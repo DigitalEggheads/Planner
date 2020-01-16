@@ -452,7 +452,7 @@ ul#top_tools a{ color:#fff;}
 ul#top_tools a:hover {color:#e04f67;}
 .sticky ul#top_tools a{ color:#333; }
 ul#top_tools li{display:inline-block; padding:0 10px;}
-ul#top_tools li i{font-size: 18px; font-weight: normal;}
+ul#top_tools li i{font-size: 18px; font-weight: normal; display: none;}
 
 #top_line{
 	color:#fff;
@@ -472,12 +472,26 @@ ul#top_links{
 	padding:0;
 	float:right;
 }
-a#access_link, a#wishlist_link{
+ul#top_links_left{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+ul#top_links_left a{
+	color:#fff;
+}
+/*a#access_link, a#wishlist_link{
+	position:relative;
+	display:inline-block;
+	padding-left:16px;
+}*/
+a#youtube_link, a#facebook_link, a#instagram_link{
 	position:relative;
 	display:inline-block;
 	padding-left:16px;
 }
-#access_link:before, #wishlist_link:before{
+/*#access_link:before, #wishlist_link:before{
 	font-style: normal;
  	font-weight: normal;
  	font-family: "fontello";
@@ -485,10 +499,20 @@ a#access_link, a#wishlist_link{
 	position:absolute;
 	left:0;
 	top:0;
+}*/
+#youtube_link:before, #facebook_link:before, #instagram_link:before{
+	font-style: normal;
+ 	font-weight: normal;
+ 	font-family: "fontawesome";
+    font-size:14px;
+	position:absolute;
+	left:0;
+	top:0;
 }
 
-#wishlist_link:before{content: "\ec5e";}
-#access_link:before{content: "\e97f";}
+#youtube_link:before{content: "\f167";}
+#facebook_link:before{content: "\f082";}
+#instagram_link:before{content: "\f16d";}
 
 ul#top_links li{
 	display:inline-block;
@@ -497,9 +521,20 @@ ul#top_links li{
 	padding-left:8px;
 	position:relative;
 }
+ul#top_links_left li{
+	display:inline-block;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	margin-left:5px;
+	padding-right:8px;
+	position:relative;
+}
 ul#top_links li:first-child{
 	border-left: none;
 	padding-left:0;
+}
+ul#top_links_left li:last-child{
+	border-right: none;
+	padding-right:0;
 }
 ul#top_links a{
 	color:#fff;
@@ -790,7 +825,7 @@ a#email_footer:before {
 .main-menu a {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
 .main-menu ul,
 .main-menu ul li,
-.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0;}
+.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0; float: right;}
 
 /* Submenu styles */
 .main-menu ul li a {display: block; line-height: 20px;padding:10px;}
