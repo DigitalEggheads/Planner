@@ -472,26 +472,12 @@ ul#top_links{
 	padding:0;
 	float:right;
 }
-ul#top_links_left{
-	list-style:none;
-	margin:0;
-	padding:0;
-	float:left;
-}
-ul#top_links_left a{
-	color:#fff;
-}
-/*a#access_link, a#wishlist_link{
-	position:relative;
-	display:inline-block;
-	padding-left:16px;
-}*/
-a#youtube_link, a#facebook_link, a#instagram_link{
+a#access_link, a#wishlist_link{
 	position:relative;
 	display:inline-block;
 	padding-left:16px;
 }
-/*#access_link:before, #wishlist_link:before{
+#access_link:before, #wishlist_link:before{
 	font-style: normal;
  	font-weight: normal;
  	font-family: "fontello";
@@ -499,20 +485,10 @@ a#youtube_link, a#facebook_link, a#instagram_link{
 	position:absolute;
 	left:0;
 	top:0;
-}*/
-#youtube_link:before, #facebook_link:before, #instagram_link:before{
-	font-style: normal;
- 	font-weight: normal;
- 	font-family: "fontawesome";
-    font-size:14px;
-	position:absolute;
-	left:0;
-	top:0;
 }
 
-#youtube_link:before{content: "\f167";}
-#facebook_link:before{content: "\f082";}
-#instagram_link:before{content: "\f16d";}
+#wishlist_link:before{content: "\ec5e";}
+#access_link:before{content: "\e97f";}
 
 ul#top_links li{
 	display:inline-block;
@@ -521,20 +497,9 @@ ul#top_links li{
 	padding-left:8px;
 	position:relative;
 }
-ul#top_links_left li{
-	display:inline-block;
-	border-right: 1px solid rgba(255,255,255,0.3);
-	margin-left:5px;
-	padding-right:8px;
-	position:relative;
-}
 ul#top_links li:first-child{
 	border-left: none;
 	padding-left:0;
-}
-ul#top_links_left li:last-child{
-	border-right: none;
-	padding-right:0;
 }
 ul#top_links a{
 	color:#fff;
@@ -825,12 +790,8 @@ a#email_footer:before {
 .main-menu a {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
 .main-menu ul,
 .main-menu ul li,
-.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0; float: left;}
+.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0;}
 
-
-.main-menu ul{
-float: right;
-}
 /* Submenu styles */
 .main-menu ul li a {display: block; line-height: 20px;padding:10px;}
 			
@@ -4544,16 +4505,18 @@ ul.plan-features {
 }
 
 /* Promo_full */
-.promo_full {
+
+/*changed by AN*/
+/*.promo_full {
 	height: auto;
-	background: url(../img/home_bg_2.jpg) no-repeat center center;
+	background: url(../img/homepage/all-cities-parallaxed-background-image.jpg) no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	position: relative;
-}
+}*/
 
 .promo_full_wp {
 	display: table;
@@ -6323,18 +6286,13 @@ a.social_bt.linkedin:before {
   margin: 45px 0 25px 0;
 }
 
-/*.feature_home_2 h3 {
-  font-size: 18px;
-}*/
-
-/*added by AN*/
 .feature_home_2 h3 {
-  font-size: 15px;
-  padding-top:15px;
+  font-size: 18px;
 }
 
-.banner_2 {
-  background: url(../img/homepage/trip-planner-banner-background-image.jpg) center center no-repeat;
+/*added by AN*/
+/*.banner_2 {
+  background: url(../img/banner_bg_desktop.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6343,16 +6301,10 @@ a.social_bt.linkedin:before {
   height: 400px;
   margin-bottom: 25px;
   position: relative;
-}
+}*/
 .banner_2 .wrapper {
   color: #fff;
   padding: 60px;
-}
-/* added by AN*/
-.trip-planning h4{
-	color: #fff !important;
-	font-size: 32px;
-	font-weight: bold;
 }
 @media (max-width: 767px) {
   .banner_2 .wrapper {
@@ -7871,18 +7823,6 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 	}
 
 	
-}
-/* END MEDIA QUERIES max-width 480px - MOBILE PORTRAIT  */
-
-/* CUSTOM STYLES FOR SHIRKAT-UL-RAS - BY AN - STARTS FROM HERE  */
-
-/*HOMEPAGE - ABOUT US SECTION, STYLES STARTS HERE*/
-.about-us-area{
-	background-color: #fff !important;
-}
-.sr-default-btn{
-	background-color: #ab972b;
-	color: #fff;
 }
 
 
