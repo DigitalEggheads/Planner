@@ -84,8 +84,8 @@ h1, h2, h3 {margin-top: 20px;margin-bottom: 10px;}
 .main_title h2 {text-transform: uppercase; font-weight:700; letter-spacing:-1px; font-size:30px; margin-bottom:0;margin-top:0; }
 .main_title p {font-weight:300; font-size:20px; color: #555;}
 
-/*h2 span, h3 span, h4 span, h5 span, h6 span{color:#e04f67;}
-*/
+h2 span, h3 span, h4 span, h5 span, h6 span{color:#e04f67;}
+
 .box_style_1 h3.inner{ 
 	margin:-30px -30px 20px -30px; 
 	background-color:#565a5c; 
@@ -452,7 +452,7 @@ ul#top_tools a{ color:#fff;}
 ul#top_tools a:hover {color:#e04f67;}
 .sticky ul#top_tools a{ color:#333; }
 ul#top_tools li{display:inline-block; padding:0 10px;}
-ul#top_tools li i{font-size: 18px; font-weight: normal; display: none;}
+ul#top_tools li i{font-size: 18px; font-weight: normal;}
 
 #top_line{
 	color:#fff;
@@ -825,8 +825,12 @@ a#email_footer:before {
 .main-menu a {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
 .main-menu ul,
 .main-menu ul li,
-.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0; float: right;}
+.main-menu ul li a {position: relative; margin-bottom:0; margin: 0;padding: 0; float: left;}
 
+
+.main-menu ul{
+float: right;
+}
 /* Submenu styles */
 .main-menu ul li a {display: block; line-height: 20px;padding:10px;}
 			
@@ -6319,12 +6323,18 @@ a.social_bt.linkedin:before {
   margin: 45px 0 25px 0;
 }
 
-.feature_home_2 h3 {
+/*.feature_home_2 h3 {
   font-size: 18px;
+}*/
+
+/*added by AN*/
+.feature_home_2 h3 {
+  font-size: 15px;
+  padding-top:15px;
 }
 
 .banner_2 {
-  background: url(../img/banner_bg_desktop.jpg) center center no-repeat;
+  background: url(../img/homepage/trip-planner-banner-background-image.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -6337,6 +6347,12 @@ a.social_bt.linkedin:before {
 .banner_2 .wrapper {
   color: #fff;
   padding: 60px;
+}
+/* added by AN*/
+.trip-planning h4{
+	color: #fff !important;
+	font-size: 32px;
+	font-weight: bold;
 }
 @media (max-width: 767px) {
   .banner_2 .wrapper {
@@ -7868,6 +7884,5 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 	background-color: #ab972b;
 	color: #fff;
 }
-h2 span, h3 span, h4 span, h5 span, h6 span{color:#ab972b;}
-/* === HOMEPAGE - ABOUT US SECTION, STYLES ENDS HERE === */
+
 
