@@ -78,3 +78,6 @@ ul#top_links_left li:last-child{
   margin-bottom: 25px;
   position: relative;
 }
+.main-menu {
+    float: right;
+}
