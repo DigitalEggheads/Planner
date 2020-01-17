@@ -81,3 +81,13 @@ ul#top_links_left li:last-child{
 .main-menu {
     float: right;
 }
+
+.first-img img, .second-img img{
+	transition: transform .6s ease-out;
+}
+.first-img img:hover{
+	transform: translate(0, 25px);
+}
+.second-img img:hover{
+	transform: translate(0, -25px);
+}
