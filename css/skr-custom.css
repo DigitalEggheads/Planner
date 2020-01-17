@@ -101,3 +101,45 @@ p.service-title {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+#social_contact_sidebar {
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	padding-top: 30px;
+	margin-top: 30px;
+}
+#social_contact_sidebar ul {
+	margin: 0;
+	padding: 0 0 10px 0;
+	text-align: center;
+	list-style: none;
+}
+
+#social_contact_sidebar ul li {
+	display: inline-block;
+	margin: 0 5px 10px 5px;
+}
+
+#social_contact_sidebar ul li a {
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	display: block;
+	font-size: 16px;
+	width: 35px;
+	height: 35px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+i.icon-facebook,
+i.icon-instagram,
+i.icon-youtube-play{
+	color: indianred;
+	font-size: 22px;
+}
+#social_contact_sidebar ul li a:hover {
+	background: #fff;
+	color: #111;
+}
