@@ -119,17 +119,17 @@ function signup ($data) {
 }
 
 
-function logout () {
-    session_start();
+// function logout () {
+//     session_start();
     
-    $query = "update session set endOn = now(), isActive = 0 where authId = @p1";
-    scalarQuery($query, array($_SESSION["authObject"]["id"]));
+//     $query = "update session set endOn = now(), isActive = 0 where authId = @p1";
+//     scalarQuery($query, array($_SESSION["authObject"]["id"]));
 
-    // session_destroy();
-    destroyUserSession();
+//     // session_destroy();
+//     destroyUserSession();
 
-    header("location: ../templates/auth/login.php");
-}
+//     header("location: ../templates/auth/login.php");
+// }
 
 function adminLogout () {
     session_start();   
@@ -138,7 +138,7 @@ function adminLogout () {
     // session_destroy();
     destroyAdminSession();
     
-    header("location: ../admin/index.php");
+    header("location: ../Admin/index.php");
 }
 
 function destroyUserSession () {
