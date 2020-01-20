@@ -78,7 +78,7 @@ ul#top_links_left li:last-child{
 	position: relative;
 }
 .banner_2 {
-  background: url(../img/homepage/trip-planner-banner-background-image.jpg) center center no-repeat;
+  background: url(../img/homepage/CTA-banner-background-image.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,6 +105,9 @@ ul#top_links_left li:last-child{
 }*/
 
 /*services section*/
+div.trip-planning{
+	margin: 0 auto;
+}
 p.service-title {
     font-size: 15px !important;
     font-weight: 500;
