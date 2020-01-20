@@ -1196,7 +1196,7 @@ a.dropdown-toggle.icon-search{display: inline-block;}
 .header-video {
 	position: relative;
 	overflow: hidden;
-	background: #4d536d url(../img/slide_hero.jpg) no-repeat center center;
+	background: #4d536d url('../img/slide_hero.jpg') no-repeat center center;
 	background-size: cover;
 }
 
