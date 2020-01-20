@@ -29,6 +29,8 @@
     <!-- CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/skr-custom.css">
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body>
@@ -201,13 +203,13 @@
                     <div class="row">
                         <div class="col-md-6 mt-5">
                           <!-- First Img -->
-                          <div class="first-img">
+                          <div data-aos="slide-up" data-aos-easing="ease-in-out-back" class="first-img">
                             <img class="mw-100" src="img/homepage/section-about-image-one.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
                        <!-- Second Img -->
-                       <div class="second-img">
+                       <div data-aos="slide-down" data-aos-easing="ease-in-out-back" class="second-img">
                         <img class="mw-100" src="img/homepage/section-about-image-two.jpg" alt="">
                     </div>
                 </div>
@@ -219,65 +221,62 @@
 <!-- about us area ends here -->
 
 <!-- Services Section Starts Here -->
-<!-- <div class="services-section">
+<div class="services-section">
    <div class="container margin_60">
-    <div class="main_title">
-        <h2>Plan <span>Your Tour</span> Easly</h2>
-        <p>
-            Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
-        </p>
-    </div>
-    <div class="row feature_home_2">
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-hotel-accomodation.png" alt="" width="60" height="60">
-            <h3>Hotel Accomodations</h3>
-
+        <div class="main_title">
+            <h2>Our <span>Services</span></h2>
+            <p>
+                Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+            </p>
         </div>
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-visa-ticketing-facilitations.png" alt="" width="60" height="60">
-            <h3>Visa &amp; Ticketing Facilitations</h3>
+        <div class="row feature_home_2">
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-hotel-accomodation.png" alt="" width="60" height="60">
+                <h3>Hotel Accomodations</h3>
 
-        </div>
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-tour-guide.png" alt="" width="60" height="60">
-            <h3>Religious/Tour Guide/Local Guide</h3>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-visa-ticketing-facilitations.png" alt="" width="60" height="60">
+                <h3>Visa &amp; Ticketing Facilitations</h3>
 
-        </div>
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-food.png" alt="" width="60" height="60">
-            <h3>Food</h3>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-tour-guide.png" alt="" width="60" height="60">
+                <h3>Religious/Tour Guide/Local Guide</h3>
 
-        </div>
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-transport-service.png" alt="" width="60" height="60">
-            <h3>Transport Service</h3>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-food.png" alt="" width="60" height="60">
+                <h3>Food</h3>
 
-        </div>
-        <div class="col-md-2 text-center">
-            <img src="img/homepage/icons/services-icon-medical-first-aid.png" alt="" width="60" height="60">
-            <h3>Medical First Aid</h3>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-transport-service.png" alt="" width="60" height="60">
+                <h3>Transport Service</h3>
 
-        </div>
-    </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="img/homepage/icons/services-icon-medical-first-aid.png" alt="" width="60" height="60">
+                <h3>Medical First Aid</h3>
 
-    <div class="banner_2">
-        <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="trip-planning">
-                <h3>Your Perfect<br>Tour Plan</h3>
-                <p>Activities and accommodations</p>
-                <a href="all_tours_list.html" class="btn_1">Plan your trip!</a>
             </div>
         </div>
-   
     </div>
-
-
+    <div class="container-fluid p-0">
+        <div class="banner_2">
+            <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                <div class="trip-planning text-center">
+                    <h3>Your Perfect<br>Tour Plan</h3>
+                    <p>Activities and accommodations</p>
+                    <a href="all_tours_list.html" class="btn_1">Plan your trip!</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-</div> -->
-
 <!-- Services Section with full width Starts Here -->
-<section class="services-section">
+<!-- <section class="services-section">
         <div class="container-fluid services-container">
             <div class="services-content">
                <div class="container">
@@ -343,8 +342,8 @@
             </div>
 
 
-        </div><!-- /.container -->
-    </section>
+        </div>
+</section> -->
 
 
 <!--  Services section ends here-->
@@ -609,7 +608,14 @@
  });
 </script>
 
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+        once: false
 
+    });
+  </script>
 
 </body>
 </html>
