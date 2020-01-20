@@ -37,14 +37,14 @@
 <body>
 	<div class="wrapper">
 		<div class="container mt-4">
-		<form action="" class="form-signin">
+		<form action="" class="form-signin" method="post">
 			<img class="mx-auto d-block" src="img/Logo.png" alt="Shirkat-ul-Ras Logo">
 			<h2 class="form-heading text-center">
 				Admin Login Form
 			</h2>
-			<input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+			<input type="email" name="User_email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
 
-			<input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+			<input type="password" name="User_Password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
 
 			<input type="submit" name="submit" class="btn btn-lg btn-dark btn-block" value="Login">
 		</form>

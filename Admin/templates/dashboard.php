@@ -1,3 +1,17 @@
+<?php
+
+  if(!isset($_SESSION))
+    session_start();
+
+  include_once "../../backend/admin.php";
+
+  if (!isset($_SESSION["adminLogin"]) || !$_SESSION["adminLogin"] || isset($_POST["logout"])) {
+    // session_destroy();
+    destroyAdminSession();
+    header("location: ../index.php");
+  }
+?>
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
