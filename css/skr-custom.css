@@ -1,4 +1,4 @@
-/*HOMEPAGE - ABOUT US SECTION, STYLES STARTS HERE*/
+HOMEPAGE - ABOUT US SECTION, STYLES STARTS HERE*/
 
 .about-us-area{
 	background-color: #fff !important;
@@ -67,7 +67,7 @@ ul#top_links_left li:last-child{
 /*end of homepage services section*/
 
 
-/*.promo_full {
+.promo_full {
 	height: auto;
 	background: url(../img/homepage/all-cities-parallaxed-background-image.jpg) no-repeat center center;
 	background-attachment: fixed;
@@ -76,8 +76,8 @@ ul#top_links_left li:last-child{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	position: relative;
-}*/
-/*.banner_2 {
+}
+.banner_2 {
   background: url(../img/homepage/trip-planner-banner-background-image.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -87,20 +87,24 @@ ul#top_links_left li:last-child{
   height: 400px;
   margin-bottom: 25px;
   position: relative;
-}*/
+}
 .main-menu {
     float: right;
 }
 
+/*About section images*/
+
 .first-img img, .second-img img{
 	transition: transform .6s ease-out;
 }
-.first-img img:hover{
+/*.first-img img:hover{
 	transform: translate(0, 25px);
 }
 .second-img img:hover{
 	transform: translate(0, -25px);
-}
+}*/
+
+/*services section*/
 p.service-title {
     font-size: 15px !important;
     font-weight: 500;
@@ -159,18 +163,18 @@ i.icon-youtube-play{
 
 
 /*Parallaxed services section*/
-section.services-section{
+/*section.services-section{
             background: url(../img/homepage/trip-planner-banner-background-image.jpg);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             color: #fff;
-        }
+        }*/
 /*        .container-fluid.services-container{
  
         }*/
-        .services-content{
+/*        .services-content{
             padding-top: 80px;
             padding-bottom: 80px;
             
