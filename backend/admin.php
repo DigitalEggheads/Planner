@@ -13,15 +13,31 @@
   function getDashboardData () {
     $res = array();
 
-    $query = "select count(*) c from auth ";
-    $query .= "inner join user on auth.id = user.authId ";
-    $query .= "where role = 'user' ";
-    $res["allUsers"] = fetchQuery($query)[0]["c"];
+    $query = "select count(*) c from hotels ";
+    // $query .= "inner join user on hotels.id = hotels.authId ";
+    // $query .= "where role = 'hotels' ";
+    $res["allhotels"] = fetchQuery($query)[0]["c"];
+
+    $query = "select count(*) c from hotels_queries ";
+    // $query .= "inner join user on hotels.id = hotels.authId ";
+    // $query .= "where role = 'hotels' ";
+    $res["allhotelsqueries"] = fetchQuery($query)[0]["c"];
+
+    $query = "select count(*) c from hotels_reviews ";
+    // $query .= "inner join user on hotels.id = hotels.authId ";
+    // $query .= "where role = 'hotels' ";
+    $query .= "where Hotel_Review_isApproved = 1";
+    $res["allhotelsreviews"] = fetchQuery($query)[0]["c"];
+
+    $query = "select count(*) c from emails ";
+    // $query .= "inner join user on hotels.id = hotels.authId ";
+    // $query .= "where role = 'hotels' ";
+    $res["allemails"] = fetchQuery($query)[0]["c"];
     
     $query = "select count(*) c from session ";
     $query .= "inner join auth on auth.id = session.authId ";
     $query .= "inner join user on session.authId = user.authId ";
-    $query .= "where isActive = 1";
+    $query .= "where isApproved = 1";
     $res["onlineUsers"] = fetchQuery($query)[0]["c"];
 
     $query = "select count(*) c from (SELECT count(ru.authId) reprotedUserCount ";

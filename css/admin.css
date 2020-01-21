@@ -265,7 +265,7 @@ ul#profile_summary li:nth-child(odd) {
   font-weight: normal;
   font-family: "icon_set_1";
   font-size:24px;
-  color:#e04f67;
+  color:#d3ba37;
   position:absolute;
   border:1px solid #ededed;
   width:50px;
@@ -292,7 +292,7 @@ ul#profile_summary li:nth-child(odd) {
 	text-align:center;
 }
 .strip_booking .date .month{
-	background-color:#e04f67;
+	background-color:#d3ba37;
 	display:block;
 	color:#fff;
 	text-transform:uppercase;
@@ -308,7 +308,7 @@ ul#profile_summary li:nth-child(odd) {
 	font-size:36px;
 	font-weight:normal;
 	display:block;
-	color:#e04f67;
+	color:#d3ba37;
 	margin-bottom:3px;
 }
 ul.info_booking{

@@ -10,6 +10,9 @@
     destroyAdminSession();
     header("location: ../index.php");
   }
+
+
+  $dashboard = getDashboardData();
 ?>
 
 <!DOCTYPE html>
@@ -212,7 +215,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="info-box-content">
                 <span class="info-box-text">Hotels</span>
                 <span class="info-box-number">
-                  90
+                  <?=$dashboard["allhotels"]?>
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -226,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <div class="info-box-content">
                 <span class="info-box-text">Hotel Queries</span>
-                <span class="info-box-number">100</span>
+                <span class="info-box-number"><?=$dashboard["allhotelsqueries"]?></span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -247,7 +250,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <div class="info-box-content">
                 <span class="info-box-text">Hotel Reviews</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-number"><?=$dashboard["allhotelsreviews"]?></span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -260,7 +263,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <div class="info-box-content">
                 <span class="info-box-text">Emails</span>
-                <span class="info-box-number">2,000</span>
+                <span class="info-box-number"><?=$dashboard["allemails"]?></span>
               </div>
               <!-- /.info-box-content -->
             </div>

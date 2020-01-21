@@ -138,7 +138,7 @@
 }
 
 .shop-item .image-box .item-options .btn_shop:hover{
-	background:#e04f67;
+	background:#d3ba37;
 	color:#ffffff;	
 }
 
@@ -167,7 +167,7 @@
 .shop-item .product_description .price{
 	font-size:16px;
 	font-weight:500;
-	color:#e04f67;
+	color:#d3ba37;
 	line-height:20px;	
 }
 
@@ -376,7 +376,7 @@
 
 .prod-tabs .tab-btns .tab-btn.active-btn{
 	top:2px;
-	color:#e04f67;
+	color:#d3ba37;
 	border-color:#f0f0f0;
 }
 
@@ -559,8 +559,8 @@
 }
 .btn_cart_outine:hover{
 	color:#fff;
-	background:#e04f67;
-	border:2px solid #e04f67;
+	background:#d3ba37;
+	border:2px solid #d3ba37;
 }
 
 .table.cart-list.shopping-cart th,
@@ -941,7 +941,7 @@
 .sidebar .related-products .post .price{
 	font-size:13px;
 	font-weight:500;
-	color:#e04f67;	
+	color:#d3ba37;	
 }
 .sidebar .related-products .post .rating{
 	font-size:13px;
@@ -969,7 +969,7 @@
 	padding-bottom:0;
 }
 #cat_shop ul li a:hover{
-	color:#e04f67;
+	color:#d3ba37;
 }
 
 /*============================================================================================*/
