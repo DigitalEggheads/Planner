@@ -1,0 +1,31 @@
+#counter-card
+{
+    float: none;
+    text-align: left;
+    margin: 5px;
+}
+.count
+{
+  color:indianred;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+/*.card {
+    background-color: #343a40;
+    color: #fff;
+}
+h4.card-title{
+	font-size: 20px;
+    font-weight: 900;
+}*/
+.info-box{
+	min-height: 120px;
+    padding: 0;
+}
+.info-box-icon{
+	width: 120px !important;
+}
+.info-box-text{
+	margin-top: 6%;
+}

@@ -34,6 +34,7 @@ a#youtube_link, a#facebook_link, a#instagram_link{
 	top:0;
 }
 
+
 #youtube_link:before{content: "\f167";}
 #facebook_link:before{content: "\f082";}
 #instagram_link:before{content: "\f16d";}
@@ -186,3 +187,18 @@ i.icon-youtube-play{
             padding-left: 90px;
             padding-right: 90px;
         }
+        /*SERVICES PAGE*/
+.service-box{
+	background-color: #fdfdfd;
+	box-shadow: 0 1px 15px -4px rgba(0,0,0,0.3);
+	height: 210px;
+}
+.service-box:hover{
+	box-shadow: inset 0 0 0 1px rgba(236,128,128,.6);
+	transition: all 0.6s linear
+
+}
+img.img-responsive.service-img {
+    width: 70px;
+    margin-bottom: 20px;
+}
