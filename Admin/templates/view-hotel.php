@@ -248,7 +248,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table class="table">
                   <thead>
                     <tr>
-                      <th></th>
+                      <th style="width: 200px;"></th>
                       <th></th>
 
                     </tr>
@@ -259,16 +259,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><img class="placeholder-img" src="<?php echo $Hotel_Featured_Image; ?>" width="250px;" height="250px;"></td>
                     </tr>
                     <tr>
-                      <td><label for="">Name</label></td>
+                      <td><label for="">Hotel Name</label></td>
                       <td><?php echo $Hotel_Title; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">City</label></td>
-                      <td><?php echo $Hotel_City; ?></td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Distance</label></td>
-                      <td><?php echo $Hotel_Distance; ?></td>
+                      <td><label for="">Type</label></td>
+                      <td><?php echo $Hotel_Type; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Price</label></td>
@@ -279,17 +275,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?php echo $Hotel_City; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">Type</label></td>
-                      <td><?php echo $Hotel_Type; ?></td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Description</label></td>
-                      <td><?php echo $Hotel_Type; ?></td>
+                      <td><label for="">Distance</label></td>
+                      <td><?php echo $Hotel_Distance; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Rating</label></td>
                       <td><?php echo $Hotel_Description; ?></td>
                     </tr>
+                    <tr>
+                      <td><label for="">Description</label></td>
+                      <td><?php echo $Hotel_Type; ?></td>
+                    </tr>
+                    
                   </tbody>
                 </table>
               </div>
