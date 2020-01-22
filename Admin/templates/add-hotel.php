@@ -174,7 +174,7 @@
 
                <!-- Hotel Details and Management -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="view-hotel.php" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Hotels
@@ -189,7 +189,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="managed-hotels.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Hotel</p>
                 </a>
@@ -296,15 +296,13 @@
                                   <div class="form-group">
                                       <label for="featuredImage">Add Featured Image</label>
                                           <div class="ml-2">
-                                          <img src="https://placehold.it/100x100" id="preview" class="img-thumbnail">
+                                          <img src="https://placehold.it/250x250" id="preview" class="img-thumbnail">
                                           </div>
                                           <input type="file" name="img[]" class="file" accept="image/*">
-                                          <div class="input-group my-3">
-                                          
-                                              <div class="input-group-append">
-                                                  <!-- <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button> -->
-                                                  <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label>
-                                              </div>
+                                          <div class="input-group my-3 col-md-4">
+                                              <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button>
+                                              <!-- <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label> -->
+                                             
                                           </div>
                                   </div>
                               </div>
@@ -545,6 +543,33 @@ $('input[type="file"]').change(function(e) {
   // read the image file as a data URL.
   reader.readAsDataURL(this.files[0]);
 });
+</script>
+<script src="dist/js/dropzone.min.js"></script>
+
+<!-- Dropzone.js Scripts for Image gallery -->
+<script type="text/javascript"> 
+var dropzone = new Dropzone('#demo-upload', {
+  previewTemplate: document.querySelector('#preview-template').innerHTML,
+  parallelUploads: 2,
+  thumbnailHeight: 120,
+  thumbnailWidth: 120,
+  maxFilesize: 3,
+  filesizeBase: 1000,
+  thumbnail: function(file, dataUrl) {
+    if (file.previewElement) {
+      file.previewElement.classList.remove("dz-file-preview");
+      var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+      for (var i = 0; i < images.length; i++) {
+        var thumbnailElement = images[i];
+        thumbnailElement.alt = file.name;
+        thumbnailElement.src = dataUrl;
+      }
+      setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+    }
+  }
+
+});
+
 </script>
 
 </body>
