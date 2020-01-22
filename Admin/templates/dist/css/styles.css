@@ -148,6 +148,6 @@ img.placeholder-img{
   border: 1px solid #eeeeee;
 }
 
-.custom-file-label.featured-image-upload::after{
+label.custom-file-label::after{
   display: none !important;
 }
