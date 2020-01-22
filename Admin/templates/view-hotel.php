@@ -1,3 +1,47 @@
+<?php
+
+  if(!isset($_SESSION))
+    session_start();
+
+  include_once "../../backend/admin.php";
+
+  if (!isset($_SESSION["adminLogin"]) || !$_SESSION["adminLogin"] || isset($_POST["logout"])) {
+    // session_destroy();
+    destroyAdminSession();
+    header("location: ../index.php");
+  }
+
+
+$Hotel_Id = $_GET["Hotel_Id"];
+
+$query = "select * from hotels where Hotel_Id = $Hotel_Id";
+
+if ($result=mysqli_query($con,$query))
+  {
+  // Fetch one and one row
+  $row=mysqli_fetch_row($result);
+    
+    $Hotel_Title = $row[1];
+    $Hotel_Description = $row[2];
+    $Hotel_Destination = $row[3];
+    $Hotel_City = $row[4];
+    $Hotel_Type = $row[5];
+    $Hotel_Distance = $row[6];
+    $Hotel_Rating = $row[7];
+    $Hotel_Map_Iframe = $row[8];
+    $Hotel_Featured_Image = $row[9];
+    $Hotel_Price = $row[10];
+    $Hotel_Gallery = $row[11];
+    
+  // Free result set
+  mysqli_free_result($result);
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -196,7 +240,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="far fa-list-alt" style="color: #339af0;"></i>
-                View Hote Details
+                Hotel Details
               </h3>
               </div>
               <!-- /.card-header -->
@@ -212,39 +256,39 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <tbody>
                     <tr>
                       <td><label for="">Profile Picture</label></td>
-                      <td><img class="placeholder-img" src="dist/img/image-placeholder.png" alt="Image placeholder"></td>
+                      <td><img class="placeholder-img" src="<?php echo $Hotel_Featured_Image; ?>" width="250px;" height="250px;"></td>
                     </tr>
                     <tr>
                       <td><label for="">Name</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_Title; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">City</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_City; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Distance</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_Distance; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Price</label></td>
-                      <td>--</td>
+                      <td>$<?php echo $Hotel_Price; ?>/night</td>
                     </tr>
                     <tr>
                       <td><label for="">City</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_City; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">Standard</label></td>
-                      <td>--</td>
+                      <td><label for="">Type</label></td>
+                      <td><?php echo $Hotel_Type; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Description</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_Type; ?></td>
                     </tr>
                     <tr>
                       <td><label for="">Rating</label></td>
-                      <td>--</td>
+                      <td><?php echo $Hotel_Description; ?></td>
                     </tr>
                   </tbody>
                 </table>
