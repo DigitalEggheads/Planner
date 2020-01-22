@@ -263,6 +263,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?php echo $Hotel_Title; ?></td>
                     </tr>
                     <tr>
+                      <td><label for="">Description</label></td>
+                      <td><?php echo $Hotel_Description; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Destination</label></td>
+                      <td><?php echo $Hotel_Destination; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">City</label></td>
+                      <td><?php echo $Hotel_City; ?></td>
+                    </tr>
+                    <tr>
                       <td><label for="">Type</label></td>
                       <td><?php echo $Hotel_Type; ?></td>
                     </tr>
@@ -271,20 +283,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>$<?php echo $Hotel_Price; ?>/night</td>
                     </tr>
                     <tr>
-                      <td><label for="">City</label></td>
-                      <td><?php echo $Hotel_City; ?></td>
-                    </tr>
-                    <tr>
                       <td><label for="">Distance</label></td>
                       <td><?php echo $Hotel_Distance; ?></td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Rating</label></td>
-                      <td><?php echo $Hotel_Description; ?></td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Description</label></td>
-                      <td><?php echo $Hotel_Type; ?></td>
                     </tr>
                     
                   </tbody>
