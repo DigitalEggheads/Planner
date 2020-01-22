@@ -31,6 +31,11 @@
     <link rel="stylesheet" href="css/skr-custom.css">
 
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <!-- Links for animation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     
 </head>
 <body>
@@ -165,13 +170,13 @@
     <main>
        <section class="header-video">
           <div id="hero_video">
-			<!-- <div class="intro_title">
-				<h3 class="animated fadeInDown">Affordable Paris tours</h3>
-				<p class="animated fadeInDown">City Tours / Tour Tickets / Tour Guides</p>
+			<div class="intro_title">
+				<h3 class="animated fadeInDown">Making your dreams come alive</h3>
+				<!-- <p class="animated fadeInDown">City Tours / Tour Tickets / Tour Guides</p>
 				<a href="#" class="animated fadeInUp button_intro">View Tours</a>
 				<a href="#" class="animated fadeInUp button_intro outline hidden-sm hidden-xs">View Tickets</a>
-				<a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video animated fadeInUp button_intro outline">Play video</a>
-			</div> -->
+				<a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video animated fadeInUp button_intro outline">Play video</a> -->
+			</div>
 		  </div>
 		  <img src="" alt="Image" class="header-video--media" data-video-src="" data-teaser-source="video/Nenave-Background-video" data-provider="Youtube" data-video-width="854" data-video-height="480">
 	   </section>
@@ -191,21 +196,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 mt-5 mb-5">
-                    <div class="row">
+                <div class="col-12 col-lg-6 mb-5">
+                    <!-- <div class="row">
                         <div class="col-md-6 mt-5">
-                          <!-- First Img -->
-                          <div data-aos="slide-up" data-aos-easing="ease-in-out-back" class="first-img">
-                            <img class="mw-100" src="img/homepage/section-about-image-one.jpg" alt="">
+                          
+                            <div class="first-img">
+                                <img class="mw-100" src="img/homepage/section-about-image-one.jpg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                       <!-- Second Img -->
-                       <div data-aos="slide-down" data-aos-easing="ease-in-out-back" class="second-img">
-                        <img class="mw-100" src="img/homepage/section-about-image-two.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+                        <div class="col-md-6">
+                           
+                           <div class="second-img">
+                                <img class="mw-100" src="img/homepage/section-about-image-two.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                    <section class="sticky">
+                        <img id="img-one" src="img/homepage/section-about-image-one.jpg">
+                        <img id="img-two" src="img/homepage/section-about-image-two.jpg" alt="">
+                    </section>
         </div>
     </div>
 </div>
@@ -474,10 +483,13 @@
 <footer class="revealed">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h3>Need help?</h3>
-                <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
-                <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
+            <div class="col-md-3">
+                <h3>Shirkat-ul-Ras</h3>
+                <p class="text-left"><strong></strong>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, assumenda?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, assumenda?
+                </p>
+                
             </div>
             <div class="col-md-3">
                 <h3>About</h3>
@@ -496,14 +508,10 @@
                     <li><a href="#">Kingdom Of Saudi Arabia</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
-                <h3>Settings</h3>
-                <div class="styled-select">
-                    <select name="lang" id="lang">
-                        <option value="English" selected>English</option>
-                        <option value="French">French</option>
-                    </select>
-                </div>
+            <div class="col-md-3">
+                <h3>Need help?</h3>
+                <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
+                <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
             </div>
         </div><!-- End row -->
         <div class="row">
@@ -600,7 +608,7 @@
  });
 </script>
 
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
         duration: 1200,
@@ -608,6 +616,29 @@
 
     });
   </script>
+ -->
 
+ <script>
+    var tl = new TimelineMax({onUpdate:updatePercentage});
+    var tl2 = new TimelineMax();
+    const controller = new ScrollMagic.Controller();
+
+    tl.from('#img-one', 1, {y:-200, opacity: 0,ease: Power4.easeInOut}, "=-1");
+    tl.from('#img-two', 1, {y:200, opacity: 0, ease: Power4.easeInOut}, "=-.7");
+     const scene = new ScrollMagic.Scene({
+  triggerElement: ".sticky",
+            triggerHook: "onLeave",
+            duration: "100%"
+})
+  .setPin(".sticky")
+  .setTween(tl)
+  .addTo(controller);
+
+function updatePercentage() {
+  //percent.innerHTML = (tl.progress() *100 ).toFixed();
+  tl.progress();
+  console.log(tl.progress());
+}
+ </script>
 </body>
 </html>

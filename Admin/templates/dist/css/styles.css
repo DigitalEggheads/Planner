@@ -151,13 +151,20 @@ img.placeholder-img{
 label.custom-file-label::after{
   display: none !important;
 }
-
+#dropzone {
+    margin-bottom: 3rem; }
+  
 .dropzone {
-    background: white;
+    border: 2px dashed #0087F7;
     border-radius: 5px;
-    border: 2px dashed rgb(0, 135, 247);
-    border-image: none;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    background: white; 
+  }
+.dropzone .dz-message {
+      font-weight: 400; 
+    }
+.dropzone .dz-message .note {
+        font-size: 0.8em;
+        font-weight: 200;
+        display: block;
+        margin-top: 1.4rem; 
+    }

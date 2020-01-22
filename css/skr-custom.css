@@ -105,6 +105,29 @@ ul#top_links_left li:last-child{
 	transform: translate(0, -25px);
 }*/
 
+
+section.sticky {
+  padding: 3em;
+  height: 55vh;
+  position: relative;
+  box-sizing: border-box;
+  }
+  
+ section.sticky img {
+    position: absolute;
+  }
+  
+ section.sticky img:nth-of-type(1) {
+    width: 40%;
+    right: 0;
+    top: 10%;
+  }
+ section.sticky img:nth-of-type(2) {
+    width: 40%;
+    right: 40%;
+    top: 15%;
+  }
+}
 /*services section*/
 div.trip-planning{
 	margin: 0 auto;
@@ -155,7 +178,7 @@ p.service-title {
 i.icon-facebook,
 i.icon-instagram,
 i.icon-youtube-play{
-	color: indianred;
+	color: #cfb737;
 	font-size: 22px;
 }
 #social_contact_sidebar ul li a:hover {
@@ -201,4 +224,7 @@ i.icon-youtube-play{
 img.img-responsive.service-img {
     width: 70px;
     margin-bottom: 20px;
+}
+.feature i{
+	color: #cfb737 !important;
 }
