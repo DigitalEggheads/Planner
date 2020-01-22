@@ -15,7 +15,7 @@ if(!isset($_SESSION))
 
     $allHotels = getAllHotels();
 
-    
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -32,6 +32,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
 
@@ -39,8 +43,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="dist/css/styles.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -206,6 +209,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div><!-- /.container-fluid -->
     </section>
 
+
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -226,7 +230,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </tr>
                 </thead>
                 <tbody>
-
                   <?php foreach ($allHotels as $key => $value) { ?>
                     
                     <tr>
@@ -235,15 +238,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?=$value["Hotel_City"]?></td>
                       <td><?=$value["Hotel_Distance"]?></td>
                       <td>
-                        <a href="./view-hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
+                        <a href="./view-hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
                         <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
                         <a href="#" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a>  &nbsp;
                       </td>
                     </tr>
 
                   <?php } ?>
-
-              </tbody>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Hotel Name</th>
+                  <th>Hotel Destination</th>
+                  <th>Hotel City</th>
+                  <th>Hotel Distance</th>
+                  <th>Actions</th>
+                </tr>
+                </tfoot>
               </table>
             </div>
             <!-- /.card-body -->
@@ -255,6 +266,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- /.row -->
     </section>
     <!-- /.content -->
+
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -279,7 +292,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.js"></script>
-<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
