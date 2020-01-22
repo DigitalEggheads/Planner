@@ -143,3 +143,7 @@ h4.card-title{
   cursor:pointer;
   font-size:15px;
 }
+
+img.placeholder-img{
+  border: 1px solid #eeeeee;
+}
