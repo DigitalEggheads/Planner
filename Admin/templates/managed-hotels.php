@@ -12,7 +12,7 @@ if(!isset($_SESSION))
   }
 
 
-  
+
     $allHotels = getAllHotels();
 ?>
 <!DOCTYPE html>
@@ -233,9 +233,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td><?=$value["Hotel_City"]?></td>
                       <td><?=$value["Hotel_Distance"]?></td>
                       <td>
-                        <i class="fas fa-edit"></i> &nbsp;
-                        <i class="fas fa-save"></i> &nbsp;
-                        <i class="far fa-trash-alt"></i>  &nbsp;
+                        <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
+                        <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
+                        <a href="#" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a>  &nbsp;
                       </td>
                     </tr>
 
