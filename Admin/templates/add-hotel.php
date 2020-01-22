@@ -19,8 +19,6 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- custom styles -->
  <link rel="stylesheet" href="dist/css/styles.css">
- 
-
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -276,7 +274,7 @@
             <!-- general form elements -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title">Add New Hotel</h3>
+                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel</h3>
                 </div>
               <!-- /.card-header -->
             </div>
@@ -287,188 +285,200 @@
         <!-- /.row -->
 
         <!--.Form Row starts here  -->
-        <div class="row bg-light">
+        <div class="row pb-4 bg-white">
             <div class="col-md-12">
                 <form role="form">
                     <div class="card-body">
-                      <div class="row">
-                          <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="ID">ID</label>
-                                <input type="text" class="form-control" id="hotel-ID" placeholder="Hotel ID">
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <!-- select -->
-                              <div class="form-group">
-                                <label>Destination</label>
-                                <select class="form-control">
-                                  <option>Iraq</option>
-                                  <option>Iran</option>
-                                  <option>Syria</option>
-                                  <option>Kingdom Of Saudi Arabia</option>
-                                </select>
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="featuredImage">Add Featured Image</label>
-                                
-                                <input type="file" name="img[]" class="file" accept="image/*">
-                                    <div class="input-group my-3">
-                                      <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
-                                      <div class="input-group-append">
-                                        <button type="button" class="browse btn btn-primary">Browse...</button>
-                                      </div>
-                                    </div>
-                                
-                              </div>
-                          </div>
-                      </div>
-                      <!-- .inner row 1 ends -->
-                      <div class="row">
-                          <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="Title">Title</label>
-                                <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title">
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <!-- select -->
-                              <div class="form-group">
-                                <label>Cities</label>
-                                <select class="form-control">
-                                  <option>Karbala</option>
-                                  <option>Najaf</option>
-                                  <option>Kazmain</option>
-                                  <option>Mashad</option>
-                                  <option>Qom</option>
-                                  <option>Damascus</option>
-                                  <option>Makkah</option>
-                                  <option>Madina</option>
-                                </select>
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <div class="ml-2">
-                                  <img src="https://placehold.it/100x100" id="preview" class="img-thumbnail">
-                              </div>
-                          </div>
-                      </div>
-                      <!-- .inner row 2 ends -->
-                      <div class="row">
-                          <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="price">Price</label>
-                                <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price">
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <!-- select -->
-                              <div class="form-group">
-                                <label>Standard</label>
-                                <select class="form-control">
-                                  <option>Deluxe Supreme (A*)</option>
-                                  <option>Deluxe (A)</option>
-                                  <option>Standard (B)</option>
-                                  <option>Economy Supreme (C)</option>
-                                  <option>Economy (D)</option>
-                                </select>
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-
-                          </div>
-                      </div>
-                      <!-- .inner row 3 ends -->
-                      <div class="row">
-                          <div class="col-md-4">
-                              <div class="form-group">
-                                <label for="distance">Distance</label>
-                                <input type="text" class="form-control" id="hotel-distance" placeholder="Hotel Distance">
-                              </div>
-                          </div>
-                          <div class="col-md-4">
-                              <!-- select -->
-                              <div><label>Rating</label></div>
-                              
-                              <div class="form-group rating">
-                                <label>
-                                <input type="radio" name="stars" value="1" />
-                                <span class="icon">★</span>
-                              </label>
-                              <label>
-                                <input type="radio" name="stars" value="2" />
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                              </label>
-                              <label>
-                                <input type="radio" name="stars" value="3" />
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>   
-                              </label>
-                              <label>
-                                <input type="radio" name="stars" value="4" />
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                              </label>
-                              <label>
-                                <input type="radio" name="stars" value="5" />
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                                <span class="icon">★</span>
-                              </label>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- .inner row 4 ends -->
-                      <div class="row">
-                          <div class="col-md-12">
-                              <label>Description</label>
-                              <div class="pad">
-                                  <div class="mb-3">
-                                      <textarea class="textarea" placeholder="Place some text here"
-                                                style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
-                                      </textarea>
+                          <!-- 1st row -->
+                          <div class="row">
+                            <!-- featured image -->
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="featuredImage">Add Featured Image</label>
+                                          <div class="ml-2">
+                                          <img src="https://placehold.it/100x100" id="preview" class="img-thumbnail">
+                                          </div>
+                                          <input type="file" name="img[]" class="file" accept="image/*">
+                                          <div class="input-group my-3">
+                                          
+                                              <div class="input-group-append">
+                                                  <!-- <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button> -->
+                                                  <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label>
+                                              </div>
+                                          </div>
                                   </div>
                               </div>
                           </div>
-                      </div>
-                      <!-- .inner row 5 ends -->
-                      <div class="row">
-                          <div class="col-md-12">
-                              <label>Location Map Iframe</label>
-                              <!--Textarea with icon prefix-->
-                                <div class="md-form amber-textarea active-amber-textarea">
-                                  <i class="fas fa-pencil-alt prefix"></i>
-                                  <textarea id="locationMap" class="md-textarea form-control" rows="3"></textarea>
+                          <!-- 2nd row -->
+                          <div class="row">
+                                <!-- hotel name -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="Title">Title</label>
+                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title">
+                                    </div>
+                                </div>
+
+                                <!-- hotel price -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="price">Price</label>
+                                      <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price">
+                                    </div>
+                                </div>
+
+                                <!-- distance -->
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="distance">Distance</label>
+                                      <input type="text" class="form-control" id="hotel-distance" placeholder="Hotel Distance">
+                                    </div>
                                 </div>
                           </div>
-                      </div>
-                      <!-- .inner row 6 ends -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                              <label for="">Images:</label>
-                              <div class="field">
-                                  <div id="hotel_image_upload" class="dropzone dz-message needsclick dz-clickable">
-                                    <div class="dz-default dz-message">
-                                      <span>Drop files here to upload</span>
-                                    </div>
-                                  </div>  
+                          <!-- 3rd row-->
+                          <div class="row">
+                            
+                              <!-- hotel cities -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div class="form-group">
+                                    <label>Cities</label>
+                                    <select class="form-control">
+                                      <option>Karbala</option>
+                                      <option>Najaf</option>
+                                      <option>Kazmain</option>
+                                      <option>Mashad</option>
+                                      <option>Qom</option>
+                                      <option>Damascus</option>
+                                      <option>Makkah</option>
+                                      <option>Madina</option>
+                                    </select>
+                                  </div>
+                              </div>
+                              
+                                  <!-- destinations -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div class="form-group">
+                                    <label>Destination</label>
+                                    <select class="form-control">
+                                      <option>Iraq</option>
+                                      <option>Iran</option>
+                                      <option>Syria</option>
+                                      <option>Kingdom Of Saudi Arabia</option>
+                                    </select>
+                                  </div>
+                              </div>
+
+                              <!-- hotel standard -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div class="form-group">
+                                    <label>Standard</label>
+                                    <select class="form-control">
+                                      <option>Deluxe Supreme (A*)</option>
+                                      <option>Deluxe (A)</option>
+                                      <option>Standard (B)</option>
+                                      <option>Economy Supreme (C)</option>
+                                      <option>Economy (D)</option>
+                                    </select>
+                                  </div>
                               </div>
                           </div>
-                        </div>
-                      </div>
+                          <!-- 4th row -->
+                          <div class="row">
+                              <!-- rating -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div><label>Rating</label></div>
+                                  
+                                  <div class="form-group rating">
+                                    <label>
+                                    <input type="radio" name="stars" value="1" />
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="2" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="3" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>   
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="4" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="stars" value="5" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                  </label>
+                                  </div>
+                              </div>
+
+                              <!-- Map Iframe -->
+                              <div class="col-md-8">
+                                    <label for="Mapiframe">Map iframe</label>
+                                    <!--Textarea with icon prefix-->
+                                        <div class="md-form amber-textarea active-amber-textarea">
+                                          <i class="fas fa-pencil-alt prefix"></i>
+                                          <input type="text" id="locationMap" class="md-textarea form-control" rows="3">
+                                        </div>
+                              </div>
+
+                          </div>
+                          <!-- 5th row -->
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <label>Description:</label>
+                                  <div class="pad">
+                                      <div class="mb-3">
+                                          <textarea class="textarea" placeholder="Place some text here"
+                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                                          </textarea>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- 6th row -->
+                          <br/>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="">Add Gallery Images:</label>
+                                  <div class="field">
+                                      <!-- <div id="hotel_image_upload" class="dropzone dz-message needsclick dz-clickable">
+                                        <div class="dz-default dz-message">
+                                          <span>Drop files here to upload</span>
+                                        </div>
+                                      </div> -->  
+                                  </div>    
+                              </div>
+                              <SECTION>
+                                <div id="dropzone">
+                                  <form class="dropzone needsclick" id="demo-upload" action="/upload">
+                                    <div class="dz-message needsclick"> 
+                                      <p class="needsclick">drop images here</p>
+                                    </div>
+                                  </form>
+                                </div>
+                              </SECTION>
+                            </div>
+                          </div>
                     </div>
                     <!-- /.card-body -->
-                    <div class="card-footer bg-light">
-                      <button type="submit" class="btn btn-dark btn-block">Submit</button>
+                    <div class="card-footer bg-white text-right">
+                          <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
                     </div>
                 </form>
             <!--/.Form  -->
@@ -521,6 +531,7 @@ $(document).ready(function () {
   var file = $(this).parents().find(".file");
   file.trigger("click");
 });
+
 $('input[type="file"]').change(function(e) {
   var fileName = e.target.files[0].name;
   $("#file").val(fileName);
@@ -530,6 +541,7 @@ $('input[type="file"]').change(function(e) {
     // get loaded data and render thumbnail.
     document.getElementById("preview").src = e.target.result;
   };
+  
   // read the image file as a data URL.
   reader.readAsDataURL(this.files[0]);
 });
