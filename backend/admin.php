@@ -33,37 +33,15 @@
     // $query .= "inner join user on hotels.id = hotels.authId ";
     // $query .= "where role = 'hotels' ";
     $res["allemails"] = fetchQuery($query)[0]["c"];
-    
-    $query = "select count(*) c from session ";
-    $query .= "inner join auth on auth.id = session.authId ";
-    $query .= "inner join user on session.authId = user.authId ";
-    $query .= "where isApproved = 1";
-    $res["onlineUsers"] = fetchQuery($query)[0]["c"];
-
-    $query = "select count(*) c from (SELECT count(ru.authId) reprotedUserCount ";
-    $query .= "FROM reportedUser ru ";
-    $query .= "inner join auth on ru.reportedAuthId = auth.id ";
-    $query .= "inner join user on user.authId = auth.id ";
-    $query .= "where ru.isApproved = 0 and isRejected = 0 ";
-    $query .= "group by ru.reportedAuthId) a";
-    $res["reportedProfiles"] = fetchQuery($query)[0]["c"];
-
-    $query = "select count(*) c from (SELECT count(ru.authId) reprotedUserCount ";
-    $query .= "FROM reportedUser ru ";
-    $query .= "inner join auth on ru.reportedAuthId = auth.id ";
-    $query .= "inner join user on user.authId = auth.id ";
-    $query .= "where ru.isApproved = 1 and isRejected = 0 ";
-    $query .= "group by ru.reportedAuthId) a";
-    $res["reportedProfileApproved"] = fetchQuery($query)[0]["c"];
 
     return $res;
 
   }
 
-  function getAllUsers () {
-    $query = "select * from auth ";
-    $query .= "inner join user on auth.id = user.authId ";
-    $query .= "where role = 'user' ";
+  function getAllHotels () {
+    $query = "select * from hotels ";
+    // $query .= "inner join user on auth.id = user.authId ";
+    // $query .= "where role = 'user' ";
     $res = fetchQuery($query);
     return $res;
   }
