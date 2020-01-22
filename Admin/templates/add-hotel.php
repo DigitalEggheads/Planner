@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- custom styles -->
  <link rel="stylesheet" href="dist/css/styles.css">
+ <!-- Dropzone css -->
+ <link rel="stylesheet" href="dist/css/basic.min.css">
+ <link rel="stylesheet" href="dist/css/dropzone.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -453,24 +456,31 @@
                           <div class="row">
                             <div class="col-md-12">
                               <div class="form-group">
-                                  <label for="">Add Gallery Images:</label>
-                                  <div class="field">
-                                      <!-- <div id="hotel_image_upload" class="dropzone dz-message needsclick dz-clickable">
-                                        <div class="dz-default dz-message">
-                                          <span>Drop files here to upload</span>
-                                        </div>
-                                      </div> -->  
+                                  
+                                  <div class="form-group">
+                                      <label for="">Images:</label>
+                                      <div class="field">
+                                          <div id="hotel_image_upload" class="dropzone dz-message needsclick dz-clickable"><div class="dz-default dz-message"><span>Drop files here to upload</span></div></div>  
+                                          <style>
+                                          #dropzone {
+                                              margin-bottom: 3rem; }
+                                            
+                                            .dropzone {
+                                              border: 2px dashed #0087F7;
+                                              border-radius: 5px;
+                                              background: white; }
+                                              .dropzone .dz-message {
+                                                font-weight: 400; }
+                                                .dropzone .dz-message .note {
+                                                  font-size: 0.8em;
+                                                  font-weight: 200;
+                                                  display: block;
+                                                  margin-top: 1.4rem; }
+                                            
+                                          </style>
+                                      </div>
                                   </div>    
                               </div>
-                              <SECTION>
-                                <div id="dropzone">
-                                  <form class="dropzone needsclick" id="demo-upload" action="/upload">
-                                    <div class="dz-message needsclick"> 
-                                      <p class="needsclick">drop images here</p>
-                                    </div>
-                                  </form>
-                                </div>
-                              </SECTION>
                             </div>
                           </div>
                     </div>
@@ -545,30 +555,31 @@ $('input[type="file"]').change(function(e) {
 });
 </script>
 <script src="dist/js/dropzone.min.js"></script>
+<script src="dist/js/dropzone-amd-module.min.js"></script>
 
 <!-- Dropzone.js Scripts for Image gallery -->
 <script type="text/javascript"> 
-var dropzone = new Dropzone('#demo-upload', {
-  previewTemplate: document.querySelector('#preview-template').innerHTML,
-  parallelUploads: 2,
-  thumbnailHeight: 120,
-  thumbnailWidth: 120,
-  maxFilesize: 3,
-  filesizeBase: 1000,
-  thumbnail: function(file, dataUrl) {
-    if (file.previewElement) {
-      file.previewElement.classList.remove("dz-file-preview");
-      var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
-      for (var i = 0; i < images.length; i++) {
-        var thumbnailElement = images[i];
-        thumbnailElement.alt = file.name;
-        thumbnailElement.src = dataUrl;
+    var dropzone = new Dropzone('#hotel_image_upload', {
+      previewTemplate: document.querySelector('#preview-template').innerHTML,
+      parallelUploads: 2,
+      thumbnailHeight: 120,
+      thumbnailWidth: 120,
+      maxFilesize: 3,
+      filesizeBase: 1000,
+      thumbnail: function(file, dataUrl) {
+        if (file.previewElement) {
+          file.previewElement.classList.remove("dz-file-preview");
+          var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+          for (var i = 0; i < images.length; i++) {
+            var thumbnailElement = images[i];
+            thumbnailElement.alt = file.name;
+            thumbnailElement.src = dataUrl;
+          }
+          setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+        }
       }
-      setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
-    }
-  }
 
-});
+    });
 
 </script>
 

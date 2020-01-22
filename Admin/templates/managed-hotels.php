@@ -215,36 +215,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="card">
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>Hotel Name</th>
-                  <th>Hotel Destination</th>
-                  <th>Hotel City</th>
-                  <th>Hotel Distance</th>
-                  <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                  <?php foreach ($allHotels as $key => $value) { ?>
-                    
+              <table class="table">
+                  <thead>
                     <tr>
-                      <td><?=$value["Hotel_Title"]?></td>
-                      <td><?=$value["Hotel_Destination"]?></td>
-                      <td><?=$value["Hotel_City"]?></td>
-                      <td><?=$value["Hotel_Distance"]?></td>
-                      <td>
-                        <a href="./view-hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
-                        <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
-                        <a href="#" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a>  &nbsp;
-                      </td>
+                      <th style="width: 200px;"></th>
+                      <th></th>
+
                     </tr>
-
-                  <?php } ?>
-
-              </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><label for="">Profile Picture</label></td>
+                      <td><img class="placeholder-img" src="<?php echo $Hotel_Featured_Image; ?>" width="250px;" height="250px;"></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Hotel Name</label></td>
+                      <td><?php echo $Hotel_Title; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Type</label></td>
+                      <td><?php echo $Hotel_Type; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Price</label></td>
+                      <td>$<?php echo $Hotel_Price; ?>/night</td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Distance</label></td>
+                      <td><?php echo $Hotel_Distance; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">City</label></td>
+                      <td><?php echo $Hotel_City; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Rating</label></td>
+                      <td><?php echo $Hotel_Description; ?></td>
+                    </tr>
+                    <tr>
+                      <td><label for="">Description</label></td>
+                      <td><?php echo $Hotel_Type; ?></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
             </div>
             <!-- /.card-body -->
           </div>
