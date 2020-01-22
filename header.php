@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Team</title>
+    <title>Shirkat-ul-Ras</title>
 
     <!-- Favicons-->
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -97,15 +97,15 @@
                                 <a href="index.html" class="show-submenu">Home</a>
                             </li>
                             <li class="submenu">
-                                <a href="about.html" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
+                                <a href="about.php" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="javascript:void(0);">Who We Are?</a></li>
                                     <li><a href="javascript:void(0);">Our Vision & Mission</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="team.php">Our Team</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="services.html" class="show-submenu">Services</a>
+                                <a href="services.php" class="show-submenu">Services</a>
                             </li>
                             <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
@@ -139,7 +139,7 @@
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="hotels.html" class="show-submenu">Hotels</a>
+                                <a href="hotels.php" class="show-submenu">Hotels</a>
                             </li>
                             <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Trip Planner</a>
@@ -148,7 +148,7 @@
                                 <a href="javascript:void(0);" class="show-submenu">Partners</a>
                             </li>
                             <li class="submenu">
-                                <a href="contact.html" class="show-submenu">Contact Us</a>
+                                <a href="contact.php" class="show-submenu">Contact Us</a>
                             </li>
                         </ul>
                     </div><!-- End main-menu -->
@@ -161,103 +161,3 @@
             </div>
         </div><!-- container -->
     </header><!-- End Header -->
-	
-	<section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
-      <div class="parallax-content-1">
-         <div class="animated fadeInDown">
-            <h1>Services</h1>
-        </div>
-    </div>
-    </section>
-    <!-- End Section -->
-
-    <main>
-    <div id="position">
-     <div class="container">
-        <ul>
-           <li><a href="#">Home</a>
-           </li>
-           <li><a href="#" class="active">Services</a>
-           </li>
-       </ul>
-    </div>
-    </div>
-
-
-		<div class="container margin_60">
-
-			<div class="main_title">
-				<h2>Our<span> &nbsp; Services</span></h2>
-            </div>
-            <div>
-                <p class="text-center">Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut <a href="#">utamur antiopam inciderint</a> sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi!</p>
-            </div>
-			<hr class="mt-5 mb-5">
-
-            <div class="container-fluid text-center">
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                            <img class="img-responsive service-img" src="img/servicepage/hotel-service.png">
-                            <h4>Hotel Accomodations</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                            <img class="img-responsive service-img" src="img/servicepage/visa-ticketing-service.png">
-                            <h4>Visa and Ticketing facilitations</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                             <img class="img-responsive service-img" src="img/servicepage/religious-tour-guide-service.png">
-                            <h4>Religious/Tour Guide/Local Guide</h4>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                            <img class="img-responsive service-img" src="img/servicepage/food-service.png">
-                            <h4>Food</h4>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                            <img class="img-responsive service-img" src="img/servicepage/transportation-service.png">
-                            <h4>Transport Service</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-box p-4">
-                            <img class="img-responsive service-img" src="img/servicepage/medical-first-aid-service.png">
-                            <h4>Medical First Aid</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid mb-0">
-            <div class="row">
-                <div class="col-md-12 p-0">
-                    <!-- CTA Banner -->
-                    <div class="banner colored mb-0">
-                        <h4>Plan a trip today with <span> &nbsp; Shirkat-ul-Ras</span></h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
-                        </p>
-                        <a href="single_tour.html" class="btn_1 white">Get in touch</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-	</main>
-	<!-- End main -->
-    
-<?php
-    include('footer.php');
-?>
