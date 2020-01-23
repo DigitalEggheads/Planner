@@ -758,12 +758,10 @@ a#email_footer {
 	padding-left: 40px;
 	margin: 20px 0;
 }
-
 a#phone:hover,
 a#email_footer:hover {
 	color: #fff;
 }
-
 a#phone:before,
 a#email_footer:before {
 	font-style: normal;
@@ -7183,6 +7181,7 @@ ul.plan-features {
   		position: relative;
   		top: 0;
   		overflow: hidden;
+  		z-index: 1;
   	}
   	
   	#content-row {

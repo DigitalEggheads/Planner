@@ -33,8 +33,33 @@ a#youtube_link, a#facebook_link, a#instagram_link{
 	left:0;
 	top:0;
 }
+p#address:before{
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'icon_set_1';
+	position: absolute;
+}
 
+p#address:before {
+	font-size: 30px;
+	content: '\45';
+	left: 0;
+	top: 0;
+	margin: 0 !important;
+}
+p#address:hover{
+	color: #fdf7ac;
+}
 
+p#address
+ {
+	display: block;
+	position: relative;
+	color: #fdf7ac;
+	font-size: 16px;
+	padding-left: 40px;
+	margin: 20px 0;
+}
 #youtube_link:before{content: "\f167";}
 #facebook_link:before{content: "\f082";}
 #instagram_link:before{content: "\f16d";}
