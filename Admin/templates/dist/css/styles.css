@@ -96,13 +96,13 @@ h4.card-title{
   color: #000;
   text-shadow: 0 0 5px #09f;
 }
+/*FEATURED IMAGE*/
+
 /*image upload*/
 .file {
   visibility: hidden;
   position: absolute;
 }
-
-/*image gallery*/
 
 .imagePreview {
     width: 100%;
@@ -151,20 +151,35 @@ img.placeholder-img{
 label.custom-file-label::after{
   display: none !important;
 }
-#dropzone {
-    margin-bottom: 3rem; }
-  
-.dropzone {
-    border: 2px dashed #0087F7;
-    border-radius: 5px;
-    background: white; 
-  }
-.dropzone .dz-message {
-      font-weight: 400; 
-    }
-.dropzone .dz-message .note {
-        font-size: 0.8em;
-        font-weight: 200;
-        display: block;
-        margin-top: 1.4rem; 
-    }
+
+
+
+
+/*IMAGE GALLERY*/
+.quote-imgs-thumbs {
+  background: #fff;
+  border: 1px dashed #0087f7;
+  border-radius: 0.25rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+}
+.quote-imgs-thumbs--hidden {
+  display: none;
+}
+.img-preview-thumb {
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+  box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.12);
+  margin-right: 1rem;
+  max-width: 140px;
+  padding: 0.25rem;
+}
+#bordered-div{
+  border: 1px solid #eee;
+  padding: 20px;
+}
+.button.hollow {
+    border: 1px solid #545b62 !important;
+    color: #545b62  !important;
+}

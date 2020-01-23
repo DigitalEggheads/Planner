@@ -98,36 +98,13 @@ ul#top_links_left li:last-child{
 .first-img img, .second-img img{
 	transition: transform .6s ease-out;
 }
-/*.first-img img:hover{
+.first-img img:hover{
 	transform: translate(0, 25px);
 }
 .second-img img:hover{
 	transform: translate(0, -25px);
-}*/
-
-
-section.sticky {
-  padding: 3em;
-  height: 55vh;
-  position: relative;
-  box-sizing: border-box;
-  }
-  
- section.sticky img {
-    position: absolute;
-  }
-  
- section.sticky img:nth-of-type(1) {
-    width: 40%;
-    right: 0;
-    top: 10%;
-  }
- section.sticky img:nth-of-type(2) {
-    width: 40%;
-    right: 40%;
-    top: 15%;
-  }
 }
+
 /*services section*/
 div.trip-planning{
 	margin: 0 auto;

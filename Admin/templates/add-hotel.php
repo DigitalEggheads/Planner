@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+  <!-- foundation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4-rc1/css/foundation.css">
   <!-- custom styles -->
  <link rel="stylesheet" href="dist/css/styles.css">
 </head>
@@ -452,22 +454,24 @@
                           <br/>
                           <div class="row">
                             <div class="col-md-12">
-                              <div class="form-group">
-                                  <div class="form-group">
-                    <label for="">Images:</label>
-                    <div class="field">
-                        <div id="hotel_image_upload" class="dropzone dz-message needsclick dz-clickable">
-                            <div class="dz-default dz-message"><span>Drop files here to upload</span>
-                            </div>
-                        </div>  
-                        <style>
-                            
-                              
-                        </style>
-                    </div>
-                </div>
-                                    
-                              </div>
+                              <label>Add Gallery Images:</label>
+                              <div class="grid-x grid-padding-x">
+                                  <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell" id="bordered-div">
+                                   
+                                    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+                                      
+                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <p class="text-center pt-4">
+                                        <label for="upload_imgs" class="button hollow">Select Your Images +</label>
+                                        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
+                                      </p>
+                                      <!-- <p>
+                                        <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
+                                      </p> -->
+                                    </form>
+
+                                  </div>
+                                </div>
                             </div>
                           </div>
                     </div>
@@ -506,7 +510,6 @@
 <script src="dist/js/demo.js"></script>
 <!-- custom script -->
 <script src="dist/js/script.js"></script>
-
 <script type="text/javascript">
 $(document).ready(function () {
   bsCustomFileInput.init();
@@ -515,12 +518,77 @@ $(document).ready(function () {
 
 <!-- Summernote -->
 <script src="plugins/summernote/summernote-bs4.min.js"></script>
-<script type="text/javascript">
+<script>
   $(function () {
     // Summernote
     $('.textarea').summernote()
   })
 </script>
+<!-- Feature Image Preview -->
+<script>
+  $(document).on("click", ".browse", function() {
+  var file = $(this).parents().find(".file");
+  file.trigger("click");
+});
+$('input[type="file"]').change(function(e) {
+  var fileName = e.target.files[0].name;
+  $("#file").val(fileName);
+
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    // get loaded data and render thumbnail.
+    document.getElementById("preview").src = e.target.result;
+  };
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
+});
+</script>
+
+
+<!-- IMAGE GALLERY  -->
+
+<script>  
+
+var imgUpload = document.getElementById('upload_imgs')
+  , imgPreview = document.getElementById('img_preview')
+  , imgUploadForm = document.getElementById('img-upload-form')
+  , totalFiles
+  , previewTitle
+  , previewTitleText
+  , img;
+
+imgUpload.addEventListener('change', previewImgs, false);
+imgUploadForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Images Uploaded! (not really, but it would if this was on your website)');
+}, false);
+
+function previewImgs(event) {
+  totalFiles = imgUpload.files.length;
+  
+  if(!!totalFiles) {
+    imgPreview.classList.remove('quote-imgs-thumbs--hidden');
+    previewTitle = document.createElement('p');
+    previewTitle.style.fontWeight = 'bold';
+    previewTitleText = document.createTextNode(totalFiles + ' Total Images Selected');
+    previewTitle.appendChild(previewTitleText);
+    imgPreview.appendChild(previewTitle);
+  }
+  
+  for(var i = 0; i < totalFiles; i++) {
+    img = document.createElement('img');
+    img.src = URL.createObjectURL(event.target.files[i]);
+    img.classList.add('img-preview-thumb');
+    imgPreview.appendChild(img);
+  }
+}
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
