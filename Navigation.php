@@ -16,9 +16,9 @@
                     </div>
                     <div class="col-6">
                         <ul id="top_links">
-                            <li><a href="#youtube_link" id="youtube_link">Youtube</a></li>
-                            <li><a href="#facebook_link" id="facebook_link">Facebook</a></li>
-                            <li><a href="#instagram_link" id="instagram_link">Instagram</a></li>
+                            <li><a href="#" id="youtube_link">Youtube</a></li>
+                            <li><a href="#" id="facebook_link">Facebook</a></li>
+                            <li><a href="#" id="instagram_link">Instagram</a></li>
 
                         </ul>
                     </div>
@@ -43,48 +43,26 @@
                         <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                         <ul>
                             <li class="submenu">
-                                <a href="index.html" class="show-submenu">Home</a>
+                                <a href="./index.php" class="show-submenu">Home</a>
                             </li>
                             <li class="submenu">
-                                <a href="about.html" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
+                                <a href="" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li><a href="javascript:void(0);">Who We Are?</a></li>
-                                    <li><a href="javascript:void(0);">Our Vision & Mission</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="./mission-vision.php">Who We Are?</a></li>
+                                    <li><a href="./mission-vision.php">Our Vision & Mission</a></li>
+                                    <li><a href="./teams.php">Our Team</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="services.html" class="show-submenu">Services</a>
+                                <a href="./services.php" class="show-submenu">Services</a>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
+                                <a href="" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li class="third-level"><a href="javascript:void(0);">Iraq</a>
-                                        <ul>
-                                            <li><a href="javascript:void(0);">Karbala</a></li>
-                                            <li><a href="javascript:void(0);">Najaf</a></li>
-                                            <li><a href="javascript:void(0)">Kazmain<</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="third-level"><a href="javascript:void(0);">Iran</a>
-                                        <ul>
-                                            <li><a href="javascript:void(0);">Mashhad</a></li>
-                                            <li><a href="javascript:void(0);">Qom</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="third-level"><a href="javascript:void(0);">Syria</a>
-                                        <ul>
-                                            <li><a href="javascript:void(0);">Damascus</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="third-level"><a href="javascript:void(0);">Kingdom of Saudi Arabia</a>
-                                        <ul>
-                                            <li><a href="javascript:void(0);">Makkah</a></li>
-                                            <li><a href="javascript:void(0);">Madina</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="third-level"><a href="#">Iraq</a></li>
+                                    <li class="third-level"><a href="#">Iran</a></li>
+                                    <li class="third-level"><a href="#">Syria</a></li>
+                                    <li class="third-level"><a href="#">Kingdom of Saudi Arabia</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">

@@ -2,21 +2,21 @@
 <footer class="revealed">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h3>Need help?</h3>
-                <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
-                <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
+            <div class="col-md-6">
+                <img src="img/Branding/FooterLogo.png" style="width: 85px" alt="">
+                <h3>Shirkat-ul-Ras</h3>
+                <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
+                
             </div>
+            
             <div class="col-md-3">
-                <h3>About</h3>
+                <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Trip Planner</a></li>
                     <li><a href="#">Partners</a></li>
                 </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>Discover</h3>
+                <h3>Destinations</h3>
                 <ul>
                     <li><a href="#">Iraq</a></li>
                     <li><a href="#">Iran</a></li>
@@ -24,26 +24,25 @@
                     <li><a href="#">Kingdom Of Saudi Arabia</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
-                <h3>Settings</h3>
-                <div class="styled-select">
-                    <select name="lang" id="lang">
-                        <option value="English" selected>English</option>
-                        <option value="French">French</option>
-                    </select>
-                </div>
-            </div>
-        </div><!-- End row -->
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3">
+                <h3>Need help?</h3>
+                <p id="address" class="pt-0"> Suite # 8, Al Murtaza Terrace, JM-2/198, Bahadur Yar Jang Road, Soldier Bazar # 3, Karachi-Pakistan.</p>
+                <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
+                <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
+
                 <div id="social_footer">
                     <ul>
                         <li><a href="#"><i class="icon-facebook"></i></a></li>
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
                         <li><a href="#"><i class="icon-youtube-play"></i></a></li>
                     </ul>
-                    <p>© <a href="#">Shirkat-ul-Ras</a> 2020 - Developed by: <a href="https://digitaleggheads.com/" target="_blank">Digital Eggheads</a></p>
+                    
                 </div>
+            </div>
+        </div><!-- End row -->
+        <div class="row text-center">
+            <div class="col-md-12 footer-copyrights">
+                <p>© <a href="#">Shirkat-ul-Ras</a> 2020 - Developed by: <a href="https://digitaleggheads.com/" target="_blank">Digital Eggheads</a></p>
             </div>
         </div><!-- End row -->
     </div><!-- End container -->

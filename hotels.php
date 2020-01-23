@@ -7,7 +7,7 @@
 
 
     $allHotels = getAllHotels();
-foreach ($allHotels as $key => $value) {}
+
 ?>
 
 <!DOCTYPE html>
@@ -358,6 +358,7 @@ foreach ($allHotels as $key => $value) {}
 					</div>
 					<!--End tools -->
 
+                    <?php foreach ($allHotels as $key => $value) { ?>
 					<div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
 						<div class="row">
 							<div class="col-lg-4 col-md-4">
@@ -405,8 +406,10 @@ foreach ($allHotels as $key => $value) {}
 								</div>
 							</div>
 						</div>
+
 					</div>
 					<!--End strip -->
+                    <?php } ?>
 
 
 					<hr>
