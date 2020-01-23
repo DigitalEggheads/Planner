@@ -48,8 +48,8 @@
                             <li class="submenu">
                                 <a href="" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li><a href="./mission-vision.php">Who We Are?</a></li>
-                                    <li><a href="./mission-vision.php">Our Vision & Mission</a></li>
+                                    <li><a href="./about.php">Who We Are?</a></li>
+                                    <li><a href="./about.php">Our Vision & Mission</a></li>
                                     <li><a href="./teams.php">Our Team</a></li>
                                 </ul>
                             </li>
@@ -66,16 +66,16 @@
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="hotels.html" class="show-submenu">Hotels</a>
+                                <a href="hotels.php" class="show-submenu">Hotels</a>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Trip Planner</a>
+                                <a href="#" class="show-submenu">Trip Planner</a>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Partners</a>
+                                <a href="#" class="show-submenu">Partners</a>
                             </li>
                             <li class="submenu">
-                                <a href="contact.html" class="show-submenu">Contact Us</a>
+                                <a href="contact.php" class="show-submenu">Contact Us</a>
                             </li>
                         </ul>
                     </div><!-- End main-menu -->

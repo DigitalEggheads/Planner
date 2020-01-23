@@ -75,7 +75,7 @@
     
 <div class="container margin_60">
     <div class="main_title">
-    <h2>About <span>&nbsp;Shirkat-ul-Ras </span></h2>
+    <h2>Who <span>We Are </span></h2>
    </div>
     <p class="text-center">Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
 </div>

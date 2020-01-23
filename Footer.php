@@ -6,6 +6,13 @@
                 <img src="img/Branding/FooterLogo.png" style="width: 85px" alt="">
                 <h3>Shirkat-ul-Ras</h3>
                 <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
+                <div id="social_footer">
+                    <ul>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                    </ul>
+                </div>
                 
             </div>
             
@@ -29,15 +36,6 @@
                 <p id="address" class="pt-0"> Suite # 8, Al Murtaza Terrace, JM-2/198, Bahadur Yar Jang Road, Soldier Bazar # 3, Karachi-Pakistan.</p>
                 <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
                 <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
-
-                <div id="social_footer">
-                    <ul>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#"><i class="icon-youtube-play"></i></a></li>
-                    </ul>
-                    
-                </div>
             </div>
         </div><!-- End row -->
         <div class="row text-center">
@@ -60,7 +58,21 @@
  </form>
 </div><!-- End Search Menu -->
 
+<!-- Date and time pickers -->
+    <script src="js/datepicker_advanced.js"></script>
 
+
+    <!-- Date and time pickers -->
+    <script src="js/datepicker_advanced.js"></script>
+
+    <!-- Map -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/map_hotels.js"></script>
+    <script src="js/infobox.js"></script>
+    
+    
+    <!--Review modal validation -->
+    <script src="assets/validate.js"></script>
 
 <!-- Common scripts -->
 <script src="js/jquery-2.2.4.min.js"></script>
@@ -83,5 +95,35 @@
  });
 </script>
 
+<!-- Check box and radio style iCheck -->
+    <script>
+        $('input').iCheck({
+           checkboxClass: 'icheckbox_square-grey',
+           radioClass: 'iradio_square-grey'
+         });
+    </script>
+    
+    <script>
+        $('.carousel-thumbs-2').owlCarousel({
+        loop:false,
+        margin:5,
+        responsiveClass:true,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4,
+                nav:false
+            }
+        }
+    });
+    </script>
+
 </body>
 </html>
+
