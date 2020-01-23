@@ -119,10 +119,10 @@ p.service-title {
     padding-left: 30px;
     padding-right: 30px;
 }
-a.btn_1{
+a.btn_1.cstm-golden{
 	background-color: #cfb737 !important;
 }
-a.btn_1:hover {
+a.btn_1.cstm-golden:hover {
 	background-color: #343a40 !important;
 }
 
