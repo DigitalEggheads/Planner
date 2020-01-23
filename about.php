@@ -82,7 +82,7 @@
 
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row row-flex">
 
             <div class="col-lg-6 nopadding">
                 <div class="features-content">

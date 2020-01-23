@@ -2288,14 +2288,14 @@ input.qty2 {
 
 .features-bg {
 	position: relative;
-	min-height: 400px;
+	min-height: 100%;
 	background: url(../img/features-intro-01.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .features-img {
 	width: 100%;
-	height: 400px;
+/*	height: 400px;*/
 	text-align: center;
 	line-height: 400px;
 }
@@ -2303,8 +2303,9 @@ input.qty2 {
 .features-content {
 	position: relative;
 	padding: 11% 100px 10% 100px;
-	height: 400px;
-	background-color: #d3ba37;
+	/*height: 400px;*/
+	/*background-color: #d3ba37;*/
+	background-color: #231f20;
 	color: #fff;
 	font-size: 14px;
 }
