@@ -58,17 +58,33 @@
  </form>
 </div><!-- End Search Menu -->
 
+
+
 <!-- Date and time pickers -->
-    <script src="js/datepicker_advanced.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#Img_carousel').sliderPro({
+                width: 960,
+                height: 500,
+                fade: true,
+                arrows: true,
+                buttons: false,
+                fullScreen: false,
+                smallSize: 500,
+                startSlide: 0,
+                mediumSize: 1000,
+                largeSize: 3000,
+                thumbnailArrows: true,
+                autoplay: false
+            });
+        });
+    </script>
 
 
     <!-- Date and time pickers -->
     <script src="js/datepicker_advanced.js"></script>
 
-    <!-- Map -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/map_hotels.js"></script>
-    <script src="js/infobox.js"></script>
     
     
     <!--Review modal validation -->
@@ -78,6 +94,10 @@
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/common_scripts_min.js"></script>
 <script src="js/functions.js"></script>
+
+<!-- Specific scripts -->
+    <script src="js/jquery.validate.js"></script>
+   
 
 <!-- Video header scripts -->
 <script src="js/modernizr.js"></script>
@@ -103,6 +123,13 @@
          });
     </script>
     
+     
+    <!-- Date and time pickers -->
+    <script>
+        $("#booking_hotel").validate();
+        $('input.date-pick').datepicker();
+    </script>
+
     <script>
         $('.carousel-thumbs-2').owlCarousel({
         loop:false,
@@ -124,6 +151,19 @@
     });
     </script>
 
+
+    
+
 </body>
 </html>
 
+
+
+
+
+ 
+
+    
+    
+    
+    

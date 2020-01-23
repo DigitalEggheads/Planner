@@ -3,10 +3,10 @@
 
   include_once "./backend/hotels.php";
 
-  
-
-
     $allHotels = getAllHotels();
+
+
+
 
 ?>
 
