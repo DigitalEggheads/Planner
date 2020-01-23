@@ -49,7 +49,7 @@
     <div class="layer"></div>
     <!-- Mobile menu overlay mask -->
 
-    <?php include_once "./topbar.php"; ?>
+    <?php include_once "./Navigation.php"; ?>
 
     <section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
@@ -176,4 +176,4 @@
     <!-- End main -->
 
 
-<?php include_once "./footer.php"; ?>
+<?php include_once "./Footer.php"; ?>
