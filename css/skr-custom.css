@@ -44,7 +44,7 @@ p#address:before {
 	font-size: 30px;
 	content: '\45';
 	left: 0;
-	top: 0;
+	top: 8 !important;
 	margin: 0 !important;
 }
 p#address:hover{
@@ -56,7 +56,7 @@ p#address
 	display: block;
 	position: relative;
 	color: #fdf7ac;
-	font-size: 16px;
+	font-size: 15px !important;
 	padding-left: 40px;
 	margin: 20px 0;
 }
@@ -244,4 +244,10 @@ img.img-responsive.service-img {
     margin-top: 30px;
 }
 
-/*ABOUT PAGE*/
+#social_footer {
+	text-align: left;
+	float: left;
+	border-top: none;
+	padding-top: 0px;
+	margin-top: 0px;
+}
