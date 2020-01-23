@@ -26,26 +26,26 @@
 	
 	<!-- CUSTOM CSS -->
 	<link href="css/custom.css" rel="stylesheet">
-
+	
 </head>
-
 <body>
 
-	<div id="preloader">
-		<div class="sk-spinner sk-spinner-wave">
-			<div class="sk-rect1"></div>
-			<div class="sk-rect2"></div>
-			<div class="sk-rect3"></div>
-			<div class="sk-rect4"></div>
-			<div class="sk-rect5"></div>
-		</div>
-	</div>
-	<!-- End Preload -->
 
-	<div class="layer"></div>
-	<!-- Mobile menu overlay mask -->
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
 
-	<!-- Header================================================== -->
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+     <!-- Header================================================== -->
 	<header>
 		<div id="top_line">
             <div class="container">
@@ -307,48 +307,48 @@
 	</header>
 	<!-- End Header -->
 
-	<section class="parallax-window" data-parallax="scroll" data-image-src="img/single_hotel_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
-		<div class="parallax-content-2">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
-						<h1>Mariott Hotel</h1>
-						<span>Champ de Mars, 5 Avenue Anatole, 75007 Paris.</span>
-					</div>
-					<div class="col-md-4">
-						<div id="price_single_main" class="hotel">
-							from/per night <span><sup>$</sup>95</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End section -->
-
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/single_hotel_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
+    <div class="parallax-content-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
+                    <h1>Mariott Hotel</h1>
+                    <span>Champ de Mars, 5 Avenue Anatole, 75007 Paris.</span>
+                </div>
+                <div class="col-md-4">
+                    <div id="price_single_main" class="hotel">
+                        from/per night <span><sup>$</sup>95</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section><!-- End section -->
+	
 	<main>
-		<div id="position">
-			<div class="container">
-				<ul>
-					<li><a href="#">Home</a>
-					</li>
-					<li><a href="#">Category</a>
-					</li>
-					<li>Page active</li>
-				</ul>
-			</div>
+	<div id="position">
+		<div class="container">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Category</a></li>
+				<li>Page active</li>
+			</ul>
 		</div>
-		<!-- End Position -->
+	</div>
+	<!-- End Position -->
 
-		<div class="collapse" id="collapseMap">
-			<div id="map" class="map"></div>
-		</div>
-		<!-- End Map -->
-
-		<div class="container margin_60">
-			<div class="row">
-				<div class="col-lg-8" id="single_tour_desc">
+    
+     <div class="collapse" id="collapseMap">
+        <!-- <div id="map" class="map"></div> -->
+        <div style="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.669297754541!2d67.05098131500299!3d24.875141984047016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e68895b8cfb%3A0xa8447f84dc06e86a!2sDigital%20Eggheads!5e0!3m2!1sen!2s!4v1579763793210!5m2!1sen!2s" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div><!-- End Map -->
+	
+    <div class="container margin_60">
+    <div class="row">
+        <div class="col-lg-8" id="single_tour_desc">
 					<div id="single_tour_feat">
 						<ul>
 							<li><i class="icon_set_2_icon-116"></i>Plasma TV</li>
@@ -636,72 +636,135 @@
 					</div>
 				</div>
 				<!--End  single_tour_desc-->
-
-				<aside class="col-lg-4">
-					<p class="d-none d-xl-block d-lg-block d-xl-none">
-						<a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
-					</p>
-					<div class="box_style_1 expose">
-						<h3 class="inner">Check Availability</h3>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label><i class="icon-calendar-7"></i> Check in</label>
-								    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label><i class="icon-calendar-7"></i> Check out</label>
-									<input class="form-control booking_time" id="bookingtime" type="text">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
-								<div class="form-group">
-									<label>Adults</label>
-									<div class="numbers-row">
-										<input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="form-group">
-									<label>Children</label>
-									<div class="numbers-row">
-										<input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
-									</div>
-								</div>
-							</div>
-						</div>
-						<br>
-
-						<a class="btn_full" href="cart_hotel.html">Check now</a>
-						<a class="btn_full_outline" href="#"><i class=" icon-heart"></i> Add to whislist</a>
-					</div>
-					<!--/box_style_1 -->
-
-					<div class="box_style_4">
-						<i class="icon_set_1_icon-90"></i>
-						<h4><span>Book</span> by phone</h4>
-						<a href="tel://004542344599" class="phone">+45 423 445 99</a>
-						<small>Monday to Friday 9.00am - 7.30pm</small>
-					</div>
-
-				</aside>
-			</div>
-			<!--End row -->
-		</div>
-		<!--End container -->
         
-        <div id="overlay"></div>
-		<!-- Mask on input focus -->
-    
-	</main>
-	<!-- End main -->
+        <aside class="col-lg-4">
 
-	<footer class="revealed">
+        <p class="d-none d-xl-block d-lg-block d-xl-none">
+            <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
+        </p>
+        <div class="box_style_1 expose">
+        <?php
+				if (!count($_POST)){
+			?>
+        <form id="booking_hotel" action="<?php echo $_server['php_self']; ?>" method="post">
+            <h3 class="inner">Check Availability</h3>
+            <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><i class="icon-calendar-7"></i> Check in</label>
+                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><i class="icon-calendar-7"></i> Check out</label>
+                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                                </div>
+                            </div>
+                        </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Adults</label>
+                        <div class="numbers-row">
+                            <input type="text" value="1" id="adults_hotel" class="qty2 form-control required" name="adults_hotel">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Children</label>
+                        <div class="numbers-row">
+                            <input type="text" value="0" id="children_hotels" class="qty2 form-control required" name="children_hotels">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 <hr>
+                <div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Name</label>
+							<input class="form-control required" name="name_hotel_booking" id="name_hotel_booking" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Last name</label>
+							<input class="form-control required" name="last_hotel_name_booking" id="last_hotel_name_booking" type="text">
+						</div>
+					</div>
+				</div>
+               
+				<div class="form-group" style="position:relative">
+					<label>Email</label>
+					<input class="form-control required" type="email" name="email_hotel_booking" id="email_hotel_booking">
+				</div>
+				<div class="form-group" style="position:relative">
+					<label>Telephone</label>
+					<input class="form-control required" type="text" name="phone_hotel_booking" id="phone_hotel_booking">
+				</div>
+            <br>
+            
+            <button type="submit" class="btn_full">Check now</button>
+            <a class="btn_full_outline" href="#"><i class=" icon-heart"></i> Add to whislist</a>
+            </form>
+            <?php
+		}else{
+	    ?>
+       <!-- START SEND MAIL SCRIPT -->
+     <div class="text-center">
+        <p><i class="icon-ok-circled" style="font-size:75px; color:#83c99f"></i></p>
+		<p><strong>Request Successfully Sent!</strong><br />
+		  We will contact you shortly to confirm your request!</p>
+		</div>			
+						<?php
+						$mail = $_POST['email_hotel_booking'];
+						
+						$to = "test@doamin.com";	/*YOUR EMAIL HERE*/
+						$subject = "Request From CityTours";
+						$headers = "From: CityTours <noreply@yourdomain.com>";
+						$message = "BOOKING for HOTEL Concordia Paris\n";
+						$message .= "\nCheck in: " . $_POST['check_in_hotel'];
+						$message .= "\nCheck out: " . $_POST['check_out_hotel'];
+						$message .= "\nAdults: " . $_POST['adults_hotel'];
+						$message .= "\nChildren: " . $_POST['children_hotels'];
+						$message .= "\nName: " . $_POST['name_hotel_booking'];
+						$message .= "\nLast name: " . $_POST['last_hotel_name_booking'];
+						$message .= "\nEmail: " . $_POST['email_hotel_booking'];
+						$message .= "\nTelephone: " . $_POST['phone_hotel_booking'];
+						
+						//Receive Variable
+						$sentOk = mail($to,$subject,$message,$headers);
+						
+						//Confirmation page
+						$user = "$mail";
+						$usersubject = "Thank You - Booking summary from CityTours";
+						$userheaders = "From: info@citytours.com\n";
+						//Confirmation page WITH  SUMMARY
+						$usermessage = "Thank you for your time, request successfully sent!.\nWe will contact you shortly to confirm your request!\n\n$message"; 
+						mail($user,$usersubject,$usermessage,$userheaders);
+						}
+						?>
+		<!-- END SEND MAIL SCRIPT -->   
+        </div><!--/box_style_1 -->
+        
+        <div class="box_style_4">
+            <i class="icon_set_1_icon-90"></i>
+            <h4><span>Book</span> by phone</h4>
+            <a href="tel://004542344599" class="phone">+45 423 445 99</a>
+            <small>Monday to Friday 9.00am - 7.30pm</small>
+        </div>
+        
+        </aside>
+    </div><!--End row -->
+    </div><!--End container -->
+    
+    <div id="overlay"></div><!-- Mask on input focus --> 
+    
+    </main><!-- End main -->
+	
+ 	<footer class="revealed">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -823,138 +886,139 @@
 		</form>
 		<!--form -->
 	</div>
-	<!-- /Sign In Popup -->	
+	<!-- /Sign In Popup -->   
 
-	<!-- Modal Review -->
-	<div class="modal fade" id="myReview" tabindex="-1" role="dialog" aria-labelledby="myReviewLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title" id="myReviewLabel">Write your review</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<!-- Modal Review -->
+<div class="modal fade" id="myReview" tabindex="-1" role="dialog" aria-labelledby="myReviewLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myReviewLabel">Write your review</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body">
+				<div id="message-review">
 				</div>
-				<div class="modal-body">
-					<div id="message-review">
+				<form method="post" action="assets/review_hotel.php" name="review_hotel" id="review_hotel">
+                <input name="hotel_name" id="hotel_name" type="hidden" value="Mariott Hotel Paris">	
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="name_review" id="name_review" type="text" placeholder="Your name" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="lastname_review" id="lastname_review" type="text" placeholder="Your last name" class="form-control">
+							</div>
+						</div>
 					</div>
-					<form method="post" action="assets/review_hotel.php" name="review_hotel" id="review_hotel">
-						<input name="hotel_name" id="hotel_name" type="hidden" value="Mariott Hotel Paris">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input name="name_review" id="name_review" type="text" placeholder="Your name" class="form-control">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input name="lastname_review" id="lastname_review" type="text" placeholder="Your last name" class="form-control">
-								</div>
+					<!-- End row -->
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="email_review" id="email_review" type="email" placeholder="Your email" class="form-control">
 							</div>
 						</div>
-						<!-- End row -->
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input name="email_review" id="email_review" type="email" placeholder="Your email" class="form-control">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<select class="form-control" name="room_type_review" id="room_type_review">
-										<option value="">Select room type</option>
-										<option value="Single room">Single Room</option>
-										<option value="Double Room">Double Room</option>
-										<option value="King double room">King Double Room</option>
-									</select>
-								</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<select class="form-control" name="room_type_review" id="room_type_review">
+									<option value="">Select room type</option>
+									<option value="Single room">Single Room</option>
+									<option value="Double Room">Double Room</option>
+									<option value="King double room">King Double Room</option>
+								</select>
 							</div>
 						</div>
-						<!-- End row -->
-						<hr>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Cleanliness</label>
-									<select class="form-control" name="cleanliness_review" id="cleanliness_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Comfort</label>
-									<select class="form-control" name="comfort_review" id="comfort_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
-									</select>
-								</div>
+					</div>
+					<!-- End row -->
+					<hr>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Cleanliness</label>
+								<select class="form-control" name="cleanliness_review" id="cleanliness_review">
+									<option value="">Please review</option>
+									<option value="Low">Low</option>
+									<option value="Sufficient">Sufficient</option>
+									<option value="Good">Good</option>
+									<option value="Excellent">Excellent</option>
+									<option value="Superb">Super</option>
+									<option value="Not rated">I don't know</option>
+								</select>
 							</div>
 						</div>
-						<!-- End row -->
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Price</label>
-									<select class="form-control" name="price_review" id="price_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Quality</label>
-									<select class="form-control" name="quality_review" id="quality_review">
-										<option value="">Please review</option>
-										<option value="Low">Low</option>
-										<option value="Sufficient">Sufficient</option>
-										<option value="Good">Good</option>
-										<option value="Excellent">Excellent</option>
-										<option value="Superb">Super</option>
-										<option value="Not rated">I don't know</option>
-									</select>
-								</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Comfort</label>
+								<select class="form-control" name="comfort_review" id="comfort_review">
+									<option value="">Please review</option>
+									<option value="Low">Low</option>
+									<option value="Sufficient">Sufficient</option>
+									<option value="Good">Good</option>
+									<option value="Excellent">Excellent</option>
+									<option value="Superb">Super</option>
+									<option value="Not rated">I don't know</option>
+								</select>
 							</div>
 						</div>
-						<!-- End row -->
-						<div class="form-group">
-							<textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+					</div>
+					<!-- End row -->
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Price</label>
+								<select class="form-control" name="price_review" id="price_review">
+									<option value="">Please review</option>
+									<option value="Low">Low</option>
+									<option value="Sufficient">Sufficient</option>
+									<option value="Good">Good</option>
+									<option value="Excellent">Excellent</option>
+									<option value="Superb">Super</option>
+									<option value="Not rated">I don't know</option>
+								</select>
+							</div>
 						</div>
-						<div class="form-group">
-							<input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Quality</label>
+								<select class="form-control" name="quality_review" id="quality_review">
+									<option value="">Please review</option>
+									<option value="Low">Low</option>
+									<option value="Sufficient">Sufficient</option>
+									<option value="Good">Good</option>
+									<option value="Excellent">Excellent</option>
+									<option value="Superb">Super</option>
+									<option value="Not rated">I don't know</option>
+								</select>
+							</div>
 						</div>
-						<input type="submit" value="Submit" class="btn_1" id="submit-review">
-					</form>
-				</div>
+					</div>
+					<!-- End row -->
+					<div class="form-group">
+						<textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
+					</div>
+					<input type="submit" value="Submit" class="btn_1" id="submit-review">
+				</form>
 			</div>
 		</div>
 	</div>
-	<!-- End modal review -->
+</div><!-- End modal review -->
 
-	<!-- Common scripts -->
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script src="js/common_scripts_min.js"></script>
-	<script src="js/functions.js"></script>
+ <!-- Common scripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions.js"></script>
 
-	<!-- Main slider -->
+	<!-- Specific scripts -->
+	<script src="js/jquery.validate.js"></script>
+	<!-- Date and time pickers -->
 	<script src="js/jquery.sliderPro.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function ($) {
+		$(document).ready(function($) {
 			$('#Img_carousel').sliderPro({
 				width: 960,
 				height: 500,
@@ -971,7 +1035,11 @@
 			});
 		});
 	</script>
-
+	<!-- Date and time pickers -->
+	<script>
+		$("#booking_hotel").validate();
+		$('input.date-pick').datepicker();
+	</script>
 	<!-- Map -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/map.js"></script>
@@ -979,29 +1047,26 @@
 	<!-- Carousel -->
 	<script>
 		$('.carousel-thumbs-2').owlCarousel({
-		loop:false,
-		margin:5,
-		responsiveClass:true,
-		nav:false,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:4,
-				nav:false
+			loop: false,
+			margin: 5,
+			responsiveClass: true,
+			nav: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 4,
+					nav: false
+				}
 			}
-		}
-	});
+		});
 	</script>
-
 	<!--Review modal validation -->
 	<script src="assets/validate.js"></script>
 	
-	
-</body>
-
+  </body>
 </html>

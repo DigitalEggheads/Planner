@@ -159,8 +159,11 @@
             <i class="icon_set_1_icon-57"></i>
             <h4>Need <span>Help?</span></h4>
             <a href="tel:+923018587645" class="phone">+923018587645</a>
-          
           </div>
+
+
+
+
         </div>
         <!-- End col-md-4 -->
       </div>
@@ -168,7 +171,7 @@
     </div>
     <!-- End container -->
 
-    <div id="map_contact"></div>
+    
     <!-- end map-->
 
   </main>
