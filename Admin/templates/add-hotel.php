@@ -298,7 +298,7 @@
                                   <div class="form-group">
                                       <label for="featuredImage">Add Featured Image</label>
                                           <div class="ml-2">
-                                          <img src="https://placehold.it/250x250" id="preview" class="img-thumbnail">
+                                          <img src="https://placehold.it/250x250" id="" class="img-thumbnail">
                                           </div>
                                           <input type="file" name="img[]" class="file" accept="image/*">
                                           <div class="input-group my-3 col-md-4">
@@ -343,7 +343,7 @@
                                   <!-- select -->
                                   <div class="form-group">
                                     <label>Cities</label>
-                                    <select class="form-control">
+                                    <select class="form-control cstm">
                                       <option>Karbala</option>
                                       <option>Najaf</option>
                                       <option>Kazmain</option>
@@ -361,7 +361,7 @@
                                   <!-- select -->
                                   <div class="form-group">
                                     <label>Destination</label>
-                                    <select class="form-control">
+                                    <select class="form-control cstm">
                                       <option>Iraq</option>
                                       <option>Iran</option>
                                       <option>Syria</option>
@@ -375,7 +375,7 @@
                                   <!-- select -->
                                   <div class="form-group">
                                     <label>Standard</label>
-                                    <select class="form-control">
+                                    <select class="form-control cstm">
                                       <option>Deluxe Supreme (A*)</option>
                                       <option>Deluxe (A)</option>
                                       <option>Standard (B)</option>
@@ -456,7 +456,7 @@
                             <div class="col-md-12">
                               <label>Add Gallery Images:</label>
                               <div class="grid-x grid-padding-x">
-                                  <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell" id="bordered-div">
+                                  <div class="cell" id="bordered-div">
                                    
                                     <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
                                       
@@ -546,7 +546,6 @@ $('input[type="file"]').change(function(e) {
 
 
 <!-- IMAGE GALLERY  -->
-
 <script>  
 
 var imgUpload = document.getElementById('upload_imgs')
@@ -583,12 +582,5 @@ function previewImgs(event) {
   }
 }
 </script>
-
-
-
-
-
-
-
 </body>
 </html>

@@ -1,4 +1,4 @@
-HOMEPAGE - ABOUT US SECTION, STYLES STARTS HERE*/
+/*HOMEPAGE - ABOUT US SECTION, STYLES STARTS HERE*/
 
 .about-us-area{
 	background-color: #fff !important;
@@ -119,6 +119,12 @@ p.service-title {
     padding-left: 30px;
     padding-right: 30px;
 }
+a.btn_1{
+	background-color: #cfb737 !important;
+}
+a.btn_1:hover {
+	background-color: #343a40 !important;
+}
 
 /*contact page aside*/
 #social_contact_sidebar {
@@ -204,4 +210,11 @@ img.img-responsive.service-img {
 }
 .feature i{
 	color: #cfb737 !important;
+}
+
+/*FOOTER*/
+.footer-copyrights{
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+    margin-top: 30px;
 }
