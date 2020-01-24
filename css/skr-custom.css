@@ -153,21 +153,20 @@ a.btn_1.cstm-golden:hover {
 
 /*contact page aside*/
 #social_contact_sidebar {
-	text-align: center;
+	text-align: left;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	padding-top: 30px;
-	margin-top: 30px;
+	padding-top: 0px;
 }
 #social_contact_sidebar ul {
 	margin: 0;
-	padding: 0 0 10px 0;
-	text-align: center;
+	padding: 0 0 0 0;
+	text-align: left;
 	list-style: none;
 }
 
 #social_contact_sidebar ul li {
 	display: inline-block;
-	margin: 0 5px 10px 5px;
+	margin: 0 0px 10px 0px;
 }
 
 #social_contact_sidebar ul li a {
