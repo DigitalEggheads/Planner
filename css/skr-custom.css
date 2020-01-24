@@ -263,11 +263,12 @@ img.img-responsive.service-img {
 .features-content.light-bg{
 	background: #f9f9f9;
 	padding-top: 70px;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 	color: #000;
 }
 .features-content.light-bg.compact{
 	padding-top: 0px !important;
+	padding-bottom: 80px;
 }
 
 .other_tours ul li a:hover{
@@ -288,4 +289,7 @@ li.custom-city a{
 }
 .custom-city img:hover{
 	transform: scale(.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.other_tours ul li.custom-city a i {
+    margin-left: -8px !important;
 }
