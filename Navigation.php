@@ -59,10 +59,10 @@
                             <li class="submenu">
                                 <a href="" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li class="third-level"><a href="#">Iraq</a></li>
-                                    <li class="third-level"><a href="#">Iran</a></li>
-                                    <li class="third-level"><a href="#">Syria</a></li>
-                                    <li class="third-level"><a href="#">Kingdom of Saudi Arabia</a></li>
+                                    <li><a href="#">Iraq</a></li>
+                                    <li><a href="#">Iran</a></li>
+                                    <li><a href="#">Syria</a></li>
+                                    <li><a href="#">Kingdom of Saudi Arabia</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
