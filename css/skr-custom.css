@@ -263,6 +263,14 @@ img.img-responsive.service-img {
 .dark-bg{
 	background-color: #141213;
 }
+.features-content.dark-bg{
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+.features-content.dark-bg.compact{
+	padding-top: 0px !important;
+}
+
 .other_tours ul li a{
 	color: #fff !important;
 }
