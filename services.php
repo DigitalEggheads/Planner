@@ -79,7 +79,7 @@
         <h2>Our<span> &nbsp; Services</span></h2>
             </div>
             <div>
-                <p class="text-center">Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut <a href="#">utamur antiopam inciderint</a> sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi!</p>
+                <p class="text-center">Shirkat ul Ras is one of the leading and trusted names in providing the services for zaireen. Our services are extended to Iraq, Iran, Syria and KSA.</p>
             </div>
       <hr class="mt-5 mb-5">
 
@@ -89,18 +89,27 @@
                         <div class="service-box p-4">
                             <img class="img-responsive service-img" src="img/servicepage/hotel-service.png">
                             <h4>Hotel Accomodations</h4>
+                            <p class="text-center">
+                                Our team will help you to find the best hotels according to your budget
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-box p-4">
                             <img class="img-responsive service-img" src="img/servicepage/visa-ticketing-service.png">
                             <h4>Visa and Ticketing facilitations</h4>
+                            <p class="text-center">
+                                We will assist you in visa and ticket so you can start your spiritual journey.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-box p-4">
                              <img class="img-responsive service-img" src="img/servicepage/religious-tour-guide-service.png">
                             <h4>Religious/Tour/Local Guide</h4>
+                            <p class="text-center">
+                               We will arrange the guide according to your needs. He will be guiding you in all aspects of travel.
+                            </p>
                         </div>
                         
                     </div>
@@ -110,6 +119,9 @@
                         <div class="service-box p-4">
                             <img class="img-responsive service-img" src="img/servicepage/food-service.png">
                             <h4>Food</h4>
+                            <p class="text-center">
+                                Our chefs are expert in cooking all sort of cuisines. You will feel like having home-made food on ziarat.
+                            </p>
                         </div>
 
                     </div>
@@ -117,12 +129,18 @@
                         <div class="service-box p-4">
                             <img class="img-responsive service-img" src="img/servicepage/transportation-service.png">
                             <h4>Transport Service</h4>
+                            <p class="text-center">
+                                It doesn’t matter how many pax you are, we will arrange for you the best and comfortable transport.
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-box p-4">
                             <img class="img-responsive service-img" src="img/servicepage/medical-first-aid-service.png">
                             <h4>Medical First Aid</h4>
+                            <p class="text-center">
+                                In case of any emergency, we have medical first aid team to handle the situations.
+                            </p>
                         </div>
                     </div>
                 </div>

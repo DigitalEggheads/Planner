@@ -92,68 +92,68 @@
                         <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                         <ul>
                             <li class="submenu">
-                                <a href="index.html" class="show-submenu">Home</a>
+                                <a href="index.php" class="show-submenu">Home</a>
                             </li>
                             <li class="submenu">
-                                <a href="about.html" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
+                                <a href="about.php" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li><a href="all_tours_list.html">Who We Are?</a></li>
-                                    <li><a href="all_tours_grid.html">Our Vision & Mission</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="javascript:void(0);">Who We Are?</a></li>
+                                    <li><a href="javascript:void(0);">Our Vision & Mission</a></li>
+                                    <li><a href="team.php">Our Team</a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="javascript:void(0);" class="show-submenu">Services <i class="icon-down-open-mini"></i></a><ul>
-                                    <li><a href="all_hotels_list.html">Hotel Accomodations</a></li>
-                                    <li><a href="all_hotels_grid.html">Visa and Ticketing facilitations</a></li>
-                                    <li><a href="all_hotels_map_listing.html">Religious/Tour Guide/Local Guide</a></li>
-                                    <li><a href="single_hotel.html">Food</a></li>
-                                    <li><a href="single_hotel_datepicker_adv.html">Transport Service</a></li>
-                                    <li><a href="single_hotel_datepicker_v2.html">Medical First Aid </a></li>
+                                <a href="planner/services.php" class="show-submenu">Services <i class="icon-down-open-mini"></i></a><ul>
+                                    <li><a href="javascript:void(0);">Hotel Accomodations</a></li>
+                                    <li><a href="javascript:void(0);">Visa and Ticketing facilitations</a></li>
+                                    <li><a href="javascript:void(0);">Religious/Tour Guide/Local Guide</a></li>
+                                    <li><a href="javascript:void(0);">Food</a></li>
+                                    <li><a href="javascript:void(0);">Transport Service</a></li>
+                                    <li><a href="javascript:void(0);">Medical First Aid </a></li>
                                 </ul>
                             </li>
                             <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li class="third-level"><a href="javascript:void(0);">Iraq</a>
+                                    <li class="third-level"><a href="/planner/iraq.html">Iraq</a>
                                         <ul>
-                                            <li><a href="single_tour_fixed_sidebar.html">Karbala</a></li>
-                                            <li><a href="single_tour_fixed_sidebar.html">Najaf</a></li>
-                                            <li><a href="single_tour_with_gallery_fixed_sidebar.html">Kazmain<</a></li>
+                                            <li><a href="javascript:void(0);">Karbala</a></li>
+                                            <li><a href="javascript:void(0);">Najaf</a></li>
+                                            <li><a href="javascript:void(0);">Kazmain</a></li>
                                         </ul>
                                     </li>
 
-                                    <li class="third-level"><a href="javascript:void(0);">Iran</a>
+                                    <li class="third-level"><a href="/planner/iran.html">Iran</a>
                                         <ul>
-                                            <li><a href="single_tour_fixed_sidebar.html">Mashhad</a></li>
-                                            <li><a href="single_tour_fixed_sidebar.html">Qom</a></li>
+                                            <li><a href="javascript:void(0);">Mashhad</a></li>
+                                            <li><a href="javascript:void(0);">Qom</a></li>
                                         </ul>
                                     </li>
 
-                                    <li class="third-level"><a href="javascript:void(0);">Syria</a>
+                                    <li class="third-level"><a href="/planner/syria.html">Syria</a>
                                         <ul>
-                                            <li><a href="single_tour_fixed_sidebar.html">Damascus</a></li>
+                                            <li><a href="javascript:void(0);">Damascus</a></li>
                                         </ul>
                                     </li>
-                                    <li class="third-level"><a href="javascript:void(0);">Kingdom of Saudi Arabia</a>
+                                    <li class="third-level"><a href="/planner/ksa.html">Kingdom of Saudi Arabia</a>
                                         <ul>
-                                            <li><a href="single_tour_fixed_sidebar.html">Makkah</a></li>
-                                            <li><a href="single_tour_fixed_sidebar.html">Madina</a></li>
+                                            <li><a href="javascript:void(0);">Makkah</a></li>
+                                            <li><a href="javascript:void(0);">Madina</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="submenu">
-                                <a href="hotels.html" class="show-submenu">Hotels</a>
+                                <a href="hotels.php" class="show-submenu">Hotels</a>
                             </li>
                             <li class="submenu">
                                 <a href="javascript:void(0);" class="show-submenu">Trip Planner</a>
                             </li>
                             <li class="submenu">
-                                <a href="partners.html" class="show-submenu">Partners</a>
+                                <a href="javascript:void(0);" class="show-submenu">Partners</a>
                             </li>
                             <li class="submenu">
-                                <a href="contact.html" class="show-submenu">Contact Us</a>
+                                <a href="contact.php" class="show-submenu">Contact Us</a>
                             </li>
                         </ul>
                     </div><!-- End main-menu -->

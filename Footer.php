@@ -19,18 +19,17 @@
             <div class="col-md-3">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Hotels</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="hotels.php">Hotels</a></li>
                     <li><a href="#">Trip Planner</a></li>
                     <li><a href="#">Partners</a></li>
                 </ul>
                 <h3>Destinations</h3>
                 <ul>
-                    <li><a href="#">Iraq</a></li>
-                    <li><a href="#">Iran</a></li>
-                    <li><a href="#">Syria</a></li>
-                    <li><a href="#">Kingdom Of Saudi Arabia</a></li>
+                    <li><a href="iraq.html">Iraq</a></li>
+                    <li><a href="iran.html">Iran</a></li>
+                    <li><a href="syria.html">Syria</a></li>
+                    <li><a href="ksa.html">Kingdom Of Saudi Arabia</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
