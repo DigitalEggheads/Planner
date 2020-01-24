@@ -260,3 +260,28 @@ img.img-responsive.service-img {
 	min-height: 100%;
 	width: 100%;
 }
+.dark-bg{
+	background-color: #141213;
+}
+.other_tours ul li a{
+	color: #fff !important;
+}
+.other_tours ul li a:hover{
+	background-color: transparent !important;
+	color: #cfb737 !important;
+}
+.icon_set_1_{
+	color: #fff;
+}
+li.custom-city a{
+	border: none !important;
+}
+.custom-city img{
+	padding: 8px;
+	/*border: 1px solid whitesmoke;*/
+	box-shadow: 0 0 20px 1px rgba(52,58,64,.5);
+	transition: transform .5s ease /* Animation */
+}
+.custom-city img:hover{
+	transform: scale(.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
