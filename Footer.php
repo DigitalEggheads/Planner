@@ -20,6 +20,8 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Hotels</a></li>
                     <li><a href="#">Trip Planner</a></li>
                     <li><a href="#">Partners</a></li>
                 </ul>
