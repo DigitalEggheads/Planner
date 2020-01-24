@@ -72,7 +72,7 @@
                         </div>
                         <div class="text-left">
                             <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
-                            <a href="#" class="btn sr-default-btn mt-50">Read More</a>
+                            <a href="/planner/about.php" class="btn sr-default-btn mt-50">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -100,12 +100,14 @@
 <!-- Services Section Starts Here -->
 <div class="services-section">
    <div class="container margin_60">
-        <div class="main_title">
+        <div>
+            <div class="main_title">
             <h2>Our <span>Services</span></h2>
-            <p>
-                We are providing all services at a single stop which could be necessary for the traveller. We have all services ranging from hotel accommodation, visa ticket facilitation and much more.
-            </p>
         </div>
+        <p class="text-center">
+            We are providing all services at a single stop which could be necessary for the traveller. We have all services ranging from hotel accommodation, visa ticket facilitation and much more.
+         </p>
+    </div>
         <div class="row feature_home_2">
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-hotel-accomodation.png" alt="" width="60" height="60">
@@ -242,9 +244,11 @@
 <!-- Destinations section starts here -->
 <div class="white_bg">
     <div class="container margin_60">
-        <div class="main_title">
-            <h2 class="mb-2">Our <span>Destinations</span></h2>
-            <p>
+        <div>
+            <div class="main_title">
+                <h2 class="mb-2">Our <span>Destinations</span></h2>
+            </div>
+            <p class="text-center">
                 Our experienced team specializes in Ziyarat and Tourism Packages for Iraq, Iran, Syria. We also provide Hajj and Umrah services.
             </p>
         </div>
@@ -298,12 +302,15 @@
 
 <!-- All cities Section -->
     <div class="container margin_60">
-        <div class="main_title">
-            <h2 class="custom-light-title">All <span>Cities</span></h2>
-            <p class="custom-light-text">
+        <div>
+            <div class="main_title">
+                <h2 class="custom-light-title">All <span>Cities</span></h2>
+            </div>
+            <p class="text-center">
                 Some of the premium locations where we can accommodate you.
             </p>
         </div>
+        
         <div class="row add_bottom_45">
             <div class="col-lg-3 other_tours">
                 <ul>
