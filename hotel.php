@@ -30,10 +30,10 @@ if ($result=mysqli_query($con,$query))
   mysqli_free_result($result);
 }
 
-// if(empty($_GET['Hotel_Id'])) {
-//     header("Location: hotels.php");
-//     exit;
-// }
+if(empty($_GET['Hotel_Id'])) {
+    header("Location: hotels.php");
+    exit;
+}
 
 
 

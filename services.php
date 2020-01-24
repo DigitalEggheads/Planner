@@ -100,7 +100,7 @@
                     <div class="col-md-4">
                         <div class="service-box p-4">
                              <img class="img-responsive service-img" src="img/servicepage/religious-tour-guide-service.png">
-                            <h4>Religious/Tour Guide/Local Guide</h4>
+                            <h4>Religious/Tour/Local Guide</h4>
                         </div>
                         
                     </div>
