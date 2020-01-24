@@ -260,20 +260,16 @@ img.img-responsive.service-img {
 	min-height: 100%;
 	width: 100%;
 }
-.dark-bg{
-	background-color: #141213;
-}
-.features-content.dark-bg{
+.features-content.light-bg{
+	background: #f9f9f9;
 	padding-top: 70px;
 	padding-bottom: 80px;
+	color: #000;
 }
-.features-content.dark-bg.compact{
+.features-content.light-bg.compact{
 	padding-top: 0px !important;
 }
 
-.other_tours ul li a{
-	color: #fff !important;
-}
 .other_tours ul li a:hover{
 	background-color: transparent !important;
 	color: #cfb737 !important;
