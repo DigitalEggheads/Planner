@@ -138,7 +138,7 @@
         <div class="col-md-4">
           <div class="box_style_1">
             <span class="tape"></span>
-            <h4>Address <span><i class="icon-pin pull-right"></i></span></h4>
+            <h4>Address <span><i class="icon-pin pull-left"></i></span></h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, laboriosam.
             </p>
@@ -147,7 +147,7 @@
             <p>
               Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie.
             </p>
-          <div id="social_footer">
+          <div id="social_contact_sidebar">
                         <ul>
                             <li><a href="#"><i class="icon-facebook"></i></a></li>
                             <li><a href="#"><i class="icon-instagram"></i></a></li>
@@ -159,11 +159,8 @@
             <i class="icon_set_1_icon-57"></i>
             <h4>Need <span>Help?</span></h4>
             <a href="tel:+923018587645" class="phone">+923018587645</a>
+          
           </div>
-
-
-
-
         </div>
         <!-- End col-md-4 -->
       </div>
