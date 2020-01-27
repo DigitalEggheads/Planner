@@ -90,13 +90,13 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>First Name</label>
-                    <input type="text" class="form-control" id="name_contact" name="name_contact" placeholder="Enter Name">
+                    <input type="text" class="form-control" id="name_contact" name="First_Name" placeholder="Enter Name">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" id="lastname_contact" name="lastname_contact" placeholder="Enter Last Name">
+                    <input type="text" class="form-control" id="lastname_contact" name="Last_Name" placeholder="Enter Last Name">
                   </div>
                 </div>
               </div>
@@ -105,13 +105,13 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Email</label>
-                    <input type="email" id="email_contact" name="email_contact" class="form-control" placeholder="Enter Email">
+                    <input type="email" id="email_contact" name="Email_Id" class="form-control" placeholder="Enter Email">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Phone</label>
-                    <input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="Enter Phone number">
+                    <input type="text" id="phone_contact" name="Contact_Number" class="form-control" placeholder="Enter Phone number">
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label>Message</label>
-                    <textarea rows="5" id="message_contact" name="message_contact" class="form-control" placeholder="Write your message" style="height:200px;"></textarea>
+                    <textarea rows="5" id="message_contact" name="Message" class="form-control" placeholder="Write your message" style="height:200px;"></textarea>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
                 <div class="col-sm-6">
                   <label>Human verification</label>
                   <input type="text" id="verify_contact" class=" form-control add_bottom_30" placeholder="Are you human? 3 + 1 =">
-                  <input type="submit" value="Submit" class="btn_1" id="submit-contact">
+                  <input type="submit" value="Submit" class="btn_1" id="submit-contact" name="submit-contact">
                 </div>
               </div>
             </form>

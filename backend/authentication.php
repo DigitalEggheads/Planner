@@ -84,17 +84,10 @@ function login($data)
 function signup ($data) {
     global $message;
     
-    $authData = array();
-    $userData = array();
-    $authData["User_email"] = $data["User_email"];
-    $authData["User_Password"] = md5($data["User_Password"]);
-    $authData["User_Role"] = "user";
     
-    $checkQuery = "select * from auth where User_email = @p1";
-    $checkRes = fetchQuery($checkQuery, array($authData["User_email"]));
     
     if (!Count($checkRes)) {
-        $authRes = save($authData, "auth");
+        $authRes = save($authData, "hotels_queries");
         
         if ($authRes) {
             $userData["authid"] = $authRes["id"];

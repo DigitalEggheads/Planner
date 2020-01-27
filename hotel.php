@@ -1,10 +1,10 @@
 <?php
     
-
+	include_once "./backend/authentication.php";
     include_once "./backend/hotel.php";
 
 $AllReviews = getAllReviews();
-
+$url =  "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $Hotel_Id = $_GET["Hotel_Id"];
 
 $query = "select * from hotels where Hotel_Id = $Hotel_Id";
@@ -35,6 +35,16 @@ if(empty($_GET['Hotel_Id'])) {
     exit;
 }
 
+
+if (isset($_POST["signup"])) {
+
+  $data = getRequestData(array("name", "gender", "lookingFor", "age", "email", "password"), "post");
+  
+  if (signup($data)) {
+    unset($data);
+  }
+  
+}
 
 
 
@@ -254,22 +264,20 @@ if(empty($_GET['Hotel_Id'])) {
             <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
         </p>
         <div class="box_style_1 expose">
-        <?php
-				if (!count($_POST)){
-			?>
-        <form id="booking_hotel" action="<?php echo $_server['php_self']; ?>" method="post">
-            <h3 class="inner">Check Availability</h3>
+
+        <form id="" action="" method="post">
+            <h3 class="inner">Booking</h3>
             <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label><i class="icon-calendar-7"></i> Check in</label>
-                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="Hotel_Query_Check_In">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label><i class="icon-calendar-7"></i> Check out</label>
-                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                                    <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="Hotel_Query_Check_Out">
                                 </div>
                             </div>
                         </div>
@@ -278,7 +286,7 @@ if(empty($_GET['Hotel_Id'])) {
                     <div class="form-group">
                         <label>Adults</label>
                         <div class="numbers-row">
-                            <input type="text" value="1" id="adults_hotel" class="qty2 form-control required" name="adults_hotel">
+                            <input type="text" value="0" id="adults_hotel" class="qty2 form-control required" name="Hotel_Query_Adult">
                         </div>
                     </div>
                 </div>
@@ -286,77 +294,45 @@ if(empty($_GET['Hotel_Id'])) {
                     <div class="form-group">
                         <label>Children</label>
                         <div class="numbers-row">
-                            <input type="text" value="0" id="children_hotels" class="qty2 form-control required" name="children_hotels">
+                            <input type="text" value="0" id="children_hotels" class="qty2 form-control required" name="Hotel_Query_Children">
                         </div>
                     </div>
                 </div>
                 </div>
                  <hr>
-                <div class="row">
-					<div class="col-md-6">
+
+                 <div class="row">
+					<div class="col-md-12">
 						<div class="form-group">
-							<label>Name</label>
-							<input class="form-control required" name="name_hotel_booking" id="name_hotel_booking" type="text">
+							<input class="form-control required" name="Hotel_Url" id="" type="hidden" value="<?php echo $url; ?>" readonly>
+							<input class="form-control required" name="Hotel_Title" id="" type="hidden" value="<?php echo $Hotel_Title; ?>" readonly>
 						</div>
 					</div>
-					<div class="col-md-6">
+				</div>
+
+                <div class="row">
+					<div class="col-md-12">
 						<div class="form-group">
-							<label>Last name</label>
-							<input class="form-control required" name="last_hotel_name_booking" id="last_hotel_name_booking" type="text">
+							<label>Name</label>
+							<input class="form-control required" name="Hotel_Query_Name" id="name_hotel_booking" type="text">
 						</div>
 					</div>
 				</div>
                
 				<div class="form-group" style="position:relative">
 					<label>Email</label>
-					<input class="form-control required" type="email" name="email_hotel_booking" id="email_hotel_booking">
+					<input class="form-control required" type="email" name="Hotel_Query_Email" id="email_hotel_booking">
 				</div>
 				<div class="form-group" style="position:relative">
 					<label>Telephone</label>
-					<input class="form-control required" type="text" name="phone_hotel_booking" id="phone_hotel_booking">
+					<input class="form-control required" type="text" name="Hotel_Query_Contact_Number" id="phone_hotel_booking">
 				</div>
             <br>
             
-            <button type="submit" class="btn_full">Check now</button>
-            <a class="btn_full_outline" href="#"><i class=" icon-heart"></i> Add to whislist</a>
+            <button type="submit" class="btn_full" name="signup">Send</button>
             </form>
-            <?php
-		}else{
-	    ?>
-       <!-- START SEND MAIL SCRIPT -->
-     <div class="text-center">
-        <p><i class="icon-ok-circled" style="font-size:75px; color:#83c99f"></i></p>
-		<p><strong>Request Successfully Sent!</strong><br />
-		  We will contact you shortly to confirm your request!</p>
-		</div>			
-						<?php
-						$mail = $_POST['email_hotel_booking'];
-						
-						$to = "test@doamin.com";	/*YOUR EMAIL HERE*/
-						$subject = "Request From CityTours";
-						$headers = "From: CityTours <noreply@yourdomain.com>";
-						$message = "BOOKING for HOTEL Concordia Paris\n";
-						$message .= "\nCheck in: " . $_POST['check_in_hotel'];
-						$message .= "\nCheck out: " . $_POST['check_out_hotel'];
-						$message .= "\nAdults: " . $_POST['adults_hotel'];
-						$message .= "\nChildren: " . $_POST['children_hotels'];
-						$message .= "\nName: " . $_POST['name_hotel_booking'];
-						$message .= "\nLast name: " . $_POST['last_hotel_name_booking'];
-						$message .= "\nEmail: " . $_POST['email_hotel_booking'];
-						$message .= "\nTelephone: " . $_POST['phone_hotel_booking'];
-						
-						//Receive Variable
-						$sentOk = mail($to,$subject,$message,$headers);
-						
-						//Confirmation page
-						$user = "$mail";
-						$usersubject = "Thank You - Booking summary from CityTours";
-						$userheaders = "From: info@citytours.com\n";
-						//Confirmation page WITH  SUMMARY
-						$usermessage = "Thank you for your time, request successfully sent!.\nWe will contact you shortly to confirm your request!\n\n$message"; 
-						mail($user,$usersubject,$usermessage,$userheaders);
-						}
-						?>
+            
+     
 		<!-- END SEND MAIL SCRIPT -->   
         </div><!--/box_style_1 -->
         
