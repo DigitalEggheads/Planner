@@ -38,7 +38,7 @@ if(empty($_GET['Hotel_Id'])) {
 
 if (isset($_POST["signup"])) {
 
-  $data = getRequestData(array("name", "gender", "lookingFor", "age", "email", "password"), "post");
+  $data = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In Auto CURDATE()", "Hotel_Query_Check_Out"), "post");
   
   if (signup($data)) {
     unset($data);

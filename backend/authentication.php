@@ -87,21 +87,25 @@ function signup ($data) {
     
     
     if (!Count($checkRes)) {
-        $authRes = save($authData, "hotels_queries");
+        // $authRes = save($authData, "hotels_queries");
         
-        if ($authRes) {
-            $userData["authid"] = $authRes["id"];
-            $userData["name"] = $data["name"];
-            $userData["gender"] = $data["gender"];
-            $userData["age"] = $data["age"];
-            $userData["lookingfor"] = $data["lookingFor"];
+        
+            $HotelQueries["Hotel_Query_Name"] = $data["Hotel_Query_Name"];
+            $HotelQueries["Hotel_Query_Email"] = $data["Hotel_Query_Email"];
+            $HotelQueries["Hotel_Query_Contact_Number"] = $data["Hotel_Query_Contact_Number"];
+            $HotelQueries["Hotel_Url"] = $data["Hotel_Url"];
+            $HotelQueries["Hotel_Title"] = $data["Hotel_Title"];
+            $HotelQueries["Hotel_Query_Children"] = $data["Hotel_Query_Children"];
+            $HotelQueries["Hotel_Query_Adult"] = $data["Hotel_Query_Adult"];
+            $HotelQueries["Hotel_Query_Check_In"] = $data["Hotel_Query_Check_In"];
+            $HotelQueries["Hotel_Query_Check_Out"] = $data["Hotel_Query_Check_Out"];
             
-            $userRes = save($userData, "user");
-            if ($userRes) {
+            $HotelQueriesRes = save($HotelQueries, "hotels_queries");
+            if ($HotelQueriesRes) {
                 success("Signup Successfully");
                 return true;
             }
-        }
+        
     } else {
         error("Email Already Exists");
         return false;
