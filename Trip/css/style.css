@@ -686,7 +686,6 @@ div.form-check{
  .form__answer {
    display: inline-block;
    box-sizing: border-box;
-   margin: 0px 1% 50px 1%;
    height: auto;
    vertical-align: top;
    font-size: 18px;
@@ -761,7 +760,6 @@ div.form-check{
 .country-form input[type="radio"]:checked ~ label {
    opacity: 1;
    border: 1px solid #cfb737;
-   border-radius: 15%;
 }
 .country-form.alt-color input[type="radio"]:checked ~ label{
   border: 3px solid #cfb737 !important;
