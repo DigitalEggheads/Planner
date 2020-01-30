@@ -1,0 +1,829 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/lato/Lato-Regular.ttf"); }
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/lato/Lato-Black.ttf"); }
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/lato/Lato-Bold.ttf"); }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  margin: 0;
+  color: #999;
+  background: url("../images/Trip-Planner-Doodle-Bg.jpg") no-repeat center center;
+  background-position: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+:focus {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+input, textarea, select, button {
+  font-family: "Lato-Regular";
+  font-size: 14px; }
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer; }
+  select option[value=""][disabled] {
+    display: none; }
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #d4bc34; }
+
+textarea {
+  resize: none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+.wrapper {
+  width: 826px;
+  height: auto;
+  padding: 63px 90px 0;
+  background: #fff; 
+  box-shadow: 2px 8px 25px #f1f1f1;
+}
+
+.wizard {
+  position: relative; }
+
+.steps .current-info, .steps .number {
+  display: none; }
+
+.steps ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px; }
+  .steps ul li {
+    margin-right: 10.8%;
+    position: relative; }
+    .steps ul li:last-child {
+      margin-right: 0; }
+    .steps ul li .step-arrow {
+      position: absolute;
+      top: 33%;
+      left: 113%;
+      max-width: 57%; }
+    .steps ul li .step-order {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #666;
+      margin-top: 14px;
+      text-decoration-color: #d4bc34; }
+.cstm-nav-tabs li a:hover{
+  border-bottom-color: #d4bc34;
+  text-decoration-color: #d4bc34;
+}
+
+h3 {
+  font-family: "Lato-Black";
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 29px;
+  font-weight: 900; }
+
+.form-row {
+  display: flex;
+  margin-bottom: 20px; }
+  .form-row .form-holder {
+    width: 100%;
+}
+    .form-row .form-holder:last-child {
+      margin-right: 0; }
+    .form-row .form-holder.w-100 {
+      width: 100%;
+      margin-right: 0; }
+  .form-row .form-group {
+    width: 50%;
+    display: flex; }
+    .form-row .form-group .form-holder {
+      margin-right: 21px; }
+      .form-row .form-group .form-holder:last-child {
+        margin-right: 0; }
+
+.form-holder {
+  position: relative; }
+  .form-holder i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 16px; }
+    .form-holder i.zmdi-eye {
+      cursor: pointer; }
+
+.form-control {
+  height: 42px;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  background: none;
+  padding: 0 35px 0 19px;
+  color: #999; }
+  .form-control:focus {
+    border-color: #d4bc34; }
+  .form-control::-webkit-input-placeholder {
+    color: #999; }
+  .form-control::-moz-placeholder {
+    color: #999; }
+  .form-control:-ms-input-placeholder {
+    color: #999; }
+  .form-control:-moz-placeholder {
+    color: #999; }
+
+.actions {
+  margin-top: 30px; }
+  .actions ul {
+    display: flex;
+    justify-content: space-between; }
+    .actions ul.step-4 {
+      justify-content: center; }
+      .actions ul.step-4 li:first-child {
+        display: none; }
+  .actions li a {
+    border: none;
+    display: inline-flex;
+    height: 42px;
+    width: 132px;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    background: #d4bc34;
+    text-transform: uppercase;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-radius: 3px; }
+    .actions li a:hover {
+      background: #231f20; }
+  .actions li:first-child a {
+    width: 97px; }
+  .actions li:last-child a {
+    width: 234px; }
+.checkbox label {
+  padding-left: 21px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-bottom: 13px; }
+  .checkbox label span {
+    font-family: "Lato-Bold"; }
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+.checkbox input:checked ~ .checkmark:after {
+  display: block; }
+.checkbox .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 1px solid #999; }
+  .checkbox .checkmark:after {
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #999;
+    position: absolute;
+    display: none; }
+
+@media (max-width: 991px) {
+  .steps ul li .step-arrow {
+    top: 45%;
+    left: 102%; }
+ }
+@media (max-width: 767px) {
+  body {
+    background: none;
+    height: auto;
+    display: block; }
+
+  .steps ul li .step-arrow {
+    top: 35%; }
+
+  .wrapper {
+    width: auto;
+    padding: 0;
+    height: auto !important;
+    }
+
+  .wizard {
+    height: auto;
+    padding: 40px 20px 20px; }
+
+  .form-row {
+    display: block; }
+    .form-row .form-holder {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 25px; }
+    .form-row .form-group {
+      width: 100%;
+      display: block; }
+
+  .actions ul {
+    flex-direction: column;
+    align-items: flex-end; }
+    .actions ul li {
+      margin-bottom: 20px; }
+ }
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+/*CUSTOM TABS ON STEP THREE*/
+
+.custom-tabs{
+    position: relative;
+}
+div.custom-tabs > .nav-pills {
+    background-color: rgba(207,183,55, 0.2);
+}
+div.custom-tab .nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+div.custom-tabs .nav-pills > li {
+    text-align: center;
+}
+div.custom-tabs .nav-pills>li {
+    float: left;
+}
+
+div.custom-tabs .nav>li {
+    position: relative;
+    display: block;
+}
+.nav-pills > li > a {
+    outline: none;
+    border: 0 !important;
+    border-radius: 0;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    color: #fff !important;
+    background-color: rgb(207,183,55);
+}
+/*for and because of country select box*/
+.form-row .form-group {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs{
+    border: none;
+    margin-bottom: 10px;
+}
+ul.nav.nav-tabs.cstm-nav-tabs li{
+  text-align: center;
+  margin: 0 auto !important;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a{
+    display: block;
+    padding: 20px;
+    margin: 0 10px 20px 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    background-color: #333538;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a:hover,
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li.active a{
+    background: #fff;
+    color: #d4bc34;
+    border: none;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a:before{
+    content: "";
+    width: 3px;
+    height: 0;
+    background: #d0cfcf;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease 0s;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a:hover:before,
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li.active a:before{ height: 25px; }
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a:after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #d4bc34;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li a:hover:after,
+.tab.cstm-tab .nav-tabs.cstm-nav-tabs li.active a:after{
+    bottom: -10px;
+    opacity: 1;
+    text-decoration-color: #d4bc34;
+}
+.tab.cstm-tab .tab-content.cstm-tab-content{
+    padding: 15px;
+    margin-top: 0;
+    background: #f9f7f7a1;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #000;
+    line-height: 25px;
+    border: 5px dashed #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+.tab.cstm-tab .tab-content.cstm-tab-content h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+@media only screen and (max-width: 479px){
+    .tab.cstm-tab .nav-tabs.nav-tabs.cstm-nav-tabs{ margin-bottom: 0; }
+    .tab.cstm-tab.tab .nav-tabs.nav-tabs.cstm-nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/*STEP 4 SUCCESS MESSAGE*/
+/*--thank you pop starts here--*/
+.thank-you-pop{
+	width:100%;
+ 	padding:20px;
+	text-align:center;
+}
+.thank-you-pop img{
+	width:76px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+	margin-bottom:25px;
+}
+
+.thank-you-pop h1{
+	font-size: 42px;
+    margin-bottom: 25px;
+	color:#5C5C5C;
+}
+.thank-you-pop p{
+	font-size: 20px;
+    margin-bottom: 27px;
+ 	color:#5C5C5C;
+}
+.thank-you-pop h3.cupon-pop{
+	font-size: 25px;
+    margin-bottom: 40px;
+	color:#222;
+	display:inline-block;
+	text-align:center;
+	padding:10px 20px;
+	border:2px dashed #222;
+	clear:both;
+	font-weight:normal;
+}
+.thank-you-pop h3.cupon-pop span{
+	color:#03A9F4;
+}
+.thank-you-pop a{
+	display: inline-block;
+    margin: 0 auto;
+    padding: 9px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #8BC34A;
+    border-radius: 17px;
+}
+.thank-you-pop a i{
+	margin-right:5px;
+	color:#fff;
+}
+#ignismyModal .modal-header{
+    border:0px;
+}
+.btn{
+    margin-bottom: 0px !important;
+}
+/*--thank you pop ends here--*/
+.alert{
+    display: none;
+    color: #000;
+}
+button.close{
+  color: #000;
+}
+.actions ul.step-4{
+  display: none;
+}
+button.btn-form-submit{
+  background-color: #000;
+  color: #fff;
+}
+.alert-success {
+    color: #231f20 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    padding-top: 30px !important;
+    padding-bottom: 40px !important;
+}
+
+/*STEP THREE CHECKBOXES*/
+@keyframes click-wave {
+  0% {
+    height: 30px;
+    width: 30px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #d4bc34;
+}
+.option-input:checked {
+  background: #d4bc34;
+}
+.option-input:checked::before {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 22px;
+  text-align: center;
+  line-height: 30px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #d4bc34;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+.custom-radios label {
+  display: block;
+  line-height: 30px;
+}
+
+
+
+/*Hotels Accordion*/
+button[aria-expanded=true] .fa-plus {
+   display: none;
+}
+button[aria-expanded=false] .fa-minus {
+   display: none;
+}
+.myaccordion {
+  margin: 00px auto;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+}
+
+.myaccordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+
+.myaccordion .fa-stack {
+  font-size: 14px;
+}
+
+.myaccordion .btn {
+  width: 100%;
+  font-weight: bold;
+  color: #000;
+  padding: 0;
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+  color: #d4bc34;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+}
+li{
+  font-size:11px;
+}
+  
+/*NEW radios*/
+/* Hide the input */
+ input[type="checkbox"] {
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
+}
+ .check-trail {
+   display: flex;
+   align-items: center;
+   width: 65px;
+   height: 35px;
+   background: #ecebeb;
+   border-radius: 2.5em;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+ .check-handler {
+   display: flex;
+   margin-left: 0.5em;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+   background: #212e3c;
+   border-radius: 50%;
+   transition: all 0.5s ease;
+   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+ .check-handler:before {
+   content: "\00D7";
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+}
+ input[type="checkbox"]:checked + .check-trail {
+   background: #cfb737;
+}
+ input[type="checkbox"]:checked + .check-trail .check-handler {
+   margin-left: 50%;
+   background: #212e3c;
+}
+ input[type="checkbox"]:checked + .check-trail .check-handler::before {
+   content: "\2714";
+}
+div.custom-radios ul li{
+  display: inline-block;
+    padding: 20px;
+}
+p.vehicle-title{
+  font-weight: bold;
+  font-size: 12px;
+}
+
+div.form-check{
+  padding-left: 1rem;
+}
+
+/*COUNTRY SELECTION CHECKBOXES*/
+/* Form Styles */
+/* .form.country-form {
+   max-width: 610px;
+   margin: 60px auto;
+}*/
+ .form__options {
+   border: none;
+   padding: 0;
+}
+ .form__question {
+   font-size: 25px;
+}
+ .form__answer {
+   display: inline-block;
+   box-sizing: border-box;
+   margin: 0px 1% 50px 1%;
+   height: auto;
+   vertical-align: top;
+   font-size: 18px;
+   text-align: center;
+}
+.form__answer span{
+  font-size: 13px;
+  font-weight: bold;
+}
+.country-form label {
+   border: 1px solid rgba(207,183,55, .15);
+   box-sizing: border-box;
+   font-size: 14px;
+    font-weight: 800;
+   display: block;
+   height: 95px;
+   width: 95px;
+   padding: 10px 10px 30px 10px;
+   cursor: pointer;
+   opacity: 0.5;
+   transition: all 0.5s ease-in-out;
+}
+.country-form label.country-hotel-listing{
+  border: 4px solid #1f1c1c;
+  color: #1f1c1c;
+  font-weight: bold;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 13px 2px 10px 2px;
+}
+
+.country-form label.iraq-label {
+  background-image: url('../images/country-iraq.png');
+  background-size: cover;
+  }
+  .country-form label.iran-label {
+  background-image: url('../images/country-iran.png');
+  background-size: cover;
+  }
+  .country-form label.syria-label {
+  background-image: url('../images/country-syria.png');
+  background-size: cover;
+  }
+  .country-form label.ksa-label {
+  background-image: url('../images/country-saudi-arabia.png');
+  background-size: cover;
+  }
+.country-form label img.checked-tick{
+  display: none;
+}
+
+ .country-form label:hover, label:focus, label:active {
+   border: 1px solid rgba(207,183,55, .5);
+}
+ .country-form label.country-hotel-listing:hover{
+  border: 3px solid rgb(207,183,55);
+  color: rgb(207,183,55);
+ }
+
+/* Input style */
+.country-form input[type="radio"] {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+ .country-form input[type="radio"]:active ~ label {
+   opacity: 1;
+}
+.country-form input[type="radio"]:checked ~ label {
+   opacity: 1;
+   border: 1px solid #cfb737;
+}
+.country-form.alt-color input[type="radio"]:checked ~ label{
+  border: 3px solid #cfb737 !important;
+  color: #cfb737 !important;
+}
+.country-form input[type="radio"]:checked ~ label img.checked-tick,
+.country-form input[type="radio"]:active ~ label img.checked-tick{
+    display: block;
+    width: 28px !important;
+}
+.custom-sq input[type=radio] {
+  display: none;
+}
+ul.country-hotel-list li{
+display: inline-block;
+padding: 5px;
+}
+
+/* custom check box for hotels accordions*/
+.custom-sq {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.custom-sq label {
+  cursor: pointer;
+  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.custom-sq label:before {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  content: url('../images/sq-tick-before.png');
+  text-align: center;
+  background: #f3f2ee;
+  color: #a9a9a6;
+  font-size: 20px;
+  padding-top: 12px;
+}
+.custom-sq label:hover{
+  box-shadow: 0px 12px 17px -7px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transition: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* On check */
+.custom-sq input:checked ~ label:before {
+  content: url('../images/sq-tick-after.png');
+  padding-top: 12px;
+}
+/*custom sq check ends here*/
+
+button.btn.btn-gold{
+  padding: 5px 11px !important;
+  background: #cfb737 !important;
+  color: snow;
+}
+button.btn.btn-gold:hover{
+  background: #343a40 !important;
+}
