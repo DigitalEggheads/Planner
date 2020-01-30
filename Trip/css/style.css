@@ -708,6 +708,7 @@ div.form-check{
    cursor: pointer;
    opacity: 0.5;
    transition: all 0.5s ease-in-out;
+   border-radius: 15%;
 }
 .country-form label.country-hotel-listing{
   border: 4px solid #1f1c1c;
@@ -760,6 +761,7 @@ div.form-check{
 .country-form input[type="radio"]:checked ~ label {
    opacity: 1;
    border: 1px solid #cfb737;
+   border-radius: 15%;
 }
 .country-form.alt-color input[type="radio"]:checked ~ label{
   border: 3px solid #cfb737 !important;
