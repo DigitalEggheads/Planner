@@ -83,24 +83,21 @@
 				</ul>
 			</div>
 		</div>
-		<!-- Position -->
-
-		<div class="collapse" id="collapseMap">
-			<div id="map" class="map"></div>
-		</div>
-		<!-- End Map -->
+		
 
 		<div class="container margin_60">
 
 			<div class="row">
 				<aside class="col-lg-3">
-					<p>
-						<a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
-					</p>
+					
 
 					<div id="filters_col">
 						<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt"><i class="icon_set_1_icon-65"></i>Filters</a>
 						<div class="collapse show" id="collapseFilters">
+							<div class="filter_type">
+								<h6>Price</h6>
+								<input type="text" id="range" name="range" value="">
+							</div>
                             <div class="filter_type">
                                 <h6>Hotel Type</h6>
                                 <ul>
@@ -220,33 +217,6 @@
 				<!--End aside -->
 
 				<div class="col-lg-9">
-
-					<div id="tools">
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-6">
-								<div class="styled-select-filters">
-									<select name="sort_price" id="sort_price">
-										<option value="" selected>Sort by price</option>
-										<option value="lower">Lowest price</option>
-										<option value="higher">Highest price</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-4 col-6">
-								<div class="styled-select-filters">
-									<select name="sort_rating" id="sort_rating">
-										<option value="" selected>Sort by ranking</option>
-										<option value="lower">Lowest ranking</option>
-										<option value="higher">Highest ranking</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-4 d-none d-sm-block text-right">
-								<a href="#" class="bt_filters"><i class="icon-th"></i></a> <a href="all_hotels_list.html" class="bt_filters"><i class=" icon-list"></i></a>
-							</div>
-						</div>
-					</div>
-					<!--End tools -->
 
                     <?php foreach ($allHotels as $key => $value) { ?>
 					<div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
