@@ -94,7 +94,11 @@
                             </a>
                         </div>
                         <div class="tour_title">
-                            <h3 class="text-center"><strong>Member</strong> one</h3>
+                            <h3 class="text-center"><strong>Abu Zehra</strong> (Nasir Abbas Khuwaja)</h3>
+                            <p class="text-center pb-4 pt-4">
+                                Contact: <a href="tel:9647814006447">+9647814006447</a> <br/>
+                                Email: <a href="mailto:nasir@shirkatulras.com">nasir@shirkatulras.com</a>
+                            </p>
                         </div>
                     </div>
                     <!-- End box tour -->
@@ -110,7 +114,11 @@
                             </a>
                         </div>
                         <div class="tour_title">
-                            <h3 class="text-center"><strong>Member</strong> two</h3>
+                            <h3 class="text-center"><strong>Syedain Alvi</strong></h3>
+                            <p class="text-center pb-4 pt-4">
+                                Contact: <a href="tel:9647822854634">+9647822854634</a> <br/>
+                                Email: <a href="mailto:syedain@shirkatulras.com">syedain@shirkatulras.com</a>
+                            </p>
                         </div>
                     </div>
                     <!-- End box tour -->
@@ -126,46 +134,16 @@
                             </a>
                         </div>
                         <div class="tour_title">
-                            <h3 class="text-center"><strong>Member</strong> three</h3>
-                            <!-- end rating -->
+                            <h3 class="text-center"><strong>Abu Mehdi </strong>(Yousuf)</h3>
+                            <p class="text-center pb-4 pt-4">
+                                Contact: <a href="tel:9647816705669">+9647816705669</a> <br/>
+                                Email: <a href="mailto:info@shirkatulras.com">info@shirkatulras.com</a>
+                            </p>
                         </div>
                     </div>
                     <!-- End box tour -->
                 </div>
                                 <!-- /item -->
-                <div class="item">
-                    <div class="tour_container">
-                        <div class="img_container">
-                            <a href="javascript:void(0);">
-                                <img src="img/tour_box_3.jpg" width="800" height="533" class="img-fluid" alt="image">
-                                <div class="short_info">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="tour_title">
-                            <h3 class="text-center"><strong>Member</strong> four</h3>
-                            <!-- end rating -->
-                        </div>
-                    </div>
-                    <!-- End box tour -->
-                </div>
-                                <!-- /item -->
-                <div class="item">
-                    <div class="tour_container">
-                        <div class="img_container">
-                            <a href="javascript:void(0);">
-                                <img src="img/tour_box_3.jpg" width="800" height="533" class="img-fluid" alt="image">
-                                <div class="short_info">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="tour_title">
-                            <h3 class="text-center"><strong>Member</strong> five</h3>
-                            <!-- end rating -->
-                        </div>
-                    </div>
-                    <!-- End box tour -->
-                </div>
             </div>
             <!-- /carousel -->
             
