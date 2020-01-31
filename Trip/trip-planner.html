@@ -27,7 +27,7 @@
 
 	<body>
 		<div class="wrapper">
-            <form action="" id="wizard">
+            <form action="" id="wizard" name="planner-form" role="form" data-toggle="validator" novalidate="true">
         		<!-- STEP 1 -->
                 <h4></h4>
                 <section>
@@ -35,24 +35,24 @@
                 	<div class="form-row row">
                         <div class="form-holder col-md-6">
                           <i class="zmdi zmdi-edit"></i>
-                           <input type="text" class="form-control" placeholder="Full Name" required>
+                           <input type="text" class="form-control" name="fullname" placeholder="Full Name"/>
                         </div>
                         <div class="form-holder col-md-6">
                             <i class="zmdi zmdi-smartphone-android"></i>
-                            <input type="text" class="form-control" placeholder="Whatsapp Number" required>
+                            <input type="text" class="form-control" name="number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}" placeholder="Whatsapp Number"  />
                         </div>
                 	</div>
                     <div class="form-row row">
                         <div class="form-holder col-md-12">
                             <i class="zmdi zmdi-email"></i>
-                            <input type="text" class="form-control" placeholder="Email" required>
+                            <input type="text" class="form-control" name="email" placeholder="Email" />
                         </div>
                     </div>
                     <div class="form-row row">
                         <div class="form-holder col-md-6">
                             <i class="zmdi zmdi-map"></i>
                             <div class="form-group">
-                              <select class="form-control" placeholder="Country" required>
+                              <select class="form-control" name="country" placeholder="Country">
                                 <option value="">Country of Departure</option>
                                 <option value="Afghanistan" title="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands" title="Åland Islands">Åland Islands</option>
@@ -322,7 +322,7 @@
                       <div class="form-holder col-md-6">
                            <div class="docs-datepicker">
                               <div class="input-group">
-                                <input type="text" class="form-control docs-date" name="date" placeholder="Departure Date" autocomplete="off">
+                                <input type="text" class="form-control docs-date" name="departure-date" placeholder="Departure Date" autocomplete="off">
                                 <i class="fa fa-calendar"></i>
                               </div>
                               <div class="docs-datepicker-container"></div>
@@ -331,7 +331,7 @@
                         <div class="form-holder col-md-6">
                            <div class="docs-datepicker">
                               <div class="input-group">
-                                <input type="text" class="form-control docs-date" name="date" placeholder="Arrival Date" autocomplete="off">
+                                <input type="text" class="form-control docs-date" name="arrival-date" placeholder="Arrival Date" autocomplete="off">
                                 <i class="fa fa-calendar"></i>
                               </div>
                               <div class="docs-datepicker-container"></div>
@@ -858,9 +858,10 @@
                         </div>
                                 
                     </div>
-                    <button type="button" class="btn btn-standard btn-block btn-form-submit mt-4">Submit</button>
+                    <button type="button" value="submit" class="btn btn-standard btn-block btn-form-submit mt-4">Submit</button>
                   </div>  
                 </section>
+
             </form>
 		</div>
 
@@ -872,6 +873,10 @@
 		<script src="js/datepicker.js"></script>
 <!--     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
  -->    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+ <!-- Validator.js -->
+
+<script src="js/validator.js"></script>
+
 
 <!-- Date Picker Script -->
 <script>
@@ -985,7 +990,17 @@
     }) 
 });
 </script>
+<!-- <script>
+	const butn = document.querySelector('next')
+	if('is-invalid'){
+    $("#wizard").steps({
+        butn.disabled: true;
+    }
+    );
+}
 
+</script>
+ -->
 
 </body>
 </html>

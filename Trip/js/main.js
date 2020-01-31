@@ -3,7 +3,7 @@ $(function(){
         headerTag: "h4",
         bodyTag: "section",
         transitionEffect: "fade",
-        enableAllSteps: true,
+        enableAllSteps: false,
         transitionEffectSpeed: 300,
         labels: {
             next: "Continue",
@@ -46,14 +46,7 @@ $(function(){
     $('.backward').click(function(){
         $("#wizard").steps('previous');
     })
-    // Click to see password 
-    $('.password i').click(function(){
-        if ( $('.password input').attr('type') === 'password' ) {
-            $(this).next().attr('type', 'text');
-        } else {
-            $('.password input').attr('type', 'password');
-        }
-    }) 
+    
 
     // Create Steps Image
     $('.steps ul li:first-child').append('<img src="images/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/step-1-active.png" alt=""> ').append('<span class="step-order">Step 01</span>');
