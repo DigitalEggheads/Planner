@@ -18,7 +18,7 @@ $.fn.extend({
 
     _enableAria: function (enable)
     {
-        return (enable == null) ? 
+        return (enable == null || enable) ? 
             this.removeClass("disabled")._aria("disabled", "false") : 
             this.addClass("disabled")._aria("disabled", "true");
     },
@@ -1754,7 +1754,7 @@ var defaults = $.fn.steps.defaults = {
      * @default true
      * @for defaults
      **/
-    enableKeyNavigation: false,
+    enableKeyNavigation: true,
 
     /**
      * Enables pagination if `true`.
@@ -2006,7 +2006,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "submit",
+        finish: "Finish",
 
         /**
          * Label for the next button.

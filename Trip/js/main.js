@@ -3,7 +3,7 @@ $(function(){
         headerTag: "h4",
         bodyTag: "section",
         transitionEffect: "fade",
-        enableAllSteps: false,
+        enableAllSteps: true,
         transitionEffectSpeed: 300,
         labels: {
             next: "Continue",

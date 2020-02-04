@@ -27,7 +27,7 @@
 
 	<body>
 		<div class="wrapper">
-            <form action="" id="wizard" name="planner-form" role="form" data-toggle="validator" novalidate="true">
+            <form action="" id="wizard" name="planner-form">
         		<!-- STEP 1 -->
                 <h4></h4>
                 <section>
@@ -503,7 +503,7 @@
                                                           <div class="card">
                                                             <div class="card-header" id="headingOne">
                                                               <h2 class="mb-0">
-                                                                <button id="swap" class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                                   Supreme Deluxe
                                                                   <span class="fa-stack fa-sm">
                                                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -570,7 +570,7 @@
                                                           <div class="card">
                                                             <div class="card-header" id="headingTwo">
                                                               <h2 class="mb-0">
-                                                                <button id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                                   Deluxe
                                                                   <span class="fa-stack fa-2x">
                                                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -637,7 +637,7 @@
                                                           <div class="card">
                                                             <div class="card-header" id="headingThree">
                                                               <h2 class="mb-0">
-                                                                <button id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                                   Standard
                                                                   <span class="fa-stack fa-2x">
                                                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -704,7 +704,7 @@
                                                           <div class="card">
                                                             <div class="card-header" id="headingThree">
                                                               <h2 class="mb-0">
-                                                                <button id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                                   Supreme Economy
                                                                   <span class="fa-stack fa-2x">
                                                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -771,7 +771,7 @@
                                                           <div class="card">
                                                             <div class="card-header" id="headingFive">
                                                               <h2 class="mb-0">
-                                                                <button id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                                   Economy
                                                                   <span class="fa-stack fa-2x">
                                                                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -873,11 +873,6 @@
 		<script src="js/datepicker.js"></script>
 <!--     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
  -->    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
- <!-- Validator.js -->
-
-<script src="js/validator.js"></script>
-
-
 <!-- Date Picker Script -->
 <script>
         
@@ -990,17 +985,7 @@
     }) 
 });
 </script>
-<!-- <script>
-	const butn = document.querySelector('next')
-	if('is-invalid'){
-    $("#wizard").steps({
-        butn.disabled: true;
-    }
-    );
-}
 
-</script>
- -->
 
 </body>
 </html>
