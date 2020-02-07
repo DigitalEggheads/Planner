@@ -82,11 +82,11 @@ function login($data)
 }
 
 function signup ($data) {
-    global $message;
+    // global $message;
     
     
     
-    if (!Count($checkRes)) {
+    // if (!Count($checkRes)) {
         // $authRes = save($authData, "hotels_queries");
         
         
@@ -106,10 +106,10 @@ function signup ($data) {
                 return true;
             }
         
-    } else {
-        error("Email Already Exists");
-        return false;
-    }
+    //  } else {
+    //     error("Email Already Exists");
+    //     return false;
+    // }
 
     error("Error While Saving");
     return false;
