@@ -47,4 +47,38 @@
     return false;
 }
 
+
+
+ function HotelReview ($data) {
+    // global $message;
+    
+    
+    
+    // if (!Count($checkRes)) {
+        // $authRes = save($authData, "hotels_queries");
+        
+        
+            $HotelReviews["Hotel_Id"] = $data["Hotel_Id"];
+            $HotelReviews["Hotel_Review_Name"] = $data["Hotel_Review_Name"];
+            $HotelReviews["Hotel_Review_Email"] = $data["Hotel_Review_Email"];
+            $HotelReviews["Hotel_Review_Reviews"] = $data["Hotel_Review_Reviews"];
+            $HotelReviews["Hotel_Review_Details"] = $data["Hotel_Review_Details"];
+            $HotelReviews["Hotel_Review_isApproved"] = $data["Hotel_Review_isApproved"];
+            
+            
+            $HotelReviewsRes = save($HotelReviews, "hotels_reviews");
+            if ($HotelReviewsRes) {
+                success("Query Has Been Submited");
+                return true;
+            }
+        
+    //  } else {
+    //     error("Email Already Exists");
+    //     return false;
+    // }
+
+    error("Error While Saving");
+    return false;
+}
+
 ?>

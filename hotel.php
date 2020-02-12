@@ -38,21 +38,32 @@ if(empty($_GET['Hotel_Id'])) {
 
 
 
-if (isset($_POST["HotelQuery"])) {
+// if (isset($_POST["HotelQuery"])) {
 
-$Hotel_Query_Check_In = $_POST["Hotel_Query_Check_In"];
-$originalDate = "2010-03-21";
-$Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
+// $Hotel_Query_Check_In = $_POST["Hotel_Query_Check_In"];
+// $originalDate = "2010-03-21";
+// $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
 
-  $data = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out"), "post");
+//   $data = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out"), "post");
   
-  if (HotelQuery($data)) {
+//   if (HotelQuery($data)) {
+//     unset($data);
+//   }
+  
+// }
+                  
+
+if (isset($_POST["HotelReview"])) {
+
+
+  $data = getRequestData(array("Hotel_Id", "Hotel_Review_Name", "Hotel_Review_Email", "Hotel_Review_Reviews", "Hotel_Review_Details", "Hotel_Review_isApproved"), "post");
+  
+  if (HotelReview($data)) {
     unset($data);
   }
   
 }
-
 
 
 
@@ -432,109 +443,41 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 			<div class="modal-body">
 				<div id="message-review">
 				</div>
-				<form method="post" action="assets/review_hotel.php" name="review_hotel" id="review_hotel">
-                <input name="hotel_name" id="hotel_name" type="hidden" value="Mariott Hotel Paris">	
+				<form method="post" action="" name="" id="">
+                    <input class="form-control required" name="Hotel_Id" id="" type="hidden" value="<?php echo $Hotel_Id; ?>" readonly>
+                    <input class="form-control required" name="Hotel_Review_isApproved" id="" type="hidden" value="0" readonly>	
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input name="name_review" id="name_review" type="text" placeholder="Your name" class="form-control">
+								<input name="Hotel_Review_Name " id="Hotel_Review_Name " type="text" placeholder="Your name" class="form-control" required="">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input name="lastname_review" id="lastname_review" type="text" placeholder="Your last name" class="form-control">
+								<input name="Hotel_Review_Email " id="Hotel_Review_Email " type="text" placeholder="Your Email" class="form-control" required="">
 							</div>
 						</div>
 					</div>
 					<!-- End row -->
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="form-group">
-								<input name="email_review" id="email_review" type="email" placeholder="Your email" class="form-control">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="form-control" name="room_type_review" id="room_type_review">
-									<option value="">Select room type</option>
-									<option value="Single room">Single Room</option>
-									<option value="Double Room">Double Room</option>
-									<option value="King double room">King Double Room</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<!-- End row -->
-					<hr>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label>Cleanliness</label>
-								<select class="form-control" name="cleanliness_review" id="cleanliness_review">
-									<option value="">Please review</option>
-									<option value="Low">Low</option>
-									<option value="Sufficient">Sufficient</option>
-									<option value="Good">Good</option>
-									<option value="Excellent">Excellent</option>
-									<option value="Superb">Super</option>
-									<option value="Not rated">I don't know</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label>Comfort</label>
-								<select class="form-control" name="comfort_review" id="comfort_review">
-									<option value="">Please review</option>
-									<option value="Low">Low</option>
-									<option value="Sufficient">Sufficient</option>
-									<option value="Good">Good</option>
-									<option value="Excellent">Excellent</option>
-									<option value="Superb">Super</option>
-									<option value="Not rated">I don't know</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<!-- End row -->
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<label>Price</label>
-								<select class="form-control" name="price_review" id="price_review">
-									<option value="">Please review</option>
-									<option value="Low">Low</option>
-									<option value="Sufficient">Sufficient</option>
-									<option value="Good">Good</option>
-									<option value="Excellent">Excellent</option>
-									<option value="Superb">Super</option>
-									<option value="Not rated">I don't know</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label>Quality</label>
-								<select class="form-control" name="quality_review" id="quality_review">
-									<option value="">Please review</option>
-									<option value="Low">Low</option>
-									<option value="Sufficient">Sufficient</option>
-									<option value="Good">Good</option>
-									<option value="Excellent">Excellent</option>
-									<option value="Superb">Super</option>
-									<option value="Not rated">I don't know</option>
+								<label>Please Review</label>
+								<select class="form-control" name="Hotel_Review_Reviews" id="Hotel_Review_Reviews" required="">
+                                    <option value="Excellent">Excellent</option>
+                                    <option value="Very Good">Very Good</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Satisfactory">Satisfactory</option>
+                                    <option value="Unsatisfactory">Unsatisfactory</option>
 								</select>
 							</div>
 						</div>
 					</div>
 					<!-- End row -->
 					<div class="form-group">
-						<textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+						<textarea name="Hotel_Review_Details" id="Hotel_Review_Details" class="form-control" style="height:100px" placeholder="Write your review" required=""></textarea>
 					</div>
-					<div class="form-group">
-						<input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
-					</div>
-					<input type="submit" value="Submit" class="btn_1" id="submit-review">
+					<input type="submit" value="Submit" class="btn_1" id="" name="HotelReview">
 				</form>
 			</div>
 		</div>
