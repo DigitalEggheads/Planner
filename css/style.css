@@ -387,7 +387,7 @@ header.sticky #logo .logo_sticky{ display:block; }
 	width:160px;
 	height:34px;
 	display:block;
-	background-image:url(../img/logo.png);
+	background-image:url(../img/Branding/Sticky-Logo.png);
 	background-repeat:no-repeat;
 	background-position:left top;
 	background-size: 160px 34px;
@@ -398,28 +398,69 @@ header.sticky #logo_home h1{
 	padding:0;
 }
 header.sticky #logo_home h1 a{
-	background-image:url(../img/logo_sticky.png);
+	background-image:url(../img/Branding/Sticky-Logo.png) !important;
+}
+header.sticky #logo_home img{
+	display: none;
+}
+header.sticky #logo_home {
+    background: url(../img/Branding/Sticky-Logo.png) !important;
+    max-width: 100%;
+    height: 60px;
+    margin: 10px;
+    padding: 0;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    image-rendering: auto;
+  image-rendering: crisp-edges;
+}
+
+@media only screen and (max-width: 768px){
+	header.sticky #logo_home {
+    max-width: 125%;
+    width: 500px !important;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+}
+}
+
+@media only screen and (max-width: 425px){
+	header.sticky #logo_home {
+    max-width: 230%;
+    width: 505px !important;
+    height: 58px;
+    margin: 0px;
+    padding: 6px;
+    margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 375px){
+	header.sticky #logo_home {
+    max-width: 246%;
+}
 }
 header#plain #logo_home h1 a{
-	background-image:url(../img/logo_sticky.png);
+	background-image:url(../img/Branding/Sticky-Logo.png) !important;
 }
 header.sticky#colored #logo_home h1 a{
-	background-image:url(../img/logo_sticky_colored.png);
+	background-image:url(../img/Branding/Sticky-Logo.png) !important;
 }
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#logo_home h1 a, header#colored #logo_home h1 a{
-		background-image: url(../img/logo_2x.png);
+		background-image: url(../img/Branding/Sticky-Logo.png) !important;
 		background-size: 160px 34px;
 	}
 	header.sticky #logo_home h1 a, header#plain #logo_home h1 a{
-		background-image: url(../img/logo_sticky_2x.png);
+		background-image: url(../img/Branding/Sticky-Logo.png) !important;
 		background-size: 160px 34px;
 	}
 	header.sticky#colored #logo_home h1 a{
-		background-image: url(../img/logo_sticky_colored_2x.png);
+		background-image: url(../img/Branding/Sticky-Logo.png) !important;
 		background-size: 160px 34px;
 	}
 }
@@ -7052,12 +7093,12 @@ ul.plan-features {
   	
   	header.sticky #logo_home h1 a,
   	header#plain #logo_home h1 a {
-  		background-image: url(../img/logo_sticky_2x.png);
+  		background-image: url(../img/Sticky-Logo.png);
   		background-size: auto 30px;
   	}
   	
   	header.sticky#colored #logo_home h1 a {
-  		background-image: url(../img/logo_sticky_colored_2x.png);
+  		background-image: url(../img/Sticky-Logo.png);
   		background-size: auto 30px;
   	}
   }
