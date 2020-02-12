@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-3">
                     <div id="logo_home">
-                        <img src="img/Branding/logo.png" alt="City tours" data-retina="true">
+                        <img src="img/Branding/Logo.png" alt="City tours" data-retina="true">
                         <h1></h1>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
                     <div class="main-menu">
                         <div id="header_menu">
-                            <img src="img/Branding/logo.png" alt="City tours" data-retina="true">
+                            <img src="img/Branding/Logo.png" alt="City tours" data-retina="true">
                         </div>
                         <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                         <ul>
