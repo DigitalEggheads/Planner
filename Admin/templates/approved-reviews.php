@@ -122,7 +122,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </td>
                       <td>
                         <a href="./view-review.php?Review_Id=<?=$value["Hotel_Review_Id"]?>" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
-                        <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
+                        <a href="./approved.php?Review_Id=<?=$value["Hotel_Review_Id"]?>" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
                         <a href="#" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a>  &nbsp;
                       </td>
                     </tr>

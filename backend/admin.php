@@ -45,7 +45,7 @@
   function getAllApprovedReviews () {
     $query = "select * from hotels_reviews ";
     // $query .= "inner join user on auth.id = user.authId ";
-    $query .= "where Hotel_Review_isApproved = 1";
+    $query .= "where Hotel_Review_isApproved = 1 and Hotel_Review_isTrashed = 0";
     $res = fetchQuery($query);
     return $res;
   }
@@ -53,7 +53,7 @@
   function getAllUnapprovedReviews () {
     $query = "select * from hotels_reviews ";
     // $query .= "inner join user on auth.id = user.authId ";
-    $query .= "where Hotel_Review_isApproved = 0";
+    $query .= "where Hotel_Review_isApproved = 0 and Hotel_Review_isTrashed = 0";
     $res = fetchQuery($query);
     return $res;
   }

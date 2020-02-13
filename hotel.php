@@ -57,7 +57,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
 
 
-  $data = getRequestData(array("Hotel_Id", "Hotel_Review_Name", "Hotel_Review_Email", "Hotel_Review_Reviews", "Hotel_Review_Details", "Hotel_Review_Date", "Hotel_Review_isApproved"), "post");
+  $data = getRequestData(array("Hotel_Id", "Hotel_Review_Name", "Hotel_Review_Email", "Hotel_Review_Reviews", "Hotel_Review_Details", "Hotel_Review_Date", "Hotel_Review_isApproved", "Hotel_Review_isTrashed"), "post");
   
   if (HotelReview($data)) {
     unset($data);
@@ -405,7 +405,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
         <div class="box_style_4">
             <i class="icon_set_1_icon-90"></i>
             <h4><span>Book</span> by phone</h4>
-            <a href="tel://004542344599" class="phone">+45 423 445 99</a>
+            <a href="tel:03018587645" class="phone">+92 301 8587645</a>
             <small>Monday to Friday 9.00am - 7.30pm</small>
         </div>
         
@@ -532,6 +532,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
                 <input class="form-control required" name="Hotel_Id" id="" type="hidden" value="<?php echo $Hotel_Id; ?>" readonly>
                     <input class="form-control required" name="Hotel_Review_isApproved" id="" type="hidden" value="0" readonly>
+                    <input class="form-control required" name="Hotel_Review_isTrashed" id="" type="hidden" value="0" readonly>
                     <input id="" type="date" value="<?php echo date("Y-m-d"); ?>" name="Hotel_Review_Date" hidden>
             
             <button type="submit" class="btn_full" name="HotelReview">Send</button>

@@ -5,7 +5,7 @@
     $query = "select * from hotels_reviews ";
     // $query .= "inner join user on hotels.id = hotels.authId ";
     // $query .= "where role = 'hotels' ";
-    $query .= "where Hotel_Review_isApproved = 1 and Hotel_ID = ".$_GET["Hotel_Id"];
+    $query .= "where Hotel_Review_isApproved = 1 and Hotel_Review_isTrashed = 0 and Hotel_ID = ".$_GET["Hotel_Id"];
     $res = fetchQuery($query);
     return $res;
   }
