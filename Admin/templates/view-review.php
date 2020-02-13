@@ -12,26 +12,22 @@
   }
 
 
-$Hotel_Id = $_GET["Hotel_Id"];
+$Review_Id = $_GET["Review_Id"];
 
-$query = "select * from hotels where Hotel_Id = $Hotel_Id";
+$query = "select * from hotels_reviews where Hotel_Review_Id = $Review_Id";
 
 if ($result=mysqli_query($con,$query))
   {
   // Fetch one and one row
   $row=mysqli_fetch_row($result);
     
-    $Hotel_Title = $row[1];
-    $Hotel_Description = $row[2];
-    $Hotel_Destination = $row[3];
-    $Hotel_City = $row[4];
-    $Hotel_Type = $row[5];
-    $Hotel_Distance = $row[6];
-    $Hotel_Rating = $row[7];
-    $Hotel_Map_Iframe = $row[8];
-    $Hotel_Featured_Image = $row[9];
-    $Hotel_Price = $row[10];
-    $Hotel_Gallery = $row[11];
+    
+    $Hotel_Review_Name = $row[2];
+    $Hotel_Review_Email = $row[3];
+    $Hotel_Review_Reviews = $row[4];
+    $Hotel_Review_Details = $row[5];
+    $Hotel_Review_Date = $row[6];
+    $Hotel_Review_isApproved = $row[7];
     
   // Free result set
   mysqli_free_result($result);
@@ -102,7 +98,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="far fa-list-alt" style="color: #339af0;"></i>
-                <?php echo $Hotel_Title; ?>
+                Reviews
               </h3>
               </div>
               <!-- /.card-header -->
@@ -116,36 +112,51 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </thead>
                   <tbody>
                     <tr>
-                      <td><label for="">Profile Picture</label></td>
-                      <td><img class="placeholder-img" src="<?php echo $Hotel_Featured_Image; ?>" width="250px;" height="250px;"></td>
+                      <td><label for="">Reviewer Name</label></td>
+                      <td><?php echo $Hotel_Review_Name; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">Hotel Name</label></td>
-                      <td><?php echo $Hotel_Title; ?></td>
+                      <td><label for="">Reviewer Email</label></td>
+                      <td><?php echo $Hotel_Review_Email; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">Description</label></td>
-                      <td><?php echo $Hotel_Description; ?></td>
+                      <td><label for="">Review Rating</label></td>
+                      <td><?php 
+                        if($Hotel_Review_Reviews == "5"){
+                          echo "Excellent";
+                        }
+                        else if($Hotel_Review_Reviews == "4"){
+                          echo "Very Good";
+                        }
+                        else if($Hotel_Review_Reviews == "3"){
+                          echo "Good";
+                        }
+                        else if($Hotel_Review_Reviews == "2"){
+                          echo "Satisfactory";
+                        }
+                        else{
+                          echo "Unstatisfactory";
+                        }
+                        ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">Destination</label></td>
-                      <td><?php echo $Hotel_Destination; ?></td>
+                      <td><label for="">Review Detail</label></td>
+                      <td><?php echo $Hotel_Review_Details; ?></td>
                     </tr>
                     <tr>
-                      <td><label for="">City</label></td>
-                      <td><?php echo $Hotel_City; ?></td>
+                      <td><label for="">Review Status</label></td>
+                      <td><?php 
+                        if($Hotel_Review_isApproved == "1"){
+                          echo "Approved";
+                        }
+                        else{
+                          echo "Unapproved";
+                        }
+                        ?>
                     </tr>
                     <tr>
-                      <td><label for="">Type</label></td>
-                      <td><?php echo $Hotel_Type; ?></td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Price</label></td>
-                      <td>$<?php echo $Hotel_Price; ?>/night</td>
-                    </tr>
-                    <tr>
-                      <td><label for="">Distance</label></td>
-                      <td><?php echo $Hotel_Distance; ?></td>
+                      <td><label for="">Review Date</label></td>
+                      <td><?php echo $Hotel_Review_Date; ?></td>
                     </tr>
                     
                   </tbody>

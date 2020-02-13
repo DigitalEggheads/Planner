@@ -49,7 +49,7 @@
 
 
 
- function HotelReview ($data) {
+  function HotelReview ($data) {
     // global $message;
     
     
@@ -64,7 +64,8 @@
             $HotelReviews["Hotel_Review_Reviews"] = $data["Hotel_Review_Reviews"];
             $HotelReviews["Hotel_Review_Details"] = $data["Hotel_Review_Details"];
             $HotelReviews["Hotel_Review_isApproved"] = $data["Hotel_Review_isApproved"];
-            
+            $HotelReviews["Hotel_Review_Date"] = date("Y-m-d", strtotime($data["Hotel_Review_Date"]));
+           
             
             $HotelReviewsRes = save($HotelReviews, "hotels_reviews");
             if ($HotelReviewsRes) {
@@ -80,5 +81,4 @@
     error("Error While Saving");
     return false;
 }
-
 ?>

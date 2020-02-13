@@ -3241,7 +3241,12 @@ ul.list_order li span {
 	background: transparent;
 	position: relative;
 }
-
+.parallax-window-h300{
+	min-height: 300px;
+}
+.parallax-window-h300 .parallax-content-1{
+	height: 300px;
+}
 .parallax-content-1 {
 	display: table;
 	width: 100%;

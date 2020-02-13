@@ -51,10 +51,10 @@
 
     <?php include_once "./Navigation.php"; ?>
     
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="300">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
-            <h1>Team</h1>
+            <h1>Teams</h1>
         </div>
     </div>
     </section>
@@ -66,7 +66,7 @@
         <ul>
            <li><a href="#">Home</a>
            </li>
-           <li><a href="#" class="active">Team</a>
+           <li><a href="#" class="active">Teams</a>
            </li>
        </ul>
     </div>

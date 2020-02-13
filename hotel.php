@@ -45,25 +45,27 @@ $originalDate = "2010-03-21";
 $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
 
-  $data = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out"), "post");
+  $data2 = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out"), "post");
   
   if (HotelQuery($data)) {
     unset($data);
   }
   
 }
-                  
+      
+      if (isset($_POST["HotelReview"])) {
 
-if (isset($_POST["HotelReview"])) {
 
 
-  $data = getRequestData(array("Hotel_Id", "Hotel_Review_Name", "Hotel_Review_Email", "Hotel_Review_Reviews", "Hotel_Review_Details", "Hotel_Review_isApproved"), "post");
+  $data = getRequestData(array("Hotel_Id", "Hotel_Review_Name", "Hotel_Review_Email", "Hotel_Review_Reviews", "Hotel_Review_Details", "Hotel_Review_Date", "Hotel_Review_isApproved"), "post");
   
   if (HotelReview($data)) {
     unset($data);
   }
   
-}
+}            
+
+
 
 
 
@@ -124,14 +126,15 @@ if (isset($_POST["HotelReview"])) {
 
      <?php include_once "./Navigation.php"; ?>
 
-    <section class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $Hotel_Featured_Image;?>" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="<?php echo $Hotel_Featured_Image;?>" data-natural-width="1400" data-natural-height="470">
     <div class="parallax-content-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
                     <h1><?php echo $Hotel_Title; ?></h1>
-                    <span>Champ de Mars, 5 Avenue Anatole, 75007 Paris.</span>
+                    <span>
+                    Champ de Mars, 5 Avenue Anatole, 75007 Paris.</span>
                 </div>
                 <div class="col-md-4">
                     <div id="price_single_main" class="hotel">
@@ -259,13 +262,57 @@ if (isset($_POST["HotelReview"])) {
 
 							<div class="review_strip_single">
 								<img src="img/avatar1.jpg" alt="Image" class="rounded-circle">
-								<small> - 10 March 2015 -</small>
+								<small> - <?=$value["Hotel_Review_Date"]?> -</small>
 								<h4><?=$value["Hotel_Review_Name"]?></h4>
 								<p>
 									"<?=$value["Hotel_Review_Details"]?>"
 								</p>
 								<div class="rating">
-									<i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><i class="icon-smile"></i>
+
+                                    <?=
+                                    $rating = $key["Hotel_Review_Reviews"];
+
+                                    if($rating = $value["Hotel_Review_Reviews"]  == "5"){
+                                       
+                                        ?>
+
+                                        <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i>
+
+                                        <?php 
+                                    }
+                                    else if($rating = $value["Hotel_Review_Reviews"]  == "4"){
+                                        ?>
+
+                                        <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i>
+
+                                        <?php 
+                                    }
+                                    else if($rating = $value["Hotel_Review_Reviews"]  == "3"){
+                                        ?>
+
+                                        <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><i class="icon-smile"></i>
+
+                                        <?php 
+                                    }
+                                    else if($rating = $value["Hotel_Review_Reviews"]  == "2"){
+                                        ?>
+
+                                        <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><i class="icon-smile"></i><i class="icon-smile"></i>
+
+                                        <?php 
+                                    }
+                                    else{
+                                        ?>
+
+                                        <i class="icon-smile voted"></i><i class="icon-smile"></i><i class="icon-smile"></i><i class="icon-smile"></i><i class="icon-smile"></i>
+
+                                        <?php 
+                                    }
+                                   
+
+                                    ?>
+
+									
 								</div>
 							</div>
 							<!-- End review strip -->
@@ -443,42 +490,54 @@ if (isset($_POST["HotelReview"])) {
 			<div class="modal-body">
 				<div id="message-review">
 				</div>
-				<form method="post" action="" name="" id="">
-                    <input class="form-control required" name="Hotel_Id" id="" type="hidden" value="<?php echo $Hotel_Id; ?>" readonly>
-                    <input class="form-control required" name="Hotel_Review_isApproved" id="" type="hidden" value="0" readonly>	
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input name="Hotel_Review_Name " id="Hotel_Review_Name " type="text" placeholder="Your name" class="form-control" required="">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input name="Hotel_Review_Email " id="Hotel_Review_Email " type="text" placeholder="Your Email" class="form-control" required="">
-							</div>
-						</div>
-					</div>
-					<!-- End row -->
-					<div class="row">
-						<div class="col-md-12">
-							<div class="form-group">
-								<label>Please Review</label>
-								<select class="form-control" name="Hotel_Review_Reviews" id="Hotel_Review_Reviews" required="">
-                                    <option value="Excellent">Excellent</option>
-                                    <option value="Very Good">Very Good</option>
-                                    <option value="Good">Good</option>
-                                    <option value="Satisfactory">Satisfactory</option>
-                                    <option value="Unsatisfactory">Unsatisfactory</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<!-- End row -->
-					<div class="form-group">
-						<textarea name="Hotel_Review_Details" id="Hotel_Review_Details" class="form-control" style="height:100px" placeholder="Write your review" required=""></textarea>
-					</div>
-					<input type="submit" value="Submit" class="btn_1" id="" name="HotelReview">
-				</form>
+
+                <form id="" action="" method="post">
+
+                <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input name="Hotel_Review_Name" id="Hotel_Review_Name" type="text" placeholder="Your name" class="form-control" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input name="Hotel_Review_Email" id="Hotel_Review_Email" type="text" placeholder="Your Email" class="form-control" required="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Please Review</label>
+                                <select class="form-control" name="Hotel_Review_Reviews" id="Hotel_Review_Reviews" required="">
+                                    <option value="5">Excellent</option>
+                                    <option value="4">Very Good</option>
+                                    <option value="3">Good</option>
+                                    <option value="2">Satisfactory</option>
+                                    <option value="1">Unsatisfactory</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="Hotel_Review_Details" id="Hotel_Review_Details" class="form-control" style="height:100px" placeholder="Write your review" required=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                <input class="form-control required" name="Hotel_Id" id="" type="hidden" value="<?php echo $Hotel_Id; ?>" readonly>
+                    <input class="form-control required" name="Hotel_Review_isApproved" id="" type="hidden" value="0" readonly>
+                    <input id="" type="date" value="<?php echo date("Y-m-d"); ?>" name="Hotel_Review_Date" hidden>
+            
+            <button type="submit" class="btn_full" name="HotelReview">Send</button>
+            </form>
+
+				
 			</div>
 		</div>
 	</div>

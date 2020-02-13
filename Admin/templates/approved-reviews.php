@@ -13,7 +13,7 @@ if(!isset($_SESSION))
 
 
 
-    $allHotels = getAllHotels();
+    $AllApprovedReviews = getAllApprovedReviews();
 
 
 ?>
@@ -59,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Manage Hotels</h1>
+            <h1>Approved Reviews</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -86,23 +86,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Hotel Name</th>
-                  <th>Hotel Destination</th>
-                  <th>Hotel City</th>
-                  <th>Hotel Distance</th>
+                  <th>Reviewer Name</th>
+                  <th>Reviewer Email</th>
+                  <th>Review Rating</th>
                   <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                  <?php foreach ($allHotels as $key => $value) { ?>
+                  <?php foreach ($AllApprovedReviews as $key => $value) { ?>
                     
                     <tr>
-                      <td><?=$value["Hotel_Title"]?></td>
-                      <td><?=$value["Hotel_Destination"]?></td>
-                      <td><?=$value["Hotel_City"]?></td>
-                      <td><?=$value["Hotel_Distance"]?></td>
+                      <td><?=$value["Hotel_Review_Name"]?></td>
+                      <td><?=$value["Hotel_Review_Email"]?></td>
+                      <td><?=
+
+                            $Rating = $key["Hotel_Review_Reviews"];
+                        
+                         if($Rating = $value["Hotel_Review_Reviews"] == "5"){
+                          echo "Excellent";
+                        }
+                        else if($Rating = $value["Hotel_Review_Reviews"] == "4"){
+                          echo "Very Good";
+                        }
+                        else if($Rating = $value["Hotel_Review_Reviews"] == "3"){
+                          echo "Good";
+                        }
+                        else if($Rating = $value["Hotel_Review_Reviews"] == "2"){
+                          echo "Satisfactory";
+                        }
+                        else{
+                          echo "Unstatisfactory";
+                        }
+
+                        ?>
+                      </td>
                       <td>
-                        <a href="./view-hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
+                        <a href="./view-review.php?Review_Id=<?=$value["Hotel_Review_Id"]?>" class="btn btn-sm btn-secondary"><i class="fas fa-eye"></i></a> &nbsp;
                         <a href="#" class="btn btn-sm btn-secondary"><i class="fas fa-edit"></i></a> &nbsp;
                         <a href="#" class="btn btn-sm btn-secondary"><i class="far fa-trash-alt"></i></a>  &nbsp;
                       </td>
@@ -112,10 +131,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Hotel Name</th>
-                  <th>Hotel Destination</th>
-                  <th>Hotel City</th>
-                  <th>Hotel Distance</th>
+                  <th>Reviewer Name</th>
+                  <th>Reviewer Email</th>
+                  <th>Review Rating</th>
                   <th>Actions</th>
                 </tr>
                 </tfoot>
