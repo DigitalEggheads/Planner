@@ -12,6 +12,29 @@ if(!isset($_SESSION))
   }
 
 
+
+if (isset($_POST["AddHotel"])) {
+
+$Hotel_Featured_Image = $_FILES["Hotel_Featured_Image"]["name"];
+$target_dir = "HotelImages/";
+$path = $target_dir.$Hotel_Featured_Image;
+
+
+if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
+    {
+      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed"), "post");
+  
+  if (AddHotel($data)) {
+    unset($data);
+  }
+      
+    }
+
+
+  
+  
+}
+
 ?>
 <!DOCTYPE html>
 <!--
@@ -31,7 +54,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- foundation -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4-rc1/css/foundation.css"> -->
-  
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -63,7 +86,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid text-center">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1>Add Hotels</h1>
+            <h1>Add Hotels </h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -78,7 +101,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- general form elements -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel</h3>
+                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel
+
+                      <small><?php 
+      print_r($data);
+    ?></small></h3>
                 </div>
               <!-- /.card-header -->
             </div>
@@ -91,18 +118,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!--.Form Row starts here  -->
         <div class="row pb-4 bg-white">
             <div class="col-md-12">
-                <form role="form">
+                <form action="" id="img-upload-form" method="post" enctype="multipart/form-data">
+
                     <div class="card-body">
                           <!-- 1st row -->
                           <div class="row">
                             <!-- featured image -->
+                            <input class="form-control required" name="Hotel_isTrashed" id="" type="hidden" value="0" readonly>
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="featuredImage">Add Featured Image</label>
                                           <div class="ml-2">
                                           <img src="https://placehold.it/250x250" id="" class="img-thumbnail">
                                           </div>
-                                          <input type="file" name="img[]" class="file" accept="image/*">
+                                          <input type="file" name="Hotel_Featured_Image" class="" accept="image/*">
                                           <div class="input-group my-3 col-md-4">
                                               <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button>
                                               <!-- <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label> -->
@@ -114,10 +143,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <!-- 2nd row -->
                           <div class="row">
                                 <!-- hotel name -->
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                       <label for="Title">Title</label>
-                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title">
+                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Title">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                      <label for="Title">Location</label>
+                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Location">
                                     </div>
                                 </div>
 
@@ -125,106 +161,75 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="price">Price</label>
-                                      <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price">
+                                      <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price" name="Hotel_Price">
                                     </div>
                                 </div>
 
-                                <!-- distance -->
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                      <label for="distance">Distance</label>
-                                      <input type="text" class="form-control" id="hotel-distance" placeholder="Hotel Distance">
-                                    </div>
-                                </div>
                           </div>
                           <!-- 3rd row-->
                           <div class="row">
+
+                                <!-- destinations -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div class="form-group">
+                                    <label>Destination</label>
+                                    <select class="form-control cstm" name="Hotel_Destination">
+                                      <option value="Iraq">Iraq</option>
+                                      <option value="Iran">Iran</option>
+                                      <option value="Syria">Syria</option>
+                                      <option value="Kingdom Of Saudi Arabia">Kingdom Of Saudi Arabia</option>
+                                    </select>
+                                  </div>
+                              </div>
                             
                               <!-- hotel cities -->
                               <div class="col-md-4">
                                   <!-- select -->
                                   <div class="form-group">
                                     <label>Cities</label>
-                                    <select class="form-control cstm">
-                                      <option>Karbala</option>
-                                      <option>Najaf</option>
-                                      <option>Kazmain</option>
-                                      <option>Mashad</option>
-                                      <option>Qom</option>
-                                      <option>Damascus</option>
-                                      <option>Makkah</option>
-                                      <option>Madina</option>
+                                    <select class="form-control cstm" name="Hotel_City">
+                                      <option value="Karbala">Karbala</option>
+                                      <option value="Najaf">Najaf</option>
+                                      <option value="Kazmain">Kazmain</option>
+                                      <option value="Mashad">Mashad</option>
+                                      <option value="Qom">Qom</option>
+                                      <option value="Damascus">Damascus</option>
+                                      <option value="Makkah">Makkah</option>
+                                      <option value="Madina">Madina</option>
                                     </select>
                                   </div>
                               </div>
                               
-                                  <!-- destinations -->
-                              <div class="col-md-4">
-                                  <!-- select -->
-                                  <div class="form-group">
-                                    <label>Destination</label>
-                                    <select class="form-control cstm">
-                                      <option>Iraq</option>
-                                      <option>Iran</option>
-                                      <option>Syria</option>
-                                      <option>Kingdom Of Saudi Arabia</option>
-                                    </select>
-                                  </div>
-                              </div>
+                              
 
                               <!-- hotel standard -->
                               <div class="col-md-4">
                                   <!-- select -->
                                   <div class="form-group">
-                                    <label>Standard</label>
-                                    <select class="form-control cstm">
-                                      <option>Deluxe Supreme (A*)</option>
-                                      <option>Deluxe (A)</option>
-                                      <option>Standard (B)</option>
-                                      <option>Economy Supreme (C)</option>
-                                      <option>Economy (D)</option>
+                                    <label>Type</label>
+                                    <select class="form-control cstm" name="Hotel_Type">
+                                      <option value="Deluxe Supreme">Deluxe Supreme)</option>
+                                      <option value="Deluxe">Deluxe</option>
+                                      <option value="Standard">Standard</option>
+                                      <option value="Economy Supreme">Economy Supreme</option>
+                                      <option value="Economy">Economy</option>
                                     </select>
                                   </div>
                               </div>
                           </div>
                           <!-- 4th row -->
                           <div class="row">
-                              <!-- rating -->
+                              <!-- Distance -->
                               <div class="col-md-4">
                                   <!-- select -->
-                                  <div><label>Rating</label></div>
-                                  
-                                  <div class="form-group rating">
-                                    <label>
-                                    <input type="radio" name="stars" value="1" />
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="2" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="3" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>   
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="4" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="5" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
+                                  <div class="form-group">
+                                    <label>Distance</label>
+                                    <select class="form-control cstm" name="Hotel_Distance">
+                                      <option value="0m to 100m From Haram">0m to 100m From Haram</option>
+                                      <option value="100m to 500m From Haram">100m to 500m From Haram</option>
+                                      <option value="Above 500m From Haram">Above 500m From Haram</option>
+                                    </select>
                                   </div>
                               </div>
 
@@ -233,8 +238,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <label for="Mapiframe">Map iframe</label>
                                     <!--Textarea with icon prefix-->
                                         <div class="md-form amber-textarea active-amber-textarea">
-                                          <i class="fas fa-pencil-alt prefix"></i>
-                                          <input type="text" id="locationMap" class="md-textarea form-control" rows="3">
+                                          <input type="text" id="locationMap" class="md-textarea form-control" rows="3" name="Hotel_Map_Iframe">
                                         </div>
                               </div>
 
@@ -246,7 +250,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                   <div class="pad">
                                       <div class="mb-3">
                                           <textarea class="textarea" placeholder="Place some text here"
-                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="Hotel_Description">
                                           </textarea>
                                       </div>
                                   </div>
@@ -260,17 +264,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <div class="grid-x grid-padding-x">
                                   <div class="cell" id="bordered-div">
                                    
-                                    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+                                    
                                       
-                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
                                         <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
-                                        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple class="HotelGalleryUpload" />
-                                      </p>
+                                        <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
+                                      </p> -->
+
+                                      
                                       <!-- <p>
                                         <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
                                       </p> -->
-                                    </form>
+                                   
 
                                   </div>
                                 </div>
@@ -279,7 +285,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer bg-white text-right">
-                          <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+                          <button type="submit" class="btn btn-secondary btn-lg" name="AddHotel">Submit</button>
                     </div>
                 </form>
             <!--/.Form  -->

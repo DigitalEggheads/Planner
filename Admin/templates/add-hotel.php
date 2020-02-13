@@ -1,259 +1,84 @@
+<?php 
+
+if(!isset($_SESSION))
+    session_start();
+
+  include_once "../../backend/admin.php";
+
+  if (!isset($_SESSION["adminLogin"]) || !$_SESSION["adminLogin"] || isset($_POST["logout"])) {
+    // session_destroy();
+    destroyAdminSession();
+    header("location: ../index.php");
+  }
+
+
+
+if (isset($_POST["AddHotel"])) {
+
+$Hotel_Featured_Image = $_FILES["Hotel_Featured_Image"]["name"];
+$target_dir = "HotelImages/";
+$path = $target_dir.$Hotel_Featured_Image;
+
+
+if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
+    {
+      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed"), "post");
+  
+  if (AddHotel($data)) {
+    unset($data);
+  }
+      
+    }
+
+
+  
+  
+}
+
+?>
 <!DOCTYPE html>
-<html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Shirkat-ul-Ras</title>
-  <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <!-- Font Awesome -->
+  <title>Shirkat-ul-Ras | Add Hotel</title>
+
+ <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+
+  <!-- foundation -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4-rc1/css/foundation.css"> -->
+
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="dist/css/styles.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
-  <!-- foundation -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4-rc1/css/foundation.css">
-  <!-- custom styles -->
- <link rel="stylesheet" href="dist/css/styles.css">
+  
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
 
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/credit/avatar.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/credit/avatar.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/credit/avatar.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
-            <span class="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
-            <span class="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- /.navbar -->
+<?php include_once "./Navigation.php"; ?>
+  
 
-  <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="dashboard.php" class="brand-link">
-      <img src="dist/img/Branding/logo.png" alt="Shirkat-ul-Ras Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">Shirkat-ul-Ras</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/default-avatar.png" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Admin Name</a>
-        </div>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-
-               <!-- Hotel Details and Management -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="view-hotel.php" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Hotels
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="add-hotel.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Hotel</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="managed-hotels.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Hotel</p>
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Trash Hotel</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Manage Reviews -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Reviews
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aproved Reviews</p>
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Unapproved Hotel</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Emails -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Emails
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-              <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Email</p>
-                </a>
-              </li>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
+  <!-- Content Wrapper. Contains page content -->
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -261,7 +86,7 @@
       <div class="container-fluid text-center">
         <div class="row mb-2">
           <div class="col-sm-12">
-            <h1>Add Hotels</h1>
+            <h1>Add Hotels </h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -276,7 +101,11 @@
             <!-- general form elements -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel</h3>
+                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel
+
+                      <small><?php 
+      print_r($data);
+    ?></small></h3>
                 </div>
               <!-- /.card-header -->
             </div>
@@ -289,18 +118,20 @@
         <!--.Form Row starts here  -->
         <div class="row pb-4 bg-white">
             <div class="col-md-12">
-                <form role="form">
+                <form action="" id="img-upload-form" method="post" enctype="multipart/form-data">
+
                     <div class="card-body">
                           <!-- 1st row -->
                           <div class="row">
                             <!-- featured image -->
+                            <input class="form-control required" name="Hotel_isTrashed" id="" type="hidden" value="0" readonly>
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="featuredImage">Add Featured Image</label>
                                           <div class="ml-2">
                                           <img src="https://placehold.it/250x250" id="" class="img-thumbnail">
                                           </div>
-                                          <input type="file" name="img[]" class="file" accept="image/*">
+                                          <input type="file" name="Hotel_Featured_Image" class="" accept="image/*">
                                           <div class="input-group my-3 col-md-4">
                                               <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button>
                                               <!-- <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label> -->
@@ -312,10 +143,17 @@
                           <!-- 2nd row -->
                           <div class="row">
                                 <!-- hotel name -->
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                       <label for="Title">Title</label>
-                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title">
+                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Title">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                      <label for="Title">Location</label>
+                                      <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Location">
                                     </div>
                                 </div>
 
@@ -323,106 +161,75 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="price">Price</label>
-                                      <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price">
+                                      <input type="text" class="form-control" id="hotel-price" placeholder="Hotel Price" name="Hotel_Price">
                                     </div>
                                 </div>
 
-                                <!-- distance -->
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                      <label for="distance">Distance</label>
-                                      <input type="text" class="form-control" id="hotel-distance" placeholder="Hotel Distance">
-                                    </div>
-                                </div>
                           </div>
                           <!-- 3rd row-->
                           <div class="row">
+
+                                <!-- destinations -->
+                              <div class="col-md-4">
+                                  <!-- select -->
+                                  <div class="form-group">
+                                    <label>Destination</label>
+                                    <select class="form-control cstm" name="Hotel_Destination">
+                                      <option value="Iraq">Iraq</option>
+                                      <option value="Iran">Iran</option>
+                                      <option value="Syria">Syria</option>
+                                      <option value="Kingdom Of Saudi Arabia">Kingdom Of Saudi Arabia</option>
+                                    </select>
+                                  </div>
+                              </div>
                             
                               <!-- hotel cities -->
                               <div class="col-md-4">
                                   <!-- select -->
                                   <div class="form-group">
                                     <label>Cities</label>
-                                    <select class="form-control cstm">
-                                      <option>Karbala</option>
-                                      <option>Najaf</option>
-                                      <option>Kazmain</option>
-                                      <option>Mashad</option>
-                                      <option>Qom</option>
-                                      <option>Damascus</option>
-                                      <option>Makkah</option>
-                                      <option>Madina</option>
+                                    <select class="form-control cstm" name="Hotel_City">
+                                      <option value="Karbala">Karbala</option>
+                                      <option value="Najaf">Najaf</option>
+                                      <option value="Kazmain">Kazmain</option>
+                                      <option value="Mashad">Mashad</option>
+                                      <option value="Qom">Qom</option>
+                                      <option value="Damascus">Damascus</option>
+                                      <option value="Makkah">Makkah</option>
+                                      <option value="Madina">Madina</option>
                                     </select>
                                   </div>
                               </div>
                               
-                                  <!-- destinations -->
-                              <div class="col-md-4">
-                                  <!-- select -->
-                                  <div class="form-group">
-                                    <label>Destination</label>
-                                    <select class="form-control cstm">
-                                      <option>Iraq</option>
-                                      <option>Iran</option>
-                                      <option>Syria</option>
-                                      <option>Kingdom Of Saudi Arabia</option>
-                                    </select>
-                                  </div>
-                              </div>
+                              
 
                               <!-- hotel standard -->
                               <div class="col-md-4">
                                   <!-- select -->
                                   <div class="form-group">
-                                    <label>Standard</label>
-                                    <select class="form-control cstm">
-                                      <option>Deluxe Supreme (A*)</option>
-                                      <option>Deluxe (A)</option>
-                                      <option>Standard (B)</option>
-                                      <option>Economy Supreme (C)</option>
-                                      <option>Economy (D)</option>
+                                    <label>Type</label>
+                                    <select class="form-control cstm" name="Hotel_Type">
+                                      <option value="Deluxe Supreme">Deluxe Supreme)</option>
+                                      <option value="Deluxe">Deluxe</option>
+                                      <option value="Standard">Standard</option>
+                                      <option value="Economy Supreme">Economy Supreme</option>
+                                      <option value="Economy">Economy</option>
                                     </select>
                                   </div>
                               </div>
                           </div>
                           <!-- 4th row -->
                           <div class="row">
-                              <!-- rating -->
+                              <!-- Distance -->
                               <div class="col-md-4">
                                   <!-- select -->
-                                  <div><label>Rating</label></div>
-                                  
-                                  <div class="form-group rating">
-                                    <label>
-                                    <input type="radio" name="stars" value="1" />
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="2" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="3" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>   
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="4" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
-                                  <label>
-                                    <input type="radio" name="stars" value="5" />
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                    <span class="icon">★</span>
-                                  </label>
+                                  <div class="form-group">
+                                    <label>Distance</label>
+                                    <select class="form-control cstm" name="Hotel_Distance">
+                                      <option value="0m to 100m From Haram">0m to 100m From Haram</option>
+                                      <option value="100m to 500m From Haram">100m to 500m From Haram</option>
+                                      <option value="Above 500m From Haram">Above 500m From Haram</option>
+                                    </select>
                                   </div>
                               </div>
 
@@ -431,8 +238,7 @@
                                     <label for="Mapiframe">Map iframe</label>
                                     <!--Textarea with icon prefix-->
                                         <div class="md-form amber-textarea active-amber-textarea">
-                                          <i class="fas fa-pencil-alt prefix"></i>
-                                          <input type="text" id="locationMap" class="md-textarea form-control" rows="3">
+                                          <input type="text" id="locationMap" class="md-textarea form-control" rows="3" name="Hotel_Map_Iframe">
                                         </div>
                               </div>
 
@@ -444,7 +250,7 @@
                                   <div class="pad">
                                       <div class="mb-3">
                                           <textarea class="textarea" placeholder="Place some text here"
-                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+                                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="Hotel_Description">
                                           </textarea>
                                       </div>
                                   </div>
@@ -458,17 +264,19 @@
                               <div class="grid-x grid-padding-x">
                                   <div class="cell" id="bordered-div">
                                    
-                                    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+                                    
                                       
-                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
-                                        <label for="upload_imgs" class="button hollow">Select Your Images +</label>
-                                        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
-                                      </p>
+                                        <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
+                                        <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
+                                      </p> -->
+
+                                      
                                       <!-- <p>
                                         <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
                                       </p> -->
-                                    </form>
+                                   
 
                                   </div>
                                 </div>
@@ -477,7 +285,7 @@
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer bg-white text-right">
-                          <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+                          <button type="submit" class="btn btn-secondary btn-lg" name="AddHotel">Submit</button>
                     </div>
                 </form>
             <!--/.Form  -->
@@ -491,10 +299,19 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer text-center">
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2020 <a href="#">Shirkat-ul-Ras</a>.</strong> All rights reserved. - Developed By: <strong><a href="https://digitaleggheads.com/" target="_blank"> Digital Eggheads</a>.</strong>
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.0.1
+    </div>
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+    reserved.
   </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
@@ -502,14 +319,36 @@
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- bs-custom-file-input -->
-<script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- bs-custom-file-input -->
+<script src="plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
 <!-- custom script -->
 <script src="dist/js/script.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+</script>
+
+
+
+
 <script type="text/javascript">
 $(document).ready(function () {
   bsCustomFileInput.init();

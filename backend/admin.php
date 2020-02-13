@@ -57,6 +57,48 @@
     $res = fetchQuery($query);
     return $res;
   }
+
+
+  function AddHotel ($data) {
+    // global $message;
+    $Hotel_Featured_Image = $_FILES["Hotel_Featured_Image"]["name"];
+    $target_dir = "HotelImages/";
+    $data["Hotel_Featured_Image"] = $target_dir.$Hotel_Featured_Image;
+
+    
+    
+    // if (!Count($checkRes)) {
+        // $authRes = save($authData, "hotels_queries");
+                
+        
+            $AddHotels["Hotel_Featured_Image"] = $data["Hotel_Featured_Image"];
+            $AddHotels["Hotel_Title"] = $data["Hotel_Title"];
+            $AddHotels["Hotel_Location"] = $data["Hotel_Location"];
+            $AddHotels["Hotel_Price"] = $data["Hotel_Price"];
+            $AddHotels["Hotel_Destination"] = $data["Hotel_Destination"];
+            $AddHotels["Hotel_City"] = $data["Hotel_City"];
+            $AddHotels["Hotel_Type"] = $data["Hotel_Type"];
+            $AddHotels["Hotel_Distance"] = $data["Hotel_Distance"];
+            $AddHotels["Hotel_Map_Iframe"] = $data["Hotel_Map_Iframe"];
+            $AddHotels["Hotel_Description"] = $data["Hotel_Description"];
+            $AddHotels["Hotel_isTrashed"] = $data["Hotel_isTrashed"];
+           
+            
+            $AddHotelsRes = save($AddHotels, "hotels");
+            if ($AddHotelsRes) {
+              print_r($AddHotelsRes["Hotel_Id"]);
+                success("Query Has Been Submited");
+                return true;
+            }
+        
+    //  } else {
+    //     error("Email Already Exists");
+    //     return false;
+    // }
+
+    error("Error While Saving");
+    return false;
+}
   
   
 ?>
