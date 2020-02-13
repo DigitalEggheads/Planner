@@ -3788,7 +3788,8 @@ ul.list_order li span {
 }
 
 .banner.colored {
-	background: #d3ba37 url(../img/banner_bg_colored.png) no-repeat center bottom;
+	/*background: #d3ba37 url(../img/banner_bg_colored.png) no-repeat center bottom;*/
+	background: #d3ba37;
 	color: #fff;
 }
 
@@ -6332,10 +6333,12 @@ ul.plan-features {
   	}
   }
   .banner_2 .wrapper h3 {
-  	color: #fff;
-  	font-size: 32px;
-  	text-transform: uppercase;
-  	font-weight: 700;
+	color: #fff;
+    letter-spacing: 2px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Gochi Hand", cursive;
   }
   .banner_2 .wrapper p {
   	font-size: 24px;
