@@ -145,7 +145,7 @@
         <div class="banner_2">
             <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
                 <div class="trip-planning text-center">
-                    <h3>Your Perfect<br>Tour Plan</h3>
+                    <h3>Your Perfect Tour Plan!</h3>
                     <p>Activities and accommodations</p>
                     <a href="javascript:void(0);" class="btn_1 cstm-golden">Plan your trip!</a>
                 </div>
