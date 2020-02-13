@@ -111,32 +111,32 @@
         <div class="row feature_home_2">
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-hotel-accomodation.png" alt="" width="60" height="60">
-                <h3>Hotel Accomodations</h3>
+                <h3>Hotel<br/>Accomodations</h3>
 
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-visa-ticketing-facilitations.png" alt="" width="60" height="60">
-                <h3>Visa &amp; Ticketing Facilitations</h3>
+                <h3>Visa &amp; Ticketing<br/>Facilitations</h3>
 
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-tour-guide.png" alt="" width="60" height="60">
-                <h3>Religious/Tour Guide/Local Guide</h3>
+                <h3>Religious/Tour<br/>Guide/Local Guide</h3>
 
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-food.png" alt="" width="60" height="60">
-                <h3>Food</h3>
+                <h3>Food &amp;<br/>Ambience</h3>
 
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-transport-service.png" alt="" width="60" height="60">
-                <h3>Transport Service</h3>
+                <h3>Transport<br/>Service</h3>
 
             </div>
             <div class="col-md-2 text-center">
                 <img src="img/homepage/icons/services-icon-medical-first-aid.png" alt="" width="60" height="60">
-                <h3>Medical First Aid</h3>
+                <h3>Medical<br/>First Aid</h3>
 
             </div>
         </div>
