@@ -153,14 +153,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <!-- 2nd row -->
                           <div class="row">
                                 <!-- hotel name -->
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="Title">Title</label>
                                       <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Title">
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                       <label for="Title">Location</label>
                                       <input type="text" class="form-control" id="hotel-title" placeholder="Hotel title" name="Hotel_Location">
@@ -276,7 +276,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                    
                                     
                                       
-                                     <!--  <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
                                         <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
                                         <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="Hotel_Galley_Image" multiple/>
