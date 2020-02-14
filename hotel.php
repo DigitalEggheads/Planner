@@ -134,7 +134,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
                     <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
                     <h1><?php echo $Hotel_Title; ?></h1>
                     <span>
-                    Champ de Mars, 5 Avenue Anatole, 75007 Paris.</span>
+                    <?php echo $Hotel_Location; ?></span>
                 </div>
                 <div class="col-md-4">
                     <div id="price_single_main" class="hotel">
