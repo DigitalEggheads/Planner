@@ -125,9 +125,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                   <div class="form-group">
                                       <label for="featuredImage">Add Featured Image</label>
                                           <div class="ml-2">
-                                          <img src="https://placehold.it/250x250" id="" class="img-thumbnail">
+                                          <img src="https://placehold.it/250x250" id="preview" class="img-thumbnail">
                                           </div>
-                                          <input type="file" name="Hotel_Featured_Image" class="" accept="image/*">
+                                          <input type="file" name="Hotel_Featured_Image" class="file" accept="image/*">
                                           <div class="input-group my-3 col-md-4">
                                               <button type="button" class="browse btn btn-lg btn-secondary">Upload Image</button>
                                               <!-- <label class="browse custom-file-label" for="inputGroupFile01">Choose file</label> -->
