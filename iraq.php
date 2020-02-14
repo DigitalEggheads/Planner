@@ -80,13 +80,13 @@
 	                	<div class="main_title">
 					    	<h2>Destinations in <span> Iraq </span></h2>
 					   </div>
-	                        <p>Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut  sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum.</p> 
+	                        <p>Iraq, officially known as the Republic of Iraq, is situated in western Asia sharing its border with Turkey, Iran, Jordan, Kuwait and KSA. Iraq has a significant importance in history. It is the home to religious places like Karbala, Najaf, Samarrah and Kazmain where the shrines Imam Imam Hussain as, Imam Ali as and others imam are situated. Every year millions of zaireen from all around the world visit these holy places</p> 
 	                </div>
 	            </div>
 	            <div class="col-lg-12">
 	 				<div class="features-content light-bg compact">
 					<div class="row text-center mr-4 ml-4">
-						<div class="col-lg-4 other_tours">
+						<div class="col-lg-3 other_tours">
 	                        <ul>
 	                            <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
 	                            </li>
@@ -94,7 +94,7 @@
                                 </li>
 	                        </ul>
 	                    </div>
-	                    <div class="col-lg-4 other_tours">
+	                    <div class="col-lg-3 other_tours">
 	                        <ul>
 	                            <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail-two.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
 	                            </li>
@@ -102,7 +102,7 @@
                                 </li>
 	                        </ul>
 	                    </div>
-	                    <div class="col-lg-4 other_tours">
+	                    <div class="col-lg-3 other_tours">
 	                        <ul>
 	                            <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail-three.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
 	                            </li>
@@ -110,27 +110,54 @@
                                 </li>
 	                        </ul>
 	                    </div>
+                        <div class="col-lg-3 other_tours">
+                            <ul>
+                                <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail-three.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
+                                </li>
+                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Samarrah</a>
+                                </li>
+                            </ul>
+                        </div>
 							</div>    
 	                </div>              
 				</div>
 	        </div>
     	</div>
-        <div class="container-fluid p-0 overflow-hidden">   
-                <div class="row">
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image.jpg" alt="">
+        <div class="container-fluid p-0 overflow-hidden">
+                <div class="row small-gutters no-padding-gutters categories_grid">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/featured-destination-iran.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Iran</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image-Two.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/featured-destination-syria.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Syria</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image-Three.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/featured-destination-iraq.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Iraq</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/featured-destination-iran.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>
+                            </div>
+                        </a>
                     </div>
-                    
-                </div>
+        </div>
         </div>
 
 

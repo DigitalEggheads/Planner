@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Syria </span></h2>
                        </div>
-                            <p>Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut  sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum.</p> 
+                            <p>Syria or the Syrian Arab Republic is a country in western Asia. It also lands of prophets. Many renowned prophets are buried in the soil of Syria. It was the kingdom for many Muslim rulers of early age. There are many historical places in Syria like the shrines of Bibi Zainab sa and Bibi Sakina sa, sister and daughter of Imam Hussain as, respectively. Zaireen often visits Syria to visit these holy shrines.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">

@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Iran </span></h2>
                        </div>
-                            <p>Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut  sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum.</p> 
+                            <p>Iran is one of the oldest civilizations formerly known as Persia. Soon after the Islam entered in this region, it became the home for many prominent people of the history. Most importantly Imam Ali Raza as, 8th imam of Muslims is resting in the city of Mashhad while the shrine of her sister is in the city of Qom. More than 300 Imam Zaday or the sons and the grandsons are resting in the city of Kashan. People love to visit Iran on different occasions. It has many attractive tourist places like Hamadan, Caves of Ali Sadr etc.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">

@@ -77,9 +77,9 @@
       <div class="row">
         <div class="col-md-8">
           <div class="form_title">
-            <h3><strong><i class="icon-pencil"></i></strong>Fill the form below</h3>
+            <h3><strong><i class="icon-pencil"></i></strong>Leave us your query here</h3>
             <p>
-              Mussum ipsum cacilds, vidis litro abertis.
+              <!-- Mussum ipsum cacilds, vidis litro abertis. -->
             </p>
           </div>
           <div class="step">
@@ -140,13 +140,13 @@
             <span class="tape"></span>
             <h4>Address <span><i class="icon-pin pull-left"></i></span></h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, laboriosam.
+              Suite #1, Mezzanine Floor, Hanif Mansion, Opp. Nisthar Park, Soldier Bazar No.3, Karachi-Pakistan.
             </p>
             <hr>
             <h4>Follow us <span><i class="icon-follow pull-right"></i></span></h4>
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet, vim id accusata sensibus, id ridens quaeque qui. Ne qui vocent ornatus molestie.
-            </p>
+            </p> -->
           <div id="social_contact_sidebar">
                         <ul>
                             <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -170,7 +170,7 @@
 
 
     <div id="map_contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.669155199591!2d67.05098131487944!3d24.875146850795296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e68895b8cfb%3A0xa8447f84dc06e86a!2sDigital%20Eggheads!5e0!3m2!1sen!2s!4v1579764865426!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d226.22843035482398!2d67.0330093!3d24.875634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e4324062253%3A0xc71c7a63c66c6df3!2sHanif%20Mansion!5e0!3m2!1sen!2s!4v1581596489397!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
     <!-- end map-->
 

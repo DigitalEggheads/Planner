@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Kingdom Of Saudi Arabia </span></h2>
                        </div>
-                            <p>Ad cum movet fierent assueverit, mei stet legere ne. Mel at vide soluta, ut  sed. Ut iriure perpetua voluptaria has, vim postea denique in, mollis pertinax elaboraret sed in. Per no vidit timeam, quis omittam sed at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse neque placeat earum dolore beatae incidunt autem culpa est laboriosam, maxime mollitia fugiat ad, quia! Sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias provident id et laborum, illo ipsum.</p> 
+                            <p>KSA or commonly known as Saudia Arabia is well-known country and has unique significance among the people especially in Muslims. It is the land from where Islam started to spread. The holy cities of Makkah and Medina are situated in Saudia. Millions of people visit Saudia Arab for performing Umrah and Hajj.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">

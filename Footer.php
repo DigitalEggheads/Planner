@@ -34,7 +34,9 @@
             </div>
             <div class="col-md-3">
                 <h3>Need help?</h3>
-                <p id="address" class="pt-0"> Suite # 8, Al Murtaza Terrace, JM-2/198, Bahadur Yar Jang Road, Soldier Bazar # 3, Karachi-Pakistan.</p>
+                <p id="address" class="pt-0">
+                Suite #1, Mezzanine Floor, Hanif Mansion, Opp. Nisthar Park, Soldier Bazar No.3, Karachi-Pakistan.
+                </p>
                 <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
                 <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
             </div>

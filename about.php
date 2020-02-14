@@ -153,7 +153,7 @@
       <i class="icon_set_1_icon-23"></i>
       <h3><span> +200</span> Hotels</h3>
       <p>
-         We have more than 200 plus hotels in 5 different categories.
+         We are giving accommodations of 200 plus hotels of five different categories.
      </p>
     </div>
     </div>

@@ -301,3 +301,30 @@ li.custom-city a{
 .other_tours ul li.custom-city a i {
     margin-left: -8px !important;
 }
+
+.small-gutters.no-padding-gutters > [class*="col-"] {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin-right: -5px !important;
+    margin-left: -5px !important;
+}
+.no-padding-gutters{
+	width: 102vw;
+}
+h2.padded-heading{
+	padding: 20px 0px 20px 0px;
+}
+
+@media screen and (max-width: 1440px){
+	.small-gutters.no-padding-gutters{
+		margin-left: 5px !important;
+    	width: 102.5vw;
+	}
+}
+@media screen and (max-width: 1024px){
+	.small-gutters.no-padding-gutters {
+    margin-left: 5px !important;
+    width: 104vw;
+}
+}
+
