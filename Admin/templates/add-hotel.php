@@ -20,13 +20,20 @@ $target_dir = "HotelImages/";
 $path = $target_dir.$Hotel_Featured_Image;
 
 
+// $Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
+// $target_dir_Gallery = "HotelImages/Gallery/";
+// $path["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
+
 if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
     {
+
+      
       $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed", "Hotel_Id", "Hotel_Galley_Image"), "post");
   
   if (AddHotel($data)) {
     unset($data);
   }
+
       
     }
 
@@ -101,7 +108,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- general form elements -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel</h3>
+                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel
+
+                      <small>
+                        <?php
+                        print_r($data); 
+                        ?>
+
+                      </small></h3>
                 </div>
               <!-- /.card-header -->
             </div>
@@ -262,11 +276,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                    
                                     
                                       
-                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                     <!--  <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
                                         <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
                                         <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="Hotel_Galley_Image" multiple/>
-                                      </p>
+                                      </p> -->
 
                                       
                                       <!-- <p>
