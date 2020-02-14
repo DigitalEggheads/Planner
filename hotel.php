@@ -126,7 +126,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
      <?php include_once "./Navigation.php"; ?>
 
-    <section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="<?php echo $Hotel_Featured_Image;?>" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="img/Hotel-Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
     <div class="parallax-content-2">
         <div class="container">
             <div class="row">

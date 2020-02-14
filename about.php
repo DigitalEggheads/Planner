@@ -51,10 +51,10 @@
 
     <?php include_once "./Navigation.php"; ?>
 
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
-            <h1>About us</h1>
+            <h1 class="Page-Title">About us</h1>
         </div>
     </div>
     </section>

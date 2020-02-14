@@ -63,11 +63,10 @@
 
     <?php include_once "./Navigation.php"; ?>
 
-	<section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="img/hotels_bg.jpg" data-natural-width="1400" data-natural-height="470">
+	<section class="parallax-window parallax-window-h300" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
 		<div class="parallax-content-1">
 			<div class="animated fadeInDown">
 				<h1>Hotels</h1>
-				<p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
 			</div>
 		</div>
 	</section>
