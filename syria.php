@@ -88,7 +88,7 @@
                     <div class="row text-center mr-4 ml-4">
                         <div class="col-lg-12 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/Damascus-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
                                 <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Damascus</a>
                                 </li>
