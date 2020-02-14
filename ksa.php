@@ -51,7 +51,7 @@
 
     <?php include_once "./Navigation.php"; ?>
     
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
             <h1>Kingdom Of Saudi Arabia</h1>
@@ -107,22 +107,41 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0 overflow-hidden">   
-                <div class="row">
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image.jpg" alt="">
+        <div class="container-fluid p-0 overflow-hidden">
+                <div class="row small-gutters no-padding-gutters categories_grid">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/cta-destination-iran.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Iran</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image-Two.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/cta-destination-syria.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Syria</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image-Three.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/cta-destination-iraq.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Iraq</h2>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3 fullwidth-img p-0">
-                        <img class="img-responsive" src="img/Destinations/Destination-Image.jpg" alt="">
+                    <div class="col-md-3">
+                        <a href="javascript:void(0);">
+                            <img src="img/homepage/cta-destination-ksa.jpg" alt="" class="img-fluid">
+                            <div class="wrapper">
+                                <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>
+                            </div>
+                        </a>
                     </div>
-                    
-                </div>
+        </div>
         </div>
 
     </main>

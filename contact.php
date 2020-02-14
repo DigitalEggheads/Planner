@@ -51,7 +51,7 @@
 
     <?php include_once "./Navigation.php"; ?>
 
-  <section class="parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg" data-natural-width="1400" data-natural-height="470">
+  <section class="parallax-window" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
     <div class="parallax-content-1">
       <div class="animated fadeInDown">
         <h1>Contact us</h1>
@@ -125,8 +125,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <label>Human verification</label>
-                  <input type="text" id="verify_contact" class=" form-control add_bottom_30" placeholder="Are you human? 3 + 1 =">
+                  
                   <input type="submit" value="Submit" class="btn_1" id="submit-contact" name="submit-contact">
                 </div>
               </div>
