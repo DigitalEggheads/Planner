@@ -86,7 +86,7 @@
             
             $AddHotelsRes = save($AddHotels, "hotels");
             if ($AddHotelsRes) {
-              print_r($AddHotelsRes["Hotel_Id"]);
+              // print_r($AddHotelsRes["Hotel_Title"]);
                 success("Query Has Been Submited");
                 return true;
             }
