@@ -227,7 +227,7 @@
                                 <div class="ribbon_3 popular"><span>Popular</span>
                                 </div>
                                 <div class="img_list">
-                                    <a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="img/hotel_1.jpg" alt="Image">
+                                    <a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="<?=$value["Hotel_Featured_Image"]?>" alt="Image">
                                         <div class="short_info"></div>
                                     </a>
                                 </div>
