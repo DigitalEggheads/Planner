@@ -28,7 +28,7 @@ if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
     {
 
       
-      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed", "Hotel_Id", "Hotel_Galley_Image"), "post");
+      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed"), "post");
   
   if (AddHotel($data)) {
     unset($data);
