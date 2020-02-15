@@ -276,11 +276,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                    
                                     
                                       
-                                      <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
                                         <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
                                         <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="Hotel_Galley_Image" multiple/>
-                                      </p> -->
+                                      </p>
 
                                       
                                       <!-- <p>
