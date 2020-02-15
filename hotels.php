@@ -218,84 +218,170 @@
 				<div class="col-lg-9">
 
                     <?php foreach ($allHotels as $key => $value) { ?>
-					<div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
-						<div class="row">
-							<div class="col-lg-4 col-md-4">
-								<div class="ribbon_3 popular"><span>Popular</span>
-								</div>
-								<div class="img_list">
-									<a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="<?=$value["Hotel_Featured_Image"]?>" alt="Image">
-										<div class="short_info"></div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="tour_list_desc">
-									<div class="score">Superb<span>9.0</span>
-									</div>
-									<div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i>
-									</div>
-									<h3><strong> <a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"> <?=$value["Hotel_Title"]?> </a></strong></h3>
-									<p> <?=$value["Hotel_Description"]?> </p>
-									<ul class="add_info">
-										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Free Wifi"><i class="icon_set_1_icon-86"></i></a>
-										</li>
-										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Plasma TV with cable channels"><i class="icon_set_2_icon-116"></i></a>
-										</li>
-										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Swimming pool"><i class="icon_set_2_icon-110"></i></a>
-										</li>
-										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Fitness Center"><i class="icon_set_2_icon-117"></i></a>
-										</li>
-										<li>
-											<a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Restaurant"><i class="icon_set_1_icon-58"></i></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-lg-2 col-md-2">
-								<div class="price_list">
-									<div><small>Starting From</small>$<?=$value["Hotel_Price"]?>*<span class="normal_price_list"></span><small>*From/Per night</small>
-										<p><a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>" class="btn_1">Details</a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+                    <?php while ($value = $page_result->fetch_assoc()): ?>
+                    <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
+                    
+                    
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="ribbon_3 popular"><span>Popular</span>
+                                </div>
+                                <div class="img_list">
+                                    <a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="img/hotel_1.jpg" alt="Image">
+                                        <div class="short_info"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="tour_list_desc">
+                                    <div class="score">Superb<span>9.0</span>
+                                    </div>
+                                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i>
+                                    </div>
+                                    <h3><strong> <a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"> <?=$value["Hotel_Title"]?> </a></strong></h3>
+                                    <p> <?=$value["Hotel_Description"]?> </p>
+                                    <ul class="add_info">
+                                        <li>
+                                            <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Free Wifi"><i class="icon_set_1_icon-86"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Plasma TV with cable channels"><i class="icon_set_2_icon-116"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Swimming pool"><i class="icon_set_2_icon-110"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Fitness Center"><i class="icon_set_2_icon-117"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Restaurant"><i class="icon_set_1_icon-58"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="price_list">
+                                    <div><sup>$</sup><?=$value["Hotel_Price"]?>*<span class="normal_price_list"></span><small>*From/Per night</small>
+                                        <p><a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>" class="btn_1">Details</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
 
-					</div>
-					<!--End strip -->
+                    </div>
+                    <?php endwhile; ?>
+                    <!--End strip -->
                     <?php } ?>
 
 
-					<hr>
+                    <hr>
 
-					<nav aria-label="Page navigation">
-						<ul class="pagination justify-content-center">
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
-								</a>
-							</li>
-							<li class="page-item active"><span class="page-link">1<span class="sr-only">(current)</span></span>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item"><a class="page-link" href="#">3</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-									<span class="sr-only">Next</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- end pagination-->
+                    <nav aria-label="Page navigation">
+                    <?php if (ceil($total_pages / $num_results_on_page) > 0): ?>
+                        <ul class="pagination justify-content-center">
+                            <?php if ($page > 1): ?>
+                            <li class="prev page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page-1 ?>">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <?php endif; ?>
 
-				</div>
+                           
+                            <?php if ($page > 3): ?>
+                            <li class="start page-item">
+                                <a class="page-link" href="hotels.php?page=1">
+                                    1
+                                </a>
+                            </li>
+                            <?php endif; ?>
+
+                           
+                            <?php if ($page-2 > 0): ?>
+                            <li class="page page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page-2 ?>"><?php echo $page-2 ?>
+                                </a>
+                            </li>
+                            <?php endif; ?>
+                            
+                            
+                            <?php if ($page-1 > 0): ?>
+                            <li class="page page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page-1 ?>"><?php echo $page-1 ?>
+                                </a>
+                            </li>
+                            <?php endif; ?>
+
+                            <li class="currentpage page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page ?>"><?php echo $page ?>
+                                </a>
+                            </li>
+
+                           
+                            <?php if ($page+1 < ceil($total_pages / $num_results_on_page)+1): ?>
+                            <li class="page page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page+1 ?>"><?php echo $page+1 ?>
+                                </a>
+                            </li>
+                            <?php endif; ?>
+                            
+                            
+                            <?php if ($page+2 < ceil($total_pages / $num_results_on_page)+1): ?>
+                            <li class="page page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page+2 ?>"><?php echo $page+2 ?>
+                                </a>
+                            </li>
+                            <?php endif; ?>
+                            
+
+                            <?php if ($page < ceil($total_pages / $num_results_on_page)-2): ?>
+                            <li class="end page-item">
+                            <a class="page-link" href="hotels.php?page=<?php echo ceil($total_pages / $num_results_on_page) ?>">
+                                <?php echo ceil($total_pages / $num_results_on_page) ?>
+                            </a>
+                            </li>
+                            <?php endif; ?>
+
+                            <?php if ($page < ceil($total_pages / $num_results_on_page)): ?>
+                            <li class="next page-item">
+                                <a class="page-link" href="hotels.php?page=<?php echo $page+1 ?>">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                            <?php endif; ?>
+                        </ul>
+                    <?php endif; ?>
+
+<!--
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><span class="page-link">1<span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+-->
+                    
+                    </nav>
+                    <!-- end pagination-->
+
+                </div>
 				<!-- End col lg-9 -->
 			</div>
 			<!-- End row -->
