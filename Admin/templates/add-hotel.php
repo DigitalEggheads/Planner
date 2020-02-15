@@ -430,6 +430,7 @@ function previewImgs(event) {
     imgPreview.appendChild(img);
   }
 }
+
 </script>
 </body>
 </html>
