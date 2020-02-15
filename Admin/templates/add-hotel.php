@@ -75,6 +75,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="dist/css/styles.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+
+    <style>
+    
+  
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  max-height: 75px;
+  border: 2px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: #d3ba37;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: #000;
+}
+  </style>
   
 
 </head>
@@ -273,14 +305,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               <label>Add Gallery Images:</label>
                               <div class="grid-x grid-padding-x">
                                   <div class="cell" id="bordered-div">
+                                    <div class="field" align="center">
+                                      
+                                      <input type="file" id="files" name="files[]" multiple />
+                                    </div>
+
                                    
                                     
                                       
-                                      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+                                      <!-- <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
                                       <p class="text-center pt-4">
                                         <label for="upload_imgs" class="button hollow HotelGalleryUploadButton">Select Your Images +</label>
                                         <input class="show-for-sr HotelGalleryUpload" type="file" id="upload_imgs" name="Hotel_Galley_Image" multiple/>
-                                      </p>
+                                      </p> -->
 
                                       
                                       <!-- <p>
@@ -395,7 +432,7 @@ $('input[type="file"]').change(function(e) {
 
 
 <!-- IMAGE GALLERY  -->
-<script>  
+<!-- <script>  
 
 var imgUpload = document.getElementById('upload_imgs')
   , imgPreview = document.getElementById('img_preview')
@@ -431,6 +468,39 @@ function previewImgs(event) {
   }
 }
 
+</script> -->
+
+<!--script for initializing gallery uploader-->
+<script>    
+    
+$(document).ready(function() {
+  if (window.File && window.FileList && window.FileReader) {
+    $("#files").on("change", function(e) {
+      var files = e.target.files,
+        filesLength = files.length;
+      for (var i = 0; i < filesLength; i++) {
+        var f = files[i]
+        var fileReader = new FileReader();
+        fileReader.onload = (function(e) {
+          var file = e.target;
+          $("<span class=\"pip\">" +
+            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+            "<br/><span class=\"remove\"><i class='fas fa-times'></i></span>" +
+            "</span>").insertAfter("#files");
+          $(".remove").click(function(){
+            $(this).parent(".pip").remove();
+          });
+          
+        });
+        fileReader.readAsDataURL(f);
+      }
+    });
+  } else {
+    alert("Your browser doesn't support to File API")
+  }
+});
+    
+    
 </script>
 </body>
 </html>
