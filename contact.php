@@ -95,24 +95,26 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label>Last Name</label>
-                    <input type="text" class="form-control" id="lastname_contact" name="Last_Name" placeholder="Enter Last Name">
+                    <label>Email</label>
+                    <input type="email" id="email_contact" name="Email_Id" class="form-control" placeholder="Enter Email">
                   </div>
+                  
                 </div>
               </div>
               <!-- End row -->
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" id="email_contact" name="Email_Id" class="form-control" placeholder="Enter Email">
+                    <label>Phone</label>
+                    <input type="text" id="phone_contact" name="Contact_Number" class="form-control" placeholder="Enter Phone number">
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label>Phone</label>
-                    <input type="text" id="phone_contact" name="Contact_Number" class="form-control" placeholder="Enter Phone number">
+                    <label>Subject</label>
+                    <input type="text" class="form-control" id="lastname_contact" name="Last_Name" placeholder="Enter Subject">
                   </div>
+                  
                 </div>
               </div>
               <div class="row">

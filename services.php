@@ -76,7 +76,7 @@
     <div class="container margin_60">
 
       <div class="main_title">
-        <h2>Our<span> &nbsp; Services</span></h2>
+        <h2>Our<span> Services</span></h2>
             </div>
             <div>
                 <p class="text-center">Shirkat ul Ras is one of the leading and trusted names in providing the services for zaireen. Our services are extended to Iraq, Iran, Syria and KSA.</p>

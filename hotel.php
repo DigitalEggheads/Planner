@@ -138,7 +138,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
                 </div>
                 <div class="col-md-4">
                     <div id="price_single_main" class="hotel">
-                        from/per night <span><sup>$</sup><?php echo $Hotel_Price; ?></span>
+                        Starting From <span><sup>$</sup><?php echo $Hotel_Price; ?></span> from/per night
                     </div>
                 </div>
             </div>

@@ -224,7 +224,7 @@
 								<div class="ribbon_3 popular"><span>Popular</span>
 								</div>
 								<div class="img_list">
-									<a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="img/hotel_1.jpg" alt="Image">
+									<a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>"><img src="<?=$value["Hotel_Featured_Image"]?>" alt="Image">
 										<div class="short_info"></div>
 									</a>
 								</div>
@@ -258,7 +258,7 @@
 							</div>
 							<div class="col-lg-2 col-md-2">
 								<div class="price_list">
-									<div><sup>$</sup><?=$value["Hotel_Price"]?>*<span class="normal_price_list"></span><small>*From/Per night</small>
+									<div><small>Starting From</small>$<?=$value["Hotel_Price"]?>*<span class="normal_price_list"></span><small>*From/Per night</small>
 										<p><a href="hotel.php?Hotel_Id=<?=$value["Hotel_Id"]?>" class="btn_1">Details</a>
 										</p>
 									</div>
