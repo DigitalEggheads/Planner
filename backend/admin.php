@@ -86,20 +86,21 @@
             
             $AddHotelsRes = save($AddHotels, "hotels");
             if ($AddHotelsRes) {
-
-                $Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
-                $target_dir_Gallery = "HotelImages/Gallery/";
-                $data["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
-
-            $AddHotelsGallery["Hotel_Id"] = $AddHotelsRes["Hotel_Id"];
-            $AddHotelsGallery["Hotel_Featured_Image"] = $data["Hotel_Featured_Image"];
-            
-            $AddHotelsGalleryRes = save($AddHotelsGallery, "hotels_gallery");
-            if ($AddHotelsGalleryRes) {
-                success("Signup Successfully");
+                UploadGallaryImages($AddHotelsRes["Hotel_Id"]);
                 return true;
-            }
-        
+            //     $Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
+            //     $target_dir_Gallery = "HotelImages/Gallery/";
+            //     $data["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
+
+            // $AddHotelsGallery["Hotel_Id"] = $AddHotelsRes["Hotel_Id"];
+            // $AddHotelsGallery["Hotel_Featured_Image"] = $data["Hotel_Featured_Image"];
+            
+            // $AddHotelsGalleryRes = save($AddHotelsGallery, "hotels_gallery");
+            // if ($AddHotelsGalleryRes) {
+            //     success("Signup Successfully");
+            //     return true;
+            // }
+        }
     //  } else {
     //     error("Email Already Exists");
     //     return false;
@@ -108,6 +109,44 @@
     error("Error While Saving");
     return false;
 }
-  
-  
+
+
+function UploadGallaryImages ($hotel_Id) {
+
+    $target_dir_Gallery = "HotelImages/Gallery/";
+    $Hotel_Galley_Multiple_Images = $_FILES["Hotel_Galley_Image"];
+    print_r($_FILES["Hotel_Galley_Image"]);
+    $Uploaded_Gallary_data = array();
+    for ($i=0; $i < Count($Hotel_Galley_Multiple_Images["name"]); $i++) {
+      $file = $Hotel_Galley_Multiple_Images;
+
+      $name = $file['name'][$i];
+      $temp = $file['tmp_name'][$i];
+      $extension = explode('.',$name);
+      $extension = strtolower(end($extension));
+      $store = $target_dir_Gallery . $name;
+      // $store = sprintf($target_dir_Gallery.'%s.%s',uniqid(),$extension);
+
+      if (move_uploaded_file($temp,$store)) {
+        $data = array();
+        $data["Hotel_Galley_Image"] = $store;
+        $data["Hotel_Id"] = $hotel_Id;
+
+        $AddHotelsGalleryRes = save($data, "hotels_gallery");
+        if ($AddHotelsGalleryRes) {
+            array_push($Uploaded_Gallary_data, $AddHotelsGalleryRes);            
+        }
+      }
+    }
+
+    if (count($Hotel_Galley_Multiple_Images) == count($Uploaded_Gallary_data)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+
 ?>

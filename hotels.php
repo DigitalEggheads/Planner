@@ -90,7 +90,7 @@
 				<aside class="col-lg-3">
 					
 
-					<div id="filters_col">
+					<form id="filters_col">
 						<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt"><i class="icon_set_1_icon-65"></i>Filters</a>
 						<div class="collapse show" id="collapseFilters">
 							<div class="filter_type">
@@ -102,31 +102,33 @@
                                 <ul>
                                     <li>
                                         <label>
-                                            <input type="checkbox">Super Deluxe
+                                            <input type="checkbox" value="Super Deluxe" name="in-hoteltype[]">Super Deluxe
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox">Deluxe
+                                            <input type="checkbox" value="Deluxe" name="in-hoteltype[]">Deluxe
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox">Standard
+                                            <input type="checkbox" value="Standard" name="in-hoteltype[]">Standard
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox">Economical Plus
+                                            <input type="checkbox" value="Economical Plus" name="in-hoteltype[]">Economical Plus
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox">Economy
+                                            <input type="checkbox" value="Economy" name="in-hoteltype[]">Economy
                                         </label>
                                     </li>
                                 </ul>
                             </div>
+
+                            <input type="submit" value="Submit" />
 
 							<div class="filter_type">
                                 <h6>Iraq</h6>
@@ -204,7 +206,7 @@
 
 						</div>
 						<!--End collapse -->
-					</div>
+					</form>
 					<!--End filters col-->
 					<div class="box_style_2">
 						<i class="icon_set_1_icon-57"></i>

@@ -1,13 +1,110 @@
 <?php
   include_once "base.php";
 
-  function getAllHotels () {
+  function getAllHotels ($search) {
     $query = "select * from hotels ";
     // $query .= "inner join user on auth.id = user.authId ";
-    $query .= "where Hotel_isTrashed = 0";
+    $query .= "where Hotel_isTrashed = 0 ";
+
+    $criteriaQuery = makeUserQueryByCriteria($search, true);
+
     $res = fetchQuery($query);
     return $res;
   }
+
+
+
+  function makeUserQueryByCriteria ($search, $skipEmptyValue = false) {
+    $searchKeys = array_keys($search);
+
+    $query = "select * from hotels ";
+    // $query .= "inner join user on auth.id = user.authId ";
+    $query .= "where Hotel_isTrashed = 0 ";
+
+    $query = replaceParams($query, $params);
+    $useKey = array();
+    $orderBy = "";
+    
+    foreach ($searchKeys as $key => $value) {
+  
+      $explodedValue = explode("-", $value);
+      
+      $fieldKey = ifsetor($explodedValue[1], $explodedValue[0]);
+      $fieldValue = $search[$value];
+
+      $seperator = $explodedValue[1] != "" ? $explodedValue[0] : "";
+      
+      if ($fieldKey == "sortby") {
+        if ($seperator == "asc")
+          $orderBy = $fieldValue . " ASC";
+          else if ($seperator == "desc")
+          $orderBy = $fieldValue . " DESC";
+          else if ($seperator == "cus")
+          $orderBy = $fieldValue;
+        continue;
+      }
+
+      if (in_array($value, $useKey))
+        continue;
+      else if ($skipEmptyValue && !$fieldValue) {
+        continue;
+      }
+      array_push($useKey, $value);
+      
+      if ($seperator) {
+        $moreExplode = explode("_", $seperator);
+        $seperator = ifsetor($moreExplode[0], "");
+        $otherSeperator = Count($moreExplode) > 1 ? $seperator[1] : "";
+
+        if ($seperator == "min") {
+          $secondaryValue = "max-".$fieldKey;
+          
+          $condition = "$fieldKey >= ".replaceParams("@p1", array($fieldValue));
+
+          if (in_array($secondaryValue, $searchKeys)) {
+            array_push($useKey, $secondaryValue);
+            $condition = "($condition AND $fieldKey <= ".replaceParams("@p1", array($search[$secondaryValue])).")";
+          }
+
+        } else if ($seperator == "max") {
+          $secondaryValue = "min-".$fieldKey;
+
+          $condition = "$fieldKey <= ".replaceParams("@p1", array($fieldValue));
+
+          if (in_array($secondaryValue, $searchKeys)) {
+            array_push($useKey, $secondaryValue);
+            $condition = "($condition AND $fieldKey >= ".replaceParams("@p1", array($search[$secondaryValue])).")";
+          }
+
+        } else if ($seperator == "in") {
+          $condition = "$fieldKey IN (".$fieldValue.")";
+        } else if ($seperator == "cus") {
+          $condition = $fieldValue;
+        } else {
+          $condition = "$fieldKey = ".replaceParams("@p1", array($fieldValue));
+        }
+      } else {
+        $condition = "$fieldKey = ".replaceParams("@p1", array($fieldValue));
+      }
+
+
+      $query .= " AND $condition ";
+
+
+      // $keyFound = searchKeyFind($searchKeys, $value);
+      // print_r($keyFound);
+      // if ($keyFound)
+
+    }
+
+    if ($orderBy)
+      $query .= " order by ".$orderBy;
+
+    return $query;
+  }
+
+
+
 
   $mysqli = mysqli_connect('localhost', 'root', '', 'planner');
 

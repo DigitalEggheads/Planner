@@ -95,7 +95,7 @@ function save($data, $table)
         
         $q = mysqli_query($con, $query);
         if ($q) {
-            $orderByKey = fetchQuery("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'Match_Maker' AND TABLE_NAME = '$table' AND COLUMN_KEY = 'PRI'");
+            $orderByKey = fetchQuery("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'planner' AND TABLE_NAME = '$table' AND COLUMN_KEY = 'PRI'");
             if (count($orderByKey) && $orderByKey[0]["COLUMN_NAME"]) {
                 $columnKey = $orderByKey[0]["COLUMN_NAME"];
                 $lastRecord = fetchQuery("SELECT * FROM $table ORDER BY $columnKey DESC LIMIT 1");
