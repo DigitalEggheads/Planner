@@ -86,8 +86,17 @@
             
             $AddHotelsRes = save($AddHotels, "hotels");
             if ($AddHotelsRes) {
-              print_r($AddHotelsRes["Hotel_Title"]);
-                success("Query Has Been Submited");
+
+                $Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
+                $target_dir_Gallery = "HotelImages/Gallery/";
+                $data["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
+
+            $AddHotelsGallery["Hotel_Id"] = $AddHotelsRes["Hotel_Id"];
+            $AddHotelsGallery["Hotel_Featured_Image"] = $data["Hotel_Featured_Image"];
+            
+            $AddHotelsGalleryRes = save($AddHotelsGallery, "hotels_gallery");
+            if ($AddHotelsGalleryRes) {
+                success("Signup Successfully");
                 return true;
             }
         

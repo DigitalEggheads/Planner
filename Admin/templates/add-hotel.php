@@ -20,15 +20,15 @@ $target_dir = "HotelImages/";
 $path = $target_dir.$Hotel_Featured_Image;
 
 
-// $Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
-// $target_dir_Gallery = "HotelImages/Gallery/";
-// $path["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
+$Hotel_Galley_Image = $_FILES["Hotel_Galley_Image"]["name"];
+$target_dir_Gallery = "HotelImages/Gallery/";
+$path_Gallery["Hotel_Galley_Image"] = $target_dir_Gallery.$Hotel_Galley_Image;
 
-if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
+if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path) && move_uploaded_file($_FILES["Hotel_Galley_Image"]["name"],$path_Gallery))
     {
 
       
-      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed"), "post");
+      $data = getRequestData(array("Hotel_Featured_Image", "Hotel_Location", "Hotel_Title", "Hotel_Price", "Hotel_Destination", "Hotel_City", "Hotel_Type", "Hotel_Distance", "Hotel_Map_Iframe", "Hotel_Description", "Hotel_isTrashed", "Hotel_Id", "Hotel_Galley_Image"), "post");
   
   if (AddHotel($data)) {
     unset($data);
@@ -307,7 +307,7 @@ input[type="file"] {
                                   <div class="cell" id="bordered-div">
                                     <div class="field" align="center">
                                       
-                                      <input type="file" id="files" name="files[]" multiple />
+                                      <input type="file" id="files" name="Hotel_Galley_Image[]" multiple />
                                     </div>
 
                                    
