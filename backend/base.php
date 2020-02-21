@@ -6,7 +6,7 @@ include_once "connection.php";
 $dataPath = (dirname(__FILE__) . "../../data/");
 
 // Base Directory path
-$baseDir = "http://localhost/Planner";
+$baseDir = "http://shirkatulras.com/Planner/";
 
 $isMessage = array();
 
