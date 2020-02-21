@@ -143,7 +143,9 @@ input[type="file"] {
                         <?php
                         print_r($data); 
                         print_r($Hotel_Galley_Image);
+                        
                         ?>
+
 
                       </small></h3>
                 </div>

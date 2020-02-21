@@ -83,7 +83,7 @@
             $AddHotels["Hotel_Description"] = $data["Hotel_Description"];
             $AddHotels["Hotel_isTrashed"] = $data["Hotel_isTrashed"];
            
-            
+            print_r($AddHotels);
             $AddHotelsRes = save($AddHotels, "hotels");
             if ($AddHotelsRes) {
                 UploadGallaryImages($AddHotelsRes["Hotel_Id"]);

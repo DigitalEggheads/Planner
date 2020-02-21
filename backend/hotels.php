@@ -1,18 +1,38 @@
 <?php
   include_once "base.php";
 
-  function getAllHotels ($search) {
+  function getAllHotels ($search = array()) {
+
+    $params = array();
+
+    foreach ($search as $key => $value) {
+      if (is_array($value)) {
+        $params["in-".$key] = join(",", array_map(function ($v) { return "'".$v."'"; }, $value));
+      }
+    }
+    if (isset($search["range"])) {
+      $range = explode(";", $search["range"]);
+      $params["min-Hotel_Price"] = $range[0];
+      $params["max-Hotel_Price"] = $range[1];
+    }
+
     $query = "select * from hotels ";
     // $query .= "inner join user on auth.id = user.authId ";
     $query .= "where Hotel_isTrashed = 0 ";
 
-    $criteriaQuery = makeUserQueryByCriteria($search, true);
+    $criteriaQuery = makeUserQueryByCriteria($params, true);
 
-    $res = fetchQuery($query);
+    $res = fetchQuery($criteriaQuery);
     return $res;
   }
 
 
+  function checkKeyExist ($val, $data = array()) {
+    $res = array_search($val, ifsetor($data, array()));
+    if ((!empty($res) || $res == 0) && $res >= 0)
+      return 1;
+    return 0;
+  }
 
   function makeUserQueryByCriteria ($search, $skipEmptyValue = false) {
     $searchKeys = array_keys($search);
@@ -21,7 +41,6 @@
     // $query .= "inner join user on auth.id = user.authId ";
     $query .= "where Hotel_isTrashed = 0 ";
 
-    $query = replaceParams($query, $params);
     $useKey = array();
     $orderBy = "";
     
@@ -128,6 +147,3 @@
         $page_result = $stmt->get_result();
         $stmt->close();
     }
-  
-  
-?>

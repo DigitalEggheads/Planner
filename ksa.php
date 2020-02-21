@@ -88,7 +88,7 @@
                     <div class="row text-center mr-4 ml-4">
                         <div class="col-lg-4 offset-lg-2 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Makkah"><img src="img/Destinations/circled-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
                                 <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Makkah</a>
                                 </li>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="col-lg-4 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="javascript:void(0);"><img src="img/Destinations/circled-city-thumbnail-two.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Madina"><img src="img/Destinations/circled-city-thumbnail-two.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
                                 <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Madina</a>
                                 </li>
@@ -110,7 +110,7 @@
         <div class="container-fluid p-0 overflow-hidden">
                 <div class="row small-gutters no-padding-gutters categories_grid">
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="./hotels.php?Hotel_City[]=Qum&Hotel_City[]=Mashdad">
                             <img src="img/homepage/cta-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iran</h2>
@@ -126,7 +126,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="./hotels.php?Hotel_City[]=Samarrah&Hotel_City[]=Kazmain&Hotel_City[]=Karbala&Hotel_City[]=Najaf">
                             <img src="img/homepage/cta-destination-iraq.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iraq</h2>
@@ -134,7 +134,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="./hotels.php?Hotel_City[]=Madina&Hotel_City[]=Makkah">
                             <img src="img/homepage/cta-destination-ksa.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>
