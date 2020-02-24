@@ -79,8 +79,8 @@
             $AddHotels["Hotel_City"] = $data["Hotel_City"];
             $AddHotels["Hotel_Type"] = $data["Hotel_Type"];
             $AddHotels["Hotel_Distance"] = $data["Hotel_Distance"];
-            $AddHotels["Hotel_Map_Iframe"] = $data["Hotel_Map_Iframe"];
-            $AddHotels["Hotel_Description"] = $data["Hotel_Description"];
+            $AddHotels["Hotel_Map_Iframe"] = str_replace("'", "''", $data["Hotel_Map_Iframe"]);
+            $AddHotels["Hotel_Description"] = str_replace("'", "''", $data["Hotel_Description"]);
             $AddHotels["Hotel_isTrashed"] = $data["Hotel_isTrashed"];
            
             print_r($AddHotels);

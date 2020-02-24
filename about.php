@@ -162,13 +162,14 @@
     <hr>
     </div>
     <!-- End container -->
+
 <!-- CTA Banner -->
 <div class="banner colored">
-    <h4>Plan a trip today with <span style="color: #231f20;"> &nbsp; Shirkat-ul-Ras</span></h4>
+    <h4>Plan a trip today with <span style="color: #231f20">Shirkat-ul-Ras</span></h4>
     <p>
         We aim to make your spiritual journey memorable and worth sharing.
     </p>
-    <a href="single_tour.html" class="btn_1 white">Get in touch</a>
+    <a href="#" class="btn_1 white ">Get in touch</a>
 </div>
 </main>
 <!-- End of CTA banner -->

@@ -149,14 +149,16 @@
         <div class="container-fluid mb-0">
             <div class="row">
                 <div class="col-md-12 p-0">
+                    
+
                     <!-- CTA Banner -->
-                    <div class="banner colored mb-0">
-                        <h4>Plan a trip today with <span> &nbsp; Shirkat-ul-Ras</span></h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
-                        </p>
-                        <a href="single_tour.html" class="btn_1 white">Get in touch</a>
-                    </div>
+<div class="banner colored">
+    <h4>Plan a trip today with <span style="color: #231f20">Shirkat-ul-Ras</span></h4>
+    <p>
+        We aim to make your spiritual journey memorable and worth sharing.
+    </p>
+    <a href="#" class="btn_1 white ">Get in touch</a>
+</div>
                 </div>
             </div>
         </div>

@@ -258,7 +258,7 @@
                     <img src="img/homepage/featured-destination-iraq.jpg" alt="" class="img-fluid">
                     <div class="wrapper">
                         <h2>Iraq</h2>
-                        <p>4 Locations</p>
+                        <p>3 Locations</p>
                     </div>
                 </a>
             </div>
@@ -269,7 +269,7 @@
                             <img src="img/homepage/featured-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2>Iran</h2>
-                                <p>3 Locations</p>
+                                <p>2 Locations</p>
                             </div>
                         </a>
                     </div>
@@ -278,7 +278,7 @@
                             <img src="img/homepage/featured-destination-syria.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2>Syria</h2>
-                                <p>2 Locations</p>
+                                <p>1 Locations</p>
                             </div>
                         </a>
                     </div>
@@ -357,7 +357,7 @@
     <p>
         We aim to make your spiritual journey memorable and worth sharing.
     </p>
-    <a href="single_tour.html" class="btn_1 white ">Get in touch</a>
+    <a href="#" class="btn_1 white ">Get in touch</a>
 </div>
 </main>
 <!-- End of CTA banner -->

@@ -6,7 +6,7 @@ include_once "connection.php";
 $dataPath = (dirname(__FILE__) . "../../data/");
 
 // Base Directory path
-$baseDir = "http://shirkatulras.com/Planner/";
+$baseDir = "http://localhost/Planner/";
 
 $isMessage = array();
 
@@ -92,7 +92,7 @@ function save($data, $table)
         $key = "(".substr($key, 0, -1).")";
         $values = "(".substr($values, 0, -1).")";
         $query .= $key." VALUES ".$values;
-        
+
         $q = mysqli_query($con, $query);
         if ($q) {
             $orderByKey = fetchQuery("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'planner' AND TABLE_NAME = '$table' AND COLUMN_KEY = 'PRI'");
