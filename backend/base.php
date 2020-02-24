@@ -7,6 +7,7 @@ $dataPath = (dirname(__FILE__) . "../../data/");
 
 // Base Directory path
 $baseDir = "http://localhost/Planner/";
+// $baseDir = "http://shirkatulras.com/";
 
 $isMessage = array();
 

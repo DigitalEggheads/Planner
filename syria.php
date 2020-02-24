@@ -51,7 +51,7 @@
 
     <?php include_once "./Navigation.php"; ?>
     
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Syria-Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
             <h1>Syria</h1>
@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Syria </span></h2>
                        </div>
-                            <p>Syria or the Syrian Arab Republic is a country in western Asia. It also lands of prophets. Many renowned prophets are buried in the soil of Syria. It was the kingdom for many Muslim rulers of early age. There are many historical places in Syria like the shrines of Bibi Zainab sa and Bibi Sakina sa, sister and daughter of Imam Hussain as, respectively. Zaireen often visits Syria to visit these holy shrines.</p> 
+                            <p>Syria or the Syrian Arab Republic is a country in western Asia. It is also the land of prophets. Many renowned prophets are buried in the soil of Syria. It was the kingdom for many Muslim rulers of early age. There are many historical places in Syria like the shrines of Bibi Zainab S.A. and Bibi Sakina S.A., sister and daughter of Imam Hussain A.S., respectively. Zaireen often visits Syria to visit these holy shrines.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -102,7 +102,7 @@
         <div class="container-fluid p-0 overflow-hidden">
                 <div class="row small-gutters no-padding-gutters categories_grid">
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="iran.php">
                             <img src="img/homepage/cta-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iran</h2>
@@ -110,7 +110,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="syria.php">
                             <img src="img/homepage/cta-destination-syria.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Syria</h2>
@@ -118,7 +118,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="iraq.php">
                             <img src="img/homepage/cta-destination-iraq.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iraq</h2>
@@ -126,7 +126,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="ksa.php">
                             <img src="img/homepage/cta-destination-ksa.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>

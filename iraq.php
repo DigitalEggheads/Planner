@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Iraq </span></h2>
                        </div>
-                            <p>Iraq, officially known as the Republic of Iraq, is situated in western Asia sharing its border with Turkey, Iran, Jordan, Kuwait and KSA. Iraq has a significant importance in history. It is the home to religious places like Karbala, Najaf, Samarrah and Kazmain where the shrines Imam Imam Hussain as, Imam Ali as and others imam are situated. Every year millions of zaireen from all around the world visit these holy places</p> 
+                            <p>Iraq, officially known as the Republic of Iraq, is situated in western Asia sharing its border with Turkey, Iran, Jordan, Kuwait and KSA. Iraq has a significant importance in history. It is the home to religious places like Karbala, Najaf, Samarrah and Kazmain where the shrines of Imam Hussain A.S., Imam Ali A.S., and other Imams are situated. Every year millions of zaireen from all around the world visit these holy places</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -126,7 +126,7 @@
         <div class="container-fluid p-0 overflow-hidden">
                 <div class="row small-gutters no-padding-gutters categories_grid">
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Qum&Hotel_City[]=Mashdad">
+                        <a href="iran.php">
                             <img src="img/homepage/cta-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iran</h2>
@@ -134,7 +134,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="syria.php">
                             <img src="img/homepage/cta-destination-syria.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Syria</h2>
@@ -142,7 +142,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Samarrah&Hotel_City[]=Kazmain&Hotel_City[]=Karbala&Hotel_City[]=Najaf">
+                        <a href="iraq.php">
                             <img src="img/homepage/cta-destination-iraq.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iraq</h2>
@@ -150,7 +150,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Madina&Hotel_City[]=Makkah">
+                        <a href="ksa.php">
                             <img src="img/homepage/cta-destination-ksa.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>

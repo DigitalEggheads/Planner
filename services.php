@@ -108,7 +108,7 @@
                              <img class="img-responsive service-img" src="img/servicepage/religious-tour-guide-service.png">
                             <h4>Religious/Tour/Local Guide</h4>
                             <p class="text-center">
-                               We will arrange the guide according to your needs. He will be guiding you in all aspects of travel.
+                               We will assign you a guide according to your needs. He will be guiding you in all aspects of travel.
                             </p>
                         </div>
                         
@@ -120,7 +120,7 @@
                             <img class="img-responsive service-img" src="img/servicepage/food-service.png">
                             <h4>Food</h4>
                             <p class="text-center">
-                                Our chefs are expert in cooking all sort of cuisines. You will feel like having home-made food on ziarat.
+                                Our chefs are expert in cooking all sort of cuisines which will make you feel like you're having home made food on ziarat.
                             </p>
                         </div>
 

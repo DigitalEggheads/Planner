@@ -254,7 +254,7 @@
         </div>
         <div class="row small-gutters categories_grid">
             <div class="col-sm-12 col-md-6">
-                <a href="javascript:void(0);">
+                <a href="iraq.php">
                     <img src="img/homepage/featured-destination-iraq.jpg" alt="" class="img-fluid">
                     <div class="wrapper">
                         <h2>Iraq</h2>
@@ -265,7 +265,7 @@
             <div class="col-sm-12 col-md-6">
                 <div class="row small-gutters mt-md-0 mt-sm-2">
                     <div class="col-sm-6">
-                        <a href="javascript:void(0);">
+                        <a href="iran.php">
                             <img src="img/homepage/featured-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2>Iran</h2>
@@ -274,7 +274,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a href="javascript:void(0);">
+                        <a href="syria.php">
                             <img src="img/homepage/featured-destination-syria.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2>Syria</h2>
@@ -283,7 +283,7 @@
                         </a>
                     </div>
                     <div class="col-sm-12 mt-sm-2">
-                        <a href="javascript:void(0);">
+                        <a href="ksa.php">
                             <img src="img/homepage/featured-destination-ksa.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2>Kingdom of Saudi Arabia</h2>

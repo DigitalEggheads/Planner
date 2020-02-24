@@ -51,7 +51,7 @@
 
     <?php include_once "./Navigation.php"; ?>
     
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Iran-Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
             <h1>Iran</h1>
@@ -80,7 +80,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Iran </span></h2>
                        </div>
-                            <p>Iran is one of the oldest civilizations formerly known as Persia. Soon after the Islam entered in this region, it became the home for many prominent people of the history. Most importantly Imam Ali Raza as, 8th imam of Muslims is resting in the city of Mashhad while the shrine of her sister is in the city of Qom. More than 300 Imam Zaday or the sons and the grandsons are resting in the city of Kashan. People love to visit Iran on different occasions. It has many attractive tourist places like Hamadan, Caves of Ali Sadr etc.</p> 
+                            <p>Iran is one of the oldest civilizations formerly known as Persia. Soon after Islam entered this region, it became home for many prominent people of the history. Most importantly Imam Ali Raza A.S., 8th imam of Muslims is resting in the city of Mashhad while the shrine of her sister is in the city of Qom. More than 300 Imam Zaday or their sons and grandsons are resting in the city of Kashan. People love to visit Iran on different occasions. It has many attractive tourist places like Hamadan, Caves of Ali Sadr etc.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -110,7 +110,7 @@
         <div class="container-fluid p-0 overflow-hidden">
                 <div class="row small-gutters no-padding-gutters categories_grid">
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Qum&Hotel_City[]=Mashdad">
+                        <a href="iran.php">
                             <img src="img/homepage/cta-destination-iran.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iran</h2>
@@ -118,7 +118,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="javascript:void(0);">
+                        <a href="syria.php">
                             <img src="img/homepage/cta-destination-syria.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Syria</h2>
@@ -126,7 +126,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Samarrah&Hotel_City[]=Kazmain&Hotel_City[]=Karbala&Hotel_City[]=Najaf">
+                        <a href="iraq.php">
                             <img src="img/homepage/cta-destination-iraq.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Iraq</h2>
@@ -134,7 +134,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a href="./hotels.php?Hotel_City[]=Madina&Hotel_City[]=Makkah">
+                        <a href="ksa.php">
                             <img src="img/homepage/cta-destination-ksa.jpg" alt="" class="img-fluid">
                             <div class="wrapper">
                                 <h2 class="padded-heading">Kingdom of Saudi Arabia</h2>
