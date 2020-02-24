@@ -88,7 +88,7 @@
                     <div class="row text-center mr-4 ml-4">
                         <div class="col-lg-4 offset-lg-2 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Makkah"><img src="img/Destinations/circled-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Makkah"><img src="img/Destinations/Makkah-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
                                 <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Makkah</a>
                                 </li>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="col-lg-4 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Madina"><img src="img/Destinations/circled-city-thumbnail-two.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Madina"><img src="img/Destinations/Madina-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
                                 <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Madina</a>
                                 </li>
