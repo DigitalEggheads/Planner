@@ -4,10 +4,12 @@
     include_once "./backend/hotel.php";
 
 $AllReviews = getAllReviews();
+$allHotelsGallery = getAllHotelsGallery();
+
 $url =  "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $Hotel_Id = $_GET["Hotel_Id"];
 
-$query = "select * from hotels where Hotel_Id = $Hotel_Id";
+$query = "select * from hotels where Hotel_Id = $Hotel_Id and Hotel_isTrashed = 0";
 
 if ($result=mysqli_query($con,$query))
   {
@@ -45,10 +47,10 @@ $originalDate = "2010-03-21";
 $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
 
-  $data2 = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out"), "post");
+  $data2 = getRequestData(array("Hotel_Query_Name", "Hotel_Query_Email", "Hotel_Query_Contact_Number", "Hotel_Url", "Hotel_Title", "Hotel_Query_Children", "Hotel_Query_Adult", "Hotel_Query_Check_In", "Hotel_Query_Check_Out", "Hotel_Query_isTrashed"), "post");
   
-  if (HotelQuery($data)) {
-    unset($data);
+  if (HotelQuery($data2)) {
+    unset($data2);
   }
   
 }
@@ -139,7 +141,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
                 </div>
                 <div class="col-md-4">
                     <div id="price_single_main" class="hotel">
-                        Starting From <span><sup>$</sup><?php echo $Hotel_Price; ?></span> from/per night
+                        Starting From <span><sup>$</sup><?php echo $Hotel_Price; ?></span> per night
                     </div>
                 </div>
             </div>
@@ -172,13 +174,11 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
         <div class="col-lg-8" id="single_tour_desc">
 					<div id="single_tour_feat">
 						<ul>
-							<li><i class="icon_set_2_icon-116"></i>Plasma TV</li>
-							<li><i class="icon_set_1_icon-86"></i>Free Wifi</li>
-							<li><i class="icon_set_2_icon-110"></i>Poll</li>
+							<li><i class="icon_set_1_icon-86"></i>Wifi</li>
 							<li><i class="icon_set_1_icon-59"></i>Breakfast</li>
-							<li><i class="icon_set_1_icon-22"></i>Pet allowed</li>
 							<li><i class="icon_set_1_icon-13"></i>Accessibiliy</li>
 							<li><i class="icon_set_1_icon-27"></i>Parking</li>
+                            <li><i class="icon_set_1_icon-58"></i>Restaurant</li>
 						</ul>
 					</div>
 					<p class="d-none d-md-block d-block d-lg-none"><a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
@@ -188,50 +188,23 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 						<div class="sp-slides">
 
 							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/1_medium.jpg" data-small="img/slider_single_tour/1_small.jpg" data-medium="img/slider_single_tour/1_medium.jpg" data-large="img/slider_single_tour/1_large.jpg" data-retina="img/slider_single_tour/1_large.jpg">
-							</div>
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/2_medium.jpg" data-small="img/slider_single_tour/2_small.jpg" data-medium="img/slider_single_tour/2_medium.jpg" data-large="img/slider_single_tour/2_large.jpg" data-retina="img/slider_single_tour/2_large.jpg">
+								<img alt="Image" class="sp-image img-responsive" src="css/images/blank.gif" data-src="<?php echo "Planner".$Hotel_Featured_Image; ?>">
 							</div>
 
+                            <?php foreach ($allHotelsGallery as $key => $value) { ?>
 							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/3_medium.jpg" data-small="img/slider_single_tour/3_small.jpg" data-medium="img/slider_single_tour/3_medium.jpg" data-large="img/slider_single_tour/3_large.jpg" data-retina="img/slider_single_tour/3_large.jpg">
+								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="<?=$value["Hotel_Galley_Image"]?>">
 							</div>
+                            <?php } ?>
 
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/4_medium.jpg" data-small="img/slider_single_tour/4_small.jpg" data-medium="img/slider_single_tour/4_medium.jpg" data-large="img/slider_single_tour/4_large.jpg" data-retina="img/slider_single_tour/4_large.jpg">
-							</div>
-
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/5_medium.jpg" data-small="img/slider_single_tour/5_small.jpg" data-medium="img/slider_single_tour/5_medium.jpg" data-large="img/slider_single_tour/5_large.jpg" data-retina="img/slider_single_tour/5_large.jpg">
-							</div>
-
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/6_medium.jpg" data-small="img/slider_single_tour/6_small.jpg" data-medium="img/slider_single_tour/6_medium.jpg" data-large="img/slider_single_tour/6_large.jpg" data-retina="img/slider_single_tour/6_large.jpg">
-							</div>
-
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/7_medium.jpg" data-small="img/slider_single_tour/7_small.jpg" data-medium="img/slider_single_tour/7_medium.jpg" data-large="img/slider_single_tour/7_large.jpg" data-retina="img/slider_single_tour/7_large.jpg">
-							</div>
-
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/8_medium.jpg" data-small="img/slider_single_tour/8_small.jpg" data-medium="img/slider_single_tour/8_medium.jpg" data-large="img/slider_single_tour/8_large.jpg" data-retina="img/slider_single_tour/8_large.jpg">
-							</div>
-
-							<div class="sp-slide">
-								<img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/9_medium.jpg" data-small="img/slider_single_tour/9_small.jpg" data-medium="img/slider_single_tour/9_medium.jpg" data-large="img/slider_single_tour/9_large.jpg" data-retina="img/slider_single_tour/9_large.jpg">
-							</div>
+							
 						</div>
 						<div class="sp-thumbnails">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/1_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/2_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/3_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/4_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/5_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/6_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/7_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/8_medium.jpg">
-							<img alt="Image" class="sp-thumbnail" src="img/slider_single_tour/9_medium.jpg">
+							<img alt="Image" class="sp-thumbnail" src="<?php echo "Planner".$Hotel_Featured_Image; ?>">
+
+                            <?php foreach ($allHotelsGallery as $key => $value) { ?>
+							<img alt="Image" class="sp-thumbnail" src="<?=$value["Hotel_Galley_Image"]?>">
+                        <?php } ?>
 						</div>
 					</div>
 
@@ -335,6 +308,12 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
         <form id="" action="" method="post">
             <h3 class="inner">Booking</h3>
             <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control required" name="Hotel_Query_isTrashed" id="" type="hidden" value="0" readonly>
+                                </div>
+                            </div>
+
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label><i class="icon-calendar-7"></i> Check in</label>

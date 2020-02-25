@@ -95,6 +95,14 @@ function save($data, $table)
         $query .= $key." VALUES ".$values;
 
         $q = mysqli_query($con, $query);
+        
+        // Print_r("<code>".$query."</code>");
+        // echo "<br/>";
+        // echo "<br/>";
+        // echo "|";
+        // echo "|";
+        // echo "|";
+        // echo "<br/>";
         if ($q) {
             $orderByKey = fetchQuery("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'planner' AND TABLE_NAME = '$table' AND COLUMN_KEY = 'PRI'");
             if (count($orderByKey) && $orderByKey[0]["COLUMN_NAME"]) {

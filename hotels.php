@@ -260,19 +260,19 @@ $allHotels = getAllHotels($data);
                                             <p> <?= $value["Hotel_Description"] ?> </p>
                                             <ul class="add_info">
                                                 <li>
-                                                    <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Free Wifi"><i class="icon_set_1_icon-86"></i></a>
+                                                    <span class="tooltip-1" data-placement="top" title="Wifi"><i class="icon_set_1_icon-86"></i></span>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Plasma TV with cable channels"><i class="icon_set_2_icon-116"></i></a>
+                                                    <span class="tooltip-1" data-placement="top" title="Breakfast"><i class="icon_set_1_icon-59"></i></span>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Swimming pool"><i class="icon_set_2_icon-110"></i></a>
+                                                    <span class="tooltip-1" data-placement="top" title="Accessibiliy"><i class="icon_set_1_icon-13"></i></span>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Fitness Center"><i class="icon_set_2_icon-117"></i></a>
+                                                    <span class="tooltip-1" data-placement="top" title="Parking"><i class="icon_set_1_icon-27"></i></span>
                                                 </li>
                                                 <li>
-                                                    <a href="javascript:void(0);" class="tooltip-1" data-placement="top" title="Restaurant"><i class="icon_set_1_icon-58"></i></a>
+                                                    <span class="tooltip-1" data-placement="top" title="Restaurant"><i class="icon_set_1_icon-58"></i></span>
                                                 </li>
                                             </ul>
                                         </div>

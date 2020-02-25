@@ -16,7 +16,7 @@ if(!isset($_SESSION))
 if (isset($_POST["AddHotel"])) {
 
 $Hotel_Featured_Image = $_FILES["Hotel_Featured_Image"]["name"];
-$target_dir = "HotelImages/";
+$target_dir = "../../HotelImages/";
 $path = $target_dir.$Hotel_Featured_Image;
 
 
@@ -133,17 +133,7 @@ input[type="file"] {
             <!-- general form elements -->
             <div class="card card-dark">
                 <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel
-
-                      <small>
-                        <?php
-                        print_r($data); 
-                        print_r($Hotel_Galley_Image);
-                        
-                        ?>
-
-
-                      </small></h3>
+                    <h3 class="card-title"><i class="fas fa-hotel"></i> &nbsp; Add New Hotel</h3>
                 </div>
               <!-- /.card-header -->
             </div>

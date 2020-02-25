@@ -9,6 +9,15 @@
     $res = fetchQuery($query);
     return $res;
   }
+
+   function getAllHotelsGallery () {
+    $query = "select * from hotels_gallery ";
+    // $query .= "inner join user on hotels.id = hotels.authId ";
+    // $query .= "where role = 'hotels' ";
+    $query .= "where Hotel_Galley_Image_isTrashed = 0 and Hotel_ID = ".$_GET["Hotel_Id"];
+    $res = fetchQuery($query);
+    return $res;
+  }
   
 
 
