@@ -22,12 +22,13 @@ $allHotels = getAllHotels($data);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Hotels</title>
+    <title>Shirkat-ul-Ras - Hotels</title>
 <!-- Common scripts -->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/common_scripts_min.js"></script>
 <script src="js/functions.js"></script>
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -83,9 +84,9 @@ $allHotels = getAllHotels($data);
         <div id="position">
             <div class="container">
                 <ul>
-                    <li><a href="#">Home</a>
+                    <li><a href="./index.php">Home</a>
                     </li>
-                    <li><a href="#" class="active">Hotels</a></li>
+                    <li class="active">Hotels</li>
                 </ul>
             </div>
         </div>
@@ -170,7 +171,7 @@ $allHotels = getAllHotels($data);
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" value="Mashdad" <?= in_array("Mashdad", ifsetor($data["Hotel_City"], array())) ? "checked" : "" ?> name="Hotel_City[]">Mashdad
+                                            <input type="checkbox" value="Mashhad" <?= in_array("Mashhad", ifsetor($data["Hotel_City"], array())) ? "checked" : "" ?> name="Hotel_City[]">Mashhad
                                         </label>
                                     </li>
                                 </ul>
@@ -186,7 +187,7 @@ $allHotels = getAllHotels($data);
                                     </li>
                                     <li>
                                         <label>
-                                            <input type="checkbox" value="Medina" <?= in_array("Super Deluxe", ifsetor($data["Hotel_City"], array())) ? "checked" : "" ?> name="Hotel_City[]">Medina
+                                            <input type="checkbox" value="Madina" <?= in_array("Super Deluxe", ifsetor($data["Hotel_City"], array())) ? "checked" : "" ?> name="Hotel_City[]">Madina
                                         </label>
                                     </li>
                                 </ul>
@@ -243,8 +244,6 @@ $allHotels = getAllHotels($data);
 
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4">
-                                        <div class="ribbon_3 popular"><span>Popular</span>
-                                        </div>
                                         <div class="img_list">
                                             <a href="hotel.php?Hotel_Id=<?= $value["Hotel_Id"] ?>"><img src="<?= $value["Hotel_Featured_Image"] ?>" alt="Image">
                                                 <div class="short_info"></div>

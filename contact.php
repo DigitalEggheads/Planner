@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Contact</title>
+    <title>Shirkat-ul-Ras - Contact Us</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,9 +65,9 @@
     <div id="position">
       <div class="container">
         <ul>
-          <li><a href="#">Home</a>
+          <li><a href="./index.php">Home</a>
           </li>
-          <li><a href="#" class="active">Contact Us</a>
+          <li class="active">Contact Us
           </li>
         </ul>
       </div>

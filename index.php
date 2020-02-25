@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras</title>
+    <title>Shirkat-ul-Ras - Economical Packages For Iran, Iraq Syria and Kingdom of Saudia Arabia</title>
 
     <!-- Favicons-->
-    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
+    <!-- <link rel="shortcut icon" href="/img/Branding/Favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -71,8 +72,8 @@
                             <h2 class="text-left">About <span>Shirkat-ul-Ras</span></h2>
                         </div>
                         <div class="text-left">
-                            <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
-                            <a href="/planner/about.php" class="btn sr-default-btn mt-50">Read More</a>
+                            <p>Shirkat ul ras is one stop solution for the zaireen who travels to Iran, Iraq, Syria and Kingdom of Saudi Arabia. We provide the facilities of hotels, transport and ticket and visa facilitations for the individuals and the group. Our mission is to provide all these services at economical rates to make the ziarats easier and memorable.</p>
+                            <a href="./about.php" class="btn sr-default-btn mt-50">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +148,7 @@
                 <div class="trip-planning text-center">
                     <h3>Your Perfect Tour Plan!</h3>
                     <p>Activities and accommodations</p>
-                    <a href="javascript:void(0);" class="btn_1 cstm-golden">Plan your trip!</a>
+                    <a href="#" class="btn_1 cstm-golden">Plan your trip!</a>
                 </div>
             </div>
         </div>
@@ -314,33 +315,33 @@
         <div class="row add_bottom_45">
             <div class="col-lg-3 other_tours">
                 <ul>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Karbala</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Karbala"><i class="icon_set_1_icon-37"></i>Karbala</a>
                     </li>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Najaf</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 other_tours">
-                <ul>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Kazmain</a>
-                    </li>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Mashhad</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Najaf"><i class="icon_set_1_icon-37"></i>Najaf</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-3 other_tours">
                 <ul>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Qom</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Kazmain"><i class="icon_set_1_icon-37"></i>Kazmain</a>
                     </li>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Damascus</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Mashhad"><i class="icon_set_1_icon-37"></i>Mashhad</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-3 other_tours">
                 <ul>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Makkah</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Qum"><i class="icon_set_1_icon-37"></i>Qom</a>
                     </li>
-                    <li><a href="#"><i class="icon_set_1_icon-37"></i>Medina</a>
+                    <li><a href="./hotels.php?Hotel_City[]=Damascus"><i class="icon_set_1_icon-37"></i>Damascus</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 other_tours">
+                <ul>
+                    <li><a href="./hotels.php?Hotel_City[]=Makkah"><i class="icon_set_1_icon-37"></i>Makkah</a>
+                    </li>
+                    <li><a href="./hotels.php?Hotel_City[]=Madina"><i class="icon_set_1_icon-37"></i>Madina</a>
                     </li>
                 </ul>
             </div>
@@ -357,7 +358,7 @@
     <p>
         We aim to make your spiritual journey memorable and worth sharing.
     </p>
-    <a href="#" class="btn_1 white ">Get in touch</a>
+    <a href="./contact.php" class="btn_1 white ">Get in touch</a>
 </div>
 </main>
 <!-- End of CTA banner -->

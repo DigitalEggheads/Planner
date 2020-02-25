@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"  content="noindex">
 	<title>Admin Login | Shirkat-ul-Ras</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">

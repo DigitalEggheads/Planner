@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Destination-Iran</title>
+    <title>Shirkat-ul-Ras - Destination Iran</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,8 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
+           <li>Destination</li>
            <li><a href="#" class="active">Iran</a>
            </li>
        </ul>
@@ -88,9 +90,9 @@
                     <div class="row text-center mr-4 ml-4">
                         <div class="col-lg-4 offset-lg-2 other_tours">
                             <ul>
-                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Mashdad"><img src="img/Destinations/Mashad-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Mashhad"><img src="img/Destinations/Mashhad-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Mashad</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Mashhad"><i class="icon_set_1_icon-37"></i>Mashhad</a>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +100,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Qum"><img src="img/Destinations/Qom-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Qom</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Qum"><i class="icon_set_1_icon-37"></i>Qom</a>
                                 </li>
                             </ul>
                         </div>

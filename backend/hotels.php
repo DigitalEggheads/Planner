@@ -126,6 +126,7 @@
 
 
   $mysqli = mysqli_connect('localhost', 'root', '', 'planner');
+  // $mysqli = mysqli_connect("localhost","shirkatu_Planner_User","shirkatu_Planner_Pass","shirkatu_Planner_DB");
 
     // Get the total number of records from our table "students".
     $total_pages = $mysqli->query('SELECT COUNT(*) FROM hotels')->fetch_row()[0];

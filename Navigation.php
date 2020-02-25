@@ -17,7 +17,7 @@
                     <div class="col-6">
                         <ul id="top_links">
                             <li><a href="#" id="youtube_link">Youtube</a></li>
-                            <li><a href="#" id="facebook_link">Facebook</a></li>
+                            <li><a href="https://www.facebook.com/ShirkatulRas/" id="facebook_link">Facebook</a></li>
                             <li><a href="#" id="instagram_link">Instagram</a></li>
 
                         </ul>
@@ -30,9 +30,8 @@
             <div class="row">
                 <div class="col-3 my-auto">
                     <div id="logo_home">
-                        <img class="notsticky-img" src="img/Branding/Logo.png" alt="Shirkat-ul-Ras" data-retina="true">
-                        <img class="sticky-img" src="img/Branding/Sticky-Logo.png" alt="Shirkat-ul-Ras" data-retina="true">
-                        <h1></h1>
+                        <a href="index.php"><img class="notsticky-img" src="img/Branding/Logo.png" alt="Shirkat-ul-Ras" data-retina="true"></a>
+                        <a href="index.php"><img class="sticky-img" src="img/Branding/Sticky-Logo.png" alt="Shirkat-ul-Ras" data-retina="true"></a>
                     </div>
                 </div>
                 <nav class="col-9 my-auto">
@@ -48,7 +47,7 @@
                                 <a href="./index.php" class="show-submenu">Home</a>
                             </li>
                             <li class="submenu">
-                                <a href="" class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
+                                <a class="show-submenu">About Us<i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="./about.php">Who We Are?</a></li>
                                     <li><a href="./about.php">Our Vision & Mission</a></li>
@@ -59,7 +58,7 @@
                                 <a href="./services.php" class="show-submenu">Services</a>
                             </li>
                             <li class="submenu">
-                                <a href="" class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
+                                <a class="show-submenu">Destinations <i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="iraq.php">Iraq</a></li>
                                     <li><a href="iran.php">Iran</a></li>
@@ -69,13 +68,13 @@
                             </li>
                             <li class="submenu">
                                 <a href="hotels.php" class="show-submenu">Hotels</a>
-                            </li>
+                            </li><!-- 
                             <li class="submenu">
                                 <a href="#" class="show-submenu">Trip Planner</a>
                             </li>
                             <li class="submenu">
                                 <a href="#" class="show-submenu">Partners</a>
-                            </li>
+                            </li> -->
                             <li class="submenu">
                                 <a href="contact.php" class="show-submenu">Contact Us</a>
                             </li>

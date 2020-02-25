@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Services</title>
+    <title>Shirkat-ul-Ras - Services</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,9 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
-           <li><a href="#" class="active">Services</a>
+           <li class="active">Services
            </li>
        </ul>
     </div>
@@ -157,7 +158,7 @@
     <p>
         We aim to make your spiritual journey memorable and worth sharing.
     </p>
-    <a href="#" class="btn_1 white ">Get in touch</a>
+    <a href="./contact.php" class="btn_1 white ">Get in touch</a>
 </div>
                 </div>
             </div>

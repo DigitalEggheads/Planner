@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Destination-Iraq</title>
+    <title>Shirkat-ul-Ras - Destination Iraq</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -51,7 +52,7 @@
 
     <?php include_once "./Navigation.php"; ?>
     
-    <section class="parallax-window" data-parallax="scroll" data-image-src="img/iraq-Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
+    <section class="parallax-window" data-parallax="scroll" data-image-src="img/Iraq-Page-Title-Bg.jpg" data-natural-width="1400" data-natural-height="470">
       <div class="parallax-content-1">
          <div class="animated fadeInDown">
             <h1>Iraq</h1>
@@ -64,8 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
+           <li>Destination</li>
            <li><a href="#" class="active">Iraq</a>
            </li>
        </ul>
@@ -90,7 +92,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Najaf"><img src="img/Destinations/Najaf-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Najaf</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Najaf"><i class="icon_set_1_icon-37"></i>Najaf</a>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +100,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Karbala"><img src="img/Destinations/Karbala-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Karbala</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Karbala"><i class="icon_set_1_icon-37"></i>Karbala</a>
                                 </li>
                             </ul>
                         </div>
@@ -106,7 +108,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Kazmain"><img src="img/Destinations/Kazmain-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Kazmain</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Kazmain"><i class="icon_set_1_icon-37"></i>Kazmain</a>
                                 </li>
                             </ul>
                         </div>
@@ -114,7 +116,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Samarrah"><img src="img/Destinations/Samarrah-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Samarrah</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Samarrah"><i class="icon_set_1_icon-37"></i>Samarrah</a>
                                 </li>
                             </ul>
                         </div>

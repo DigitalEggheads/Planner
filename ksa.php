@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Destination-Kingdom Of Saudi Arabia</title>
+    <title>Shirkat-ul-Ras - Destination Kingdom Of Saudi Arabia</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,8 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
+           <li>Destination</li>
            <li><a href="#" class="active">Kingdom Of Saudi Arabia</a>
            </li>
        </ul>
@@ -80,7 +82,7 @@
                         <div class="main_title">
                             <h2>Destinations in <span> Kingdom Of Saudi Arabia </span></h2>
                        </div>
-                            <p>KSA or commonly known as Saudia Arabia is well-known country and has unique significance among the people especially in Muslims. It is the land from where Islam started to spread. The holy cities of Makkah and Medina are situated in Saudia. Millions of people visit Saudia Arab for performing Umrah and Hajj.</p> 
+                            <p>KSA or commonly known as Saudia Arabia is well-known country and has unique significance among the people especially in Muslims. It is the land from where Islam started to spread. The holy cities of Makkah and Madina are situated in Saudia. Millions of people visit Saudia Arab for performing Umrah and Hajj.</p> 
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -90,7 +92,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Makkah"><img src="img/Destinations/Makkah-city-thumbnail.jpg" class="img-responsive rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Makkah</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Makkah"><i class="icon_set_1_icon-37"></i>Makkah</a>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +100,7 @@
                             <ul>
                                 <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Madina"><img src="img/Destinations/Madina-city-thumbnail.jpg" class="rounded-circle mx-auto d-block" alt=""></a>
                                 </li>
-                                <li class="custom-city"><a href="#"><i class="icon_set_1_icon-37"></i>Madina</a>
+                                <li class="custom-city"><a href="./hotels.php?Hotel_City[]=Madina"><i class="icon_set_1_icon-37"></i>Madina</a>
                                 </li>
                             </ul>
                         </div>

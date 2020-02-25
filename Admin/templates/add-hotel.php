@@ -41,13 +41,9 @@ if(move_uploaded_file($_FILES["Hotel_Featured_Image"]["tmp_name"],$path))
 
 ?>
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"  content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -234,7 +230,7 @@ input[type="file"] {
                                       <option value="Karbala">Karbala</option>
                                       <option value="Najaf">Najaf</option>
                                       <option value="Kazmain">Kazmain</option>
-                                      <option value="Mashad">Mashad</option>
+                                      <option value="Mashhad">Mashhad</option>
                                       <option value="Qom">Qom</option>
                                       <option value="Damascus">Damascus</option>
                                       <option value="Makkah">Makkah</option>

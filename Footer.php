@@ -3,12 +3,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="img/Branding/FooterLogo.png" style="width: 85px" alt="">
-                <h3>Shirkat-ul-Ras</h3>
-                <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
+                <img src="img/Branding/FooterLogo.png" alt="Footer Logo">
+                <br/>
+                <br/>
+                <p class="Footer-About">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
+
                 <div id="social_footer">
                     <ul>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/ShirkatulRas/"><i class="icon-facebook"></i></a></li>
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
                         <li><a href="#"><i class="icon-youtube-play"></i></a></li>
                     </ul>
@@ -22,14 +24,13 @@
                     <li><a href="services.php">Services</a></li>
                     <li><a href="hotels.php">Hotels</a></li>
                     <li><a href="#">Trip Planner</a></li>
-                    <li><a href="#">Partners</a></li>
                 </ul>
                 <h3>Destinations</h3>
                 <ul>
-                    <li><a href="iraq.html">Iraq</a></li>
-                    <li><a href="iran.html">Iran</a></li>
-                    <li><a href="syria.html">Syria</a></li>
-                    <li><a href="ksa.html">Kingdom Of Saudi Arabia</a></li>
+                    <li><a href="iraq.php">Iraq</a></li>
+                    <li><a href="iran.php">Iran</a></li>
+                    <li><a href="syria.php">Syria</a></li>
+                    <li><a href="ksa.php">Kingdom Of Saudi Arabia</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
@@ -43,7 +44,7 @@
         </div><!-- End row -->
         <div class="row text-center">
             <div class="col-md-12 footer-copyrights">
-                <p>© <a href="#">Shirkat-ul-Ras</a> 2020 - Developed by: <a href="https://digitaleggheads.com/" target="_blank">Digital Eggheads</a></p>
+                <p>© Copyright 2020 - <a href="http://shirkatulras.com/" style="color: #d3ba37;">Shirkat-ul-Ras</a>. Developed by: <a href="https://digitaleggheads.com/" target="_blank" style="color: #d3ba37;">Digital Eggheads</a></p>
             </div>
         </div><!-- End row -->
     </div><!-- End container -->

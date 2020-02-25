@@ -80,9 +80,10 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | <?php echo $Hotel_Title; ?> </title>
+    <title>Shirkat-ul-Ras - <?php echo $Hotel_Title; ?> </title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -152,7 +153,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 			<ul>
 				<li><a href="./index.php">Home</a></li>
 				<li><a href="./hotels.php">Hotels</a></li>
-				<li><?php echo $Hotel_Title; ?></li>
+				<li class="active"><?php echo $Hotel_Title; ?></li>
 			</ul>
 		</div>
 	</div>

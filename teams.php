@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | Team</title>
+    <title>Shirkat-ul-Ras - Teams</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,9 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
-           <li><a href="#" class="active">Teams</a>
+           <li class="active">Teams
            </li>
        </ul>
     </div>
@@ -88,9 +89,7 @@
 
                         <div class="img_container">
                             <a href="javascript:void(0);">
-                                <img src="img/tour_box_1.jpg" width="800" height="533" class="img-fluid" alt="image">
-                                <div class="short_info">
-                                </div>
+                                <img src="img/Team/Avatar.jpg" width="800" height="533" class="img-fluid" alt="image">
                             </a>
                         </div>
                         <div class="tour_title">
@@ -108,9 +107,7 @@
                     <div class="tour_container">
                         <div class="img_container">
                             <a href="javascript:void(0);">
-                                <img src="img/tour_box_2.jpg" width="800" height="533" class="img-fluid" alt="image">
-                                <div class="short_info">
-                                </div>
+                                <img src="img/Team/Avatar.jpg" width="800" height="533" class="img-fluid" alt="image">
                             </a>
                         </div>
                         <div class="tour_title">
@@ -128,9 +125,7 @@
                     <div class="tour_container">
                         <div class="img_container">
                             <a href="javascript:void(0);">
-                                <img src="img/tour_box_3.jpg" width="800" height="533" class="img-fluid" alt="image">
-                                <div class="short_info">
-                                </div>
+                                <img src="img/Team/Avatar.jpg" width="800" height="533" class="img-fluid" alt="image">
                             </a>
                         </div>
                         <div class="tour_title">

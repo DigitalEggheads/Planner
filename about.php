@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras | About</title>
+    <title>Shirkat-ul-Ras - About Us</title>
 
     <!-- Favicons-->
+    <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
     <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
@@ -64,9 +65,9 @@
     <div id="position">
      <div class="container">
         <ul>
-           <li><a href="#">Home</a>
+           <li><a href="./index.php">Home</a>
            </li>
-           <li><a href="#" class="active">About</a></li>
+           <li class="active">About</li>
        </ul>
     </div>
     </div>
@@ -77,7 +78,7 @@
     <div class="main_title">
     <h2>Who <span>We Are </span></h2>
    </div>
-    <p class="text-center">Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations.</p>
+    <p class="text-center">Shirkat ul Ras is trustable and reliable name in religious tourism. We have the team of professionals who lead the groups for ziarat in Iraq, Iran and Syria. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations at economical cost.</p>
 </div>
 
 
@@ -169,7 +170,7 @@
     <p>
         We aim to make your spiritual journey memorable and worth sharing.
     </p>
-    <a href="#" class="btn_1 white ">Get in touch</a>
+    <a href="./contact.php" class="btn_1 white ">Get in touch</a>
 </div>
 </main>
 <!-- End of CTA banner -->
