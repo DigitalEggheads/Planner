@@ -7,6 +7,10 @@
 .Footer-About{
 	text-align: justify;
 }
+.Hotel_Type{
+	background:#d3ba37;
+	padding: 0px 5px;
+}
 .submenu{
 	color: #ffffff !important;
 }

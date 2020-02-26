@@ -134,10 +134,10 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
+                    <span class="Hotel_Type"><i class="fa fa-list-ul"></i> <?php echo $Hotel_Type; ?> | <i class="fa fa-building"></i> <?php echo $Hotel_City; ?></span>
                     <h1><?php echo $Hotel_Title; ?></h1>
                     <span>
-                    <?php echo $Hotel_Location; ?></span>
+                    <i class="fa fa-map-marker"></i> <?php echo $Hotel_Location; ?></span>
                 </div>
                 <div class="col-md-4">
                     <div id="price_single_main" class="hotel">
