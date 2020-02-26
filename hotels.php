@@ -239,6 +239,7 @@ $allHotels = getAllHotels($data);
                 <div class="col-lg-9">
 
                     <?php foreach ($allHotels as $key => $value) { ?>
+                        <?php while ($value = $page_result->fetch_assoc()): ?>
                             <div class="strip_all_tour_list wow fadeIn" data-wow-delay="0.1s">
 
 
@@ -291,17 +292,18 @@ $allHotels = getAllHotels($data);
 
                             </div>
                         <!--End strip -->
+                        <?php endwhile; ?>
                     <?php } ?>
 
 
                     <hr>
 
                     <nav aria-label="Page navigation">
-                        <?php if (ceil($total_pages / $num_results_on_page) > 0) : ?>
+                        <?php if (ceil($total_pages / $num_results_on_page) > 0): ?>
                             <ul class="pagination justify-content-center">
-                                <?php if ($page > 1) : ?>
+                                <?php if ($page > 1): ?>
                                     <li class="prev page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page - 1 ?>">
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page-1 ?>">
                                             <span aria-hidden="true">&laquo;</span>
                                             <span class="sr-only">Previous</span>
                                         </a>
@@ -309,7 +311,7 @@ $allHotels = getAllHotels($data);
                                 <?php endif; ?>
 
 
-                                <?php if ($page > 3) : ?>
+                                <?php if ($page > 3): ?>
                                     <li class="start page-item">
                                         <a class="page-link" href="hotels.php?page=1">
                                             1
@@ -318,17 +320,17 @@ $allHotels = getAllHotels($data);
                                 <?php endif; ?>
 
 
-                                <?php if ($page - 2 > 0) : ?>
+                                <?php if ($page-2 > 0): ?>
                                     <li class="page page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page - 2 ?>"><?php echo $page - 2 ?>
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page-2 ?>"><?php echo $page-2 ?>
                                         </a>
                                     </li>
                                 <?php endif; ?>
 
 
-                                <?php if ($page - 1 > 0) : ?>
+                                <?php if ($page-1 > 0): ?>
                                     <li class="page page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page - 1 ?>"><?php echo $page - 1 ?>
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page-1 ?>"><?php echo $page-1 ?>
                                         </a>
                                     </li>
                                 <?php endif; ?>
@@ -339,23 +341,23 @@ $allHotels = getAllHotels($data);
                                 </li>
 
 
-                                <?php if ($page + 1 < ceil($total_pages / $num_results_on_page) + 1) : ?>
+                                <?php if ($page+1 < ceil($total_pages / $num_results_on_page)+1): ?>
                                     <li class="page page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page + 1 ?>"><?php echo $page + 1 ?>
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page+1 ?>"><?php echo $page+1 ?>
                                         </a>
                                     </li>
                                 <?php endif; ?>
 
 
-                                <?php if ($page + 2 < ceil($total_pages / $num_results_on_page) + 1) : ?>
+                                <?php if ($page+2 < ceil($total_pages / $num_results_on_page)+1): ?>
                                     <li class="page page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page + 2 ?>"><?php echo $page + 2 ?>
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page+2 ?>"><?php echo $page+2 ?>
                                         </a>
                                     </li>
                                 <?php endif; ?>
 
 
-                                <?php if ($page < ceil($total_pages / $num_results_on_page) - 2) : ?>
+                                <?php if ($page < ceil($total_pages / $num_results_on_page)-2): ?>
                                     <li class="end page-item">
                                         <a class="page-link" href="hotels.php?page=<?php echo ceil($total_pages / $num_results_on_page) ?>">
                                             <?php echo ceil($total_pages / $num_results_on_page) ?>
@@ -363,9 +365,9 @@ $allHotels = getAllHotels($data);
                                     </li>
                                 <?php endif; ?>
 
-                                <?php if ($page < ceil($total_pages / $num_results_on_page)) : ?>
+                                <?php if ($page < ceil($total_pages / $num_results_on_page)): ?>
                                     <li class="next page-item">
-                                        <a class="page-link" href="hotels.php?page=<?php echo $page + 1 ?>">
+                                        <a class="page-link" href="hotels.php?page=<?php echo $page+1 ?>">
                                             <span aria-hidden="true">&raquo;</span>
                                             <span class="sr-only">Next</span>
                                         </a>
