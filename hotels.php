@@ -253,9 +253,9 @@ $allHotels = getAllHotels($data);
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="tour_list_desc">
-                                            <div class="score">Superb<span>9.0</span>
+                                            <div class="score"><?= $value["Hotel_City"] ?><span><i class="fa fa-building"></i></span>
                                             </div>
-                                            <div class="rating"><i class="icon-star voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star  voted"></i><i class="icon-star-empty"></i>
+                                            <div><i class="fa fa-list-ul"></i> <?= $value["Hotel_Type"] ?>
                                             </div>
                                             <h3><strong> <a href="hotel.php?Hotel_Id=<?= $value["Hotel_Id"] ?>"> <?= $value["Hotel_Title"] ?> </a></strong></h3>
                                             <p> <?= $value["Hotel_Description"] ?> </p>
@@ -280,7 +280,7 @@ $allHotels = getAllHotels($data);
                                     </div>
                                     <div class="col-lg-2 col-md-2">
                                         <div class="price_list">
-                                            <div><sup>$</sup><?= $value["Hotel_Price"] ?>*<span class="normal_price_list"></span><small>*From/Per night</small>
+                                            <div><sup>$</sup><?= $value["Hotel_Price"] ?>*<span class="normal_price_list"></span><small>Per night</small>
                                                 <p><a href="hotel.php?Hotel_Id=<?= $value["Hotel_Id"] ?>" class="btn_1">Details</a>
                                                 </p>
                                             </div>
