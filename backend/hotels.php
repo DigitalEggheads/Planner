@@ -135,7 +135,7 @@
     $page = isset($_GET['page']) && is_numeric($_GET['page']) ? $_GET['page'] : 1;
 
     // Number of results to show on each page.
-    $num_results_on_page = 4;
+    $num_results_on_page = 5;
 
     //now we need to get the records from the database for the current page, the following code below will do just that.
 
