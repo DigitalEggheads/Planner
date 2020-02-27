@@ -328,3 +328,29 @@ h2.padded-heading{
 }
 }
 
+@media screen and (max-width: 768px){
+	.service-box{
+		height: 265px
+	}
+	.service-box h4 {
+    font-size: 16px;
+	}
+	.service-box p.text-center {
+    font-size: 11px;
+}
+.box_style_4 a.phone{
+	font-size: 20px;
+}
+}
+@media screen and (max-width: 425px){
+	.service-box{
+		height: 245px;
+	}
+	.service-box h4 {
+    font-size: 18px;
+	}
+	.service-box p.text-center {
+    font-size: 13px;
+}
+}
+
