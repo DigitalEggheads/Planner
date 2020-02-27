@@ -376,7 +376,7 @@
                                                         <div class="country-form">
                                                             <div class="form__options">
                                                                 <p class="form__answer"> 
-                                                                    <input type="radio" name="match" id="match_1" value="country-iraq" checked> 
+                                                                    <input type="checkbox" name="match" id="match_1" value="country-iraq" checked> 
                                                                     <label for="match_1" class="iraq-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                         
@@ -387,7 +387,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="radio" name="match" id="match_2" value="country-iran"> 
+                                                                    <input type="checkbox" name="match" id="match_2" value="country-iran"> 
                                                                     <label for="match_2" class="iran-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                         
@@ -396,7 +396,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="radio" name="match" id="match_3" value="country-syria"> 
+                                                                    <input type="checkbox" name="match" id="match_3" value="country-syria"> 
                                                                     <label for="match_3" class="syria-label">
                                                                         <img class="checked-tick mx-auto" src="images/hotel-checked.png" alt="">
                                                                     </label> 
@@ -404,7 +404,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="radio" name="match" id="match_4" value="country-ksa"> 
+                                                                    <input type="checkbox" name="match" id="match_4" value="country-ksa"> 
                                                                     <label for="match_4" class="ksa-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                     </label> 
@@ -450,41 +450,41 @@
                                                     <ul>
                                                         <li>
                                                             <img src="images/4-seater.png" alt="" class="pb-2">
-                                                            <input id="four-seat" type="checkbox">
-                                                            <label for="four-seat" class="check-trail p-1">
-                                                              <span class="check-handler"></span>
+                                                            <input id="four-seat" type="radio" name="transport-choice" value="4seats">
+                                                            <label for="four-seat" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="vehicle-title">4 seater</p>
                                                         </li>
                                                         <li>
                                                             <img src="images/6-seater.png" alt="" class="pb-2">
-                                                            <input id="six-seat" type="checkbox">
-                                                            <label for="six-seat" class="check-trail p-1">
-                                                              <span class="check-handler"></span>
+                                                            <input id="six-seat" type="radio" name="transport-choice" value="6seats">
+                                                            <label for="six-seat" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="vehicle-title">6 seater</p>
                                                         </li>
                                                         <li>
                                                             <img src="images/9-seater.png" alt="" class="pb-2">
-                                                            <input id="nine-seat" type="checkbox">
-                                                            <label for="nine-seat" class="check-trail p-1">
-                                                              <span class="check-handler"></span>
+                                                            <input id="nine-seat" type="radio" name="transport-choice" value="9seats">
+                                                            <label for="nine-seat" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="vehicle-title">9 seater</p>
                                                         </li>
                                                         <li>
                                                             <img src="images/13-seater.png" alt="" class="pb-2">
-                                                            <input id="thirteen-seat" type="checkbox">
-                                                            <label for="thirteen-seat" class="check-trail p-1">
-                                                              <span class="check-handler"></span>
+                                                            <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats">
+                                                            <label for="thirteen-seat" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="vehicle-title">13 seater</p>
                                                         </li>
                                                         <li>
                                                             <img src="images/27-seater.png" alt="" class="pb-2">
-                                                            <input id="twentyseven-seat" type="checkbox">
-                                                            <label for="twentyseven-seat" class="check-trail p-1">
-                                                              <span class="check-handler"></span>
+                                                            <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats">
+                                                            <label for="twentyseven-seat" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
 
                                                             </label>
                                                             <p class="vehicle-title">27 seater</p>
@@ -499,342 +499,47 @@
                                             <div class="row pt-4 pb-4 text-center">
                                                 <div class="col-md-12">
                                                     <p><strong>Choose and explore the type of hotel that your prefer:</strong></p>
-                                                    <div id="customAccordion" class="myaccordion">
-                                                          <div class="card">
-                                                            <div class="card-header" id="headingOne">
-                                                              <h2 class="mb-0">
-                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                                  Supreme Deluxe
-                                                                  <span class="fa-stack fa-sm">
-                                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                                    <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                                  </span>
-                                                                </button>
-                                                              </h2>
-                                                            </div>
-                                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#customAccordion">
-                                                              <div class="card-body">
-                                                                <div class="row text-center">
-                                                                    <div class="col-md-12 pb-4">
-                                                                        <img src="images/hotel-type-thumbnail.jpg" alt="" class="img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-8 p-0">
-                                                                        <p class="h6 pl-4 text-left">Description: </p>
-                                                                        <p class="pl-4 mb-0 text-left" style="font-size: 12px; line-height: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id excepturi consequatur sed nobis, facere veritatis tempore qui ipsum enim, dignissimos iste. Natus esse, omnis!</p>
-                                                                    </div>
-                                                                    <div class="col-md-4 my-auto">
-                                                                        <div class="custom-sq">
-                                                                          <input type="checkbox" id="supreme-deluxe-type"/>
-                                                                          <label for="supreme-deluxe-type">
-                                                                          </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 text-center">
-                                                                        <div class="country-form alt-color">
-                                                                            <div class="form__options">
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="sdeluxe-in-iraq" value="country-iraq" checked> 
-                                                                                    <label for="sdeluxe-in-iraq" class="country-hotel-listing">
-                                                                                        IRAQ
-                                                                                    </label> 
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="sdeluxe-in-iran" value="country-iran"> 
-                                                                                    <label for="sdeluxe-in-iran" class="country-hotel-listing">
-                                                                                        IRAN
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="sdeluxe-in-syria" value="country-syria"> 
-                                                                                    <label for="sdeluxe-in-syria" class="country-hotel-listing">
-                                                                                        SYRIA
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="sdeluxe-in-ksa" value="country-ksa"> 
-                                                                                    <label for="sdeluxe-in-ksa" class="country-hotel-listing">
-                                                                                        KSA
-                                                                                    </label>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="card">
-                                                            <div class="card-header" id="headingTwo">
-                                                              <h2 class="mb-0">
-                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                                  Deluxe
-                                                                  <span class="fa-stack fa-2x">
-                                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                                    <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                                                                  </span>
-                                                                </button>
-                                                              </h2>
-                                                            </div>
-                                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#customAccordion">
-                                                              <div class="card-body">
-                                                                <div class="row text-center">
-                                                                    <div class="col-md-12 pb-4">
-                                                                        <img src="images/hotel-type-thumbnail.jpg" alt="" class="img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-8 p-0">
-                                                                        <p class="h6 pl-4 text-left">Description: </p>
-                                                                        <p class="pl-4 mb-0 text-left" style="font-size: 12px; line-height: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id excepturi consequatur sed nobis, facere veritatis tempore qui ipsum enim, dignissimos iste. Natus esse, omnis!</p>
-                                                                    </div>
-                                                                    <div class="col-md-4 my-auto">
-                                                                        <div class="custom-sq">
-                                                                          <input type="checkbox" id="deluxe-type"/>
-                                                                          <label for="deluxe-type">
-                                                                          </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 text-center">
-                                                                        <div class="country-form alt-color">
-                                                                            <div class="form__options">
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="deluxe-in-iraq" value="country-iraq" checked> 
-                                                                                    <label for="deluxe-in-iraq" class="country-hotel-listing">
-                                                                                        IRAQ
-                                                                                    </label> 
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="deluxe-in-iran" value="country-iran"> 
-                                                                                    <label for="deluxe-in-iran" class="country-hotel-listing">
-                                                                                        IRAN
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="deluxe-in-syria" value="country-syria"> 
-                                                                                    <label for="deluxe-in-syria" class="country-hotel-listing">
-                                                                                        SYRIA
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="deluxe-in-ksa" value="country-ksa"> 
-                                                                                    <label for="deluxe-in-ksa" class="country-hotel-listing">
-                                                                                        KSA
-                                                                                    </label>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="card">
-                                                            <div class="card-header" id="headingThree">
-                                                              <h2 class="mb-0">
-                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                  Standard
-                                                                  <span class="fa-stack fa-2x">
-                                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                                    <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                                                                  </span>
-                                                                </button>
-                                                              </h2>
-                                                            </div>
-                                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#customAccordion">
-                                                              <div class="card-body">
-                                                               <div class="row text-center">
-                                                                    <div class="col-md-12 pb-4">
-                                                                        <img src="images/hotel-type-thumbnail.jpg" alt="" class="img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-8 p-0">
-                                                                        <p class="h6 pl-4 text-left">Description: </p>
-                                                                        <p class="pl-4 mb-0 text-left" style="font-size: 12px; line-height: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id excepturi consequatur sed nobis, facere veritatis tempore qui ipsum enim, dignissimos iste. Natus esse, omnis!</p>
-                                                                    </div>
-                                                                    <div class="col-md-4 my-auto">
-                                                                        <div class="custom-sq">
-                                                                          <input type="checkbox" id="standard-type"/>
-                                                                          <label for="standard-type">
-                                                                          </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 text-center">
-                                                                        <div class="country-form alt-color">
-                                                                            <div class="form__options">
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="standard-in-iraq" value="country-iraq" checked> 
-                                                                                    <label for="standard-in-iraq" class="country-hotel-listing">
-                                                                                        IRAQ
-                                                                                    </label> 
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="standard-in-iran" value="standard-iran"> 
-                                                                                    <label for="deluxe-in-iran" class="country-hotel-listing">
-                                                                                        IRAN
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="standard-in-syria" value="country-syria"> 
-                                                                                    <label for="standard-in-syria" class="country-hotel-listing">
-                                                                                        SYRIA
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="standard-in-ksa" value="country-ksa"> 
-                                                                                    <label for="standard-in-ksa" class="country-hotel-listing">
-                                                                                        KSA
-                                                                                    </label>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="card">
-                                                            <div class="card-header" id="headingThree">
-                                                              <h2 class="mb-0">
-                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                                  Supreme Economy
-                                                                  <span class="fa-stack fa-2x">
-                                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                                    <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                                                                  </span>
-                                                                </button>
-                                                              </h2>
-                                                            </div>
-                                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#customAccordion">
-                                                              <div class="card-body">
-                                                                 <div class="row text-center">
-                                                                    <div class="col-md-12 pb-4">
-                                                                        <img src="images/hotel-type-thumbnail.jpg" alt="" class="img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-8 p-0">
-                                                                        <p class="h6 pl-4 text-left">Description: </p>
-                                                                        <p class="pl-4 mb-0 text-left" style="font-size: 12px; line-height: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id excepturi consequatur sed nobis, facere veritatis tempore qui ipsum enim, dignissimos iste. Natus esse, omnis!</p>
-                                                                    </div>
-                                                                    <div class="col-md-4 my-auto">
-                                                                        <div class="custom-sq">
-                                                                          <input type="checkbox" id="supreme-economy-type"/>
-                                                                          <label for="supreme-economy-type">
-                                                                          </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 text-center">
-                                                                        <div class="country-form alt-color">
-                                                                            <div class="form__options">
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="supreme-economy-in-iraq" value="country-iraq" checked> 
-                                                                                    <label for="supreme-economy-in-iraq" class="country-hotel-listing">
-                                                                                        IRAQ
-                                                                                    </label> 
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="supreme-economy-in-iran" value="country-iran"> 
-                                                                                    <label for="supreme-economy-in-iran" class="country-hotel-listing">
-                                                                                        IRAN
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="supreme-economy-in-syria" value="country-syria"> 
-                                                                                    <label for="supreme-economy-in-syria" class="country-hotel-listing">
-                                                                                        SYRIA
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="supreme-economy-in-ksa" value="country-ksa"> 
-                                                                                    <label for="supreme-economy-in-ksa" class="country-hotel-listing">
-                                                                                        KSA
-                                                                                    </label>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                          <div class="card">
-                                                            <div class="card-header" id="headingFive">
-                                                              <h2 class="mb-0">
-                                                                <button type="button" id="swap" class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                                  Economy
-                                                                  <span class="fa-stack fa-2x">
-                                                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                                                    <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
-                                                                    <i class="fas fa-minus fa-stack-1x fa-inverse"></i>
-                                                                  </span>
-                                                                </button>
-                                                              </h2>
-                                                            </div>
-                                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#customAccordion">
-                                                              <div class="card-body">
-<div class="row text-center">
-                                                                    <div class="col-md-12 pb-4">
-                                                                        <img src="images/hotel-type-thumbnail.jpg" alt="" class="img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-8 p-0">
-                                                                        <p class="h6 pl-4 text-left">Description: </p>
-                                                                        <p class="pl-4 mb-0 text-left" style="font-size: 12px; line-height: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id excepturi consequatur sed nobis, facere veritatis tempore qui ipsum enim, dignissimos iste. Natus esse, omnis!</p>
-                                                                    </div>
-                                                                    <div class="col-md-4 my-auto">
-                                                                        <div class="custom-sq">
-                                                                          <input type="checkbox" id="economy-type"/>
-                                                                          <label for="economy-type">
-                                                                          </label>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-12 text-center">
-                                                                        <div class="country-form alt-color">
-                                                                            <div class="form__options">
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="economy-in-iraq" value="country-iraq" checked> 
-                                                                                    <label for="economy-in-iraq" class="country-hotel-listing">
-                                                                                        IRAQ
-                                                                                    </label> 
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="economy-in-iran" value="country-iran"> 
-                                                                                    <label for="economy-in-iran" class="country-hotel-listing">
-                                                                                        IRAN
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="economy-in-syria" value="country-syria"> 
-                                                                                    <label for="economy-in-syria" class="country-hotel-listing">
-                                                                                        SYRIA
-                                                                                    </label>
-                                                                                </p>
-                                                                                
-                                                                                <p class="form__answer"> 
-                                                                                    <input type="radio" name="match" id="economy-in-ksa" value="country-ksa"> 
-                                                                                    <label for="economy-in-ksa" class="country-hotel-listing">
-                                                                                        KSA
-                                                                                    </label>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                    </div>
+                                                    <!-- removed hote accordians from here and saved in locals docs -->
+                                                    <div class="hotel-type-radios">
+                                                    <ul>
+                                                        <li>
+                                                            <input id="sDeluxe" type="radio" name="hotel-choice" value="SupremeDeluxeHotel">
+                                                            <label for="sDeluxe" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
+                                                            </label>
+                                                            <p class="hotel-title">Supreme Deluxe</p>
+                                                        </li>
+                                                        <li>
+                                                            <input id="deluxe" type="radio" name="hotel-choice" value="DeluxeHotel">
+                                                            <label for="deluxe" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
+                                                            </label>
+                                                            <p class="hotel-title">Deluxe</p>
+                                                        </li>
+                                                        <li>
+                                                            <input id="standard" type="radio" name="hotel-choice" value="standard">
+                                                            <label for="standard" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
+                                                            </label>
+                                                            <p class="hotel-title">Standard</p>
+                                                        </li>
+                                                        <li>
+                                                            <input id="economy" type="radio" name="hotel-choice" value="Economy">
+                                                            <label for="economy" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
+                                                            </label>
+                                                            <p class="hotel-title">Economy</p>
+                                                        </li>
+                                                        <li>
+                                                            <input id="sEconomy" type="radio" name="hotel-choice" value="SupremeEconomy">
+                                                            <label for="sEconomy" class="check-trail-radio p-1">
+                                                              <span class="check-handler-radio"></span>
+
+                                                            </label>
+                                                            <p class="hotel-title">Supreme Economy</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 </div>
                                             </div>
                                             <!-- /hotel type selection ends here-->

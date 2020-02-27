@@ -72,7 +72,8 @@ img {
 }
 
 .wizard {
-  position: relative; }
+   position: relative; 
+}
 
 .steps .current-info, .steps .number {
   display: none; }
@@ -563,6 +564,10 @@ button.btn-form-submit{
   display: block;
   line-height: 30px;
 }
+.hotel-type-radios label {
+  display: block;
+  line-height: 30px;
+}
 
 
 
@@ -657,11 +662,32 @@ li{
  input[type="checkbox"]:checked + .check-trail .check-handler::before {
    content: "\2714";
 }
+div.custom-radios{
+  text-align: center;
+}
 div.custom-radios ul li{
   display: inline-block;
-    padding: 20px;
+    padding: 15px;
+}
+.custom-radios label {
+    display: block;
+    line-height: 30px;
+    margin: 0 auto;
+}
+div.hotel-type-radios ul li{
+  display: inline-block;
+    padding: 7px;
+}
+.hotel-type-radios label {
+    display: block;
+    line-height: 30px;
+    margin: 0 auto;
 }
 p.vehicle-title{
+  font-weight: bold;
+  font-size: 12px;
+}
+p.hotel-title{
   font-weight: bold;
   font-size: 12px;
 }
@@ -669,6 +695,64 @@ p.vehicle-title{
 div.form-check{
   padding-left: 1rem;
 }
+
+
+
+
+
+
+/*NEW radios for Vehicles only*/
+/* Hide the input */
+input[type="radio"] {
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
+}
+.check-trail-radio {
+   display: flex;
+   align-items: center;
+   width: 65px;
+   height: 35px;
+   background: #ecebeb;
+   border-radius: 2.5em;
+   transition: all 0.5s ease;
+   cursor: pointer;
+}
+.check-handler-radio {
+   display: flex;
+   margin-left: 0.5em;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+   background: #212e3c;
+   border-radius: 50%;
+   transition: all 0.5s ease;
+   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.check-handler-radio:before {
+   content: "\00D7";
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+}
+ input[type="radio"]:checked + .check-trail-radio {
+   background: #cfb737;
+}
+ input[type="radio"]:checked + .check-trail-radio .check-handler-radio {
+   margin-left: 50%;
+   background: #212e3c;
+}
+ input[type="radio"]:checked + .check-trail-radio .check-handler-radio::before {
+   content: "\2714";
+}
+
+
+
+
+
+
+
 
 /*COUNTRY SELECTION CHECKBOXES*/
 /* Form Styles */
@@ -713,11 +797,11 @@ div.form-check{
   border: 4px solid #1f1c1c;
   color: #1f1c1c;
   font-weight: bold;
-  width: 60px !important;
-  height: 60px !important;
+  width: 80px !important;
+  height: 80px !important;
   border-radius: 50%;
   font-size: 12px;
-  padding: 13px 2px 10px 2px;
+  padding: 14px 3px 11px 3px;
 }
 
 .country-form label.iraq-label {
@@ -741,36 +825,36 @@ div.form-check{
 }
 
  .country-form label:hover, label:focus, label:active {
-   border: 1px solid rgba(207,183,55, .5);
+   border: 1px solid rgba(207,183,55);
 }
  .country-form label.country-hotel-listing:hover{
-  border: 3px solid rgb(207,183,55);
-  color: rgb(207,183,55);
+  border: 3px solid rgb(212,188,52);
+  color: rgb(212,188,52);
  }
 
 /* Input style */
-.country-form input[type="radio"] {
-   opacity: 0;
+.country-form input[type="checkbox"] {
+   opacity: 1;
    width: 0;
    height: 0;
 }
- .country-form input[type="radio"]:active ~ label {
+ .country-form input[type="checkbox"]:active ~ label {
    opacity: 1;
 }
-.country-form input[type="radio"]:checked ~ label {
-   opacity: 1;
+.country-form input[type="checkbox"]:checked ~ label {
+   opacity: 1 !important;
    border: 1px solid #cfb737;
 }
-.country-form.alt-color input[type="radio"]:checked ~ label{
+.country-form.alt-color input[type="checkbox"]:checked ~ label{
   border: 3px solid #cfb737 !important;
   color: #cfb737 !important;
 }
-.country-form input[type="radio"]:checked ~ label img.checked-tick,
-.country-form input[type="radio"]:active ~ label img.checked-tick{
+.country-form input[type="checkbox"]:checked ~ label img.checked-tick,
+.country-form input[type="checkbox"]:active ~ label img.checked-tick{
     display: block;
     width: 28px !important;
 }
-.custom-sq input[type=radio] {
+.custom-sq input[type=checkbox] {
   display: none;
 }
 ul.country-hotel-list li{
@@ -779,11 +863,14 @@ padding: 5px;
 }
 
 /* custom check box for hotels accordions*/
+
 .custom-sq {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: left;
 }
+
+
 .custom-sq label {
   cursor: pointer;
   -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
@@ -794,28 +881,21 @@ padding: 5px;
 }
 .custom-sq label:before {
   display: inline-block;
-  width: 65px;
-  height: 65px;
   content: url('../images/sq-tick-before.png');
   text-align: center;
-  background: #f3f2ee;
-  color: #a9a9a6;
-  font-size: 20px;
-  padding-top: 12px;
+  padding-right: 5px;
 }
 .custom-sq label:hover{
-  box-shadow: 0px 12px 17px -7px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -o-transition: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -o-transition: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* On check */
 .custom-sq input:checked ~ label:before {
   content: url('../images/sq-tick-after.png');
-  padding-top: 12px;
 }
 /*custom sq check ends here*/
 
