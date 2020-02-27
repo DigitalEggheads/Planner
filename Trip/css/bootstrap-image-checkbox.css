@@ -3,7 +3,7 @@
  * Copyright 2019 Iqbal Fauzi
  * Licensed under MIT (https://github.com/iqbalfnn/bootstrap-image-checkbox/blob/master/LICENSE)
  */
-.custom-control.image-checkbox {
+/*.custom-control.image-checkbox {
   position: relative;
   padding-left: 0;
 }
@@ -45,5 +45,5 @@
 .form-group-image-checkbox.is-invalid .invalid-feedback {
   display: block;
 }
-
+*/
 /*# sourceMappingURL=bootstrap-image-checkbox.css.map */
