@@ -6,7 +6,7 @@
 $AllReviews = getAllReviews();
 $allHotelsGallery = getAllHotelsGallery();
 
-$url =  "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+$url =  "https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $Hotel_Id = $_GET["Hotel_Id"];
 
 $query = "select * from hotels where Hotel_Id = $Hotel_Id and Hotel_isTrashed = 0";
@@ -82,7 +82,7 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras - <?php echo $Hotel_Title; ?> </title>
+    <title><?php echo $Hotel_Title ." - ". $Hotel_City; ?> - Shirkat-ul-Ras</title>
 
     <!-- Favicons-->
     <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
@@ -109,6 +109,8 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
 
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
+    <?php include_once "./Analytic-and-Pixel.php"; ?>
+    
 </head>
 <body>
 
@@ -134,7 +136,10 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <span class="Hotel_Type"><i class="fa fa-list-ul"></i> <?php echo $Hotel_Type; ?> | <i class="fa fa-building"></i> <?php echo $Hotel_City; ?></span>
+                    <span class="Hotel_Type"><i class="fa fa-list-ul"></i> <?php echo $Hotel_Type; ?></span>
+
+                    <span class="Hotel_Type" style="background: #b79a00;"><i class="fa fa-building"></i> <?php echo $Hotel_City; ?></span>
+
                     <h1><?php echo $Hotel_Title; ?></h1>
                     <span>
                     <i class="fa fa-map-marker"></i> <?php echo $Hotel_Location; ?></span>
@@ -401,12 +406,14 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="img/Branding/FooterLogo.png" style="width: 85px" alt="">
-                <h3>Shirkat-ul-Ras</h3>
-                <p>Shirkat ul Ras is all about making your dreams come alive. We arrange and facilitate trips for individuals and groups. Our fleet has a large number of hotels, transport and other facilities from which you can take advantage. Our plan is to extend the religious tourism and make travelling easier to dedicated locations</p>
+                <img src="img/Branding/FooterLogo.png" alt="Footer Logo">
+                <br/>
+                <br/>
+                <p class="Footer-About">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
+
                 <div id="social_footer">
                     <ul>
-                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/ShirkatulRas/"><i class="icon-facebook"></i></a></li>
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
                         <li><a href="#"><i class="icon-youtube-play"></i></a></li>
                     </ul>
@@ -417,29 +424,30 @@ $Hotel_Query_Check_In = date("Y-m-d", strtotime($Hotel_Query_Check_In));
             <div class="col-md-3">
                 <h3>Quick Links</h3>
                 <ul>
-                	<li><a href="#">Hotels</a></li>
-                	<li><a href="#">Services</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="hotels.php">Hotels</a></li>
                     <li><a href="#">Trip Planner</a></li>
-                    <li><a href="#">Partners</a></li>
                 </ul>
                 <h3>Destinations</h3>
                 <ul>
-                    <li><a href="/planner/iraq.html">Iraq</a></li>
-                    <li><a href="/planner/iran.html">Iran</a></li>
-                    <li><a href="/planner/syria.html">Syria</a></li>
-                    <li><a href="/planner/ksa.html">Kingdom Of Saudi Arabia</a></li>
+                    <li><a href="iraq.php">Iraq</a></li>
+                    <li><a href="iran.php">Iran</a></li>
+                    <li><a href="syria.php">Syria</a></li>
+                    <li><a href="ksa.php">Kingdom Of Saudi Arabia</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <h3>Need help?</h3>
-                <p id="address" class="pt-0"> Suite # 8, Al Murtaza Terrace, JM-2/198, Bahadur Yar Jang Road, Soldier Bazar # 3, Karachi-Pakistan.</p>
+                <p id="address" class="pt-0">
+                Suite #1, Mezzanine Floor, Hanif Mansion, Opp. Nisthar Park, Soldier Bazar No.3, Karachi-Pakistan.
+                </p>
                 <a href="tel:+923018587645" id="phone">+92 301 8587645</a>
                 <a href="mailto:info@shirkatulras.com" id="email_footer">info@shirkatulras.com</a>
             </div>
         </div><!-- End row -->
         <div class="row text-center">
             <div class="col-md-12 footer-copyrights">
-                <p>© <a href="#">Shirkat-ul-Ras</a> 2020 - Developed by: <a href="https://digitaleggheads.com/" target="_blank">Digital Eggheads</a></p>
+                <p>© Copyright 2020 - <a href="http://shirkatulras.com/" style="color: #d3ba37;">Shirkat-ul-Ras</a>. Developed by: <a href="https://digitaleggheads.com/" target="_blank" style="color: #d3ba37;">Digital Eggheads</a></p>
             </div>
         </div><!-- End row -->
     </div><!-- End container -->

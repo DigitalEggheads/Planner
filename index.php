@@ -33,6 +33,8 @@
 
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
+    <?php include_once "./Analytic-and-Pixel.php"; ?>
+    
 </head>
 <body>
 

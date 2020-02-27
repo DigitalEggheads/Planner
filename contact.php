@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras - Contact Us</title>
+    <title>Contact Us - Shirkat-ul-Ras</title>
 
     <!-- Favicons-->
     <link rel="icon" href="img/Branding/Favicon.png" type="image/png">
@@ -31,7 +31,9 @@
     <link href="css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="css/skr-custom.css">
 
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <?php include_once "./Analytic-and-Pixel.php"; ?>
     
 </head>
 <body>

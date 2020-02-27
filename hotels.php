@@ -22,7 +22,7 @@ $allHotels = getAllHotels($data);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shirkat-ul-Ras">
     <meta name="digitaleggheads" content="Shirkat-ul-Ras">
-    <title>Shirkat-ul-Ras - Hotels</title>
+    <title>Hotels - Shirkat-ul-Ras</title>
 <!-- Common scripts -->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/common_scripts_min.js"></script>
@@ -51,6 +51,8 @@ $allHotels = getAllHotels($data);
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <?php include_once "./Analytic-and-Pixel.php"; ?>
+    
 </head>
 
 <body>
