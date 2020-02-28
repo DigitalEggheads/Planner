@@ -3,7 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="img/Branding/FooterLogo.png" alt="Footer Logo">
+                <div class="row">
+                    <div class="col-md-6 p-1"><img class="img-responsive mw-100" src="img/Branding/FooterLogo.png" alt="Footer Logo"></div>
+                    <div class="col-md-6 p-1"><img class="img-responsive mw-100" src="img/Branding/Al-Sahlah-Logo.png" alt="Al-Sahlah-Logo"></div>
+                </div>
                 <br/>
                 <br/>
                 <p class="Footer-About">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
