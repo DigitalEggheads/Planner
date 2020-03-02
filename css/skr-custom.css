@@ -354,3 +354,12 @@ h2.padded-heading{
 }
 }
 
+#social_footer{
+	width: 100%;
+}
+#social_footer ul{
+	float: left;
+padding: 0px;
+
+}
+

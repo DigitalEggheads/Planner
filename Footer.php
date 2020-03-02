@@ -3,11 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6 p-1"><img class="img-responsive mw-100" src="img/Branding/FooterLogo.png" alt="Footer Logo"></div>
-                    <div class="col-md-6 p-1"><img class="img-responsive mw-100" src="img/Branding/Al-Sahlah-Logo.png" alt="Al-Sahlah-Logo"></div>
-                </div>
-                <br/>
+                        <a href="https://shirkatulras.com/">
+                            <img class="img-responsive mw-100" src="img/Branding/FooterLogo.png" alt="Footer Logo">
+                        </a>
                 <br/>
                 <p class="Footer-About">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
 
@@ -18,6 +16,19 @@
                         <li><a href="#"><i class="icon-youtube-play"></i></a></li>
                     </ul>
                 </div>
+
+                
+                    
+                <div class="">
+                    <h4 style="">For Standard Packages</h4>
+                    <a href="https://alsahlah.com/"  rel="nofollow">
+                        <img class="img-responsive mw-100" src="img/Branding/Al-Sahlah-Logo.png" alt="Al-Sahlah-Logo">
+                    </a>
+                </div>
+
+                
+
+                
                 
             </div>
             
@@ -47,7 +58,7 @@
         </div><!-- End row -->
         <div class="row text-center">
             <div class="col-md-12 footer-copyrights">
-                <p>© Copyright 2020 - <a href="http://shirkatulras.com/" style="color: #d3ba37;">Shirkat-ul-Ras</a>. Developed by: <a href="https://digitaleggheads.com/" target="_blank" style="color: #d3ba37;">Digital Eggheads</a></p>
+                <p>© Copyright 2020 - <a href="https://shirkatulras.com/" style="color: #d3ba37;">Shirkat-ul-Ras</a>. Developed by: <a href="https://digitaleggheads.com/" target="_blank" style="color: #d3ba37;">Digital Eggheads</a></p>
             </div>
         </div><!-- End row -->
     </div><!-- End container -->
