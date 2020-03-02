@@ -27,7 +27,7 @@
 
 	<body>
 		<div class="wrapper">
-            <form action="" id="wizard" name="planner-form">
+            <form action="" id="wizard" name="planner-form" class="needs-validation" novalidate>
         		<!-- STEP 1 -->
                 <h4></h4>
                 <section>
@@ -35,24 +35,24 @@
                 	<div class="form-row row">
                         <div class="form-holder col-md-6">
                           <i class="zmdi zmdi-edit"></i>
-                           <input type="text" class="form-control" name="fullname" placeholder="Full Name"/>
+                           <input type="text" class="form-control" name="fullname" placeholder="Full Name"/ required>
                         </div>
                         <div class="form-holder col-md-6">
                             <i class="zmdi zmdi-smartphone-android"></i>
-                            <input type="text" class="form-control" name="number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}" placeholder="Whatsapp Number"  />
+                            <input type="text" class="form-control" name="number" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}" placeholder="Whatsapp Number" required/>
                         </div>
                 	</div>
                     <div class="form-row row">
                         <div class="form-holder col-md-12">
                             <i class="zmdi zmdi-email"></i>
-                            <input type="text" class="form-control" name="email" placeholder="Email" />
+                            <input type="text" class="form-control" name="email" placeholder="Email" required/>
                         </div>
                     </div>
                     <div class="form-row row">
                         <div class="form-holder col-md-6">
                             <i class="zmdi zmdi-map"></i>
                             <div class="form-group">
-                              <select class="form-control" name="country" placeholder="Country">
+                              <select class="form-control" name="country" placeholder="Country" required>
                                 <option value="">Country of Departure</option>
                                 <option value="Afghanistan" title="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands" title="Åland Islands">Åland Islands</option>
@@ -309,7 +309,7 @@
                         </div>
                         <div class="form-holder col-md-6">
                             <i class="zmdi zmdi-pin-drop"></i>
-                            <input type="text" class="form-control" placeholder="City">
+                            <input type="text" class="form-control" placeholder="City" required>
                         </div>
                     </div>
                 </section>
@@ -322,7 +322,7 @@
                       <div class="form-holder col-md-6">
                            <div class="docs-datepicker">
                               <div class="input-group">
-                                <input type="text" class="form-control docs-date" name="departure-date" placeholder="Departure Date" autocomplete="off">
+                                <input type="text" class="form-control docs-date" name="departure-date" placeholder="Departure Date" autocomplete="off" required>
                                 <i class="fa fa-calendar"></i>
                               </div>
                               <div class="docs-datepicker-container"></div>
@@ -331,7 +331,7 @@
                         <div class="form-holder col-md-6">
                            <div class="docs-datepicker">
                               <div class="input-group">
-                                <input type="text" class="form-control docs-date" name="arrival-date" placeholder="Arrival Date" autocomplete="off">
+                                <input type="text" class="form-control docs-date" name="arrival-date" placeholder="Arrival Date" autocomplete="off" required>
                                 <i class="fa fa-calendar"></i>
                               </div>
                               <div class="docs-datepicker-container"></div>
@@ -340,11 +340,11 @@
                     </div>
                     <div class="form-row">
                         <div class="form-holder col-md-6">
-                            <input type="number" class="form-control" placeholder="Number of adults">
+                            <input type="number" class="form-control" placeholder="Number of adults" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="form-holder col-md-6">
-                            <input type="number" class="form-control" placeholder="Number of children">
+                            <input type="number" class="form-control" placeholder="Number of children" required>
                             <i class="fa fa-child"></i>
                         </div>
                     </div>
@@ -376,7 +376,7 @@
                                                         <div class="country-form">
                                                             <div class="form__options">
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_1" value="country-iraq" checked> 
+                                                                    <input type="checkbox" name="match" id="match_1" value="country-iraq" checked required> 
                                                                     <label for="match_1" class="iraq-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                         
@@ -387,7 +387,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_2" value="country-iran"> 
+                                                                    <input type="checkbox" name="match" id="match_2" value="country-iran" required> 
                                                                     <label for="match_2" class="iran-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                         
@@ -396,7 +396,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_3" value="country-syria"> 
+                                                                    <input type="checkbox" name="match" id="match_3" value="country-syria" required> 
                                                                     <label for="match_3" class="syria-label">
                                                                         <img class="checked-tick mx-auto" src="images/hotel-checked.png" alt="">
                                                                     </label> 
@@ -404,7 +404,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_4" value="country-ksa"> 
+                                                                    <input type="checkbox" name="match" id="match_4" value="country-ksa" required> 
                                                                     <label for="match_4" class="ksa-label">
                                                                         <img class="checked-tick  mx-auto" src="images/hotel-checked.png" alt="">
                                                                     </label> 
@@ -423,21 +423,21 @@
                                                 <div class="row pb-4 pt-3 text-center">
                                                     <div class="col-md-4">
                                                         <p class="pb-2"> <strong>Need Ticket Facilitations?</strong></p>
-                                                          <input id="ticket" type="checkbox">
+                                                          <input id="ticket" type="checkbox" required>
                                                             <label for="ticket" class="check-trail mx-auto">
                                                               <span class="check-handler"></span>
                                                             </label>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <p class="pb-2"><strong>Need Visa Facilitations?</strong></p>
-                                                          <input id="need-visa" type="checkbox">
+                                                          <input id="need-visa" type="checkbox" required>
                                                             <label for="need-visa" class="check-trail mx-auto">
                                                               <span class="check-handler"></span>
                                                             </label>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <p class="pb-2"><strong>Need religious/tour guide?</strong></p>
-                                                          <input id="guide" type="checkbox">
+                                                          <input id="guide" type="checkbox" required>
                                                             <label for="guide" class="check-trail mx-auto">
                                                               <span class="check-handler"></span>
                                                             </label>
@@ -450,7 +450,7 @@
                                                     <ul>
                                                         <li>
                                                             <img src="images/4-seater.png" alt="" class="pb-2">
-                                                            <input id="four-seat" type="radio" name="transport-choice" value="4seats">
+                                                            <input id="four-seat" type="radio" name="transport-choice" value="4seats" required>
                                                             <label for="four-seat" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
@@ -458,7 +458,7 @@
                                                         </li>
                                                         <li>
                                                             <img src="images/6-seater.png" alt="" class="pb-2">
-                                                            <input id="six-seat" type="radio" name="transport-choice" value="6seats">
+                                                            <input id="six-seat" type="radio" name="transport-choice" value="6seats" required>
                                                             <label for="six-seat" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
@@ -466,7 +466,7 @@
                                                         </li>
                                                         <li>
                                                             <img src="images/9-seater.png" alt="" class="pb-2">
-                                                            <input id="nine-seat" type="radio" name="transport-choice" value="9seats">
+                                                            <input id="nine-seat" type="radio" name="transport-choice" value="9seats" required>
                                                             <label for="nine-seat" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
@@ -474,7 +474,7 @@
                                                         </li>
                                                         <li>
                                                             <img src="images/13-seater.png" alt="" class="pb-2">
-                                                            <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats">
+                                                            <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats" required>
                                                             <label for="thirteen-seat" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
@@ -482,7 +482,7 @@
                                                         </li>
                                                         <li>
                                                             <img src="images/27-seater.png" alt="" class="pb-2">
-                                                            <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats">
+                                                            <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats" required>
                                                             <label for="twentyseven-seat" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
 
@@ -503,35 +503,35 @@
                                                     <div class="hotel-type-radios">
                                                     <ul>
                                                         <li>
-                                                            <input id="sDeluxe" type="radio" name="hotel-choice" value="SupremeDeluxeHotel">
+                                                            <input id="sDeluxe" type="radio" name="hotel-choice" value="SupremeDeluxeHotel" required>
                                                             <label for="sDeluxe" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="hotel-title">Supreme Deluxe</p>
                                                         </li>
                                                         <li>
-                                                            <input id="deluxe" type="radio" name="hotel-choice" value="DeluxeHotel">
+                                                            <input id="deluxe" type="radio" name="hotel-choice" value="DeluxeHotel" required>
                                                             <label for="deluxe" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="hotel-title">Deluxe</p>
                                                         </li>
                                                         <li>
-                                                            <input id="standard" type="radio" name="hotel-choice" value="standard">
+                                                            <input id="standard" type="radio" name="hotel-choice" value="standard" required>
                                                             <label for="standard" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="hotel-title">Standard</p>
                                                         </li>
                                                         <li>
-                                                            <input id="economy" type="radio" name="hotel-choice" value="Economy">
+                                                            <input id="economy" type="radio" name="hotel-choice" value="Economy" required>
                                                             <label for="economy" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
                                                             </label>
                                                             <p class="hotel-title">Economy</p>
                                                         </li>
                                                         <li>
-                                                            <input id="sEconomy" type="radio" name="hotel-choice" value="SupremeEconomy">
+                                                            <input id="sEconomy" type="radio" name="hotel-choice" value="SupremeEconomy" required>
                                                             <label for="sEconomy" class="check-trail-radio p-1">
                                                               <span class="check-handler-radio"></span>
 
@@ -569,15 +569,16 @@
 
             </form>
 		</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<!-- JQUERY STEP -->
 		<script src="js/jquery.steps.js"></script>
 
 		<script src="js/main.js"></script>
 		<script src="js/datepicker.js"></script>
-<!--     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
- -->    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- Date Picker Script -->
 <script>
         
@@ -689,6 +690,29 @@
         $('.alert').show();
     }) 
 });
+</script>
+
+
+<!-- form validation -->
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 </script>
 
 
