@@ -115,6 +115,7 @@
 
 <!-- Specific scripts -->
     <script src="js/jquery.validate.js"></script>
+    <script src="js/plannerjs/script.js"></script>
    
 
 <!-- Video header scripts -->
