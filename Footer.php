@@ -7,9 +7,9 @@
                             <img class="img-responsive mw-100" src="img/Branding/FooterLogo.png" alt="Footer Logo">
                         </a>
                 <br/>
-                <p class="Footer-About">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
+                <p class="Footer-About p-2 pt-4">Shirkat ul Ras is reliable name for religious tourism. Our professional team is always ready to guide the zaireen on their trips to Iran, Iraq, Syria and Saudia Arabia. We are extending the religious tourism to make traveling easier to dedicated location.</p>
 
-                <div id="social_footer">
+                <div id="social_footer" class="mb-2 pb-2">
                     <ul>
                         <li><a href="https://www.facebook.com/ShirkatulRas/"><i class="icon-facebook"></i></a></li>
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
@@ -19,10 +19,10 @@
 
                 
                     
-                <div class="">
-                    <h4 style="">For Standard Packages</h4>
+                <div class="alsahlah-affiliation p-0 m-0">
+                    <h4 class="text-light pt-4 mt-4 pl-2 pr-2"><strong>For Standard Packages</strong></h4>
                     <a href="https://alsahlah.com/"  rel="nofollow">
-                        <img class="img-responsive mw-100" src="img/Branding/Al-Sahlah-Logo.png" alt="Al-Sahlah-Logo">
+                        <img class="img-responsive mw-100" src="img/Branding/AlSahlah-Logo.png" alt="Al-Sahlah-Logo">
                     </a>
                 </div>
 
