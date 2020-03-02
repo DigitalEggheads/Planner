@@ -696,8 +696,11 @@ footer ul {
 }
 
 #social_footer ul li a:hover {
-	background: #fff;
-	color: #111;
+	background: #cfb737;
+	color: #fff;
+}
+#social_footer ul li a:hover > i{
+	color: #fff;
 }
 
 a#phone,

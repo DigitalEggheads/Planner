@@ -20,8 +20,8 @@
                 
                     
                 <div class="alsahlah-affiliation p-0 m-0">
-                    <h4 class="text-light pt-4 mt-4 pl-2 pr-2"><strong>For Standard Packages</strong></h4>
-                    <a href="https://alsahlah.com/"  rel="nofollow">
+                    <p class="text-light pt-4 mt-4 pl-2 pr-2" style="margin-bottom: 0px;">For Standard Packages</p>
+                    <a href="https://alsahlah.com/"  rel="nofollow" target="_blank">
                         <img class="img-responsive mw-100" src="img/Branding/AlSahlah-Logo.png" alt="Al-Sahlah-Logo">
                     </a>
                 </div>
