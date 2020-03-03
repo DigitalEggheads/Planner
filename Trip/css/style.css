@@ -906,3 +906,11 @@ button.btn.btn-gold{
 button.btn.btn-gold:hover{
   background: #343a40 !important;
 }
+
+
+
+
+/*custom styles*/
+.form-inline label{
+  justify-content: left !important;
+}

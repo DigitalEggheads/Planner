@@ -1,8 +1,6 @@
 .form-box {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	
-	
 }
 
 .form-wizard {
@@ -67,10 +65,6 @@
 
 .form-wizard img { max-width: 100%; }
 
-.form-wizard ::-moz-selection { background: #ea2803; color: #fff; text-shadow: none; }
-.form-wizard ::selection { background: #ea2803; color: #fff; text-shadow: none; }
-
-
 .form-control {
 	height: 44px;
 	width:100%;
@@ -88,31 +82,12 @@
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
-.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {
-	position: absolute;
-	margin-top: 9px;
-	margin-left: -20px;
-}
-
-.form-control option:hover, .form-control option:checked  {
-    box-shadow: 0 0 10px 100px #d4bc34 inset;
-}
-
-.form-control:focus {
-	outline: 0;
-	background: #fff;
-    border: 1px solid #ccc;
-    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-}
-
 .form-control:-moz-placeholder { color: #888; }
 .form-control:-ms-input-placeholder { color: #888; }
 .form-control::-webkit-input-placeholder { color: #888; }
 
 .form-wizard label { font-weight: 300; }
 .form-wizard label span { color:#d4bc34; }
-
-
 .form-wizard .btn {
 	min-width: 105px;
 	height: 40px;
@@ -155,7 +130,7 @@
 .form-wizard .btn.btn-next:focus,
 .form-wizard .btn.btn-next:active:focus, 
 .form-wizard .btn.btn-next.active:focus { 
-background: #d4bc34; 
+		background: #d4bc34; 
 }
 
 .form-wizard .btn.btn-submit,
@@ -187,7 +162,7 @@ background: #bbb;
 	margin: 25px auto;
 }
 .form-wizard .progress-bar {
-	background-color: #d4bc34;
+   background-color: #d4bc34;
 }
 
 .form-wizard-steps{ 
@@ -205,7 +180,7 @@ background: #bbb;
     transform: skewX(-30deg); /* Standard syntax */
 }
 .form-wizard-step.active{
-	background:#d4bc34;
+	background: #d4bc34;
 }
 .form-wizard-step.activated{
 	background:#d4bc34;
@@ -286,98 +261,23 @@ background: #bbb;
 .form-wizard fieldset { 
 	display: none; 
 	text-align: left; 
-	border:0px !important
+	border:0px !important;
+	padding-left: 40px !important;
+	padding-right: 40px !important;
 }
 
 .form-wizard-buttons { text-align: right; }
 
 .form-wizard .input-error { border-color: #d4bc34;}
 
-/** image uploader **/
-.image-upload a[data-action] {
-  cursor: pointer;
-  color: #555;
-  font-size: 18px;
-  line-height: 24px;
-  transition: color 0.2s;
-}
-.image-upload a[data-action] i {
-  width: 1.25em;
-  text-align: center;
-}
-.image-upload a[data-action]:hover {
-  color: #d4bc34;
-}
-.image-upload a[data-action].disabled {
-  opacity: 0.35;
-  cursor: default;
-}
-.image-upload a[data-action].disabled:hover {
-  color: #555;
-}
-.settings_wrap{
-	margin-top:20px;
-}
-.image_picker .settings_wrap {
-  overflow: hidden;
-  position: relative;
-}
-.image_picker .settings_wrap .drop_target,
-.image_picker .settings_wrap .settings_actions {
-  float: left;
-}
-.image_picker .settings_wrap .drop_target {
-  margin-right: 18px;
-}
-.image_picker .settings_wrap .settings_actions {
-	float: left;
-	margin-top: 100px;
-	margin-left: 20px;
-}
 .settings_actions.vertical a {
   display: block;
 }
-.drop_target {
-	position: relative;
-	cursor: pointer;
-	transition: all 0.2s;
-    width: 250px;
-    height: 250px;
-    background: #f2f2f2;
-    border-radius: 100%;
-    margin: 0 auto 25px auto;
-    overflow: hidden;
-    border: 8px solid #E0E0E0;
-}
-.drop_target input[type="file"] {
-  visibility: hidden;
-}
-.drop_target::before {
-	content: 'Drop Hear';
-	font-family: FontAwesome;
-	position: absolute;
-	display: block;
-	width: 100%;
-	line-height: 220px;
-	text-align: center;
-	font-size: 40px;
-	color: rgba(0, 0, 0, 0.3);
-	transition: color 0.2s;
-}
-.drop_target:hover,
-.drop_target.dropping {
-  background: #f80;
-  border-top-color: #cc6d00;
-}
-.drop_target:hover:before,
-.drop_target.dropping:before {
-  color: rgba(0, 0, 0, 0.6);
-}
-.drop_target .image_preview {
-  width: 100%;
-  height: 100%;
-  background: no-repeat center;
-  background-size: contain;
-  position: relative;
-  z-index: 2;
-}
+
+
+/*Adding old css for step 3*/
+
+
+
+/*TICKET FACILITATION CHECK BOX*/
+
