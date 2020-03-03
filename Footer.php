@@ -169,18 +169,16 @@
         }
     });
     </script>
-    <script>
-        // All this jquery is just used for presentation. Not required at all for the radio buttons to work.
-$( document ).ready(function(){
-//   Hide the border by commenting out the variable below
-    var $on = 'section';
-    $($on).css({
-      'background':'none',
-      'border':'none',
-      'box-shadow':'none'
-    });
-}); 
-    </script>
+<!-- Step 4 submit form success message script -->
+<script> 
+    
+$('.success-txt').hide();
+$( "#tips" ).click(function(e) {
+    e.preventDefault();
+  $('.success-txt').show();
+});
+</script>
+
 
 
     

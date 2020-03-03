@@ -34,7 +34,7 @@
     
 
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+     <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
      <link rel="stylesheet" href="css/planner_css/style.css">
     
     <?php include_once "./Analytic-and-Pixel.php"; ?>
@@ -98,29 +98,29 @@
                                       </div>
                             <!-- Step 1 -->
                                       <div class="form-wizard-step active">
-                                        <div class="form-wizard-step-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                                        <p>Step 1</p>
+                                        <div class="form-wizard-step-icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                                        <p>Basic Details</p>
                                       </div>
                             <!-- Step 1 -->
                             
                             <!-- Step 2 -->
                                       <div class="form-wizard-step">
-                                        <div class="form-wizard-step-icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
-                                        <p>Step 2</p>
+                                        <div class="form-wizard-step-icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                                        <p>Traveling Details</p>
                                       </div>
                             <!-- Step 2 -->
                             
                             <!-- Step 3 -->
                             <div class="form-wizard-step">
-                                        <div class="form-wizard-step-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
-                                        <p>Step 3</p>
+                                        <div class="form-wizard-step-icon"><i class="fa fa-hotel" aria-hidden="true"></i></div>
+                                        <p>Facilities</p>
                              </div>
                             <!-- Step 3 -->
                             
                             <!-- Step 4 -->
                             <div class="form-wizard-step">
-                                        <div class="form-wizard-step-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
-                                        <p>Step 4</p>
+                                        <div class="form-wizard-step-icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <p>Confirm Submition</p>
                             </div>
                             <!-- Step 4 -->
                                     </div>
@@ -130,25 +130,25 @@
               <!-- Form Step 1 -->
                 <fieldset>
 
-                  <h4>Basic Details: <span>Step 1 - 4</span></h4>
+                  <!-- <h4>: <span>Step 1 - 4</span></h4> -->
                   <div style="clear:both;"></div>
                       <div class="form-group">
                         <div class="container-fluid mt-4">
                           <div class="row form-inline">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 p-1">
                                <label>Full Name: <span>*</span></label>
-                                <input type="text" name="Full Name" placeholder="Full Name" class="form-control ">
+                               <input type="text" name="Full Name" placeholder="Full Name" class="form-control w-100">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 p-1">
                               <label>Whatsapp Number: <span>*</span></label>
-                                <input type="tel" name="Phone" placeholder="Whatsapp Number" class="form-control ">
+                              <input type="tel" name="Phone" placeholder="Whatsapp Number" class="form-control w-100">
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="form-group">
                           <label>Email: <span>*</span></label>
-                                <input type="email" name="email" placeholder="E-mail" class="form-control ">
+                          <input type="email" name="email" placeholder="E-mail" class="form-control ">
                       </div>
                       <div class="form-group">
                          <label>Country Of Departure: <span>*</span></label>
@@ -407,7 +407,7 @@
                       </div>
                       <div class="form-group">
                           <label>City: <span>*</span></label>
-                                <input type="text" name="city" placeholder="City" class="form-control ">
+                          <input type="text" name="city" placeholder="City" class="form-control ">
                       </div>
                       
                       <div class="form-wizard-buttons">
@@ -419,18 +419,18 @@
               <!-- Form Step 2 -->
                 <fieldset>
                                
-                  <h4>Traveling Details : <span>Step 2 - 4</span></h4>
+                  <!-- <h4> : <span>Step 2 - 4</span></h4> -->
                   <div style="clear:both !important;"></div>
                   <div class="form-group">
                     <div class="container-fluid mt-4">
                       <div class="row form-inline">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 p-1">
                            <label><i class="icon-calendar-7"></i> Departure Date:</label>
-                                  <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                           <input class="form-control booking_date w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 p-1">
                           <label><i class="icon-calendar-7"></i> Arrival Date:</label>
-                                  <input class="form-control booking_date" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
+                          <input class="form-control booking_date w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017">
                         </div>
                       </div>
                     </div>
@@ -438,11 +438,11 @@
                                 
                   <div class="form-group">
                       <label>Adults: <span>*</span></label>
-                            <input type="number" name="adults" placeholder="Number Of Adults" class="form-control ">
+                      <input type="number" name="adults" placeholder="Number Of Adults" class="form-control ">
                   </div>
                   <div class="form-group">
                       <label>Children: <span>*</span></label>
-                            <input type="number" name="children" placeholder="Children Of Adults" class="form-control ">
+                      <input type="number" name="children" placeholder="Children Of Adults" class="form-control ">
                   </div>
                         
                   <div class="form-wizard-buttons">
@@ -453,117 +453,146 @@
               <!-- Form Step 2 -->
 
               <!-- Form Step 3 -->
-                            <fieldset class="third-step">
+                <fieldset class="third-step">
 
-                                <h4>Facilities &amp; More Details: <span>Step 3 - 4</span></h4>
-                                <div style="clear:both !important;"></div>
+                 <!--  <h4> &amp; More Details: <span>Step 3 - 4</span></h4> -->
+                  <div style="clear:both !important;"></div>
+                  <div class="col-md-12">
+                    
+                  </div>
+
+                  <!-- country selection -->
+                  <div class="form-group">
+                      <div class="container-fluid mt-4">
+                        <div class="row form-inline">
+                          <div class="form-group col-md-12  p-4">
+                            <p>Select Country: <span>*</span></p>
+
+                              
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- facilities selection -->
+
+                    <div class="form-group">
+                      <div class="container-fluid mt-4">
+                        <div class="row form-inline">
+                          <div class="form-group col-md-4  p-4">
+                            <p>Need ticket facilitation? <span>*</span></p>
+                            <input type="checkbox" id="ticketyes" name="ticketyes" value="Yes">
+                            <label for="ticketyes"> yes</label>
+
+                            <input type="checkbox" id="ticketno" name="ticketno" value="No">
+                            <label for="ticketno"> No</label>
+                          </div>
+                          <div class="form-group col-md-4  p-4">
+                              <label>Need Visa facilitation? <span>*</span></label>   
+                          </div>
+                          <div class="form-group col-md-4  p-4">
+                              <label>Need religious/tour guide? <span>*</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- transport selection -->
+
+                    <div class="form-group">
+                      <div class="container-fluid mt-4">
+                        <div class="row form-inline">
+                          <div class="form-group col-md-12  p-4">
+                            <p>What kind of transport you prefer? <span>*</span></p>
+
+                              <!-- <ul class="vehicle-choice">
+                                  <li>
+                                      <img src="img/Planner/4-seater.png" alt="" class="pb-2">
+                                      <input id="four-seat" type="radio" name="transport-choice" value="4seats" required>
+                                      <label for="four-seat" class="check-trail-radio p-1">
+                                        <span class="check-handler-radio"></span>
+                                      </label>
+                                      <p class="vehicle-title">4 seater</p>
+                                  </li>
+                                  <li>
+                                      <img src="img/Planner/6-seater.png" alt="" class="pb-2">
+                                      <input id="six-seat" type="radio" name="transport-choice" value="6seats" required>
+                                      <label for="six-seat" class="check-trail-radio p-1">
+                                        <span class="check-handler-radio"></span>
+                                      </label>
+                                      <p class="vehicle-title">6 seater</p>
+                                  </li>
+                                  <li>
+                                      <img src="img/Planner/9-seater.png" alt="" class="pb-2">
+                                      <input id="nine-seat" type="radio" name="transport-choice" value="9seats" required>
+                                      <label for="nine-seat" class="check-trail-radio p-1">
+                                        <span class="check-handler-radio"></span>
+                                      </label>
+                                      <p class="vehicle-title">9 seater</p>
+                                  </li>
+                                  <li>
+                                      <img src="img/Planner/13-seater.png" alt="" class="pb-2">
+                                      <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats" required>
+                                      <label for="thirteen-seat" class="check-trail-radio p-1">
+                                        <span class="check-handler-radio"></span>
+                                      </label>
+                                      <p class="vehicle-title">13 seater</p>
+                                  </li>
+                                  <li>
+                                      <img src="img/Planner/27-seater.png" alt="" class="pb-2">
+                                      <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats" required>
+                                      <label for="twentyseven-seat" class="check-trail-radio p-1">
+                                        <span class="check-handler-radio"></span>
+
+                                      </label>
+                                      <p class="vehicle-title">27 seater</p>
+                                  </li>
+                              </ul> -->
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Hotel Type selection -->
+
+                    <div class="form-group">
+                      <div class="container-fluid mt-4">
+                        <div class="row form-inline">
+                          <div class="form-group col-md-12  p-4">
+                            <p>Choose and explore the type of hotel that your prefer: <span>*</span></p>
+
+                              
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
 
-
-                                <div class="form-group">
-                                    <label>Select Country: <span>*</span></label>
-                                          
-                                </div>
-                                <div class="form-group">
-                                  <div class="container-fluid mt-4">
-                                    <div class="row form-inline">
-                                      <div class="form-group col-md-4  p-4">
-                                    <p>Need ticket facilitation? <span>*</span></p>
-                                        <input type="checkbox" id="ticketyes" name="ticketyes" value="Yes">
-                                        <label for="ticketyes"> yes</label>
-                                    </div>
-                                <div class="form-group col-md-4  p-4">
-                                    <label>Need Visa facilitation? <span>*</span></label>
-                                    
-                                          
-                                </div>
-                                <div class="form-group col-md-4  p-4">
-                                    <label>Need religious/tour guide? <span>*</span></label>
-                                    
-                                          
-                                </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <br/>
-
-
-                                <div class="form-wizard-buttons">
-                                    <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
-                                </div>
-                            </fieldset>
+                    <br/>
+                    <div class="form-wizard-buttons">
+                        <button type="button" class="btn btn-previous">Previous</button>
+                        <button type="button" class="btn btn-next">Next</button>
+                    </div>
+              </fieldset>
               <!-- Form Step 3 -->
               
               <!-- Form Step 4 -->
               <fieldset>
 
-                    <h4>Payment Information: <span>Step 4 - 4</span></h4>
+                   <!--  <h4>: <span>Step 4 - 4</span></h4> -->
                 <div style="clear:both;"></div>
                     <div class="form-group">
-                        <label>Bank Name: <span>*</span></label>
-                              <input type="text" name="Bank Name" placeholder="Bank Name" class="form-control required">
+                      <div class="col-md-12 p-4 m-4 text-center">
+                        <img src="img/Planner/success.png" class="success-txt" class="mx-auto" width="80px" alt="">
+                         <p class="pt-4 pb-4 text-dark success-txt">Success! Details have been submitted. Check your email!</p>
+                      </div>
                     </div>
-                    <div class="form-group">
-                        <label>Payment Type : </label>
-                              <label class="radio-inline">
-                          <input type="radio" name="Payment" value="option1" checked="checked"> Master Card
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" name="Payment" value="option2"> Visa Card
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label>Holder Name: <span>*</span></label>
-                              <input type="text" name="Holder Name" placeholder="Holder Name" class="form-control required">
-                    </div>
-
-                <div class="container-fluid">
-                <div class="row form-inline">
-                    <div class="form-group col-md-6 col-xs-6">
-                      <label>Card Number: <span>*</span></label>
-                          <input type="text" name="Card Number" placeholder="Card Number" class="form-control required">
-                    </div>
-                    <div class="form-group col-md-6 col-xs-6">
-                      <label>CVC: <span>*</span></label>
-                          <input type="text" name="CVC" placeholder="CVC" class="form-control required">
-                    </div>
-                </div>
-                </div>
-                <br/>
-
-
-                <div class="container-fluid">
-                <div class="row form-inline">
-                <div class="form-group col-md-3 col-xs-3">
-                  <label>Expiry Date: </label>
-                </div>
-                <div class="form-group col-md-3 col-xs-3">
-                  <label>Month: </label>
-                                    <select class="form-control">
-                    <option>Jan</option>
-                    <option>Feb</option>
-                    <option>Mar</option>
-                    <option>Apr</option>
-                    <option>May</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-3 col-xs-3">
-                  <label>Year: </label>
-                                    <select class="form-control">
-                    <option>2017</option>
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option>2020</option>
-                    <option>2021</option>
-                  </select>
-                </div>
-                                </div>
-                </div>
-                <br/>
                                 <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="submit" class="btn btn-submit">Submit</button>
+                                    <button type="submit" id="tips" class="btn btn-submit">Submit</button>
                                 </div>
                             </fieldset>
               <!-- Form Step 4 -->
