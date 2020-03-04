@@ -39,6 +39,18 @@
     
     <?php include_once "./Analytic-and-Pixel.php"; ?>
     
+
+    <style type="text/css">
+        .Select_Hotel_Type{
+            border: 1px solid #ededed;
+        }
+        .Select_Hotel_Type div.col-md-4, .Select_Hotel_Type div.col-md-8{
+            padding: 0px;
+        }
+        .Select_Hotel_Type div.col-md-8 .tour_list_desc{
+            border-right: 0px;
+        }
+    </style>
 </head>
 <body>
 
@@ -148,7 +160,7 @@
                                 <br>
                                 <div class="form-group">
                                     <label>Email: <span>*</span></label>
-                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" name="Email" placeholder="Email" class="form-control required">
+                                    <input type="email" name="Email" placeholder="Email" class="form-control required">
                                 </div>
                                 
                                 <div style="clear:both;"></div>
@@ -638,6 +650,28 @@
                                     </ul>
                                 </div>
                                 </div>
+
+                                <div class="row Select_Hotel_Type">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="img_list">
+                                            <a href="hotel.php?Hotel_Id=1"><img src="../../HotelImages/Crystal-Lulu-Featured.jpg" alt="Image">
+                                                <div class="short_info"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="tour_list_desc">
+                                            <h3><strong> <a href="#">Deluxe Supreme </a></strong></h3>
+                                            <p>
+                                                Located in Karbala, Crystal Hotel is 500 metres from Border of Imam Hussein Shrine. It offers simply furnished accommodations with free Wi-Fi.
+                                            </p>
+                                            <p><a href="#" class="btn_1">Details</a>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                             <!-- /hotel type selection ends here-->
 
