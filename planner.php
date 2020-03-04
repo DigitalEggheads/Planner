@@ -41,6 +41,8 @@
     
 
     <style type="text/css">
+
+
         .Select_Hotel_Type{
             border: 1px solid #ededed;
         }
@@ -53,6 +55,17 @@
         }
         #Deluxe-Supreme-Show, #Deluxe-Show, #Standard-Show, #Economy-Supreme-Show, #Economy-Show{
             display: none;
+        }
+        li.no-style{
+            display: inline-block;
+        }
+        ul.no-style{
+            list-style: none;
+            margin-bottom: : 0px !important;
+        }
+        .no-style p{
+            font-size: 14px;
+            padding-right: 15px;
         }
     </style>
 </head>
@@ -479,9 +492,9 @@
 
                             <!-- Form Step 3 -->
                             <fieldset>
-                                <div class="container">
-                                            <div class="row text-center pb-3">
-                                                    <div class="col-md-12">
+                                <div class="container mt-4 pt-4">
+                                            <div class="row text-center pb-3 mt-2 pt-4">
+                                                    <div class="col-md-6">
                                                         <p><strong>Select a country:</strong></p>
                                                         <div class="country-form">
                                                             <div class="form__options">
@@ -523,37 +536,61 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="col-md-6">
+                                                        <div class="col-md-12">
+                                                            <p class="pt-2 m-0"> 
+                                                                <ul class="no-style mb-0">
+                                                                    <li class="no-style">
+                                                                    <p  class="m-0"><strong>Need Ticket Facilitations?</strong></p>
+                                                                    </li>
+                                                                    <li class="no-style">
+                                                                        <input id="ticket" type="checkbox" name="ticket-validation">
+                                                                        <label for="ticket" class="check-trail mx-auto">
+                                                                          <span class="check-handler"></span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                            </p>
+                                                              
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <p class="pt-2 m-0">
+                                                                <ul class="no-style mb-0">
+                                                                    <li class="no-style"><p class="m-0"><strong>Need Visa Facilitations?</strong></p></li>
+                                                                    <li class="no-style">
+                                                                        <input id="need-visa" type="checkbox" name="visa-validation">
+                                                                        <label for="need-visa" class="check-trail mx-auto">
+                                                                          <span class="check-handler"></span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                                </p>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <p class="pt-2 m-0">
+                                                                <ul class="no-style mb-0">
+                                                                    <li class="no-style">
+                                                                        <p class="m-0"><strong>Need religious/tour guide?</strong>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li class="no-style">
+                                                                        <input id="guide" type="checkbox" name="guide-validation" >
+                                                                        <label for="guide" class="check-trail mx-auto">
+                                                                          <span class="check-handler"></span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                            </p>
+                                                              
+                                                        </div>
+                                                    </div>
+
                                             </div>
                             </div>
                             <!-- /country selection ends here -->
-                            <hr>
 
                             <!-- section for facilities -->
                             <div class="form-check">
-                                <div class="row pb-4 pt-3 text-center">
-                                    <div class="col-md-4">
-                                        <p class="pb-2"> <strong>Need Ticket Facilitations?</strong></p>
-                                          <input id="ticket" type="checkbox" name="ticket-validation">
-                                            <label for="ticket" class="check-trail mx-auto">
-                                              <span class="check-handler"></span>
-                                            </label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="pb-2"><strong>Need Visa Facilitations?</strong></p>
-                                          <input id="need-visa" type="checkbox" name="visa-validation">
-                                            <label for="need-visa" class="check-trail mx-auto">
-                                              <span class="check-handler"></span>
-                                            </label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="pb-2"><strong>Need religious/tour guide?</strong></p>
-                                          <input id="guide" type="checkbox" name="guide-validation" >
-                                            <label for="guide" class="check-trail mx-auto">
-                                              <span class="check-handler"></span>
-                                            </label>
-                                    </div>
-                                </div>
-                              
                                 <hr>
                               <p class="pt-4 text-center"><strong>What kind of transport you prefer?</strong></p>
                                 <div class="custom-radios">
@@ -663,7 +700,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Deluxe Supreme </a></strong></h3>
-                                            <p>
+                                            <p class="cstm-hotel-type-desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
@@ -684,7 +721,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Deluxe</a></strong></h3>
-                                            <p>
+                                            <p class="cstm-hotel-type-desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
@@ -706,7 +743,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Standard</a></strong></h3>
-                                            <p>
+                                            <p class="cstm-hotel-type-desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
@@ -727,7 +764,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Economy Supreme</a></strong></h3>
-                                            <p>
+                                            <p class="cstm-hotel-type-desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
@@ -748,7 +785,7 @@
                                     <div class="col-lg-8 col-md-8">
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Economy</a></strong></h3>
-                                            <p>
+                                            <p class="cstm-hotel-type-desc">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>

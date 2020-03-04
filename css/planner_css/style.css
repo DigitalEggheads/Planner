@@ -1188,26 +1188,26 @@ input[type="radio"] {
 .country-form label.iraq-label {
   background-image: url('../../img/Planner/country-iraq.png');
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   }
   .country-form label.iran-label {
   background-image: url('../../img/Planner/country-iran.png');
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   }
   .country-form label.syria-label {
   background-image: url('../../img/Planner/country-syria.png');
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   }
   .country-form label.ksa-label {
   background-image: url('../../img/Planner/country-saudi-arabia.png');
   background-size: cover;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
   }
 .country-form label img.checked-tick{
   display: none;
@@ -1311,12 +1311,18 @@ button.btn.btn-gold:hover{
 .Select_Hotel_Type div.col-md-8 .tour_list_desc {
     text-align: left;
     vertical-align: middle;
-    padding: 15px;
+    padding: 20px;
     border-right: 0px;
     line-height: 22px;
 }
 .Select_Hotel_Type div.col-md-8 .tour_list_desc h3 a{
-  color: #212e3c !important;
+  color: #d4bc34 !important;
+  font-size: 16px !important;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  font-family: "Montserrat", Arial, sans-serif !important;
+  font-weight: bold;
+
 }
 .Select_Hotel_Type div.col-md-8 .tour_list_desc .btn_1{
   color: #fff !important;
@@ -1324,3 +1330,11 @@ button.btn.btn-gold:hover{
 }
 
 
+.tour_list_desc p.cstm-hotel-type-desc{
+            font-size: 13px !important;
+            color: #000000 !important;
+            font-family: "Montserrat", Arial, sans-serif !important;
+  }
+.Select_Hotel_Type .img_list img{
+      left: 0 !important;
+}
