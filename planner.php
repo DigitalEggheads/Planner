@@ -466,208 +466,188 @@
 
                             <!-- Form Step 3 -->
                             <fieldset>
-                                <div style="clear:both;"></div>
-                                <div class="container-fluid p-0 mt-4">
-                                    <div class="col-md-12">
-                                        <p class="text-center"><strong>Select a country:</strong></p>
+                                <div class="container">
+                                            <div class="row text-center pb-3">
+                                                    <div class="col-md-12">
+                                                        <p><strong>Select a country:</strong></p>
+                                                        <div class="country-form">
+                                                            <div class="form__options">
+                                                                <p class="form__answer"> 
+                                                                    <input type="checkbox" name="match" id="match_1" value="country-iraq" checked required> 
+                                                                    <label for="match_1" class="iraq-label">
+                                                                        <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
+                                                                        
+                                                                        
+                                                                    </label> 
+                                                                    <span>Iraq</span>
+                                                                        
+                                                                </p>
+                                                                
+                                                                <p class="form__answer"> 
+                                                                    <input type="checkbox" name="match" id="match_2" value="country-iran" required> 
+                                                                    <label for="match_2" class="iran-label">
+                                                                        <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
+                                                                        
+                                                                    </label> 
+                                                                    <span>Iran</span>
+                                                                </p>
+                                                                
+                                                                <p class="form__answer"> 
+                                                                    <input type="checkbox" name="match" id="match_3" value="country-syria" required> 
+                                                                    <label for="match_3" class="syria-label">
+                                                                        <img class="checked-tick mx-auto" src="img/Planner/hotel-checked.png" alt="">
+                                                                    </label> 
+                                                                    <span>Syria</span>
+                                                                </p>
+                                                                
+                                                                <p class="form__answer"> 
+                                                                    <input type="checkbox" name="match" id="match_4" value="country-ksa" required> 
+                                                                    <label for="match_4" class="ksa-label">
+                                                                        <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
+                                                                    </label> 
+                                                                    <span>KSA</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                            </div>
+                            <!-- /country selection ends here -->
+                            <hr>
+
+                            <!-- section for facilities -->
+                            <div class="form-check">
+                                <div class="row pb-4 pt-3 text-center">
+                                    <div class="col-md-4">
+                                        <p class="pb-2"> <strong>Need Ticket Facilitations?</strong></p>
+                                          <input id="ticket" type="checkbox" required>
+                                            <label for="ticket" class="check-trail mx-auto">
+                                              <span class="check-handler"></span>
+                                            </label>
                                     </div>
-                                    <div class="row form-inline">
-                                        <div class="form-group col-md-12 w-100">
-                                            
-                                            <div class="country-form">
-                                                <ul>
-                                                    <li>
-                                                        <img src="img/Planner/country-iraq.png" alt="">
-                                                        <input type="checkbox" name="match" id="match_1" value="country-iraq" class="form-control required" required="required"> 
-                                                        <label for="match_1" class="iraq-label"> </label> 
-                                                        <span>Iraq</span>
-                                                    </li>
-                                                    <li>
-                                                        <img src="img/Planner/country-iran.png" alt="">
-                                                        <input type="checkbox" name="match" id="match_2" value="country-iran" class="form-control required"> 
-                                                        <label for="match_2" class="iran-label"></label> 
-                                                        <span>Iran</span>
-                                                    </li>
-                                                    <li>
-                                                        <img src="img/Planner/country-syria.png" alt="">
-                                                        <input type="checkbox" name="match" id="match_3" value="country-syria"  class="form-control required" > 
-                                                        <label for="match_3" class="syria-label"></label> 
-                                                        <span>Syria</span>
-                                                    </li>
-                                                    <li>
-                                                        <img src="img/Planner/country-saudi-arabia.png" alt="">
-                                                        <input type="checkbox" name="match" id="match_4" value="country-ksa"  class="form-control required" > 
-                                                        <label for="match_4" class="ksa-label"></label> 
-                                                        <span>KSA</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
+                                    <div class="col-md-4">
+                                        <p class="pb-2"><strong>Need Visa Facilitations?</strong></p>
+                                          <input id="need-visa" type="checkbox" required>
+                                            <label for="need-visa" class="check-trail mx-auto">
+                                              <span class="check-handler"></span>
+                                            </label>
                                     </div>
-                                    
-                                </div>
-                                <hr>
-                                <div style="clear:both;"></div>
-                                <div class="container-fluid p-0 mt-4 pl-lg-4 pr-lg-0 ml-lg-4">
-                                    <div class="row form-inline">
-                                            <!-- ticketing -->
-                                            <div class="form-group col-md-4 w-100 p-0">
-                                                <p class="text-center letter-space"><strong>Need Ticket Facilitations?</strong></p>
-                                                <!-- <input type="checkbox" id="ticket-yes" value="ticket-yes" required /> -->
-                                                <ul class="no-styles">
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forticket" id="ticket-yes" value="ticket-yes"  class="form-control required" required="required" >
-                                                        <label for="ticket-yes"></label>
-                                                        <span>Yes</span>
-                                                    </li>
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forticket" id="ticket-no" value="ticket-no"  class="form-control required" >
-                                                        <label for="ticket-no"></label>
-                                                        <span>No</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- visa -->
-                                            <div class="form-group col-md-4 w-100 p-0">
-                                                <p class="text-center letter-space"><strong>Need &nbsp; Visa &nbsp; Facilitations? <br></strong></p>
-                                                <ul class="no-styles">
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forvisa" id="visa-yes" value="ticket-yes" class="form-control required" required="required" >
-                                                        <label for="visa-yes"></label>
-                                                        <span>Yes</span>
-                                                    </li>
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forvisa" id="visa-no" value="visa-no" class="form-control required" >
-                                                        <label for="visa-no"></label>
-                                                        <span>No</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <!-- tour guide -->
-                                            <div class="form-group col-md-4 w-100 p-0">
-                                                <p class="text-center letter-space"><strong>Need religious/tour guide?</strong></p>
-                                                <ul class="no-styles">
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forguide" id="guide-yes" value="guide-yes" class="form-control required" required="required" >
-                                                        <label for="guide-yes"></label>
-                                                        <span>Yes</span>
-                                                    </li>
-                                                    <li class="no-styles">
-                                                        <input type="checkbox" name="forguide" id="guide-no" value="guide-no" class="form-control required" >
-                                                        <label for="guide-no"></label>
-                                                        <span>No</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                    <div class="col-md-4">
+                                        <p class="pb-2"><strong>Need religious/tour guide?</strong></p>
+                                          <input id="guide" type="checkbox" required>
+                                            <label for="guide" class="check-trail mx-auto">
+                                              <span class="check-handler"></span>
+                                            </label>
                                     </div>
                                 </div>
-
+                              
                                 <hr>
-                                <div style="clear:both;"></div>
-                                <div class="container-fluid p-0 mt-4">
-                                    <div class="row form-inline">
-                                            <!-- Transport -->
-                                            <div class="form-group col-md-12 w-100 p-0">
-                                                <p class="text-center letter-space mx-auto"><strong>What kind of transport you prefer?</strong></p>
-                                            </div>
-                                            <div class="form-group col-md-12 w-100 p-0">
-                                                <ul class="no-styles pl-0 mx-auto">
-                                                    <li class="no-styles text-center">
-                                                        <img src="img/Planner/4-seater.png" alt=""> 
-                                                        <br>
-                                                        <input type="radio" name="transport" id="four-seat" value="country-iraq" class="form-control required"  required="required"> 
-                                                        <label for="four-seat" class="iraq-label"> </label> 
-                                                        <span>4-seater</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <img src="img/Planner/6-seater.png" alt="">
-                                                        <br>
-                                                        <input type="radio" name="transport" id="six-seat" value="country-iran" class="form-control required"  > 
-                                                        <label for="four-seat" class="iran-label"></label> 
-                                                        <span>6-seater</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <img src="img/Planner/9-seater.png" alt="">
-                                                        <br>
-                                                        <input type="radio" name="transport" id="nine-seat" value="4seat" class="form-control required"  > 
-                                                        <label for="nine-seat" class="syria-label"></label> 
-                                                        <span>9-seater</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <img src="img/Planner/13-seater.png" alt="">
-                                                        <br>
-                                                        <input type="radio" name="transport" id="thirteen-seat" value="13seat" class="form-control required"  > 
-                                                        <label for="thirteen-seat" class="ksa-label"></label> 
-                                                        <span>13-seater</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <img src="img/Planner/27-seater.png" alt="">
-                                                        <br>
-                                                        <input type="radio" name="transport" id="tseven-seat" value="27-seater" class="form-control required"  > 
-                                                        <label for="tseven-seat" class="ksa-label"></label> 
-                                                        <span>27-seater</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            </div>
-                                    </div>
+                              <p class="pt-4 text-center"><strong>What kind of transport you prefer?</strong></p>
+                                <div class="custom-radios">
+                                    <ul>
+                                        <li>
+                                            <img src="img/Planner/4-seater.png" alt="" class="pb-2">
+                                            <input id="four-seat" type="radio" name="transport-choice" value="4seats" required>
+                                            <label for="four-seat" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="vehicle-title">4 seater</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/Planner/6-seater.png" alt="" class="pb-2">
+                                            <input id="six-seat" type="radio" name="transport-choice" value="6seats" required>
+                                            <label for="six-seat" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="vehicle-title">6 seater</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/Planner/9-seater.png" alt="" class="pb-2">
+                                            <input id="nine-seat" type="radio" name="transport-choice" value="9seats" required>
+                                            <label for="nine-seat" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="vehicle-title">9 seater</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/Planner/13-seater.png" alt="" class="pb-2">
+                                            <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats" required>
+                                            <label for="thirteen-seat" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="vehicle-title">13 seater</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/Planner/27-seater.png" alt="" class="pb-2">
+                                            <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats" required>
+                                            <label for="twentyseven-seat" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
 
+                                            </label>
+                                            <p class="vehicle-title">27 seater</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                                <hr>
-                                <div style="clear:both;"></div>
-                                <div class="container-fluid p-0 mt-4">
-                                    <div class="row form-inline">
-                                            <!-- Hotel Type -->
-                                            <div class="form-group col-md-12 w-100 p-0">
-                                                <p class="text-center letter-space mx-auto">
-                                                <strong>
-                                                    Choose and explore the type of hotel that your prefer:
-                                                </strong>
-                                               </p>
-                                            </div>
-                                            <div class="form-group col-md-12 w-100 p-0">
-                                                <ul class="no-styles pl-0 mx-auto">
-                                                    <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="deluxe" value="deluxe" checked class="form-control required" required="required" > 
-                                                        <label for="deluxe" class="iraq-label"> </label> 
-                                                        <span>Deluxe</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="Supreme-deluxe" value="Supreme-deluxe" class="form-control" > 
-                                                        <label for="Supreme-deluxe" class="iran-label"></label> 
-                                                        <span>Supreme Deluxe</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="standard" value="standard" class="form-control" > 
-                                                        <label for="standard" class="syria-label"></label> 
-                                                        <span>standard</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="economy" value="economy" class="form-control" > 
-                                                        <label for="economy" class="ksa-label"></label> 
-                                                        <span>Economy</span>
-                                                    </li>
-                                                    <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="seconomy" value="supreme-economy" class="form-control" > 
-                                                        <label for="seconomy" class="ksa-label"></label> 
-                                                        <span>Supreme Economy</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            </div>
-                                    </div>
-                                
-                                
-                                
-                                <br/>
+                            <!-- /facilities section ends here -->
+                            <hr>
+                            <!-- section for hotel type selection -->
+                            <div class="row pt-4 pb-4 text-center">
+                                <div class="col-md-12">
+                                    <p><strong>Choose and explore the type of hotel that your prefer:</strong></p>
+                                    <!-- removed hote accordians from here and saved in locals docs -->
+                                    <div class="hotel-type-radios">
+                                    <ul>
+                                        <li>
+                                            <input id="sDeluxe" type="radio" name="hotel-choice" value="SupremeDeluxeHotel" required>
+                                            <label for="sDeluxe" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="hotel-title">Supreme Deluxe</p>
+                                        </li>
+                                        <li>
+                                            <input id="deluxe" type="radio" name="hotel-choice" value="DeluxeHotel" required>
+                                            <label for="deluxe" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="hotel-title">Deluxe</p>
+                                        </li>
+                                        <li>
+                                            <input id="standard" type="radio" name="hotel-choice" value="standard" required>
+                                            <label for="standard" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="hotel-title">Standard</p>
+                                        </li>
+                                        <li>
+                                            <input id="economy" type="radio" name="hotel-choice" value="Economy" required>
+                                            <label for="economy" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="hotel-title">Economy</p>
+                                        </li>
+                                        <li>
+                                            <input id="sEconomy" type="radio" name="hotel-choice" value="SupremeEconomy" required>
+                                            <label for="sEconomy" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+
+                                            </label>
+                                            <p class="hotel-title">Supreme Economy</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /hotel type selection ends here-->
+
+                            <br/>
                                 <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="button" class="btn btn-next">Next</button>
+                                    <button type="submit" id="tips" class="btn btn-submit">Submit</button>
                                 </div>
                             </fieldset>
+                            
                             <!-- End Of Form Step 3 -->
                             
                             <!-- Form Step 4 -->
