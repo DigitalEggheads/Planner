@@ -478,7 +478,7 @@
                                                 <ul>
                                                     <li>
                                                         <img src="img/Planner/country-iraq.png" alt="">
-                                                        <input type="checkbox" name="match" id="match_1" value="country-iraq" class="form-control required" checked> 
+                                                        <input type="checkbox" name="match" id="match_1" value="country-iraq" class="form-control required" required="required"> 
                                                         <label for="match_1" class="iraq-label"> </label> 
                                                         <span>Iraq</span>
                                                     </li>
@@ -517,7 +517,7 @@
                                                 <!-- <input type="checkbox" id="ticket-yes" value="ticket-yes" required /> -->
                                                 <ul class="no-styles">
                                                     <li class="no-styles">
-                                                        <input type="checkbox" name="forticket" id="ticket-yes" value="ticket-yes"  class="form-control required" >
+                                                        <input type="checkbox" name="forticket" id="ticket-yes" value="ticket-yes"  class="form-control required" required="required" >
                                                         <label for="ticket-yes"></label>
                                                         <span>Yes</span>
                                                     </li>
@@ -534,7 +534,7 @@
                                                 <p class="text-center letter-space"><strong>Need &nbsp; Visa &nbsp; Facilitations? <br></strong></p>
                                                 <ul class="no-styles">
                                                     <li class="no-styles">
-                                                        <input type="checkbox" name="forvisa" id="visa-yes" value="ticket-yes" class="form-control required" >
+                                                        <input type="checkbox" name="forvisa" id="visa-yes" value="ticket-yes" class="form-control required" required="required" >
                                                         <label for="visa-yes"></label>
                                                         <span>Yes</span>
                                                     </li>
@@ -551,7 +551,7 @@
                                                 <p class="text-center letter-space"><strong>Need religious/tour guide?</strong></p>
                                                 <ul class="no-styles">
                                                     <li class="no-styles">
-                                                        <input type="checkbox" name="forguide" id="guide-yes" value="guide-yes" class="form-control required" >
+                                                        <input type="checkbox" name="forguide" id="guide-yes" value="guide-yes" class="form-control required" required="required" >
                                                         <label for="guide-yes"></label>
                                                         <span>Yes</span>
                                                     </li>
@@ -578,7 +578,7 @@
                                                     <li class="no-styles text-center">
                                                         <img src="img/Planner/4-seater.png" alt=""> 
                                                         <br>
-                                                        <input type="radio" name="transport" id="four-seat" value="country-iraq" class="form-control required"  checked> 
+                                                        <input type="radio" name="transport" id="four-seat" value="country-iraq" class="form-control required"  required="required"> 
                                                         <label for="four-seat" class="iraq-label"> </label> 
                                                         <span>4-seater</span>
                                                     </li>
@@ -631,27 +631,27 @@
                                             <div class="form-group col-md-12 w-100 p-0">
                                                 <ul class="no-styles pl-0 mx-auto">
                                                     <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="deluxe" value="deluxe" checked class="form-control required" > 
+                                                        <input type="radio" name="hotel-type" id="deluxe" value="deluxe" checked class="form-control required" required="required" > 
                                                         <label for="deluxe" class="iraq-label"> </label> 
                                                         <span>Deluxe</span>
                                                     </li>
                                                     <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="Supreme-deluxe" value="Supreme-deluxe" class="form-control required" > 
+                                                        <input type="radio" name="hotel-type" id="Supreme-deluxe" value="Supreme-deluxe" class="form-control" > 
                                                         <label for="Supreme-deluxe" class="iran-label"></label> 
                                                         <span>Supreme Deluxe</span>
                                                     </li>
                                                     <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="standard" value="standard" class="form-control required" > 
+                                                        <input type="radio" name="hotel-type" id="standard" value="standard" class="form-control" > 
                                                         <label for="standard" class="syria-label"></label> 
                                                         <span>standard</span>
                                                     </li>
                                                     <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="economy" value="economy" class="form-control required" > 
+                                                        <input type="radio" name="hotel-type" id="economy" value="economy" class="form-control" > 
                                                         <label for="economy" class="ksa-label"></label> 
                                                         <span>Economy</span>
                                                     </li>
                                                     <li class="no-styles text-center">
-                                                        <input type="radio" name="hotel-type" id="seconomy" value="supreme-economy" class="form-control required" > 
+                                                        <input type="radio" name="hotel-type" id="seconomy" value="supreme-economy" class="form-control" > 
                                                         <label for="seconomy" class="ksa-label"></label> 
                                                         <span>Supreme Economy</span>
                                                     </li>
