@@ -1308,4 +1308,19 @@ button.btn.btn-gold:hover{
 
 
 
+.Select_Hotel_Type div.col-md-8 .tour_list_desc {
+    text-align: left;
+    vertical-align: middle;
+    padding: 15px;
+    border-right: 0px;
+    line-height: 22px;
+}
+.Select_Hotel_Type div.col-md-8 .tour_list_desc h3 a{
+  color: #212e3c !important;
+}
+.Select_Hotel_Type div.col-md-8 .tour_list_desc .btn_1{
+  color: #fff !important;
+  background-color: #d4bc34 !important;
+}
+
 

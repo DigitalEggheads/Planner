@@ -654,7 +654,7 @@
                                 <div class="row Select_Hotel_Type">
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="hotel.php?Hotel_Id=1"><img src="../../HotelImages/Crystal-Lulu-Featured.jpg" alt="Image">
+                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -663,7 +663,7 @@
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Deluxe Supreme </a></strong></h3>
                                             <p>
-                                                Located in Karbala, Crystal Hotel is 500 metres from Border of Imam Hussein Shrine. It offers simply furnished accommodations with free Wi-Fi.
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
                                             <p><a href="#" class="btn_1">Details</a>
                                                 </p>
