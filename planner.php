@@ -87,7 +87,7 @@
                     <div class="col-md-10 form-wizard">
                     
                         <!-- Form Wizard -->
-                        <form role="form" action="" method="post">
+                        <form role="form" action="" method="post" id="trip-form">
 
                             <h3>Trip Planner</h3>
                             
@@ -473,7 +473,7 @@
                                                         <div class="country-form">
                                                             <div class="form__options">
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_1" value="country-iraq" required> 
+                                                                    <input type="checkbox" name="match" id="match_1" class="required"> 
                                                                     <label for="match_1" class="iraq-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                         
@@ -484,7 +484,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_2" value="country-iran" required> 
+                                                                    <input type="checkbox" name="match" id="match_2"> 
                                                                     <label for="match_2" class="iran-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                         
@@ -493,7 +493,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_3" value="country-syria" required> 
+                                                                    <input type="checkbox" name="match" id="match_3"> 
                                                                     <label for="match_3" class="syria-label">
                                                                         <img class="checked-tick mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
@@ -501,7 +501,7 @@
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_4" value="country-ksa" required> 
+                                                                    <input type="checkbox" name="match" id="match_4"> 
                                                                     <label for="match_4" class="ksa-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
@@ -520,21 +520,21 @@
                                 <div class="row pb-4 pt-3 text-center">
                                     <div class="col-md-4">
                                         <p class="pb-2"> <strong>Need Ticket Facilitations?</strong></p>
-                                          <input id="ticket" type="checkbox" required>
+                                          <input id="ticket" type="checkbox" name="ticket-validation">
                                             <label for="ticket" class="check-trail mx-auto">
                                               <span class="check-handler"></span>
                                             </label>
                                     </div>
                                     <div class="col-md-4">
                                         <p class="pb-2"><strong>Need Visa Facilitations?</strong></p>
-                                          <input id="need-visa" type="checkbox" required>
+                                          <input id="need-visa" type="checkbox" name="visa-validation">
                                             <label for="need-visa" class="check-trail mx-auto">
                                               <span class="check-handler"></span>
                                             </label>
                                     </div>
                                     <div class="col-md-4">
                                         <p class="pb-2"><strong>Need religious/tour guide?</strong></p>
-                                          <input id="guide" type="checkbox" required>
+                                          <input id="guide" type="checkbox" name="guide-validation" >
                                             <label for="guide" class="check-trail mx-auto">
                                               <span class="check-handler"></span>
                                             </label>
@@ -547,7 +547,7 @@
                                     <ul>
                                         <li>
                                             <img src="img/Planner/4-seater.png" alt="" class="pb-2">
-                                            <input id="four-seat" type="radio" name="transport-choice" value="4seats" required>
+                                            <input id="four-seat" type="radio" name="transport-choice" class="required">
                                             <label for="four-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -555,7 +555,7 @@
                                         </li>
                                         <li>
                                             <img src="img/Planner/6-seater.png" alt="" class="pb-2">
-                                            <input id="six-seat" type="radio" name="transport-choice" value="6seats" required>
+                                            <input id="six-seat" type="radio" name="transport-choice">
                                             <label for="six-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -563,7 +563,7 @@
                                         </li>
                                         <li>
                                             <img src="img/Planner/9-seater.png" alt="" class="pb-2">
-                                            <input id="nine-seat" type="radio" name="transport-choice" value="9seats" required>
+                                            <input id="nine-seat" type="radio" name="transport-choice">
                                             <label for="nine-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -571,7 +571,7 @@
                                         </li>
                                         <li>
                                             <img src="img/Planner/13-seater.png" alt="" class="pb-2">
-                                            <input id="thirteen-seat" type="radio" name="transport-choice" value="13seats" required>
+                                            <input id="thirteen-seat" type="radio" name="transport-choice">
                                             <label for="thirteen-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -579,7 +579,7 @@
                                         </li>
                                         <li>
                                             <img src="img/Planner/27-seater.png" alt="" class="pb-2">
-                                            <input id="twentyseven-seat" type="radio" name="transport-choice" value="27seats" required>
+                                            <input id="twentyseven-seat" type="radio" name="transport-choice">
                                             <label for="twentyseven-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
 
@@ -600,35 +600,35 @@
                                     <div class="hotel-type-radios">
                                     <ul>
                                         <li>
-                                            <input id="sDeluxe" type="radio" name="hotel-choice" value="SupremeDeluxeHotel" required>
+                                            <input id="sDeluxe" type="radio" name="hotel-choice" class="required">
                                             <label for="sDeluxe" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Supreme Deluxe</p>
                                         </li>
                                         <li>
-                                            <input id="deluxe" type="radio" name="hotel-choice" value="DeluxeHotel" required>
+                                            <input id="deluxe" type="radio" name="hotel-choice">
                                             <label for="deluxe" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Deluxe</p>
                                         </li>
                                         <li>
-                                            <input id="standard" type="radio" name="hotel-choice" value="standard" required>
+                                            <input id="standard" type="radio" name="hotel-choice">
                                             <label for="standard" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Standard</p>
                                         </li>
                                         <li>
-                                            <input id="economy" type="radio" name="hotel-choice" value="Economy" required>
+                                            <input id="economy" type="radio" name="hotel-choice">
                                             <label for="economy" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Economy</p>
                                         </li>
                                         <li>
-                                            <input id="sEconomy" type="radio" name="hotel-choice" value="SupremeEconomy" required>
+                                            <input id="sEconomy" type="radio" name="hotel-choice">
                                             <label for="sEconomy" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
 
@@ -644,7 +644,7 @@
                             <br/>
                                 <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
-                                    <button type="submit" id="tips" class="btn btn-submit">Submit</button>
+                                    <button type="button" class="btn btn-next">Next</button>
                                 </div>
                             </fieldset>
                             
@@ -825,10 +825,20 @@ $( "#tips" ).click(function(e) {
   $('.success-popout').hide();
 });
 
-
-
 </script>
 
+
+<script>
+    $('#trip-form').submit(function() {
+    if ($('input:checkbox', this).is(':checked') &&
+        $('input:radio', this).is(':checked')) {
+        // everything's fine...
+    } else {
+        alert('Please select something!');
+        return false;
+    }
+});
+</script>
 
 
     
