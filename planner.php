@@ -537,52 +537,38 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <div class="col-md-12">
-                                                            <p class="pt-2 m-0"> 
-                                                                <ul class="no-style mb-0">
-                                                                    <li class="no-style">
-                                                                    <p  class="m-0"><strong>Need Ticket Facilitations?</strong></p>
-                                                                    </li>
-                                                                    <li class="no-style">
-                                                                        <input id="ticket" type="checkbox" name="ticket-validation">
-                                                                        <label for="ticket" class="check-trail mx-auto">
-                                                                          <span class="check-handler"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                </ul>
-                                                            </p>
-                                                              
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <p class="pt-2 m-0">
-                                                                <ul class="no-style mb-0">
-                                                                    <li class="no-style"><p class="m-0"><strong>Need Visa Facilitations?</strong></p></li>
-                                                                    <li class="no-style">
-                                                                        <input id="need-visa" type="checkbox" name="visa-validation">
-                                                                        <label for="need-visa" class="check-trail mx-auto">
-                                                                          <span class="check-handler"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                </ul>
-                                                                </p>
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <p class="pt-2 m-0">
-                                                                <ul class="no-style mb-0">
-                                                                    <li class="no-style">
-                                                                        <p class="m-0"><strong>Need religious/tour guide?</strong>
-                                                                        </p>
-                                                                    </li>
-                                                                    <li class="no-style">
-                                                                        <input id="guide" type="checkbox" name="guide-validation" >
-                                                                        <label for="guide" class="check-trail mx-auto">
-                                                                          <span class="check-handler"></span>
-                                                                        </label>
-                                                                    </li>
-                                                                </ul>
-                                                            </p>
-                                                              
-                                                        </div>
+                                                        
+
+                                                         <table class="table table-borderless">
+                                                          <tbody>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need Ticket Facilitations?</strong></th>
+                                                              <td> 
+                                                                    <input id="ticket" type="checkbox" name="ticket-validation">
+                                                                    <label for="ticket" class="check-trail mx-auto">
+                                                                      <span class="check-handler"></span>
+                                                                    </label>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need Visa Facilitations?</strong></th>
+                                                              <td>
+                                                                <input id="need-visa" type="checkbox" name="visa-validation">
+                                                                <label for="need-visa" class="check-trail mx-auto">
+                                                                  <span class="check-handler"></span>
+                                                                </label>
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need religious/tour guide?</strong></th>
+                                                              <td>                                                     <input id="guide" type="checkbox" name="guide-validation" >
+                                                                    <label for="guide" class="check-trail mx-auto">
+                                                                      <span class="check-handler"></span>
+                                                                    </label>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
                                                     </div>
 
                                             </div>
