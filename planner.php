@@ -46,9 +46,13 @@
         }
         .Select_Hotel_Type div.col-md-4, .Select_Hotel_Type div.col-md-8{
             padding: 0px;
+            float: left;
         }
         .Select_Hotel_Type div.col-md-8 .tour_list_desc{
             border-right: 0px;
+        }
+        #Deluxe-Supreme-Show, #Deluxe-Show, #Standard-Show, #Economy-Supreme-Show, #Economy-Show{
+            display: none;
         }
     </style>
 </head>
@@ -609,46 +613,46 @@
                                     <div class="hotel-type-radios">
                                     <ul>
                                         <li>
-                                            <input id="sDeluxe" type="radio" name="hotel-choice" class="required">
-                                            <label for="sDeluxe" class="check-trail-radio p-1">
+                                            <input id="Deluxe-Supreme" type="radio" name="hotel-choice" class="required">
+                                            <label for="Deluxe-Supreme" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="hotel-title">Supreme Deluxe</p>
+                                            <p class="hotel-title">Deluxe Supreme</p>
                                         </li>
                                         <li>
-                                            <input id="deluxe" type="radio" name="hotel-choice">
-                                            <label for="deluxe" class="check-trail-radio p-1">
+                                            <input id="Deluxe" type="radio" name="hotel-choice">
+                                            <label for="Deluxe" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Deluxe</p>
                                         </li>
                                         <li>
-                                            <input id="standard" type="radio" name="hotel-choice">
-                                            <label for="standard" class="check-trail-radio p-1">
+                                            <input id="Standard" type="radio" name="hotel-choice">
+                                            <label for="Standard" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title">Standard</p>
                                         </li>
                                         <li>
-                                            <input id="economy" type="radio" name="hotel-choice">
-                                            <label for="economy" class="check-trail-radio p-1">
-                                              <span class="check-handler-radio"></span>
-                                            </label>
-                                            <p class="hotel-title">Economy</p>
-                                        </li>
-                                        <li>
-                                            <input id="sEconomy" type="radio" name="hotel-choice">
-                                            <label for="sEconomy" class="check-trail-radio p-1">
+                                            <input id="Economy-Supreme" type="radio" name="hotel-choice">
+                                            <label for="Economy-Supreme" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
 
                                             </label>
                                             <p class="hotel-title">Supreme Economy</p>
                                         </li>
+                                        <li>
+                                            <input id="Economy" type="radio" name="hotel-choice">
+                                            <label for="Economy" class="check-trail-radio p-1">
+                                              <span class="check-handler-radio"></span>
+                                            </label>
+                                            <p class="hotel-title">Economy</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 </div>
 
-                                <div class="row Select_Hotel_Type">
+                                <div class="row Select_Hotel_Type" id="Deluxe-Supreme-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
                                             <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
@@ -668,6 +672,93 @@
                                     </div>
 
                                 </div>
+
+                                <div class="row Select_Hotel_Type" id="Deluxe-Show"> 
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="img_list">
+                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                                <div class="short_info"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="tour_list_desc">
+                                            <h3><strong> <a href="#">Deluxe</a></strong></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <p><a href="#" class="btn_1">View More</a>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row Select_Hotel_Type" id="Standard-Show"> 
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="img_list">
+                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                                <div class="short_info"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="tour_list_desc">
+                                            <h3><strong> <a href="#">Standard</a></strong></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <p><a href="#" class="btn_1">View More</a>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row Select_Hotel_Type" id="Economy-Supreme-Show"> 
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="img_list">
+                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                                <div class="short_info"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="tour_list_desc">
+                                            <h3><strong> <a href="#">Economy Supreme</a></strong></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <p><a href="#" class="btn_1">View More</a>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row Select_Hotel_Type" id="Economy-Show"> 
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="img_list">
+                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                                <div class="short_info"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="tour_list_desc">
+                                            <h3><strong> <a href="#">Economy</a></strong></h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <p><a href="#" class="btn_1">View More</a>
+                                                </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
 
                             </div>
                             <!-- /hotel type selection ends here-->
@@ -871,8 +962,76 @@ $( "#tips" ).click(function(e) {
 });
 </script>
 
-
     
+<script type="text/javascript">
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'Deluxe-Supreme') {
+            $('#Deluxe-Supreme-Show').show();           
+       }
+
+       else {
+            $('#Deluxe-Supreme-Show').hide();   
+       }
+   });
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'Deluxe') {
+            $('#Deluxe-Show').show();           
+       }
+       
+       else {
+            $('#Deluxe-Show').hide();   
+       }
+   });
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'Standard') {
+            $('#Standard-Show').show();           
+       }
+       
+       else {
+            $('#Standard-Show').hide();   
+       }
+   });
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'Economy-Supreme') {
+            $('#Economy-Supreme-Show').show();           
+       }
+       
+       else {
+            $('#Economy-Supreme-Show').hide();   
+       }
+   });
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'Economy') {
+            $('#Economy-Show').show();           
+       }
+       
+       else {
+            $('#Economy-Show').hide();   
+       }
+   });
+});
+</script>
 
 </body>
 </html>
