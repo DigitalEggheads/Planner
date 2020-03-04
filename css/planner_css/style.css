@@ -283,6 +283,55 @@ background: #bbb;
 
 /*TICKET FACILITATION CHECK BOX*/
 
+.country-form{
+	margin: 0 auto;
+	text-align: center;
+}
+.country-form ul li .icheckbox_square-grey{
+	margin: 0 !important;
+}
+.country-form ul li{
+	display: inline-block;
+	width: 100px;
+	padding: 12px;
+	text-align: center;
+}
+
+ul.no-styles{
+	display: inline-block;
+	list-style: none !important;
+}
+li.no-styles{
+	display: inline-block;
+	margin: 0 auto;
+    padding: 0px 14px;
+}
+p.letter-space{
+	letter-spacing: 1px;
+}
+.country-form ul li.iraq-label {
+  background: url('../../img/Planner/country-iraq.png');
+  background-size: cover;
+  width: 100%;
+  }
+  .country-form ul li.iran-label {
+  background: url('../../img/Planner/country-iran.png');
+  background-size: cover;
+  width: 100%;
+  }
+  .country-form ul li.syria-label {
+  background: url('../../img/Planner/country-syria.png');
+  background-size: cover;
+  width: 100%;
+  }
+  .country-form ul li.ksa-label {
+  background: url('../../img/Planner/country-saudi-arabia.png');
+  background-size: cover;
+  width: 100%;
+  }
+
+
+
 
 /*TRANSPORT CHOICE*/
 ul.vehicle-choice{

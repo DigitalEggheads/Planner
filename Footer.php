@@ -171,12 +171,16 @@
     </script>
 <!-- Step 4 submit form success message script -->
 <script> 
-    
-$('.success-txt').hide();
+
+$('.success-popup').hide();
 $( "#tips" ).click(function(e) {
     e.preventDefault();
-  $('.success-txt').show();
+  $('.success-popup').show();
+  $('.success-popout').hide();
 });
+
+
+
 </script>
 
 

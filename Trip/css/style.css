@@ -806,18 +806,26 @@ input[type="radio"] {
 .country-form label.iraq-label {
   background-image: url('../images/country-iraq.png');
   background-size: cover;
+  height: 100px;
+  width: 100px;
   }
   .country-form label.iran-label {
   background-image: url('../images/country-iran.png');
   background-size: cover;
+  height: 100px;
+  width: 100px;
   }
   .country-form label.syria-label {
   background-image: url('../images/country-syria.png');
   background-size: cover;
+  height: 100px;
+  width: 100px;
   }
   .country-form label.ksa-label {
   background-image: url('../images/country-saudi-arabia.png');
   background-size: cover;
+    height: 100px;
+    width: 100px;
   }
 .country-form label img.checked-tick{
   display: none;
