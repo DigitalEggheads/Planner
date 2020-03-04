@@ -100,9 +100,6 @@
                     
                         <!-- Form Wizard -->
                         <form role="form" action="" method="post" id="trip-form">
-
-                            <h3>Trip Planner</h3>
-                            
                             <!-- Form progress -->
                             <div class="form-wizard-steps form-wizard-tolal-steps-4">
                                 <div class="form-wizard-progress">
@@ -665,7 +662,7 @@
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
                                             </p>
-                                            <p><a href="#" class="btn_1">Details</a>
+                                            <p><a href="#" class="btn_1">View More</a>
                                                 </p>
                                         </div>
                                     </div>
