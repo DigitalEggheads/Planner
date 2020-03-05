@@ -1,3 +1,23 @@
+<?php
+include_once "./backend/planner.php";
+
+if (isset($_POST["TP_Submit"])) {
+
+
+
+  $data = getRequestData(array("TP_Id", "TP_Name", "TP_Whatsapp_Number", "TP_Email", "TP_Country", "TP_City"), "post");
+  
+  if (TP_Submit($data)) {
+    unset($data);
+  }
+  
+} 
+
+
+if(isset($_POST['submit'])){
+    echo "string";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,14 +123,21 @@
            </li>
            <li class="active">Planner
            </li>
+           <li>
+               <?php 
+                print_r($data);
+               ?>
+           </li>
        </ul>
     </div>
     </div>
 
 
+
 <section class="form-box" >
+
             <div class="container">
-                
+                    
                 <div class="row">
                     <div class="col-md-10 form-wizard">
                     
@@ -161,11 +188,11 @@
                                 <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
                                     <label>Full Name: <span>*</span></label>
-                                    <input type="text" name="Full Name" placeholder="Full Name" class="form-control required w-100">
+                                    <input type="text" name="TP_Name" placeholder="Full Name" class="form-control required w-100">
                                 </div>
                                 <div class="form-group col-md-6 w-100">
                                     <label>Whatsapp Number: <span>*</span></label>
-                                    <input type="tel" pattern="[0-9]{10}" name="Whatsapp Number" placeholder="Number" class="form-control required w-100">
+                                    <input type="tel" pattern="[0-9]{10}" name="TP_Whatsapp_Number" placeholder="Number" class="form-control required w-100">
                                 </div>
                                 </div>
                                 </div>
@@ -173,16 +200,15 @@
                                 <br>
                                 <div class="form-group">
                                     <label>Email: <span>*</span></label>
-                                    <input type="email" name="Email" placeholder="Email" class="form-control required">
+                                    <input type="email" name="TP_Email" placeholder="Email" class="form-control required">
                                 </div>
                                 
                                 <div style="clear:both;"></div>
                                 <div class="container-fluid p-0 mt-4">
                                 <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
-                                    <label>Country </label>
-                                    <select class="form-control" required>
-                                        <option value="">Country Of Departure</option>
+                                    <label>Country Of Departure</label>
+                                    <select class="form-control" required name="TP_Country">
                                         <option value="Afghanistan" title="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands" title="Åland Islands">Åland Islands</option>
                                         <option value="Albania" title="Albania">Albania</option>
@@ -436,7 +462,7 @@
                                 </div>
                                 <div class="form-group col-md-6 w-100">
                                     <label>City: <span>*</span></label>
-                                    <input type="text" name="city" placeholder="City" class="form-control required w-100">
+                                    <input type="text" name="TP_City" placeholder="City" class="form-control required w-100">
                                 </div>
                                 </div>
                                 </div>
@@ -794,7 +820,14 @@
                              <fieldset>
                                 <div class="text-center p-4 m-4">
                                 <h3 class="pb-4 pt-2 success-popout">Confirm Submission</h3>
-                                <button type="button" value="submit" id="tips" class="btn btn-standard btn-block btn-form-submit mt-4 success-popout">Submit</button>
+
+
+                                <input type="submit" name="TP_Submit" value="Send">
+
+                                <form action="" method="post">
+                                <input type="submit" name="submit">
+                            </form>
+
                                   <img src="img/Planner/success.png" class="mx-auto success-popup" width="80px" alt="">
                                   <p class="pt-4 pb-4 success-popup">Success! Details have been submitted. Check your email!</p>
                                 </div>
@@ -958,7 +991,7 @@
 
     
 <!-- Step 4 submit form success message script -->
-<script> 
+<!-- <script> 
 
 $('.success-popup').hide();
 $( "#tips" ).click(function(e) {
@@ -980,7 +1013,7 @@ $( "#tips" ).click(function(e) {
         return false;
     }
 });
-</script>
+</script> -->
 
     
 <script type="text/javascript">
