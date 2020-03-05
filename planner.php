@@ -56,15 +56,16 @@
         #Deluxe-Supreme-Show, #Deluxe-Show, #Standard-Show, #Economy-Supreme-Show, #Economy-Show{
             display: none;
         }
-        .Trip-Assistance div.col-md-6{
-            padding: 0px;
+        li.no-style{
+            display: inline-block;
         }
-        .clh1{
-            line-height: 1;
+        ul.no-style{
+            list-style: none;
+            margin-bottom: : 0px !important;
         }
-        .cfst{
-            font-weight: normal !important;
-
+        .no-style p{
+            font-size: 14px;
+            padding-right: 15px;
         }
     </style>
 </head>
@@ -492,8 +493,9 @@
                             <!-- Form Step 3 -->
                             <fieldset>
                                 <div class="container mt-4 pt-4">
-                                            <div class="row text-center pb-3 mt-2 pt-4 Trip-Assistance">
+                                            <div class="row text-center pb-3 mt-2 pt-4">
                                                     <div class="col-md-6">
+                                                        <p><strong>Select a country:</strong></p>
                                                         <div class="country-form">
                                                             <div class="form__options">
                                                                 <p class="form__answer"> 
@@ -503,7 +505,7 @@
                                                                         
                                                                         
                                                                     </label> 
-                                                                    <span class="cfst">Iraq</span>
+                                                                    <span>Iraq</span>
                                                                         
                                                                 </p>
                                                                 
@@ -513,7 +515,7 @@
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                         
                                                                     </label> 
-                                                                    <span class="cfst">Iran</span>
+                                                                    <span>Iran</span>
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
@@ -521,7 +523,7 @@
                                                                     <label for="match_3" class="syria-label">
                                                                         <img class="checked-tick mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
-                                                                    <span class="cfst">Syria</span>
+                                                                    <span>Syria</span>
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
@@ -529,41 +531,42 @@
                                                                     <label for="match_4" class="ksa-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
-                                                                    <span class="cfst">KSA</span>
+                                                                    <span>KSA</span>
                                                                 </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <p class="clh1">Ticket<br/>Assistance</p>
-
-                                                                <input id="ticket" type="checkbox" name="ticket-validation">
+                                                         <table class="table table-borderless">
+                                                          <tbody>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need Ticket Facilitations?</strong></th>
+                                                              <td> 
+                                                                    <input id="ticket" type="checkbox" name="ticket-validation">
                                                                     <label for="ticket" class="check-trail mx-auto">
                                                                       <span class="check-handler"></span>
                                                                     </label>
-                                                            </div>
-
-                                                            <div class="col-md-4">
-                                                                <p class="clh1">Visa<br/>Assistance</p>
-
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need Visa Facilitations?</strong></th>
+                                                              <td>
                                                                 <input id="need-visa" type="checkbox" name="visa-validation">
                                                                 <label for="need-visa" class="check-trail mx-auto">
                                                                   <span class="check-handler"></span>
                                                                 </label>
-                                                            </div>
-
-                                                            <div class="col-md-4">
-                                                                <p class="clh1">Religious / Tour<br/>guide</p>
-
-                                                                <input id="guide" type="checkbox" name="guide-validation" >
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <th scope="row"><strong>Need religious/tour guide?</strong></th>
+                                                              <td>                                                     <input id="guide" type="checkbox" name="guide-validation" >
                                                                     <label for="guide" class="check-trail mx-auto">
                                                                       <span class="check-handler"></span>
                                                                     </label>
-                                                            </div>
-                                                        </div>
-                                                        
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
                                                     </div>
 
                                             </div>
@@ -582,7 +585,7 @@
                                             <label for="four-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="vehicle-title cfst">4 seater</p>
+                                            <p class="vehicle-title">4 seater</p>
                                         </li>
                                         <li>
                                             <img src="img/Planner/6-seater.png" alt="" class="pb-2">
@@ -590,7 +593,7 @@
                                             <label for="six-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="vehicle-title cfst">6 seater</p>
+                                            <p class="vehicle-title">6 seater</p>
                                         </li>
                                         <li>
                                             <img src="img/Planner/9-seater.png" alt="" class="pb-2">
@@ -598,7 +601,7 @@
                                             <label for="nine-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="vehicle-title cfst">9 seater</p>
+                                            <p class="vehicle-title">9 seater</p>
                                         </li>
                                         <li>
                                             <img src="img/Planner/13-seater.png" alt="" class="pb-2">
@@ -606,7 +609,7 @@
                                             <label for="thirteen-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="vehicle-title cfst">13 seater</p>
+                                            <p class="vehicle-title">13 seater</p>
                                         </li>
                                         <li>
                                             <img src="img/Planner/27-seater.png" alt="" class="pb-2">
@@ -615,7 +618,7 @@
                                               <span class="check-handler-radio"></span>
 
                                             </label>
-                                            <p class="vehicle-title cfst">27 seater</p>
+                                            <p class="vehicle-title">27 seater</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -635,21 +638,21 @@
                                             <label for="Deluxe-Supreme" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="hotel-title cfst">Deluxe Supreme</p>
+                                            <p class="hotel-title">Deluxe Supreme</p>
                                         </li>
                                         <li>
                                             <input id="Deluxe" type="radio" name="hotel-choice">
                                             <label for="Deluxe" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="hotel-title cfst">Deluxe</p>
+                                            <p class="hotel-title">Deluxe</p>
                                         </li>
                                         <li>
                                             <input id="Standard" type="radio" name="hotel-choice">
                                             <label for="Standard" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="hotel-title cfst">Standard</p>
+                                            <p class="hotel-title">Standard</p>
                                         </li>
                                         <li>
                                             <input id="Economy-Supreme" type="radio" name="hotel-choice">
@@ -657,14 +660,14 @@
                                               <span class="check-handler-radio"></span>
 
                                             </label>
-                                            <p class="hotel-title cfst">Supreme Economy</p>
+                                            <p class="hotel-title">Supreme Economy</p>
                                         </li>
                                         <li>
                                             <input id="Economy" type="radio" name="hotel-choice">
                                             <label for="Economy" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
-                                            <p class="hotel-title cfst">Economy</p>
+                                            <p class="hotel-title">Economy</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -793,16 +796,17 @@
                             <!-- Form Step 4 -->
                             <fieldset>
                                 <div class="text-center p-4 m-4">
-                                <p class="pt-4 pb-4 success-popout">Submit form!</p>
+                                <h3 class="pb-4 pt-2 success-popout">Confirm Submission</h3>
+                                <button type="button" value="submit" id="tips" class="btn btn-standard btn-block btn-form-submit mt-4 success-popout">Submit</button>
                                   <img src="img/Planner/success.png" class="mx-auto success-popup" width="80px" alt="">
                                   <p class="pt-4 pb-4 success-popup">Success! Details have been submitted. Check your email!</p>
                                 </div>
                                 
                                 <br/>
-                                <div class="form-wizard-buttons">
+                                <!-- <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
                                     <button type="submit" id="tips" class="btn btn-submit">Submit</button>
-                                </div>
+                                </div> -->
                             </fieldset>
                             <!-- Form Step 4 -->
                         
