@@ -791,19 +791,21 @@
                             <!-- End Of Form Step 3 -->
                             
                             <!-- Form Step 4 -->
-                            <fieldset>
+                             <fieldset>
                                 <div class="text-center p-4 m-4">
-                                <p class="pt-4 pb-4 success-popout">Submit form!</p>
+                                <h3 class="pb-4 pt-2 success-popout">Confirm Submission</h3>
+                                <button type="button" value="submit" id="tips" class="btn btn-standard btn-block btn-form-submit mt-4 success-popout">Submit</button>
                                   <img src="img/Planner/success.png" class="mx-auto success-popup" width="80px" alt="">
                                   <p class="pt-4 pb-4 success-popup">Success! Details have been submitted. Check your email!</p>
                                 </div>
                                 
                                 <br/>
-                                <div class="form-wizard-buttons">
+                                <!-- <div class="form-wizard-buttons">
                                     <button type="button" class="btn btn-previous">Previous</button>
                                     <button type="submit" id="tips" class="btn btn-submit">Submit</button>
-                                </div>
+                                </div> -->
                             </fieldset>
+
                             <!-- Form Step 4 -->
                         
                         </form>
