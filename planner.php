@@ -1,5 +1,5 @@
 <?php
-include_once "./backend/planner.php";
+// include_once "./backend/planner.php";
 
 if (isset($_POST["TP_Submit"])) {
 
@@ -137,12 +137,12 @@ if(isset($_POST['submit'])){
 <section class="form-box" >
 
             <div class="container">
-                    
+                    <form role="form" action="" method="post" id="trip-form">
                 <div class="row">
                     <div class="col-md-10 form-wizard">
                     
                         <!-- Form Wizard -->
-                        <form role="form" action="" method="post" id="trip-form">
+                        
                             <!-- Form progress -->
                             <div class="form-wizard-steps form-wizard-tolal-steps-4">
                                 <div class="form-wizard-progress">
@@ -822,11 +822,9 @@ if(isset($_POST['submit'])){
                                 <h3 class="pb-4 pt-2 success-popout">Confirm Submission</h3>
 
 
-                                <input type="submit" name="TP_Submit" value="Send">
+                                <input type="submit" name="TP_Submit" value="Send" id="TP_Submit">
 
-                                <form action="" method="post">
-                                <input type="submit" name="submit">
-                            </form>
+                                
 
                                   <img src="img/Planner/success.png" class="mx-auto success-popup" width="80px" alt="">
                                   <p class="pt-4 pb-4 success-popup">Success! Details have been submitted. Check your email!</p>
@@ -841,11 +839,11 @@ if(isset($_POST['submit'])){
 
                             <!-- Form Step 4 -->
                         
-                        </form>
+                        
                         <!-- Form Wizard -->
                     </div>
                 </div>
-                    
+                    </form>
             </div>
         </section>
         
@@ -994,16 +992,14 @@ if(isset($_POST['submit'])){
 <!-- <script> 
 
 $('.success-popup').hide();
-$( "#tips" ).click(function(e) {
-    e.preventDefault();
-  $('.success-popup').show();
-  $('.success-popout').hide();
+$( "#TP_Submit" ).click(function(e) {
+    $('#trip-form').submit();
 });
 
-</script>
+</script> -->
 
 
-<script>
+<!-- <script>
     $('#trip-form').submit(function() {
     if ($('input:checkbox', this).is(':checked') &&
         $('input:radio', this).is(':checked')) {
