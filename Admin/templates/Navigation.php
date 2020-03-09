@@ -127,7 +127,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Reviews
+                Hotel Reviews
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -142,6 +142,31 @@
                 <a href="unapproved-reviews.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Unapproved Reviews</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Manage Queries -->
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Trip Planner Queries
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="trip-planner-queries.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Queries</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Trashed Queries</p>
                 </a>
               </li>
             </ul>

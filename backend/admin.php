@@ -58,6 +58,14 @@
     return $res;
   }
 
+  function getAllTripPlannerQueries () {
+    $query = "select * from travel_planner ";
+    // $query .= "inner join user on auth.id = user.authId ";
+    $query .= "where TP_isTrashed = 0";
+    $res = fetchQuery($query);
+    return $res;
+  }
+
 
   function AddHotel ($data) {
     // global $message;
