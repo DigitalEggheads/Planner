@@ -1,11 +1,96 @@
+<style type="text/css">
+    .cstm-golden{
+        background-color: #cfb737 !important;
+    }
+</style>
+
 <?php
-// include_once "./backend/planner.php";
+include_once "./backend/planner.php";
+
+
+if(isset($_POST['TP_Arr_Country_Iraq']) && 
+   $_POST['TP_Arr_Country_Iraq'] == 'Yes') 
+{
+    $_POST['TP_Arr_Country_Iraq'] = "Yes";
+}
+else
+{
+    $_POST['TP_Arr_Country_Iraq'] = "No";
+}  
+
+
+if(isset($_POST['TP_Arr_Country_Iran']) && 
+   $_POST['TP_Arr_Country_Iran'] == 'Yes') 
+{
+    $_POST['TP_Arr_Country_Iran'] = "Yes";
+}
+else
+{
+    $_POST['TP_Arr_Country_Iran'] = "No";
+}  
+
+
+if(isset($_POST['TP_Arr_Country_Syria']) && 
+   $_POST['TP_Arr_Country_Syria'] == 'Yes') 
+{
+    $_POST['TP_Arr_Country_Syria'] = "Yes";
+}
+else
+{
+    $_POST['TP_Arr_Country_Syria'] = "No";
+}  
+
+
+if(isset($_POST['TP_Arr_Country_KSA']) && 
+   $_POST['TP_Arr_Country_KSA'] == 'Yes') 
+{
+    $_POST['TP_Arr_Country_KSA'] = "Yes";
+}
+else
+{
+    $_POST['TP_Arr_Country_KSA'] = "No";
+}  
+
+
+if(isset($_POST['TP_Ticket_Assistance']) && 
+   $_POST['TP_Ticket_Assistance'] == 'Yes') 
+{
+    $_POST['TP_Ticket_Assistance'] = "Yes";
+}
+else
+{
+    $_POST['TP_Ticket_Assistance'] = "No";
+}  
+
+
+if(isset($_POST['TP_Visa_Assistance']) && 
+   $_POST['TP_Visa_Assistance'] == 'Yes') 
+{
+    $_POST['TP_Visa_Assistance'] = "Yes";
+}
+else
+{
+    $_POST['TP_Visa_Assistance'] = "No";
+}  
+
+
+if(isset($_POST['TP_Guide_Assistance']) && 
+   $_POST['TP_Guide_Assistance'] == "Yes") 
+{
+    $_POST['TP_Guide_Assistance'] = "Yes";
+}
+else
+{
+    $_POST['TP_Guide_Assistance'] = "No";
+}  
+
 
 if (isset($_POST["TP_Submit"])) {
+echo "string";
 
 
 
-  $data = getRequestData(array("TP_Id", "TP_Name", "TP_Whatsapp_Number", "TP_Email", "TP_Country", "TP_City"), "post");
+  $data = getRequestData(array("TP_Id", "TP_Name", "TP_Whatsapp_Number", "TP_Email", "TP_Dep_Country", "TP_Dep_City", "TP_Dep_Date", "TP_Arr_Date", "TP_Adults", "TP_Children", "TP_Arr_Country_Iraq", "TP_Arr_Country_Iran", "TP_Arr_Country_Syria", "TP_Arr_Country_KSA", "TP_Ticket_Assistance", "TP_Visa_Assistance", "TP_Guide_Assistance", "TP_Transport", "TP_Hotel_Type", "TP_isTrashed"), "post");
   
   if (TP_Submit($data)) {
     unset($data);
@@ -14,9 +99,6 @@ if (isset($_POST["TP_Submit"])) {
 } 
 
 
-if(isset($_POST['submit'])){
-    echo "string";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -187,12 +269,13 @@ if(isset($_POST['submit'])){
                                 <div class="container-fluid p-0 mt-4">
                                 <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
+                                    <input class="form-control required" name="TP_isTrashed" id="" type="hidden" value="0" readonly>
                                     <label>Full Name: <span>*</span></label>
                                     <input type="text" name="TP_Name" placeholder="Full Name" class="form-control required w-100">
                                 </div>
                                 <div class="form-group col-md-6 w-100">
                                     <label>Whatsapp Number: <span>*</span></label>
-                                    <input type="tel" pattern="[0-9]{10}" name="TP_Whatsapp_Number" placeholder="Number" class="form-control required w-100">
+                                    <input type="tel" name="TP_Whatsapp_Number" placeholder="Number" class="form-control required w-100">
                                 </div>
                                 </div>
                                 </div>
@@ -208,7 +291,7 @@ if(isset($_POST['submit'])){
                                 <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
                                     <label>Country Of Departure</label>
-                                    <select class="form-control" required name="TP_Country">
+                                    <select class="form-control" required name="TP_Dep_Country">
                                         <option value="Afghanistan" title="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands" title="Åland Islands">Åland Islands</option>
                                         <option value="Albania" title="Albania">Albania</option>
@@ -462,7 +545,7 @@ if(isset($_POST['submit'])){
                                 </div>
                                 <div class="form-group col-md-6 w-100">
                                     <label>City: <span>*</span></label>
-                                    <input type="text" name="TP_City" placeholder="City" class="form-control required w-100">
+                                    <input type="text" name="TP_Dep_City" placeholder="City" class="form-control required w-100">
                                 </div>
                                 </div>
                                 </div>
@@ -483,12 +566,12 @@ if(isset($_POST['submit'])){
                                 <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
                                     <label><i class="icon-calendar-7"></i> Date Of Departure</label>
-                                    <input class="form-control booking_date required w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="" required>
+                                    <input class="form-control booking_date required w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="TP_Dep_Date" required>
                                 </div>
 
                                 <div class="form-group col-md-6 w-100">
                                     <label><i class="icon-calendar-7"></i> Date Of Arrival</label>
-                                    <input class="form-control booking_date required w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="" required>
+                                    <input class="form-control booking_date required w-100" id="bookingdate" type="text" data-lang="en" data-large-mode="true" data-large-default="true" data-min-year="2017" data-max-year="2020" data-disabled-days="11/17/2017,12/17/2017" name="TP_Arr_Date" required>
                                 </div>
                                 </div>
                                 </div>
@@ -497,12 +580,12 @@ if(isset($_POST['submit'])){
                                     <div class="row form-inline">
                                 <div class="form-group col-md-6 w-100">
                                     <label>Adults: <span>*</span></label>
-                                    <input type="number" name="adults" placeholder="Number Of Adults" class="form-control w-100 required">
+                                    <input type="number" name="TP_Adults" placeholder="Number Of Adults" class="form-control w-100 required">
                                 </div>
 
                                 <div class="form-group col-md-6 w-100">
                                     <label>Children: <span>*</span></label>
-                                    <input type="number" name="children" placeholder="Number Of Children" class="form-control w-100 required">
+                                    <input type="number" name="TP_Children" placeholder="Number Of Children" class="form-control w-100 required">
                                 </div>
                                 </div>
                                 </div>
@@ -523,7 +606,7 @@ if(isset($_POST['submit'])){
                                                         <div class="country-form">
                                                             <div class="form__options">
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_1" class="required"> 
+                                                                    <input type="checkbox" name="TP_Arr_Country_Iraq" id="match_1" class="required" value="Yes"> 
                                                                     <label for="match_1" class="iraq-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                         
@@ -534,7 +617,7 @@ if(isset($_POST['submit'])){
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_2"> 
+                                                                    <input type="checkbox" name="TP_Arr_Country_Iran" id="match_2" value="Yes"> 
                                                                     <label for="match_2" class="iran-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                         
@@ -543,7 +626,7 @@ if(isset($_POST['submit'])){
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_3"> 
+                                                                    <input type="checkbox" name="TP_Arr_Country_Syria" id="match_3" value="Yes"> 
                                                                     <label for="match_3" class="syria-label">
                                                                         <img class="checked-tick mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
@@ -551,7 +634,7 @@ if(isset($_POST['submit'])){
                                                                 </p>
                                                                 
                                                                 <p class="form__answer"> 
-                                                                    <input type="checkbox" name="match" id="match_4"> 
+                                                                    <input type="checkbox" name="TP_Arr_Country_KSA" id="match_4" value="Yes"> 
                                                                     <label for="match_4" class="ksa-label">
                                                                         <img class="checked-tick  mx-auto" src="img/Planner/hotel-checked.png" alt="">
                                                                     </label> 
@@ -565,7 +648,7 @@ if(isset($_POST['submit'])){
                                                             <div class="col-md-4">
                                                                 <p class="clh1">Ticket<br/>Assistance</p>
 
-                                                                <input id="ticket" type="checkbox" name="ticket-validation">
+                                                                <input id="ticket" type="checkbox" name="TP_Ticket_Assistance" value="Yes">
                                                                     <label for="ticket" class="check-trail mx-auto">
                                                                       <span class="check-handler"></span>
                                                                     </label>
@@ -574,7 +657,7 @@ if(isset($_POST['submit'])){
                                                             <div class="col-md-4">
                                                                 <p class="clh1">Visa<br/>Assistance</p>
 
-                                                                <input id="need-visa" type="checkbox" name="visa-validation">
+                                                                <input id="need-visa" type="checkbox" name="TP_Visa_Assistance" value="Yes">
                                                                 <label for="need-visa" class="check-trail mx-auto">
                                                                   <span class="check-handler"></span>
                                                                 </label>
@@ -583,7 +666,7 @@ if(isset($_POST['submit'])){
                                                             <div class="col-md-4">
                                                                 <p class="clh1">Religious / Tour<br/>guide</p>
 
-                                                                <input id="guide" type="checkbox" name="guide-validation" >
+                                                                <input id="guide" type="checkbox" name="TP_Guide_Assistance" value="Yes">
                                                                     <label for="guide" class="check-trail mx-auto">
                                                                       <span class="check-handler"></span>
                                                                     </label>
@@ -604,7 +687,7 @@ if(isset($_POST['submit'])){
                                     <ul>
                                         <li>
                                             <img src="img/Planner/4-seater.png" alt="" class="pb-2">
-                                            <input id="four-seat" type="radio" name="transport-choice" class="required">
+                                            <input id="four-seat" type="radio" name="TP_Transport" class="required" value="4 seater">
                                             <label for="four-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -612,7 +695,7 @@ if(isset($_POST['submit'])){
                                         </li>
                                         <li>
                                             <img src="img/Planner/6-seater.png" alt="" class="pb-2">
-                                            <input id="six-seat" type="radio" name="transport-choice">
+                                            <input id="six-seat" type="radio" name="TP_Transport" value="6 seater">
                                             <label for="six-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -620,7 +703,7 @@ if(isset($_POST['submit'])){
                                         </li>
                                         <li>
                                             <img src="img/Planner/9-seater.png" alt="" class="pb-2">
-                                            <input id="nine-seat" type="radio" name="transport-choice">
+                                            <input id="nine-seat" type="radio" name="TP_Transport" value="9 seater">
                                             <label for="nine-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -628,7 +711,7 @@ if(isset($_POST['submit'])){
                                         </li>
                                         <li>
                                             <img src="img/Planner/13-seater.png" alt="" class="pb-2">
-                                            <input id="thirteen-seat" type="radio" name="transport-choice">
+                                            <input id="thirteen-seat" type="radio" name="TP_Transport" value="13 seater">
                                             <label for="thirteen-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -636,7 +719,7 @@ if(isset($_POST['submit'])){
                                         </li>
                                         <li>
                                             <img src="img/Planner/27-seater.png" alt="" class="pb-2">
-                                            <input id="twentyseven-seat" type="radio" name="transport-choice">
+                                            <input id="twentyseven-seat" type="radio" name="TP_Transport" value="27 seater">
                                             <label for="twentyseven-seat" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
 
@@ -657,28 +740,28 @@ if(isset($_POST['submit'])){
                                     <div class="hotel-type-radios">
                                     <ul>
                                         <li>
-                                            <input id="Deluxe-Supreme" type="radio" name="hotel-choice" class="required">
+                                            <input id="Deluxe-Supreme" type="radio" name="TP_Hotel_Type" class="required" value="Deluxe Supreme">
                                             <label for="Deluxe-Supreme" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title cfst">Deluxe Supreme</p>
                                         </li>
                                         <li>
-                                            <input id="Deluxe" type="radio" name="hotel-choice">
+                                            <input id="Deluxe" type="radio" name="TP_Hotel_Type" value="Deluxe">
                                             <label for="Deluxe" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title cfst">Deluxe</p>
                                         </li>
                                         <li>
-                                            <input id="Standard" type="radio" name="hotel-choice">
+                                            <input id="Standard" type="radio" name="TP_Hotel_Type" value="Standard">
                                             <label for="Standard" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
                                             <p class="hotel-title cfst">Standard</p>
                                         </li>
                                         <li>
-                                            <input id="Economy-Supreme" type="radio" name="hotel-choice">
+                                            <input id="Economy-Supreme" type="radio" name="TP_Hotel_Type" value="Supreme Economy">
                                             <label for="Economy-Supreme" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
 
@@ -686,7 +769,7 @@ if(isset($_POST['submit'])){
                                             <p class="hotel-title cfst">Supreme Economy</p>
                                         </li>
                                         <li>
-                                            <input id="Economy" type="radio" name="hotel-choice">
+                                            <input id="Economy" type="radio" name="TP_Hotel_Type" value="Economy">
                                             <label for="Economy" class="check-trail-radio p-1">
                                               <span class="check-handler-radio"></span>
                                             </label>
@@ -819,15 +902,12 @@ if(isset($_POST['submit'])){
                             <!-- Form Step 4 -->
                              <fieldset>
                                 <div class="text-center p-4 m-4">
-                                <h3 class="pb-4 pt-2 success-popout">Confirm Submission</h3>
+                                <h3 class="success-popout">Confirm Submission</h3>
+                                <p class="success-popup">Lorem Ipsum is a dummy Text</p>
 
 
-                                <input type="submit" name="TP_Submit" value="Send" id="TP_Submit">
-
-                                
-
-                                  <img src="img/Planner/success.png" class="mx-auto success-popup" width="80px" alt="">
-                                  <p class="pt-4 pb-4 success-popup">Success! Details have been submitted. Check your email!</p>
+                                <input type="submit" name="TP_Submit" value="Submit" id="TP_Submit" class="btn_1 cstm-golden">
+                                  
                                 </div>
                                 
                                 <br/>
