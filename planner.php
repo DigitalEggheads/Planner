@@ -782,7 +782,7 @@ echo "string";
                                 <div class="row Select_Hotel_Type" id="Deluxe-Supreme-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                            <a href="#"><img src="https://shirkatulras.com/HotelImages/Hotel-Rotana-Featured.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -791,7 +791,7 @@ echo "string";
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Deluxe Supreme </a></strong></h3>
                                             <p class="cstm-hotel-type-desc">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                                The hotels of deluxe supreme have high quality maintained rooms with baths and balconies. Hotels have their own restaurants with all kinds for food in buffet.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
                                                 </p>
@@ -803,7 +803,7 @@ echo "string";
                                 <div class="row Select_Hotel_Type" id="Deluxe-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                            <a href="#"><img src="https://shirkatulras.com/HotelImages/Hotel-Anwar-e-Baghdad-Featured.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -812,7 +812,7 @@ echo "string";
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Deluxe</a></strong></h3>
                                             <p class="cstm-hotel-type-desc">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                                The hotels have spacious rooms and quality maintained interior. Hotels have large waiting areas and conference rooms. People can also enjoy their meals of their choice in buffet system.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
                                                 </p>
@@ -825,7 +825,7 @@ echo "string";
                                 <div class="row Select_Hotel_Type" id="Standard-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                            <a href="#"><img src="https://shirkatulras.com/HotelImages/Hotel-Qamar-Al-Qami-Featured.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -834,7 +834,7 @@ echo "string";
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Standard</a></strong></h3>
                                             <p class="cstm-hotel-type-desc">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                                Standard hotels have 3 and 4 star category. You can get the rooms on sharing basis as per your need. The hotels have courtyard and waiting rooms or conference halls where people can meet and greet. 
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
                                                 </p>
@@ -846,7 +846,7 @@ echo "string";
                                 <div class="row Select_Hotel_Type" id="Economy-Supreme-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                            <a href="#"><img src="https://shirkatulras.com/HotelImages/Hotel-Rawan-Featured.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -855,7 +855,7 @@ echo "string";
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Economy Supreme</a></strong></h3>
                                             <p class="cstm-hotel-type-desc">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                                Economy supreme hotels are average in rating. Mostly people choose this category as it is cost effective and have same features as of standard hotels.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
                                                 </p>
@@ -867,7 +867,7 @@ echo "string";
                                 <div class="row Select_Hotel_Type" id="Economy-Show"> 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="img_list">
-                                            <a href="#"><img src="img/Planner/default-featured-hotel.jpg" alt="Image">
+                                            <a href="#"><img src="https://shirkatulras.com/HotelImages/Hotel-Aadyan-Featured.jpg" alt="Image">
                                                 <div class="short_info"></div>
                                             </a>
                                         </div>
@@ -876,7 +876,7 @@ echo "string";
                                         <div class="tour_list_desc">
                                             <h3><strong> <a href="#">Economy</a></strong></h3>
                                             <p class="cstm-hotel-type-desc">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dignissimos natus corporis fugiat dolorem reiciendis aperiam. Quidem quos dignissimos, adipisci! Lorem ipsum dolor sit amet.
+                                                Economy hotels are below the average. They don't have much as much features as others like restaurants. They are most highly cost effective and you can save your money over here. But you will have to compromise on many things.
                                             </p>
                                             <p><a href="#" class="btn_1">View More</a>
                                                 </p>
