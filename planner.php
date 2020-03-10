@@ -205,11 +205,6 @@ echo "string";
            </li>
            <li class="active">Planner
            </li>
-           <li>
-               <?php 
-                print_r($data);
-               ?>
-           </li>
        </ul>
     </div>
     </div>

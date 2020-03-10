@@ -205,6 +205,24 @@ if ($result=mysqli_query($con,$query))
                     </tr>
                   </tbody>
                 </table>
+
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="text-align: center; background-color: #cfb737 !important; color:#ffffff;" colspan="4">Transport & Hotel Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><label for="">Transport</label></td>
+                      <td><?php echo $TP_Transport; ?></td>
+
+                      <td><label for="">Hotel Type</label></td>
+                      <td><?php echo $TP_Hotel_Type; ?></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <!-- /.card-body -->
             </div>

@@ -96,13 +96,13 @@ function save($data, $table)
 
         $q = mysqli_query($con, $query);
         
-        Print_r("<code>".$query."</code>");
-        echo "<br/>";
-        echo "<br/>";
-        echo "|";
-        echo "|";
-        echo "|";
-        echo "<br/>";
+        // Print_r("<code>".$query."</code>");
+        // echo "<br/>";
+        // echo "<br/>";
+        // echo "|";
+        // echo "|";
+        // echo "|";
+        // echo "<br/>";
         
         if ($q) {
             $orderByKey = fetchQuery("SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'planner' AND TABLE_NAME = '$table' AND COLUMN_KEY = 'PRI'");
